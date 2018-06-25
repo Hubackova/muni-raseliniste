@@ -24,7 +24,7 @@ export default withLocalization(({ children, language }) =>
    <LocalizationProvider>
     <Container>
       <Header />
-      <Main>{children()}</Main>
+      <Main>{children}</Main>
       <footer><FooterContent/></footer>
     </Container>
     </LocalizationProvider>

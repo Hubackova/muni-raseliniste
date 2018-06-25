@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from "react";
 import styled from "styled-components";
-
+import Layout from "../components/layout";
 import StudentBox from "../components/studentBox"
 
 const hrivovaInfo = {
@@ -21,7 +21,7 @@ const personLink = "https://d1nhio0ox7pgb.cloudfront.net/_img/g_collection_png/s
 
 class Students extends Component {
     render() {
-        return (
+        return (  <Layout>
   <Container>
   <StudentBox img={personLink} personInfo={hrivovaInfo} />
   <StudentBox img={personLink} personInfo={dalsiInfo} />
@@ -29,7 +29,7 @@ class Students extends Component {
   <StudentBox img={personLink} personInfo={dalsiInfo} />
   <StudentBox img={personLink} personInfo={dalsiInfo} />
   <StudentBox img={personLink} personInfo={dalsiInfo} />
-</Container>
+</Container></Layout>
 );
 }}
 

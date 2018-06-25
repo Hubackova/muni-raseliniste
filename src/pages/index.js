@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { injectGlobal } from 'styled-components'
 import Images from "../components/images";
 import Container from "../components/container";
+import Layout from "../components/layout";
 import 'font-awesome/css/font-awesome.min.css';
 import { LocalizationConsumer, withLocalization } from '../components/localization.context';
 
@@ -12,14 +13,14 @@ function MainText({language}) {
 const LocalizedText = withLocalization(MainText);
 
 
-export default () => <Container>
+export default () => <Layout><Container>
   <h2>In our group we focus on </h2>
   <div>
         <LocalizationConsumer>
         {context => <p>{context.language.mainPage.introText}</p>}
         </LocalizationConsumer>
     </div>
-</Container>
+</Container></Layout>
 
 injectGlobal`
 html, body, #___gatsby, #___gatsby>div {

@@ -1,7 +1,7 @@
 import React, {Fragment} from "react"
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-
+import Layout from "../components/layout";
 
 const papers_2017 = [
     "Beran L., Juřičková L. & Horsák M. (2017): Mollusca (měkkýši). In: Hejda R., Farkač J. & Chobot K. (eds.). Červený seznam ohrožených druhů České republiky. Bezobratlí. (Red List of threatened species of the Czech Republic. Invertebrates.). Příroda 36: 70-76.",
@@ -19,7 +19,7 @@ const Publications = props => {
             return <li key={i}>{i}</li>;
           })
     return (
-    <Fragment>
+    <Layout>
     <h2>2017</h2>
     <ul>
     {papers2017}
@@ -28,7 +28,7 @@ const Publications = props => {
     <ul>
     {papers2017}
     </ul>
-    </Fragment>
+    </Layout>
     );
 };
 

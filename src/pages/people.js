@@ -7,7 +7,7 @@ import omesova from "./images/omesova.jpg";
 import sychra from "./images/sychra.jpg";
 import zahradkova from "./images/zahradkova.jpg";
 import paril from "./images/paril.jpg";
-
+import Layout from "../components/layout";
 const helesicInfo = {
     name: "Jan Helešic",
     position: "vedoucí pracovní skupiny Laboratoř biologie tekoucích vod",
@@ -51,14 +51,14 @@ const parilInfo = {
 
 class Staff extends Component {
     render() {
-        return (
+        return (<Layout>
   <Container>
   <StaffBox img={helesic} personInfo={helesicInfo} />
   <StaffBox img={paril} personInfo={parilInfo} />
   <StaffBox img={zahradkova} personInfo={zahradkovaInfo} />
   <StaffBox img={omesova} personInfo={zhaiInfo} />
   <StaffBox img={sychra} personInfo={sychraInfo} />
-</Container>
+</Container></Layout>
 );
 }}
 export default Staff;
