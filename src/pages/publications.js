@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Fragment} from "react"
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
@@ -19,7 +19,7 @@ const Publications = props => {
             return <li key={i}>{i}</li>;
           })
     return (
-    <Container>
+    <Fragment>
     <h2>2017</h2>
     <ul>
     {papers2017}
@@ -28,7 +28,7 @@ const Publications = props => {
     <ul>
     {papers2017}
     </ul>
-    </Container>
+    </Fragment>
     );
 };
 
@@ -37,12 +37,3 @@ Publications.propTypes = {
 };
 
 export default Publications;
-
-
- const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: 800px) {
-      width: 100%;
-    }
-`;

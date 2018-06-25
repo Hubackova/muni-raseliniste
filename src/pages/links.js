@@ -1,4 +1,4 @@
-import React from "react"
+import React, {Fragment} from "react"
 import PropTypes from 'prop-types';
 import styled from "styled-components";
 
@@ -11,10 +11,10 @@ const Links = props => {
         return <li key={i.name}><A href={i.link}>{i.name}</A></li>;
     })
     return (
-    <Container>
+    <Fragment>
         <h1> Odkazy </h1>
     {linksList}
-    </Container>
+    </Fragment>
     );
 };
 
@@ -23,15 +23,6 @@ Links.propTypes = {
 };
 
 export default Links;
-
-
-const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: 800px) {
-      width: 100%;
-    }
-`;
 
 const A = styled.a`
         color: #333;

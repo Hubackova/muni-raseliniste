@@ -3,34 +3,32 @@ import Link from "gatsby-link";
 import styled from "styled-components";
 import {ThemeProvider} from 'styled-components';
 
-import ecdyonurus from "../pages/images/ecdyonurus.jpg";
-import Navigation from "./navigation";
-import FooterContent from "./footer";
 
+import Header from "./header";
+import FooterContent from "./footer";
+import {LocalizationProvider, withLocalization} from "../components/localization.context";
 
 const blueTheme = {
   main: '#0868ac',
   secondary: '#43a2ca',
   terciary: '#a8ddb5',
   grey: '#969696',
-  white: 'white'
+  white: 'white',
+  black: 'black',
+  mediumDevice: '768px',
+  largeDevice: '1024px'
 };
 
-
-export default ({ children }) =>
+export default withLocalization(({ children, language }) =>
  <ThemeProvider theme={blueTheme}>
-    <Container class="container">
-    <LogoText><img src={ecdyonurus}/>
-    Pracovní skupina hydrobiologie
-    </LogoText>
-    <SubHeader>Ústav botaniky a zoologie | Masarykova univerzita | Přírodovědecká fakulta </SubHeader>
-
-
-    <Header><Navigation/></Header>
-    <Main>{children()}</Main>
-    <footer><FooterContent/></footer>
+   <LocalizationProvider>
+    <Container>
+      <Header />
+      <Main>{children()}</Main>
+      <footer><FooterContent/></footer>
     </Container>
-  </ThemeProvider>
+    </LocalizationProvider>
+  </ThemeProvider>)
 
 const Container = styled.div`
     min-height: 100%;
@@ -38,31 +36,9 @@ const Container = styled.div`
     flex-direction: column;
 `;
 
-
-const Header = styled.header`
-    background: ${props => props.theme.secondary};
-    flex-shrink: 0;
-`;
-
-const SubHeader = styled.div`
-    font-size: 1em;
-    color: ${props => props.theme.grey};
-    padding-left: 2em;
-    padding-bottom: 0.5em;
-`;
-
 const Main = styled.main`
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex: 1 0;
     padding: 20px;
+    margin: 0 auto;
 `;
 
-const LogoText = styled.h1`
-    text-transform: uppercase;
-    color: ${props => props.theme.main};
-    margin: 0 0.3em 0.3em 0.3em;
-    margin: 0 0.3em 0.3em 0.3em;
-    @media (max-width: 800px) {
-      font-size:1.3em;
-    }
-`;

@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import styled from "styled-components";
 
 import img2 from "./images/img2.jpg";

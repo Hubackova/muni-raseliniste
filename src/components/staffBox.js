@@ -43,7 +43,7 @@ const Box = styled.div`
   padding: 1em;
   border-bottom: 0.1em solid #46ACC2;
   line-height: 1.6em;
-  @media (max-width: 800px) {
+  @media (max-width: ${props => props.theme.mediumDevice}) {
     flex-direction: column;
   }
 `;

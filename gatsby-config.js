@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Hydrobiologie - MUNI`,
+    title: `MIRE ECOLOGY GROUP - MUNI`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-next`
   ],
-    pathPrefix: "/hydroweb"
+    pathPrefix: "/raseliniste"
 
 }

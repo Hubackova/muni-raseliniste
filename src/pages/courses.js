@@ -1,7 +1,6 @@
-import React from "react"
+import React, {Fragment} from "react"
 import PropTypes from 'prop-types';
 import styled from "styled-components";
-
 
 const courses = [
    {name: "Hydrobiologie (Bi0000)", lecteur: "Jan Helešic", link: "http://is.muni.cz"},
@@ -14,10 +13,10 @@ const Courses = props => {
         return <li key={i.name}><A href={i.link}>{i.name}</A>. Vyučující: <i><strong>{i.lecteur}</strong></i></li>;
     })
     return (
-    <Container>
+    <Fragment>
         <h1> Předměty </h1>
-    {coursesList}
-    </Container>
+        {coursesList}
+    </Fragment>
     );
 };
 
@@ -26,15 +25,6 @@ Courses.propTypes = {
 };
 
 export default Courses;
-
-
-const Container = styled.div`
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: 800px) {
-      width: 100%;
-    }
-`;
 
 const A = styled.a`
         color: #333;

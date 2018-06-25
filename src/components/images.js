@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import styled from "styled-components";
 import hp01 from "../pages/images/homepage/hp01.jpg";
 import hp02 from "../pages/images/homepage/hp02.jpg";
@@ -11,13 +11,15 @@ class Images extends Component {
     state = {imgIndex: 0}
     componentDidMount() {
          setTimeout(()=> this.pictureChanger(), 3000)
-         console.log('did mount', this.state )
     }
 
     componentDidUpdate() {
          setTimeout(()=> this.pictureChanger(), 3000)
-         console.log('did update ', this.state )
     }
+
+    // componentWillUnmount = () => {
+    //     this.clearTimer()
+    // };
 
     pictureChanger = () => {
         if (this.state.imgIndex<imgs.length-1) {
@@ -29,24 +31,40 @@ class Images extends Component {
 
     render() {
         const dots = imgs.map((i, index) => <RoundDot key={i} active={this.state.imgIndex === index}>{false && <InnerDot key={i} active={this.state.imgIndex === index}/>}</RoundDot>)
-        return (
-        <ImgWrapper>
-            <Img src={imgs[this.state.imgIndex]} />
-            {dots}
-        </ImgWrapper>
 
+        return (
+            <Container>
+            <ImgWrapper>
+                <Img src={imgs[this.state.imgIndex]} />
+            </ImgWrapper>
+            <DotsWrapper>{dots}</DotsWrapper>
+            </Container>
 );
 }}
 export default Images;
 
+  const Container = styled.div`
+   position: relative;
+   paddingLeft: 1000px;
+ `
   const Img = styled.img`
    object-fit: none;
-   height: 450px;
-   width: 100%;
+   height: 250px;
+   width: 85%;
+    @media (max-width: ${props => props.theme.mediumDevice}) {
+      width: 100%;
+    }
  `
   const ImgWrapper = styled.div`
-  text-align: center;
-  background-color: white;
+   height: 250px;
+   background-color: black;
+   text-align: center;
+ `
+
+  const DotsWrapper = styled.div`
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
  `
 
    const RoundDot = styled.div`

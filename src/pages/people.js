@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React, {Component, Fragment} from "react";
 import styled from "styled-components";
 
-import StudentBox from "../components/studentBox"
+import StaffBox from "../components/staffBox"
 import helesic from "./images/helesic.jpg";
 import omesova from "./images/omesova.jpg";
 import sychra from "./images/sychra.jpg";
@@ -16,14 +16,16 @@ const helesicInfo = {
      "Po návratu na MU se zpočátku věnoval ekotoxikologii a detekci znečištění prostředí perzistentními polutanty." ,
      "Specialista na řád pošvatky (Plecoptera), bioindikace stavu tekoucích vod (habilitace v roce 1999).",
      "Nyní se především věnuje ekologii tekoucích vod, hyporealu, procesům na a v říčním dně a obecným problémům populací a společenstev vodních bezobratlých."],
-    email: "helesic_at_sci.muni.cz"
+    email: "helesic@sci.muni.cz",
+    researchgate: 'https://www.researchgate.net/profile/Jan_Helesic2',
+    is: 'https://is.muni.cz/osoba/580'
 }
 
 const zhaiInfo = {
     name: "Marie Zhai",
     position: "",
     research: ["Marie Zhai je výzkumnou pracovnicí na Ústavu botaniky a zoologie Masarykovy univerzity a v současnosti se věnuje především mikroskopickým korýšům v tekoucích vodách. Tématem její magisterské práce byly planktonní korýši žijící v tůních a jejich sezónní dynamika. V roce 2007 obhájila dizertační práci na téma Časová a prostorová distribuce společenstva bezobratlých v hyporeálu štěrkovitého toku. Její vyvolenou skupinou korýšů jsou plazivky (Harpacticoida)."],
-    email: "marie.zhai_at_yahoo.com"
+    email: "marie.zhai@yahoo.com"
 }
 
 const sychraInfo = {
@@ -51,11 +53,11 @@ class Staff extends Component {
     render() {
         return (
   <Container>
-  <StudentBox img={helesic} personInfo={helesicInfo} />
-  <StudentBox img={paril} personInfo={parilInfo} />
-  <StudentBox img={zahradkova} personInfo={zahradkovaInfo} />
-  <StudentBox img={omesova} personInfo={zhaiInfo} />
-  <StudentBox img={sychra} personInfo={sychraInfo} />
+  <StaffBox img={helesic} personInfo={helesicInfo} />
+  <StaffBox img={paril} personInfo={parilInfo} />
+  <StaffBox img={zahradkova} personInfo={zahradkovaInfo} />
+  <StaffBox img={omesova} personInfo={zhaiInfo} />
+  <StaffBox img={sychra} personInfo={sychraInfo} />
 </Container>
 );
 }}
@@ -63,9 +65,5 @@ export default Staff;
 
 const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-    @media (max-width: 800px) {
-        flex-direction: column;
-    }
+  flex-direction: column;
 `;
