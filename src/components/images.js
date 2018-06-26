@@ -4,8 +4,9 @@ import hp01 from "../pages/images/homepage/hp01.jpg";
 import hp02 from "../pages/images/homepage/hp02.jpg";
 import hp03 from "../pages/images/homepage/hp03.jpg";
 import hp04 from "../pages/images/homepage/hp04.jpg";
+import hp05 from "../pages/images/homepage/hp05.jpg";
 
-const imgs = [hp01, hp02, hp03, hp04] //do props
+const imgs = [hp01, hp02, hp03, hp04, hp05] //do props
 
 class Images extends Component {
     state = {imgIndex: 0}

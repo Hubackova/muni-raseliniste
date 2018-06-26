@@ -46,6 +46,9 @@ const Box = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1em;
+  @media (max-width: ${props => props.theme.largeDevice}) {
+    padding: 0;
+  }
 `;
 
 const Name = styled.h3`
@@ -57,7 +60,7 @@ const Name = styled.h3`
  `
 
 const BoxPart = styled.div`
-    padding: 1em;
+    padding: 0 1em;
  `
 
 const P = styled.p`

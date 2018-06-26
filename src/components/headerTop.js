@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from "styled-components";
 
-import logo from "../pages/images/logo.png";
 import czFlag from "../pages/images/cz-icon.png";
 import ukFlag from "../pages/images/uk-icon.png";
 import Navigation from "./navigation";
@@ -33,7 +32,6 @@ const HeaderTop = () => {
         <Container>
             <FlagEN />
             <FlagCZ />
-            <Logo src={logo}/>
             <Navigation/>
         </Container>
     )

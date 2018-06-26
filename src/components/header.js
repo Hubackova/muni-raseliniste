@@ -5,17 +5,19 @@ import mainLogo from "../pages/images/mainLogo.png";
 import Images from "../components/images";
 import HeaderTop from "../components/headerTop";
 import {withLocalization} from "./localization.context";
+import logo from "../pages/images/logo2.png";
 
 const Header = ({language}) => {
     return (
     <Fragment>
         <HeaderTop />
         <SubContainer>
-            <LogoText>
-                <ImgWrapper><img style={{maxHeight: '180px', marginRight: '0.6em'}} src={mainLogo} alt='mainLogo'/></ImgWrapper>
-                {language.language.mainPage.mainHeader}
-            </LogoText>
-            <div style={{minWidth: 320, flex: 3}}><Images /></div>
+            <LeftSide>
+                <LeftSideWrapper><MainLogo src={mainLogo} alt='mainLogo'/></LeftSideWrapper>
+                <LeftSideWrapper><LogoText>{language.language.mainPage.mainHeader}</LogoText></LeftSideWrapper>
+                <LeftSideWrapper><Logo src={logo} alt='logo'/></LeftSideWrapper>
+            </LeftSide>
+            <RightSide style={{}}><Images /></RightSide>
         </SubContainer>
     </Fragment>
     )
@@ -23,43 +25,58 @@ const Header = ({language}) => {
 
 export default withLocalization(Header);
 
-// const Logo = styled.img`
-//     height: 150px;
-//     position: absolute;
-//     bottom: -50px;
-//     left: 13vw;
-//     @media (max-width: 1024px) {
-//       left: 0px;
-//       top: 0px;
-//       height: 130px;
-//     }
-// `;
-
 const SubContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     background-color: black;
-`;
-
-const ImgWrapper = styled.div`
-    background-color: black;
-`;
-
-const LogoText = styled.h1`
-    flex: 2;
-    display: flex;
-    text-transform: uppercase;
-    color: ${props => props.theme.white};
-    background-color: ${props => props.theme.black};
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-    margin: 0;
-    min-width: 320px;
-    @media (max-width: ${props => props.theme.mediumDevice}) {
-      font-size:1.3em;
-      flex-wrap: wrap;
+    @media (max-width: 1366px) {
+      flex-direction: column;
     }
 `;
 
+const LeftSide = styled.div`
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+`;
 
+const LeftSideWrapper = styled.div`
+    justify-content: center;
+`;
+
+const RightSide = styled.div`
+    background-color: black;
+    flex: 1;
+`;
+
+const LogoText = styled.h1`
+    text-transform: uppercase;
+    color: ${props => props.theme.white};
+    background-color: ${props => props.theme.black};
+    margin: 30px 0;
+    @media (max-width: ${props => props.theme.mediumDevice}) {
+      font-size:1.3em;
+      padding: 0;
+    }
+    @media (max-width: ${props => props.theme.smallDevice}) {
+      display: none;
+    }
+`;
+
+const Logo = styled.img`
+    max-width: 160px;
+    margin-left: 20px;
+    @media (max-width: 670px) {
+      display: none;
+    }
+`;
+
+const MainLogo = styled.img`
+    max-width: 180px;
+    @media (max-width: 670px) {
+      margin: 0;
+    }
+`;

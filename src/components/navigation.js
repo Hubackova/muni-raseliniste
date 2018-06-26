@@ -57,7 +57,7 @@ const Container = styled.ul`
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin: 0;
+    margin: 0 15px;
     margin-left: auto;
     padding: 0;
     @media (max-width: ${props => props.theme.mediumDevice}) {

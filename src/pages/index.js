@@ -68,8 +68,8 @@ const ContainerWrapper = styled.div`
     display: flex;
     margin: 0 50px;
     @media (max-width: ${props => props.theme.largeDevice}) {
-      margin: 0;
-          flex-wrap: wrap;
+      margin: 0 15px;
+      flex-wrap: wrap;
     }
 `;
 
