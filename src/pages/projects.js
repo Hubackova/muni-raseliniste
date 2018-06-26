@@ -1,39 +1,39 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
 import styled from "styled-components";
 
 import img2 from "./images/img2.jpg";
+import Container from "../components/container";
 import Project from "../components/project"
 import Layout from "../components/layout";
+
 const project1 = {
-    name: "Výzkum vodních bezobratlých na slatiništích moravsko-slovenského pomezí:gradienty prostředí vs. prostorová struktura",
-    mainSolver: "Jindřiška Bojková",
+    name: "Diversity of mire vegetation in Europe",
+    mainSolver: "Michal Hájek, Borja Jiménez-Alfaro, Martin Jiroušek, Tomáš Peterka",
     img: img2,
-    description: "Vliv faktorů prostředí a schopnosti šíření na skladbu taxocenóz vodních bezobratlých v izolovaných prameništních slatiništích (The role of species sorting and dispersal in structuring the aquatic invertebrate assemblages of isolated spring fens)",
+    description: `Mire vegetation comprises FENS (Scheuchzerio-Caricetea) and BOGS (Oxycocco-Sphagnetea). In Europe, the classification of plant communities related to these habitats has been a continuous source of debate, and different classification concepts are generally applied at national or regional level. Thus we need to establish a consistent classification useful for comunication among scientists (e.g. plant ecologists) and nature conservation agencies (e. g. interpretation of the habitats of European conservation concern within the Natura 2000 network).
+    Our main aims are:
+    1) To create a unique database with harmonized taxonomy for vegetation plot data collected from official databases, bibliographic references and unpublished data from insufficiently explored regions of Europe.
+    2) To develop a consistent and formalized classification of European mires at the alliance level.
+    3) To characterize the species composition and geographic distribution of the alliances.`,
 }
 
 class Projects extends Component {
     render() {
         return (<Layout>
-<div style={{margin: '0 auto', width: '90%'}}>
-  <h1> Soušasné projekty </h1>
-<Container>
-  <Project project={project1} />
-  <Project project={project1} />
-  <Project project={project1} />
-  </Container>
-
-  <h1> Dokončené projekty </h1>
-      <Container>
-  <Project project={project1} />
-  <Project project={project1} />
-</Container></div></Layout>
-);
+          <Container>
+            <H2> Soušasné projekty </H2>
+              <Project project={project1} />
+            <H2> Dokončené projekty </H2>
+              <Project project={project1} />
+              <Project project={project1} />
+          </Container>
+        </Layout>);
 }}
 
 export default Projects;
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+
+const H2 = styled.h2`
+  color: '#969696';
+  border-bottom: 1px solid ${props => props.theme.grey};
 `;

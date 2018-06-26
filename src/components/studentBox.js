@@ -21,8 +21,8 @@ class PersonBox extends Component {
                 <div><b>Práce: </b>{personInfo.thesis}</div>
                 <div>
                     <b>Školitel: </b>{personInfo.supervisor}
-                </div><a href={personInfo.is || '#'}><img src={is}/></a>
-                                    <a href={personInfo.researchgate || '#'}><img src={researchgate}/></a>
+                </div><a href={personInfo.is || '#'}><img src={is} alt='is'/></a>
+                                    <a href={personInfo.researchgate || '#'}><img src={researchgate} alt='researchgate'/></a>
 
             </BoxPart>
 

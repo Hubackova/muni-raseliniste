@@ -1,26 +1,103 @@
-import React, {Component, Fragment} from "react"
-import styled from "styled-components";
-import { injectGlobal } from 'styled-components'
-import Images from "../components/images";
+import React, {Component} from "react"
+import styled, { injectGlobal } from 'styled-components'
+import 'font-awesome/css/font-awesome.min.css';
+
 import Container from "../components/container";
 import Layout from "../components/layout";
-import 'font-awesome/css/font-awesome.min.css';
-import { LocalizationConsumer, withLocalization } from '../components/localization.context';
+import { LocalizationConsumer } from '../components/localization.context';
+import snail from "./images/snail.png"
+import plant from "./images/plant.png"
 
-function MainText({language}) {
-  return <p>{JSON.stringify(language.language.mainPage.introHeader)}</p>
+const Databases = () => {
+    return (
+    <Section>
+      <p><strong>Databases</strong></p>
+      <p><img src={plant} alt='plant' height='30em'/><StyledLink href='http://is.muni.cz'>Macrofossils</StyledLink></p>
+      <p><img src={snail} alt='snail' height='30em'/><StyledLink href='http://is.muni.cz'>Palaeo-profiles</StyledLink></p>
+      <p><img src={plant} alt='plant' height='30em'/><StyledLink href='http://is.muni.cz'>Vegetation</StyledLink></p>
+    </Section>
+    )
 }
-const LocalizedText = withLocalization(MainText);
 
+class Index extends Component {
+  state = {showAll: false}
 
-export default () => <Layout><Container>
-  <h2>In our group we focus on </h2>
-  <div>
+  toggleShowFulltext = () => {
+    this.setState(prevState => ({
+      showAll: !prevState.showAll
+    }));
+  }
+
+  render() {
+    return (
+      <Layout>
+        <ContainerWrapper>
+        <Container text>
         <LocalizationConsumer>
-        {context => <p>{context.language.mainPage.introText}</p>}
-        </LocalizationConsumer>
-    </div>
-</Container></Layout>
+          {context => <>
+          <h2>{context.language.mainPage.introHeader}</h2>
+          <div>
+            <p>
+              {this.state.showAll
+                ? context.language.mainPage.introText
+                : context.language.mainPage.introTextShort
+              }
+            {!this.state.showAll && <span style={{color: 'red', cursor: 'pointer'}} onClick={this.toggleShowFulltext}> {context.language.mainPage.fullText}</span>}
+            </p>
+
+            <span style={{color: 'green'}}>{context.language.mainPage.mainTopics}</span>
+            <ul style={{fontWeight: 'bold'}}>
+            <li>{context.language.mainPage.mireEcology}</li>
+            <li>{context.language.mainPage.palaeoecology}</li>
+            <li>{context.language.mainPage.relictEcosystems}</li>
+            <li>{context.language.mainPage.cryptogamology}</li>
+            </ul>
+          </div>
+          </>}
+          </LocalizationConsumer>
+        </Container>
+        <Databases/>
+        </ContainerWrapper>
+      </Layout>)
+  }
+}
+
+export default Index;
+
+const ContainerWrapper = styled.div`
+    display: flex;
+    margin: 0 50px;
+    @media (max-width: ${props => props.theme.largeDevice}) {
+      margin: 0;
+          flex-wrap: wrap;
+    }
+`;
+
+const StyledLink = styled.a`
+  color: ${props => props.theme.main};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    color: ${props => props.theme.secondary};
+  }
+`;
+
+const Section = styled.section`
+  flex: 1;
+  border-left: 1px solid ${props => props.theme.grey};
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: 2em;
+  line-height: 1em;
+  min-width: 250px;
+  @media (max-width: ${props => props.theme.largeDevice}) {
+    margin: 0;
+    border: 0;
+    border-top: 1px solid ${props => props.theme.grey};
+  }
+`;
 
 injectGlobal`
 html, body, #___gatsby, #___gatsby>div {
@@ -30,7 +107,7 @@ html, body, #___gatsby, #___gatsby>div {
 
 body {
     font-family: Elena, sans-serif;
-    font-size: calc(18px + .25vw);
+    font-size: calc(17px + .25vw);
     letter-spacing: -.25px;
     line-height: calc(1.5em + .2vw);
     color: #333;

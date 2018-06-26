@@ -4,7 +4,7 @@ import styled from "styled-components";
 import mainLogo from "../pages/images/mainLogo.png";
 import Images from "../components/images";
 import HeaderTop from "../components/headerTop";
-import {withLocalization} from "../components/localization.context";
+import {withLocalization} from "./localization.context";
 
 const Header = ({language}) => {
     return (
@@ -12,7 +12,7 @@ const Header = ({language}) => {
         <HeaderTop />
         <SubContainer>
             <LogoText>
-                <ImgWrapper><img style={{maxHeight: 100}} src={mainLogo}/></ImgWrapper>
+                <ImgWrapper><img style={{maxHeight: '180px', marginRight: '0.6em'}} src={mainLogo} alt='mainLogo'/></ImgWrapper>
                 {language.language.mainPage.mainHeader}
             </LogoText>
             <div style={{minWidth: 320, flex: 3}}><Images /></div>
@@ -23,23 +23,17 @@ const Header = ({language}) => {
 
 export default withLocalization(Header);
 
-const Logo = styled.img`
-    height: 150px;
-    position: absolute;
-    bottom: -50px;
-    left: 13vw;
-    @media (max-width: 1024px) {
-      left: 0px;
-      top: 0px;
-      height: 130px;
-    }
-`;
-
-const Container = styled.div`
-    display: flex;
-    position: relative;
-    min-height: 150px;
-`;
+// const Logo = styled.img`
+//     height: 150px;
+//     position: absolute;
+//     bottom: -50px;
+//     left: 13vw;
+//     @media (max-width: 1024px) {
+//       left: 0px;
+//       top: 0px;
+//       height: 130px;
+//     }
+// `;
 
 const SubContainer = styled.div`
     display: flex;
@@ -48,7 +42,6 @@ const SubContainer = styled.div`
 `;
 
 const ImgWrapper = styled.div`
-    padding: 0.8em;
     background-color: black;
 `;
 

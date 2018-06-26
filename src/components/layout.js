@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import styled from "styled-components";
 import {ThemeProvider} from 'styled-components';
 
@@ -11,7 +10,7 @@ import {LocalizationProvider, withLocalization} from "../components/localization
 const blueTheme = {
   main: '#0868ac',
   secondary: '#43a2ca',
-  terciary: '#a8ddb5',
+  terciary: 'green',
   grey: '#969696',
   white: 'white',
   black: 'black',
@@ -31,14 +30,12 @@ export default withLocalization(({ children, language }) =>
   </ThemeProvider>)
 
 const Container = styled.div`
-    min-height: 100%;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 `;
 
 const Main = styled.main`
-    flex: 1 0;
-    padding: 20px;
-    margin: 0 auto;
+    flex: 1;
 `;
 

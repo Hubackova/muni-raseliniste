@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from "react";
+import React, {Component} from "react";
 import styled from "styled-components";
 import hp01 from "../pages/images/homepage/hp01.jpg";
 import hp02 from "../pages/images/homepage/hp02.jpg";
@@ -16,10 +16,6 @@ class Images extends Component {
     componentDidUpdate() {
          setTimeout(()=> this.pictureChanger(), 3000)
     }
-
-    // componentWillUnmount = () => {
-    //     this.clearTimer()
-    // };
 
     pictureChanger = () => {
         if (this.state.imgIndex<imgs.length-1) {

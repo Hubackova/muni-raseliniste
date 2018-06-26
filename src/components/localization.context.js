@@ -16,6 +16,27 @@ import React, {Component} from 'react'
         monitor the influence of different management types on the vegetation of spring fens and fen meadows using permanent plots. Our research covers various spatial scales,
         from very local to pan-European. Recently, we have also dealt with the classification of mire vegetation on the European scale (large-scale syntheses), phylogenetic
         reconstructions, phylogeography and taxonomy.`,
+      introTextShort: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
+        which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
+        Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
+        general ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
+        and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae.`,
+      fullText: 'Show full text...',
+      mainTopics: 'Main research topics:',
+      mireEcology: 'Mire ecology',
+      palaeoecology: 'Palaeoecology',
+      relictEcosystems: 'Relict ecosystems',
+      cryptogamology: 'Cryptogamology',
+    },
+    footer: {
+      botzool: 'Department of Botany and Zoology, ',
+      faculty: 'Faculty of Science, ',
+      university: ' Masaryk University',
+      postalAddressHeading: 'Postal Address: ',
+      physicalAddressHeading: `Physical Address: `,
+      postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
+      physicalAddress: `Campus Bohunice, building A31, Kamenice 5, Brno`,
+      links: 'Links'
     }
   },
   cz: {
@@ -33,6 +54,27 @@ import React, {Component} from 'react'
       vegetaci pramenišť a rašelinných luk, s cílem přispět k jejich efektivní ochraně. Naše výzkumy probíhají na rozmanitých prostorových škálách, od zcela lokální
       až po celoevropskou. V poslední době se věnujeme také klasifikaci vegetace na evropské škále (celoevropské syntézy), fylogenetickým rekonstrukcím,
       fylogeografii a taxonomii. `,
+      introTextShort: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
+      paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
+      Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
+      ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,
+      rozsivek, krytenek až po subfosilní pyl, makrozbytky rostlin i schránky měkkýšů a krytenek.`,
+      fullText: 'Zobrazit celý text...',
+      mainTopics: 'Hlavní směry výzkumu:',
+      mireEcology: 'Ekologie rašelinišť',
+      palaeoecology: 'Paleoekologie',
+      relictEcosystems: 'Reliktní ekosystémy',
+      cryptogamology: 'Kryptogamologie',
+    },
+    footer: {
+      botzool: 'Ústav botaniky a zoologie, ',
+      faculty: 'Přírodovědecká fakulta, ',
+      university: ' Masarykova Univerzita',
+      postalAddressHeading: 'Poštovní adresa: ',
+      physicalAddressHeading: `Adresa pracoviště: `,
+      postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
+      physicalAddress: `Campus Bohunice, budova A31, Kamenice 5, Brno`,
+      links: 'Odkazy'
     }
   },
 };

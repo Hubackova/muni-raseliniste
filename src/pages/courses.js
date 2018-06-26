@@ -1,11 +1,11 @@
-import React, {Fragment} from "react"
-import PropTypes from 'prop-types';
+import React from "react"
 import styled from "styled-components";
 import Layout from "../components/layout";
+import Container from "../components/container";
+
 const courses = [
-   {name: "Hydrobiologie (Bi0000)", lecteur: "Jan Helešic", link: "http://is.muni.cz"},
-   {name: "Hydrobiologie (Bi0001)", lecteur: "Jan Helešic, Jindřiška Bojková", link: "http://is.muni.cz"},
-   {name: "Hydrobiologie (Bi0002)", lecteur: "Jan Helešic", link: "http://is.muni.cz"}
+   {name: "Ekologie rašelinišť - cvičení  (Bi8179)", lecteur: "doc. Mgr. Michal Hájek, Ph.D., prof. RNDr. Michal Horsák, Ph.D.", link: "http://is.muni.cz"},
+   {name: "Ekologie rašelinišť (Bi0001)", lecteur: "doc. Mgr. Michal Hájek, Ph.D.", link: "http://is.muni.cz"},
 ]
 
 const Courses = props => {
@@ -14,8 +14,10 @@ const Courses = props => {
     })
     return (
     <Layout>
+        <Container>
         <h1> Předměty </h1>
         {coursesList}
+        </Container>
     </Layout>
     );
 };

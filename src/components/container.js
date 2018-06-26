@@ -1,16 +1,16 @@
 import React from 'react'
 import styled from "styled-components";
 
-const Container = ({children}) => {
+const Container = ({children, text}) => {
     return (
-    <ContainerWrapper>
+    <ContainerWrapper text={text}>
         {children}
     </ContainerWrapper>
     )
 }
 
 const ContainerWrapper = styled.div`
-    width: 85ch;
+    width: ${props => props.text ? '85ch' : '80%'};
     margin: 0 auto;
     @media (max-width: ${props => props.theme.mediumDevice}) {
         width: 100%;

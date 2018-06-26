@@ -1,26 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from "styled-components";
+
 import facebook from "../pages/images/facebook.png";
 import youtube from "../pages/images/youtube.png";
 import twitter from "../pages/images/twitter.png";
+import {withLocalization} from "./localization.context";
 
-const FooterContent = () => {
+const FooterContent = ({language}) => {
+    const {language: {footer}} = language
     return (
         <Container>
            <FooterSection background='rgba(150,150,150, 0.9)'>
                 <FooterHeader>MUNI</FooterHeader>
-                <A href="http://botzool.sci.muni.cz">Ústav botaniky a zoologie</A> <br/>
-                 je součástí <A href="http://www.sci.muni.cz/">Přírodovědecké fakulty</A>  <br/>
-                <A href="https://www.muni.cz/">Masarykovy univerzity</A>
+                <A href="http://botzool.sci.muni.cz">{footer.botzool}</A>
+                <A href="http://www.sci.muni.cz/">{footer.faculty}</A>
+                <A href="https://www.muni.cz/">{footer.university}</A>
             </FooterSection>
            <FooterSection background='rgba(150,150,150, 0.8)'>
-               <FooterHeader>ADRESA</FooterHeader>
-                Kotlářská 267/2,<br/>
-                611 37, Brno,<br/>
-                Czech Republic
+               <FooterHeader>{footer.postalAddressHeading}</FooterHeader>
+               {footer.postalAddress}
             </FooterSection>
            <FooterSection background='rgba(150,150,150, 0.7)'>
-               <FooterHeader>ODKAZY</FooterHeader>
+               <FooterHeader>{footer.physicalAddressHeading}</FooterHeader>
+               {language.language.footer.physicalAddress}
+            </FooterSection>
+           <FooterSection background='rgba(150,150,150, 0.6)'>
+               <FooterHeader>{footer.links}</FooterHeader>
                 <a href="https://www.facebook.com/botzool"><Img src={facebook} /></a>
                 <a href="https://www.youtube.com/channel/UCpUU624DlUwOewM_KfG1rpA/videos"><Img src={youtube} /></a>
                 <a href="https://twitter.com/BotZool_MUNI"><Img src={twitter} /></a>
@@ -29,7 +34,7 @@ const FooterContent = () => {
     );
 };
 
-export default FooterContent;
+export default withLocalization(FooterContent);
 
 const Container = styled.div`
     display: flex;

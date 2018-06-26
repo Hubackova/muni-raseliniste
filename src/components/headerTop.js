@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import styled from "styled-components";
 
 import logo from "../pages/images/logo.png";
@@ -42,7 +42,7 @@ const HeaderTop = () => {
 const Container = styled.div`
     display: flex;
     position: relative;
-    min-height: 150px;
+    min-height: 100px;
     @media (max-width: ${props => props.theme.mediumDevice}) {
       min-height: 40px;
       padding-bottom: 10px;
@@ -61,11 +61,6 @@ const Logo = styled.img`
     bottom: -50px;
     left: 13vw;
     @media (max-width: ${props => props.theme.largeDevice}) {
-      left: 0px;
-      top: 0px;
-      height: 110px;
-    }
-    @media (max-width: ${props => props.theme.mediumDevice}) {
       display: none;
     }
 `;

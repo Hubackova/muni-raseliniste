@@ -13,22 +13,29 @@ class StaffBox extends Component {
         return (
         <Box>
             <BoxPart style={{flex: 1}}>
-                <BoxSubPart><img src={img} alt={personInfo.name}/></BoxSubPart>
-                <BoxSubPart style={{paddingTop: '1em'}}>
-                    <a href={`mailto:${personInfo.email}` || '#'}><img src={email}/></a>
-                    <a href={personInfo.researchgate || '#'}><img src={researchgate}/></a>
-                    <a href={personInfo.is || '#'}><img src={is}/></a>
-                </BoxSubPart>
+                <img src={img} alt={personInfo.name} height='265px'/>
             </BoxPart>
-            <BoxPart style={{flex: 5}}>
+            <BoxPart style={{flex: 6, minWidth: 260}}>
                 <Name>{personInfo.name}
-                <div style={{fontSize: '0.8em', color: '#778899'}}>{personInfo.position}</div>
+                 <div style={{fontSize: '0.7em', color: '#778899'}}>{personInfo.position}</div>
                 </Name>
                 <div>
-                    {research}
+                    <P>
+                        <i className="fa fa-envelope fa-lg" style={{color: 'black', marginRight: 15}}></i>
+                        <StyledLink href={`mailto:${personInfo.email}` || '#'}>
+                            <span>{personInfo.email}</span>
+                        </StyledLink>
+                    </P>
+                    <P>
+                        <i className="fa fa-phone fa-lg" style={{marginRight: 15}}></i>
+                        {personInfo.phoneNumber}
+                    </P>
+                    <P>
+                        <a href={personInfo.researchgate || '#'}><img src={researchgate} alt='researchgate'  height='40px'/></a>
+                        <a href={personInfo.is || '#'}><img src={is} alt='is' height='40px'/></a>
+                    </P>
                 </div>
             </BoxPart>
-
         </Box>
 );
 }}
@@ -38,20 +45,14 @@ const Box = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-width: 18em;
-  min-height: 18em;
   padding: 1em;
-  border-bottom: 0.1em solid #46ACC2;
-  line-height: 1.6em;
-  @media (max-width: ${props => props.theme.mediumDevice}) {
-    flex-direction: column;
-  }
 `;
 
 const Name = styled.h3`
     color: ${props => props.theme.main};
     text-transform: uppercase;
-    margin-top: 0;
+    margin: 0;
+    margin-bottom: 20px;
     border-bottom: 0.08em solid rgb(229, 229, 229);
  `
 
@@ -59,9 +60,14 @@ const BoxPart = styled.div`
     padding: 1em;
  `
 
- const BoxSubPart = styled.div`
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+const P = styled.p`
+    margin: 10px 0px;
  `
+
+ const StyledLink = styled.a`
+  color: ${props => props.theme.grey};
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;

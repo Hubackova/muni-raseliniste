@@ -75,7 +75,7 @@ const Li = styled.li`
     justify-content: center;
     color: ${props => props.theme.grey};
     padding: 0px 10px;
-    border-right: 1px solid black;
+    border-right: 1px solid ${props => props.theme.grey};
     &:last-child {
       border-right: 0px;
     }

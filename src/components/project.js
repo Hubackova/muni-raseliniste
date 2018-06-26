@@ -19,9 +19,6 @@ export default Project;
 const Box = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 30em;
-  min-width: 18em;
-  min-height: 18em;
   margin: 1em;
   padding: 1em;
   line-height: 1.6em;
