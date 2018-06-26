@@ -61,9 +61,6 @@ const LogoText = styled.h1`
       font-size:1.3em;
       padding: 0;
     }
-    @media (max-width: ${props => props.theme.smallDevice}) {
-      display: none;
-    }
 `;
 
 const Logo = styled.img`

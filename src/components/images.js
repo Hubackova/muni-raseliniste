@@ -41,27 +41,30 @@ class Images extends Component {
 export default Images;
 
   const Container = styled.div`
-   position: relative;
-   paddingLeft: 1000px;
+  padding-top: 15px;
  `
   const Img = styled.img`
    object-fit: none;
-   height: 250px;
+   max-height: 250px;
    width: 85%;
     @media (max-width: ${props => props.theme.mediumDevice}) {
+      object-fit: contain;
       width: 100%;
+      max-height: 150px;
     }
  `
   const ImgWrapper = styled.div`
    height: 250px;
    background-color: black;
    text-align: center;
+    @media (max-width: ${props => props.theme.mediumDevice}) {
+     height: 150px;
+    }
  `
 
   const DotsWrapper = styled.div`
-    position: absolute;
-    bottom: 8px;
-    left: 50%;
+    text-align: center;
+    padding-top: 10px;
  `
 
    const RoundDot = styled.div`
