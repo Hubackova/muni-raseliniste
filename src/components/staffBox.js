@@ -3,17 +3,18 @@ import styled from "styled-components";
 import researchgate from "../pages/images/social-researchgate.png";
 import email from "../pages/images/social-email.png";
 import is from "../pages/images/social-is.png";
+import {Link} from "gatsby"
 
 class StaffBox extends Component {
     render() {
-      const {img, personInfo} = this.props
-      const research = personInfo.research.map(i => {
-            return <li key={i}>{i}</li>;
-          })
+      const {personInfo} = this.props
+
         return (
         <Box>
             <BoxPart style={{flex: 1}}>
-                <img src={img} alt={personInfo.name} height='265px'/>
+                <Link to="/staffDetail/" personInfo={personInfo}>
+                    {personInfo.img && <img src={personInfo.img} alt={personInfo.name} height='265px'/>}
+                </Link>
             </BoxPart>
             <BoxPart style={{flex: 6, minWidth: 260}}>
                 <Name>{personInfo.name}

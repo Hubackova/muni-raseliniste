@@ -8,31 +8,33 @@ import horsak from "./images/horsak.jpg";
 import horsakova from "./images/horsakova.jpg";
 import H2 from "../components/atoms/h2";
 
-const hajekInfo = {
+export const hajekInfo = {
     name: "Doc. Michal Hájek Ph.D.",
     position: "vedoucí pracovní skupiny",
-    research: ["",
-     ""],
+    description: 'Michal Hájek je docent v oboru botanika na Masarykově univerzitě v Brně, kde vede Pracovní skupinu pro výzkum rašelinišť. Jeho vědecký výzkum je zaměřen na diverzitu rašeliništní a luční vegetace a současné a historické činitele, které ji předurčují. Co má obzvláště rád, jsou fascinující vesmíry ostřicovomechových vápnitých slatinišť a extrémně druhově bohatých luk v Karpatech. Studoval obor Systematická botanika a ekologie na Universitě Palackého v Olomouci. Diplomovou práci o mokřadní vegetaci Bílých Karpat obhájil v roce 1997. Doktorská práce se zabývala vegetací prameništních slatinišť Západních Karpat ve vztahu k faktorům prostředí a byla obhájena v roce 2002. Od roku 2000 pracoval na Masarykově univerzitě jako odborný pracovník, od roku 2003 jako odborný asistent a později jako docent. Menší úvazek měl i na Botanickém ústavu Akademie věd České republiky. Je maskotem Centra aplikované ekologie rostlin, virtuálního společného pracoviště Ústavu botaniky a zoologie Masarykovy univerzity a Oddělení vegetační ekologie Botanického ústavu Akademie věd ČR.',
     email: "hajek@sci.muni.cz",
     researchgate: 'https://www.researchgate.net/profile/Jan_Helesic2',
     is: 'https://is.muni.cz/osoba/580',
-    phoneNumber: '+42549494010'
+    phoneNumber: '+42549494010',
+    img:hajek
 }
 
 const horsakInfo = {
     name: "Prof. RNDr. Michal Horsák Ph.D.",
     position: "",
-    research: [""],
+    description: "",
     email: "horsak@sci.muni.cz",
-    phoneNumber: '+420549494448'
+    phoneNumber: '+420549494448',
+    img:horsak
 }
 
 const phdInfo = {
     name: "Mgr. Někdo Kdosi",
     position: "",
-    research: [""],
+    description: "",
     email: "email@sci.muni.cz",
-    phoneNumber: '+420666333666'
+    phoneNumber: '+420666333666',
+    img:horsakova
 }
 
 const studentInfoA = {
@@ -57,11 +59,11 @@ class Staff extends Component {
         <Layout>
             <Container>
                 <H2>Staff</H2>
-                <StaffBox img={hajek} personInfo={hajekInfo} />
-                <StaffBox img={horsak} personInfo={horsakInfo} />
+                <StaffBox personInfo={hajekInfo} />
+                <StaffBox personInfo={horsakInfo} />
                 <H2>PhD Students</H2>
-                <StaffBox img={horsakova} personInfo={phdInfo} />
-                <StaffBox img={horsakova} personInfo={phdInfo} />
+                <StaffBox personInfo={phdInfo} />
+                <StaffBox personInfo={phdInfo} />
                 <H2>Students</H2>
                 <Student studentInfo={studentInfoA} />
                 <Student studentInfo={studentInfoA} />
