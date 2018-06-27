@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import H2 from "../components/atoms/h2";
 
 const popularization = [
    {name: "Kam se točí ulity (Vesmír 96, 343, 2017/6)", link: "https://vesmir.cz/cz/casopis/archiv-casopisu/2017/cislo-6/kam-se-toci-ulity.html"},
@@ -44,7 +45,4 @@ const A = styled.a`
         text-decoration: none;
 `;
 
-const H2 = styled.h2`
-  color: '#969696';
-  border-bottom: 1px solid ${props => props.theme.grey};
-`;
+

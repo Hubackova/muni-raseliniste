@@ -37,14 +37,17 @@ const SubContainer = styled.div`
 const LeftSide = styled.div`
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: black;
+    @media (max-width: 600px) {
+      flex-wrap: wrap;
+    }
 `;
 
 const LeftSideWrapper = styled.div`
     justify-content: center;
+    text-align: center;
 `;
 
 const RightSide = styled.div`
@@ -57,14 +60,10 @@ const LogoText = styled.h1`
     color: ${props => props.theme.white};
     background-color: ${props => props.theme.black};
     margin: 30px 0;
-    @media (max-width: ${props => props.theme.mediumDevice}) {
-      font-size:1.3em;
-      padding: 0;
-    }
 `;
 
 const Logo = styled.img`
-    max-width: 160px;
+    max-width: 7em;
     margin-left: 20px;
     @media (max-width: 670px) {
       display: none;
@@ -72,8 +71,5 @@ const Logo = styled.img`
 `;
 
 const MainLogo = styled.img`
-    max-width: 180px;
-    @media (max-width: 670px) {
-      margin: 0;
-    }
+    max-width: 8em;
 `;

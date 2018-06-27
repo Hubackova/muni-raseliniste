@@ -15,15 +15,12 @@ const Courses = props => {
     return (
     <Layout>
         <Container>
-        <h1> Předměty </h1>
-        {coursesList}
+            <ul style={{marginTop: 20}}>
+                {coursesList}
+            </ul>
         </Container>
     </Layout>
     );
-};
-
-Courses.propTypes = {
-
 };
 
 export default Courses;

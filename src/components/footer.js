@@ -39,7 +39,7 @@ export default withLocalization(FooterContent);
 const Container = styled.div`
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
+    margin: 1em auto 0;
     height: 100%;
 `;
 

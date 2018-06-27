@@ -6,6 +6,7 @@ import StaffBox from "../components/staffBox"
 import hajek from "./images/hajek.jpg";
 import horsak from "./images/horsak.jpg";
 import horsakova from "./images/horsakova.jpg";
+import H2 from "../components/atoms/h2";
 
 const hajekInfo = {
     name: "Doc. Michal Hájek Ph.D.",
@@ -55,13 +56,13 @@ class Staff extends Component {
         return (
         <Layout>
             <Container>
-                <H1>Staff</H1>
+                <H2>Staff</H2>
                 <StaffBox img={hajek} personInfo={hajekInfo} />
                 <StaffBox img={horsak} personInfo={horsakInfo} />
-                <H1>PhD Students</H1>
+                <H2>PhD Students</H2>
                 <StaffBox img={horsakova} personInfo={phdInfo} />
                 <StaffBox img={horsakova} personInfo={phdInfo} />
-                <H1>Students</H1>
+                <H2>Students</H2>
                 <Student studentInfo={studentInfoA} />
                 <Student studentInfo={studentInfoA} />
             </Container>
@@ -77,9 +78,4 @@ const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
-`;
-
-const H1 = styled.h1`
-  color: '#969696';
-  border-bottom: 1px solid ${props => props.theme.grey};
 `;

@@ -41,6 +41,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     min-height: 100px;
+    padding-left: 10px;
     @media (max-width: ${props => props.theme.mediumDevice}) {
       min-height: 40px;
       padding-bottom: 10px;

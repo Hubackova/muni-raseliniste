@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import {ThemeProvider} from 'styled-components';
 
-
 import Header from "./header";
 import FooterContent from "./footer";
-import {LocalizationProvider, withLocalization} from "../components/localization.context";
+import {LocalizationProvider, withLocalization} from "./localization.context";
 
 const blueTheme = {
   main: '#0868ac',
