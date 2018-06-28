@@ -128,19 +128,20 @@ h2 {
 
 }
 
-ul {
+h2 + ul {
   list-style-type:none;
   padding: 0;
   line-height: 1.2em;
+}
+
+h2 + ul > li {
+  margin-bottom: 1em;
 }
 
 a {
   color: green;
 }
 
-h2 + ul > li {
-  margin-bottom: 1em;
-}
 
 * {
     box-sizing: border-box

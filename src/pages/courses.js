@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components";
 import Layout from "../components/layout";
 import Container from "../components/container";
+import H2 from "../components/atoms/h2";
 
 const courses = [
    {name: "Ekologie rašelinišť - cvičení  (Bi8179)", lecteur: "doc. Mgr. Michal Hájek, Ph.D., prof. RNDr. Michal Horsák, Ph.D.", link: "http://is.muni.cz"},
@@ -15,6 +16,7 @@ const Courses = props => {
     return (
     <Layout>
         <Container>
+            <H2>Předměty</H2>
             <ul style={{marginTop: 20}}>
                 {coursesList}
             </ul>
@@ -26,5 +28,6 @@ const Courses = props => {
 export default Courses;
 
 const A = styled.a`
-        color: #333;
+        color: ${props => props.theme.main};
+        text-decoration: none;
 `;

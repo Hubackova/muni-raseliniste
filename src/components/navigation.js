@@ -43,7 +43,7 @@ class Navigation extends Component {
             <Li menuVisible={menuVisible}>Theses</Li>
             <ListLink to="/publications/" menuVisible={menuVisible}>Publications</ListLink>
             <ListLink to="/courses/"  menuVisible={menuVisible}>Courses</ListLink>
-            <Li menuVisible={menuVisible}>Gallery</Li>
+            <ListLink to="/gallery/" menuVisible={menuVisible}>Gallery</ListLink>
             <ListLink to="/links/" menuVisible={menuVisible}>Links</ListLink>
           </Container>
         )
