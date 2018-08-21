@@ -41,7 +41,8 @@ const PHOTO_SET = [
     src: 'http://kalendar.zivykraj.cz/administrace/foto_akce/70021_20_1494334802_822650_max.jpg',
     thumbnail: 'http://kalendar.zivykraj.cz/administrace/foto_akce/70021_20_1494334802_822650_max.jpg',
     thumbnailWidth: 368,
-    thumbnailHeight: 246
+    thumbnailHeight: 246,
+    caption: "Drosophila"
   }
 ];
 

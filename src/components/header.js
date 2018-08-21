@@ -7,17 +7,17 @@ import HeaderTop from "../components/headerTop";
 import {withLocalization} from "./localization.context";
 import logo from "../pages/images/logo2.png";
 
-const Header = ({language}) => {
+const Header = ({language, isIndex}) => {
     return (
     <Fragment>
         <HeaderTop />
         <SubContainer>
             <LeftSide>
                 <LeftSideWrapper><MainLogo src={mainLogo} alt='mainLogo'/></LeftSideWrapper>
-                <LeftSideWrapper><LogoText>{language.language.mainPage.mainHeader}</LogoText></LeftSideWrapper>
+                <LeftSideWrapper><LogoText>{language.language.mainPage.mainHeader}<br/> </LogoText>{language.language.mainPage.muni}</LeftSideWrapper>
                 <LeftSideWrapper><Logo src={logo} alt='logo'/></LeftSideWrapper>
             </LeftSide>
-            <RightSide style={{}}><Images /></RightSide>
+            {isIndex && <RightSide style={{}}><Images /></RightSide>}
         </SubContainer>
     </Fragment>
     )
@@ -28,8 +28,8 @@ export default withLocalization(Header);
 const SubContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    background-color: black;
-    @media (max-width: 1366px) {
+    background-color: ${props => props.theme.green};
+    @media (max-width: ${props => props.theme.extraLargeDevice}) {
       flex-direction: column;
     }
 `;
@@ -39,7 +39,7 @@ const LeftSide = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: ${props => props.theme.green};
     @media (max-width: 600px) {
       flex-wrap: wrap;
     }
@@ -51,14 +51,18 @@ const LeftSideWrapper = styled.div`
 `;
 
 const RightSide = styled.div`
-    background-color: black;
+    background-color: ${props => props.theme.green};
     flex: 1;
+    text-align: center;
+    @media (min-width: ${props => props.theme.extraLargeDevice}) {
+      padding-left: 50px;
+    }
 `;
 
 const LogoText = styled.h1`
     text-transform: uppercase;
     color: ${props => props.theme.white};
-    background-color: ${props => props.theme.black};
+    background-color: inherit;
     margin: 30px 0;
 `;
 

@@ -4,7 +4,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-next`
+    `gatsby-plugin-react-next`,
+    `gatsby-plugin-netlify-cms`,
   ],
     pathPrefix: "/raseliniste"
 

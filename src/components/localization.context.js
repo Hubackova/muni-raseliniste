@@ -4,6 +4,7 @@ import React, {Component} from 'react'
   en: {
     mainPage: {
       mainHeader: 'Mire ecology group',
+      muni: 'Masaryk university',
       introHeader: 'In our group we focus on',
       introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
         which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
@@ -42,6 +43,7 @@ import React, {Component} from 'react'
   cz: {
     mainPage: {
       mainHeader: 'Skupina pro výzkum rašelinišť',
+      muni: 'Masarykova univerzita',
       introHeader: 'Naše skupina',
       introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
       paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.

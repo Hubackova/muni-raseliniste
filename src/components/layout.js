@@ -10,18 +10,20 @@ const blueTheme = {
   main: '#0868ac',
   secondary: '#43a2ca',
   terciary: 'green',
+  green: '#3E7404',
   grey: '#969696',
   white: 'white',
   black: 'black',
   mediumDevice: '768px',
-  largeDevice: '1024px'
+  largeDevice: '1024px',
+  extraLargeDevice: '1600px'
 };
 
-export default withLocalization(({ children, language }) =>
+export default withLocalization(({ children, language, isIndex }) =>
  <ThemeProvider theme={blueTheme}>
    <LocalizationProvider>
     <Container>
-      <Header />
+      <Header isIndex={isIndex}/>
       <Main>{children}</Main>
       <footer><FooterContent/></footer>
     </Container>

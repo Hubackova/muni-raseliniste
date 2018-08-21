@@ -22,7 +22,7 @@ const FooterContent = ({language}) => {
             </FooterSection>
            <FooterSection background='rgba(150,150,150, 0.7)'>
                <FooterHeader>{footer.physicalAddressHeading}</FooterHeader>
-               {language.language.footer.physicalAddress}
+               {footer.physicalAddress}
             </FooterSection>
            <FooterSection background='rgba(150,150,150, 0.6)'>
                <FooterHeader>{footer.links}</FooterHeader>

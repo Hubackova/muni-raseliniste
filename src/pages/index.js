@@ -30,7 +30,7 @@ class Index extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout isIndex={this.props.location.pathname === '/'}>
         <ContainerWrapper>
         <Container text>
         <LocalizationConsumer>
@@ -146,4 +146,18 @@ a {
 * {
     box-sizing: border-box
 }
+
+.images-wrap, .images-wrap img, .images-wrap > div {
+   max-height: 250px;
+   object-fit: cover;
+   @media (max-width: ${props => props.theme.extraLargeDevice}) {
+     object-fit: contain;
+  }
+   @media (max-width: ${props => props.theme.largeDevice}) {
+     max-height: 150px;
+     object-fit: contain;
+  }
+}
+
+div.nav {}
 `
