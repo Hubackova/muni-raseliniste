@@ -13,6 +13,7 @@
     "font-awesome": "^4.7.0",
     "gatsby": "next",
     "gatsby-plugin-netlify-cms": "next",
+    "gatsby-plugin-react-next": "next",
     "gatsby-plugin-styled-components": "next",
     "netlify-cms": "^2.0.9",
     "react": "^16.4.1",
