@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react'
 import styled from "styled-components";
 
-import mainLogo from "../pages/images/mainLogo.png";
-import Images from "../components/images";
-import HeaderTop from "../components/headerTop";
+import Images from "./images";
+import HeaderTop from "./headerTop";
 import {withLocalization} from "./localization.context";
 import logo from "../pages/images/logo2.png";
+import mainLogo from "../pages/images/mainLogo.png";
 
 const Header = ({language, isIndex}) => {
     return (
