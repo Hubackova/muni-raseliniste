@@ -23,7 +23,8 @@ const PHOTO_SET = [
     src: 'http://www.casopis.ochranaprirody.cz/res/archive/033/004158.jpg?seek=1371627507',
     thumbnail: 'http://www.casopis.ochranaprirody.cz/res/archive/033/004158.jpg?seek=1371627507',
     thumbnailWidth: 531,
-    thumbnailHeight: 354
+    thumbnailHeight: 354,
+    caption: 'popis druhu'
   },
   {
     src: 'http://docplayer.cz/docs-images/57/40257613/images/23-0.jpg',

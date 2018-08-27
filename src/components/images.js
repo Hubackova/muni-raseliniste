@@ -18,7 +18,7 @@ const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do p
 
 const Images = () => {
     return (
-        <ImgWrapper>
+        <ImgWrapper className='indexImg'>
             <Fade
                 images={imgs}
                 duration={5000}

@@ -148,7 +148,7 @@ a {
 }
 
 .images-wrap, .images-wrap img, .images-wrap > div {
-   max-height: 250px;
+   max-height: 200px;
    object-fit: cover;
    @media (max-width: ${props => props.theme.extraLargeDevice}) {
      object-fit: contain;
@@ -159,5 +159,15 @@ a {
   }
 }
 
-div.nav {}
+.indexImg .images-wrap, .indexImg .images-wrap img, .indexImg .images-wrap > div {
+   max-height: 250px;
+   object-fit: cover;
+   @media (max-width: ${props => props.theme.extraLargeDevice}) {
+     object-fit: contain;
+  }
+   @media (max-width: ${props => props.theme.largeDevice}) {
+     max-height: 150px;
+     object-fit: contain;
+  }
+}
 `

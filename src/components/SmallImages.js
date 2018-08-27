@@ -29,13 +29,9 @@ const SmallImages = () => {
 export default SmallImages;
 
 const ImgWrapper = styled.div`
-   max-height: 185px;
    background-color: ${props => props.theme.green};
    text-align: center;
-   @media (max-width: ${props => props.theme.mediumDevice}) {
-    height: 100px;
-   }
-   img {
-       max-height: 185px;
+   @media (max-width: ${props => props.theme.extraLargeDevice}) {
+    display: none;
    }
  `
