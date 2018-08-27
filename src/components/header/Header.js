@@ -5,8 +5,8 @@ import Images from "./images";
 import SmallImages from "./SmallImages";
 import HeaderTop from "./HeaderTop";
 import {withLocalization} from "../localization.context";
-import logo from "../../pages/images/logo2.png";
-import mainLogo from "../../pages/images/mainLogo.png";
+import logo from "../../images/logo2.png";
+import mainLogo from "../../images/mainLogo.png";
 
 const Header = ({language, isIndex}) => {
     return (

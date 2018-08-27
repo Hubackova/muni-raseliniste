@@ -5,8 +5,8 @@ import 'font-awesome/css/font-awesome.min.css';
 import MainContainer from "../components/MainContainer";
 import Layout from "../components/layout";
 import { LocalizationConsumer } from '../components/localization.context';
-import snail from "./images/snail.png"
-import plant from "./images/plant.png"
+import snail from "../images/snail.png"
+import plant from "../images/plant.png"
 
 const Databases = () => {
     return (

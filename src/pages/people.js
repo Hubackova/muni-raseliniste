@@ -1,15 +1,15 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+import { Link, Element} from 'react-scroll'
 
 import Layout from "../components/layout";
 import PersonBox from "../components/people/PersonBox"
 import H2 from "../components/atoms/h2";
 import {Container as MenuContainer, Li} from "../components/header/navigation"
 
-import hajek from "./images/people/hajek.jpg";
-import horsak from "./images/people/horsak.jpg";
-import horsakova from "./images/people/horsakova.jpg";
+import hajek from "../images/people/hajek.jpg";
+import horsak from "../images/people/horsak.jpg";
+import horsakova from "../images/people/horsakova.jpg";
 
 export const hajekInfo = {
     name: "Doc. Michal Hájek Ph.D.",

@@ -2,9 +2,8 @@ import React, {Component} from "react";
 import styled from "styled-components";
 
 import StyledLink from "../atoms/styledLink";
-import researchgate from "../../pages/images/social-researchgate.png";
-import email from "../../pages/images/social-email.png";
-import is from "../../pages/images/social-is.png";
+import researchgate from "../../images/social-researchgate.png";
+import is from "../../images/social-is.png";
 
 
 class PersonBox extends Component {

@@ -3,9 +3,9 @@ import styled from "styled-components";
 import {Link} from "gatsby"
 
 import Layout from "../components/layout";
-import excursions from "./images/gallery/excursions.jpg";
-import organisms from "./images/gallery/organisms.jpg";
-import fieldwork from "./images/gallery/fieldwork.jpg";
+import excursions from "../images/gallery/excursions.jpg";
+import organisms from "../images/gallery/organisms.jpg";
+import fieldwork from "../images/gallery/fieldwork.jpg";
 
 const GalleryType = ({to, img, heading}) => {
     return (

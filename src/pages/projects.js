@@ -1,11 +1,10 @@
 import React, {Component} from "react";
-import styled from "styled-components";
 
 import Layout from "../components/layout";
 import MainContainer from "../components/MainContainer";
 import Project from "../components/projects/Project"
 import H2 from "../components/atoms/h2";
-import img2 from "./images/projects/img2.jpg";
+import img2 from "../images/projects/img2.jpg";
 
 const project1 = {
     name: "Diversity of mire vegetation in Europe",

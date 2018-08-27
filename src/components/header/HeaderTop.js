@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from "styled-components";
 
-import czFlag from "../../pages/images/cz-icon.png";
-import ukFlag from "../../pages/images/uk-icon.png";
+import czFlag from "../../images/cz-icon.png";
+import ukFlag from "../../images/uk-icon.png";
 import Navigation from "./Navigation";
 import { LocalizationConsumer } from '../localization.context';
 
@@ -52,16 +52,6 @@ const Flag = styled.img`
     height: 48px;
     margin: 2px;
     align-self: flex-end;
-`;
-
-const Logo = styled.img`
-    height: 150px;
-    position: absolute;
-    bottom: -50px;
-    left: 13vw;
-    @media (max-width: ${props => props.theme.largeDevice}) {
-      display: none;
-    }
 `;
 
 export default HeaderTop;
