@@ -1,20 +1,20 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Container from "../components/container"
+import MainContainer from "../components/MainContainer"
 import H2 from "../components/atoms/h2"
 
 const Publications = () => {
     return (
     <Layout>
-        <Container>
+        <MainContainer>
             <H2>2018</H2>
             {papers_2018}
             <H2>2017</H2>
             {papers_2017}
             <H2>2016</H2>
             {papers_2016}
-        </Container>
+        </MainContainer>
     </Layout>
     );
 };

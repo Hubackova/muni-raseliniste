@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import {ThemeProvider} from 'styled-components';
 
-import Header from "./header";
-import FooterContent from "./footer";
+import Header from "./header/Header";
+import FooterContent from "./footer/Footer";
 import {LocalizationProvider, withLocalization} from "./localization.context";
 
 const blueTheme = {

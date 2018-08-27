@@ -2,23 +2,22 @@ import React from "react"
 import {Link} from "gatsby"
 import styled from "styled-components";
 
-const StyledLink = ({to, children}) => {
+const StyledLink = ({to, navigation, children}) => {
     return (
-        <LinkStyled to={to}> {children} </LinkStyled>
+        <LinkStyled to={to} navigation={navigation}> {children} </LinkStyled>
     );
 };
-
-const H2Styled = styled.h2`
-  color: '#969696';
-  border-bottom: 1px solid ${props => props.theme.grey};
-`;
 
 export default StyledLink;
 
 const LinkStyled = styled(Link)`
   color: ${props => props.theme.grey};
   text-decoration: none;
-  &:hover, &:focus {
-    color: ${props => props.theme.secondary};
+  &:hover {
+    text-decoration:  ${props => props.navigation ? 'underline' : 'none'};
+    color: ${props => props.navigation ? props.theme.grey : props.theme.secondary};
+  }
+  &:focus {
+    color: ${props => props.navigation ? props.theme.secondary : props.theme.grey};
   }
 `;

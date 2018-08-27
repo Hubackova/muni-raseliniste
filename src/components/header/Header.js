@@ -3,10 +3,10 @@ import styled from "styled-components";
 
 import Images from "./images";
 import SmallImages from "./SmallImages";
-import HeaderTop from "./headerTop";
-import {withLocalization} from "./localization.context";
-import logo from "../pages/images/logo2.png";
-import mainLogo from "../pages/images/mainLogo.png";
+import HeaderTop from "./HeaderTop";
+import {withLocalization} from "../localization.context";
+import logo from "../../pages/images/logo2.png";
+import mainLogo from "../../pages/images/mainLogo.png";
 
 const Header = ({language, isIndex}) => {
     return (

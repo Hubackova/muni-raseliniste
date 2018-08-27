@@ -1,11 +1,13 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import researchgate from "../pages/images/social-researchgate.png";
-import email from "../pages/images/social-email.png";
-import is from "../pages/images/social-is.png";
-import {Link} from "gatsby"
 
-class StaffBox extends Component {
+import StyledLink from "../atoms/styledLink";
+import researchgate from "../../pages/images/social-researchgate.png";
+import email from "../../pages/images/social-email.png";
+import is from "../../pages/images/social-is.png";
+
+
+class PersonBox extends Component {
     state = {showDetail: false}
 
     toggleShowDetail = () => {
@@ -62,7 +64,7 @@ class StaffBox extends Component {
         </>
 );
 }}
-export default StaffBox;
+export default PersonBox;
 
 const Box = styled.div`
   display: flex;
@@ -89,14 +91,6 @@ const BoxPart = styled.div`
 const P = styled.p`
     margin: 10px 0px;
  `
-
- const StyledLink = styled.a`
-  color: ${props => props.theme.grey};
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 const ArrowIcon = styled.div`
   color: ${props => props.theme.grey};

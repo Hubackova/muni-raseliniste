@@ -15,6 +15,7 @@ const GalleryType = ({to, img, heading}) => {
     </div>
     );
 };
+
 const PhotoGallery = () => {
     return (
     <Layout>
@@ -26,7 +27,6 @@ const PhotoGallery = () => {
     </Layout>
     );
 };
-
 
 export default PhotoGallery
 

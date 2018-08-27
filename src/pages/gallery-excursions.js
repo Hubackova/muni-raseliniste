@@ -3,17 +3,17 @@ import {Link} from "gatsby"
 import Gallery from 'react-grid-gallery';
 
 import Layout from "../components/layout";
-import Container from "../components/container";
+import MainContainer from "../components/MainContainer";
 import H2 from "../components/atoms/h2";
 import StyledLink from "../components/atoms/styledLink";
 
 const PhotoGallery = () => {
     return (
     <Layout>
-        <Container>
+        <MainContainer>
             <H2><StyledLink to="/gallery/"><i className="fa fa-arrow-left"></i></StyledLink>Exkurze</H2>
             <Gallery images={PHOTO_SET}/>
-        </Container>
+        </MainContainer>
     </Layout>
     );
 };

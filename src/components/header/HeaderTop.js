@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from "styled-components";
 
-import czFlag from "../pages/images/cz-icon.png";
-import ukFlag from "../pages/images/uk-icon.png";
-import Navigation from "./navigation";
-import { LocalizationConsumer } from './localization.context';
+import czFlag from "../../pages/images/cz-icon.png";
+import ukFlag from "../../pages/images/uk-icon.png";
+import Navigation from "./Navigation";
+import { LocalizationConsumer } from '../localization.context';
 
 const FlagCZ = () => (
   <LocalizationConsumer>

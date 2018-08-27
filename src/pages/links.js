@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components";
 import Layout from "../components/layout";
-import Container from "../components/container";
+import MainContainer from "../components/MainContainer";
 import H2 from "../components/atoms/h2";
 
 const popularization = [
@@ -24,12 +24,12 @@ const Popularization = props => {
     })
     return (
     <Layout>
-      <Container>
+      <MainContainer>
         <H2> Odkazy </H2>
         {linksList}
         <H2> Popularizační články </H2>
         {popularizationList}
-    	</Container>
+    	</MainContainer>
     </Layout>
     );
 };

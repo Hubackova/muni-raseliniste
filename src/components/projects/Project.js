@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import styled from "styled-components";
-import {withLocalization} from "./localization.context";
+import {withLocalization} from "../localization.context";
 
 class Project extends Component {
     state = {showDetail: false}

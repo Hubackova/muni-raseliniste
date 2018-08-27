@@ -2,7 +2,7 @@ import React, {Component} from "react"
 import styled, { injectGlobal } from 'styled-components'
 import 'font-awesome/css/font-awesome.min.css';
 
-import Container from "../components/container";
+import MainContainer from "../components/MainContainer";
 import Layout from "../components/layout";
 import { LocalizationConsumer } from '../components/localization.context';
 import snail from "./images/snail.png"
@@ -32,7 +32,7 @@ class Index extends Component {
     return (
       <Layout isIndex={this.props.location.pathname === '/'}>
         <ContainerWrapper>
-        <Container text>
+        <MainContainer text>
         <LocalizationConsumer>
           {context => <>
           <h2>{context.language.mainPage.introHeader}</h2>
@@ -55,7 +55,7 @@ class Index extends Component {
           </div>
           </>}
           </LocalizationConsumer>
-        </Container>
+        </MainContainer>
         <Databases/>
         </ContainerWrapper>
       </Layout>)
@@ -99,6 +99,8 @@ const Section = styled.section`
   }
 `;
 
+
+// TODO: move this section to gatsby-browser after solving the issue with global styles: https://github.com/gatsbyjs/gatsby/issues/7447
 injectGlobal`
 html, body, #___gatsby, #___gatsby>div {
     width: 100%;

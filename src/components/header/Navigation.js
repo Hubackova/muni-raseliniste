@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import styled from "styled-components";
-import {Link} from "gatsby"
+
+import StyledLink from "../atoms/styledLink";
+
+
 
 const ListLink = props =>
   <Li visible={props.visible}>
-    <StyledLink to={props.to}>
+    <StyledLink to={props.to} navigation={true}>
       {props.children}
     </StyledLink>
   </Li>
@@ -82,17 +85,6 @@ export const Li = styled.li`
     @media (max-width: ${props => props.theme.mediumDevice}) {
       border: 0px;
     }
-`;
-
-const StyledLink = styled(Link)`
-  color: ${props => props.theme.grey};
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-  &:focus {
-    color: ${props => props.theme.secondary};
-  }
 `;
 
 const NavbarToggle  = styled(Li)`

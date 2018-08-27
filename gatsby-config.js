@@ -13,7 +13,16 @@ module.exports = {
         name: "pages",
       },
     },
-    `gatsby-transformer-remark`,
+    {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+        path: `${__dirname}/src/img/`,
+        name: `img`,
+    }
+  },
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
+  `gatsby-transformer-remark`,
   ],
     pathPrefix: "/raseliniste"
 

@@ -3,12 +3,13 @@ import styled from "styled-components";
 import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import Layout from "../components/layout";
-import StaffBox from "../components/staffBox"
-import hajek from "./images/hajek.jpg";
-import horsak from "./images/horsak.jpg";
-import horsakova from "./images/horsakova.jpg";
+import PersonBox from "../components/people/PersonBox"
 import H2 from "../components/atoms/h2";
-import {Container as MenuContainer, Li} from "../components/navigation"
+import {Container as MenuContainer, Li} from "../components/header/navigation"
+
+import hajek from "./images/people/hajek.jpg";
+import horsak from "./images/people/horsak.jpg";
+import horsakova from "./images/people/horsakova.jpg";
 
 export const hajekInfo = {
     name: "Doc. Michal Hájek Ph.D.",
@@ -61,16 +62,16 @@ class Staff extends Component {
         <Layout>
             <Container>
                 <MenuContainer>
-                    <Li visible={true}><StyledLink activeClass="active" className="staff" to="staff" spy={true} smooth={true} duration={500} >Staff</StyledLink></Li>
-                    <Li visible={true}><StyledLink activeClass="active" className="PhD" to="PhD" spy={true} smooth={true} duration={500} >PhD Students</StyledLink></Li>
-                    <Li visible={true}><StyledLink activeClass="active" className="students" to="students" spy={true} smooth={true} duration={500} >Students</StyledLink></Li>
+                    <Li visible={true}><StyledLink activeClass="active" to="staff" spy={true} smooth={true} duration={500} >Staff</StyledLink></Li>
+                    <Li visible={true}><StyledLink activeClass="active" to="PhD" spy={true} smooth={true} duration={500} >PhD Students</StyledLink></Li>
+                    <Li visible={true}><StyledLink activeClass="active" to="students" spy={true} smooth={true} duration={500} >Students</StyledLink></Li>
                 </MenuContainer>
                 <Element name="staff" className="element"><H2>Staff</H2></Element>
-                <StaffBox personInfo={hajekInfo} />
-                <StaffBox personInfo={horsakInfo} />
+                <PersonBox personInfo={hajekInfo} />
+                <PersonBox personInfo={horsakInfo} />
                 <Element name="PhD" className="element"><H2>PhD Students</H2></Element>
-                <StaffBox personInfo={phdInfo} />
-                <StaffBox personInfo={phdInfo} />
+                <PersonBox personInfo={phdInfo} />
+                <PersonBox personInfo={phdInfo} />
                 <Element name="students" className="element"><H2>Students</H2></Element>
                 <Student studentInfo={studentInfoA} />
                 <Student studentInfo={studentInfoA} />

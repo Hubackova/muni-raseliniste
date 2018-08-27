@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 
-import facebook from "../pages/images/facebook.png";
-import youtube from "../pages/images/youtube.png";
-import twitter from "../pages/images/twitter.png";
-import {withLocalization} from "./localization.context";
+import facebook from "../../pages/images/facebook.png";
+import youtube from "../../pages/images/youtube.png";
+import twitter from "../../pages/images/twitter.png";
+import {withLocalization} from "../localization.context";
 
 const FooterContent = ({language}) => {
     const {language: {footer}} = language

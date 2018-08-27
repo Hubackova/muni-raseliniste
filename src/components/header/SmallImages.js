@@ -3,13 +3,13 @@ import { Transition } from 'react-transition-group';
 import styled from "styled-components";
 import { Fade  } from 'react-slideshow-image';
 
-import hp01 from "../pages/images/homepage/small/hp01small.jpg";
-import hp02 from "../pages/images/homepage/small/hp02small.jpg";
-import hp03 from "../pages/images/homepage/small/hp03small.jpg";
-import hp04 from "../pages/images/homepage/small/hp04small.jpg";
-import hp05 from "../pages/images/homepage/small/hp05small.jpg";
-import hp06 from "../pages/images/homepage/small/hp06small.jpg";
-import hp07 from "../pages/images/homepage/small/hp07small.jpg";
+import hp01 from "../../pages/images/homepage/small/hp01small.jpg";
+import hp02 from "../../pages/images/homepage/small/hp02small.jpg";
+import hp03 from "../../pages/images/homepage/small/hp03small.jpg";
+import hp04 from "../../pages/images/homepage/small/hp04small.jpg";
+import hp05 from "../../pages/images/homepage/small/hp05small.jpg";
+import hp06 from "../../pages/images/homepage/small/hp06small.jpg";
+import hp07 from "../../pages/images/homepage/small/hp07small.jpg";
 
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07]
