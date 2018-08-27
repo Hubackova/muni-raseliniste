@@ -3,7 +3,7 @@ import styled from "styled-components";
 import {Link} from "gatsby"
 
 const ListLink = props =>
-  <Li menuVisible={props.menuVisible}>
+  <Li visible={props.visible}>
     <StyledLink to={props.to}>
       {props.children}
     </StyledLink>
@@ -13,7 +13,7 @@ const windowGlobal = typeof window !== 'undefined' && window
 
 class Navigation extends Component {
   state = {
-    menuVisible: false,
+    visible: false,
     width: windowGlobal.innerWidth,
   };
 
@@ -26,25 +26,25 @@ class Navigation extends Component {
   };
 
   toggleMenu = () => {
-    this.setState({menuVisible: !this.state.menuVisible});
+    this.setState({visible: !this.state.visible});
   }
 
     render() {
       const isMobile = this.state.width <= 768;
-      const menuVisible = this.state.menuVisible || !isMobile
+      const visible = this.state.visible || !isMobile
         return (
           <Container>
             <NavbarToggle onClick={this.toggleMenu}>
               <i className="fa fa-bars"></i>
             </NavbarToggle>
-            <ListLink to="/" menuVisible={menuVisible}>HomePage</ListLink>
-            <ListLink to="/people/" menuVisible={menuVisible}>People</ListLink>
-            <ListLink to="/projects/" menuVisible={menuVisible}>Projects</ListLink>
-            <Li menuVisible={menuVisible}>Theses</Li>
-            <ListLink to="/publications/" menuVisible={menuVisible}>Publications</ListLink>
-            <ListLink to="/courses/"  menuVisible={menuVisible}>Courses</ListLink>
-            <ListLink to="/gallery/" menuVisible={menuVisible}>Gallery</ListLink>
-            <ListLink to="/links/" menuVisible={menuVisible}>Links</ListLink>
+            <ListLink to="/" visible={visible}>HomePage</ListLink>
+            <ListLink to="/people/" visible={visible}>People</ListLink>
+            <ListLink to="/projects/" visible={visible}>Projects</ListLink>
+            <Li visible={visible}>Theses</Li>
+            <ListLink to="/publications/" visible={visible}>Publications</ListLink>
+            <ListLink to="/courses/"  visible={visible}>Courses</ListLink>
+            <ListLink to="/gallery/" visible={visible}>Gallery</ListLink>
+            <ListLink to="/links/" visible={visible}>Links</ListLink>
           </Container>
         )
     }
@@ -52,7 +52,7 @@ class Navigation extends Component {
 
 export default Navigation;
 
-const Container = styled.ul`
+export const Container = styled.ul`
     align-self: flex-end;
     display: flex;
     flex-direction: row;
@@ -67,8 +67,8 @@ const Container = styled.ul`
     }
 `;
 
-const Li = styled.li`
-    display: ${props => props.menuVisible ? 'flex' : 'none'};
+export const Li = styled.li`
+    display: ${props => props.visible ? 'flex' : 'none'};
     height: 40px;
     flex: auto;
     align-items: center;

@@ -2,6 +2,7 @@ import React, {Fragment} from 'react'
 import styled from "styled-components";
 
 import Images from "./images";
+import SmallImages from "./SmallImages";
 import HeaderTop from "./headerTop";
 import {withLocalization} from "./localization.context";
 import logo from "../pages/images/logo2.png";
@@ -14,10 +15,14 @@ const Header = ({language, isIndex}) => {
         <SubContainer>
             <LeftSide>
                 <LeftSideWrapper><MainLogo src={mainLogo} alt='mainLogo'/></LeftSideWrapper>
-                <LeftSideWrapper><LogoText>{language.language.mainPage.mainHeader}<br/> </LogoText>{language.language.mainPage.muni}</LeftSideWrapper>
+                <LeftSideWrapper>
+                    <LogoText>{language.language.mainPage.mainHeader}<br/></LogoText>
+                    <LogoTextSmall>{language.language.mainPage.muni}</LogoTextSmall>
+                </LeftSideWrapper>
                 <LeftSideWrapper><Logo src={logo} alt='logo'/></LeftSideWrapper>
             </LeftSide>
             {isIndex && <RightSide style={{}}><Images /></RightSide>}
+            {!isIndex && <RightSide style={{}}><SmallImages /></RightSide>}
         </SubContainer>
     </Fragment>
     )
@@ -63,7 +68,13 @@ const LogoText = styled.h1`
     text-transform: uppercase;
     color: ${props => props.theme.white};
     background-color: inherit;
-    margin: 30px 0;
+    margin: 30px 0 0 0;
+`;
+
+const LogoTextSmall = styled.h2`
+    color: ${props => props.theme.white};
+    background-color: inherit;
+    margin: 0;
 `;
 
 const Logo = styled.img`

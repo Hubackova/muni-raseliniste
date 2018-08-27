@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import styled from "styled-components";
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 import Layout from "../components/layout";
 import StaffBox from "../components/staffBox"
@@ -7,6 +8,7 @@ import hajek from "./images/hajek.jpg";
 import horsak from "./images/horsak.jpg";
 import horsakova from "./images/horsakova.jpg";
 import H2 from "../components/atoms/h2";
+import {Container as MenuContainer, Li} from "../components/navigation"
 
 export const hajekInfo = {
     name: "Doc. Michal Hájek Ph.D.",
@@ -22,7 +24,7 @@ export const hajekInfo = {
 const horsakInfo = {
     name: "Prof. RNDr. Michal Horsák Ph.D.",
     position: "",
-    description: "",
+    description: "Lorem ipsum dolor sit amet",
     email: "horsak@sci.muni.cz",
     phoneNumber: '+420549494448',
     img:horsak
@@ -58,13 +60,18 @@ class Staff extends Component {
         return (
         <Layout>
             <Container>
-                <H2>Staff</H2>
+                <MenuContainer>
+                    <Li visible={true}><StyledLink activeClass="active" className="staff" to="staff" spy={true} smooth={true} duration={500} >Staff</StyledLink></Li>
+                    <Li visible={true}><StyledLink activeClass="active" className="PhD" to="PhD" spy={true} smooth={true} duration={500} >PhD Students</StyledLink></Li>
+                    <Li visible={true}><StyledLink activeClass="active" className="students" to="students" spy={true} smooth={true} duration={500} >Students</StyledLink></Li>
+                </MenuContainer>
+                <Element name="staff" className="element"><H2>Staff</H2></Element>
                 <StaffBox personInfo={hajekInfo} />
                 <StaffBox personInfo={horsakInfo} />
-                <H2>PhD Students</H2>
+                <Element name="PhD" className="element"><H2>PhD Students</H2></Element>
                 <StaffBox personInfo={phdInfo} />
                 <StaffBox personInfo={phdInfo} />
-                <H2>Students</H2>
+                <Element name="students" className="element"><H2>Students</H2></Element>
                 <Student studentInfo={studentInfoA} />
                 <Student studentInfo={studentInfoA} />
             </Container>
@@ -80,4 +87,16 @@ const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
+`;
+
+const StyledLink = styled(Link)`
+  color: ${props => props.theme.grey};
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    color: ${props => props.theme.secondary};
+  }
 `;

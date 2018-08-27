@@ -8,7 +8,6 @@ import Layout from "../components/layout";
 import H2 from "../components/atoms/h2";
 
 const project1 = {
-    index: 1,
     name: "Diversity of mire vegetation in Europe",
     contributors: "Michal Hájek, Borja Jiménez-Alfaro, Martin Jiroušek, Tomáš Peterka",
     img: img2,
@@ -21,7 +20,6 @@ const project1 = {
 }
 
 const project2 = {
-    index: 2,
     name: "Diversity of mire vegetation in Europe 2",
     contributors: "Michal Hájek, Borja Jiménez-Alfaro, Martin Jiroušek, Tomáš Peterka",
     img: img2,
@@ -36,18 +34,13 @@ const project2 = {
 class Projects extends Component {
     state = {showAllIndex: 0}
 
-    showFulltext = (index) => {
-      this.setState({showAllIndex:index});
-      console.log('this.state', this.state.showAllIndex)
-    }
-
     render() {
         return (<Layout>
           <Container>
             <H2> Soušasné projekty </H2>
-              <Project project={project1} showAllIndex={this.state.showAllIndex} showFulltext={this.showFulltext}/>
+              <Project project={project1} />
             <H2> Dokončené projekty </H2>
-              <Project project={project2} showAllIndex={this.state.showAllIndex} showFulltext={this.showFulltext}/>
+              <Project project={project2} />
           </Container>
         </Layout>);
 }}

@@ -3,19 +3,18 @@ import styled from "styled-components";
 import {withLocalization} from "./localization.context";
 
 class Project extends Component {
-    state = {showAll: false}
+    state = {showDetail: false}
 
-    toggleShowFulltext = () => {
+    toggleShowDetail = () => {
       this.setState(prevState => ({
-        showAll: !prevState.showAll
+        showDetail: !prevState.showDetail
       }));
     }
 
     render() {
-      const {project: {description}, project, showFulltext, showAllIndex} = this.props
+      const {project: {description}, project} = this.props
+      const {showDetail} = this.state
       const shortDescription = description.substring(0, 300)
-      const showFull = showAllIndex === project.index
-      console.log(project.name, project.index, showAllIndex, showFull)
         return (
         <>
         <Name>{project.name}</Name>
@@ -28,11 +27,13 @@ class Project extends Component {
             <div><u>Duration</u>: {project.duration}</div>
             <div style={{whiteSpace: 'pre-wrap', textAlign: 'justify'}}>
               <u>Project aims</u>:
-              {showFull
+              {showDetail
                 ? project.description
                 : shortDescription
               }
-            {!showFull && <span style={{color: 'red', cursor: 'pointer'}} onClick={() => showFulltext(project.index)}> Show more...</span>}</div>
+            {!showDetail && <span style={{color: 'red', cursor: 'pointer'}} onClick={() => this.toggleShowDetail()}> Show more...</span>}
+            {showDetail && <div style={{color: 'red', cursor: 'pointer'}} onClick={() => this.toggleShowDetail()}> Show less...</div>}
+            </div>
             </RightWrapper>
         </Box>
         </>

@@ -6,15 +6,25 @@ import is from "../pages/images/social-is.png";
 import {Link} from "gatsby"
 
 class StaffBox extends Component {
+    state = {showDetail: false}
+
+    toggleShowDetail = () => {
+      this.setState(prevState => ({
+        showDetail: !prevState.showDetail
+      }));
+    }
+
     render() {
       const {personInfo} = this.props
-
+      const {showDetail} = this.state
+      const hasDetail = personInfo.description.length > 0
         return (
+        <>
         <Box>
-            <BoxPart style={{flex: 1}}>
-                <Link to="/staffDetail/" personInfo={personInfo}>
+            <BoxPart style={{flex: 1, paddingLeft: 0}}>
+                <div>
                     {personInfo.img && <img src={personInfo.img} alt={personInfo.name} height='265px'/>}
-                </Link>
+                </div>
             </BoxPart>
             <BoxPart style={{flex: 6, minWidth: 260}}>
                 <Name>{personInfo.name}
@@ -36,8 +46,20 @@ class StaffBox extends Component {
                         <a href={personInfo.is || '#'}><img src={is} alt='is' height='40px'/></a>
                     </P>
                 </div>
+                {!showDetail && hasDetail && <ArrowIcon onClick={() => this.toggleShowDetail()}>
+                    <i className="fa fa-arrow-down"></i>
+                    <ArrowText style={{color: 'red', cursor: 'pointer'}}> Show more...</ArrowText>
+                </ArrowIcon>}
             </BoxPart>
         </Box>
+        {showDetail && hasDetail && <div style={{padding: '0 1em 1em 1em'}}>
+            <div>{personInfo.description}</div>
+            <ArrowIcon onClick={() => this.toggleShowDetail()}>
+                <i className="fa fa-arrow-up"></i>
+                <ArrowText style={{color: 'red', cursor: 'pointer'}}> Show less...</ArrowText>
+            </ArrowIcon>
+        </div>}
+        </>
 );
 }}
 export default StaffBox;
@@ -74,4 +96,21 @@ const P = styled.p`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const ArrowIcon = styled.div`
+  color: ${props => props.theme.grey};
+  text-decoration: none;
+  cursor: 'pointer'
+  &:hover {
+    text-decoration: underline;
+  }
+  &:focus {
+    color: ${props => props.theme.secondary};
+  }
+`;
+
+const ArrowText = styled.span`
+  color: 'red',
+  cursor: 'pointer';
 `;
