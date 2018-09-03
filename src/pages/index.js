@@ -1,22 +1,33 @@
-import React, {Component} from "react"
-import styled, { injectGlobal } from 'styled-components'
-import 'font-awesome/css/font-awesome.min.css';
+import React, {Component, Fragment} from 'react'
+import styled, {injectGlobal} from 'styled-components'
+import 'font-awesome/css/font-awesome.min.css'
 
-import MainContainer from "../components/MainContainer";
-import Layout from "../components/layout";
-import { LocalizationConsumer } from '../components/localization.context';
-import snail from "../images/snail.png"
-import plant from "../images/plant.png"
+import MainContainer from '../components/MainContainer'
+import Layout from '../components/layout'
+import {LocalizationConsumer} from '../components/localization.context'
+import snail from '../images/snail.png'
+import plant from '../images/plant.png'
 
 const Databases = () => {
-    return (
+  return (
     <Section>
-      <p><strong>Databases</strong></p>
-      <p><img src={plant} alt='plant' height='30em'/><StyledLink href='http://is.muni.cz'>Macrofossils</StyledLink></p>
-      <p><img src={snail} alt='snail' height='30em'/><StyledLink href='http://is.muni.cz'>Palaeo-profiles</StyledLink></p>
-      <p><img src={plant} alt='plant' height='30em'/><StyledLink href='http://is.muni.cz'>Vegetation</StyledLink></p>
+      <p>
+        <strong>Databases</strong>
+      </p>
+      <p>
+        <img src={plant} alt="plant" height="30em" />
+        <StyledLink href="http://is.muni.cz">Macrofossils</StyledLink>
+      </p>
+      <p>
+        <img src={snail} alt="snail" height="30em" />
+        <StyledLink href="http://is.muni.cz">Palaeo-profiles</StyledLink>
+      </p>
+      <p>
+        <img src={plant} alt="plant" height="30em" />
+        <StyledLink href="http://is.muni.cz">Vegetation</StyledLink>
+      </p>
     </Section>
-    )
+  )
 }
 
 class Index extends Component {
@@ -25,53 +36,60 @@ class Index extends Component {
   toggleShowFulltext = () => {
     this.setState(prevState => ({
       showAll: !prevState.showAll
-    }));
+    }))
   }
 
   render() {
     return (
       <Layout isIndex={this.props.location.pathname === '/'}>
         <ContainerWrapper>
-        <MainContainer text>
-        <LocalizationConsumer>
-          {context => <>
-          <h2>{context.language.mainPage.introHeader}</h2>
-          <div>
-            <p>
-              {this.state.showAll
-                ? context.language.mainPage.introText
-                : context.language.mainPage.introTextShort
-              }
-            {!this.state.showAll && <span style={{color: 'red', cursor: 'pointer'}} onClick={this.toggleShowFulltext}> {context.language.mainPage.fullText}</span>}
-            </p>
+          <MainContainer text>
+            <LocalizationConsumer>
+              {context => (
+                <Fragment>
+                  <h2>{context.language.mainPage.introHeader}</h2>
+                  <div>
+                    <p>
+                      {this.state.showAll
+                        ? context.language.mainPage.introText
+                        : context.language.mainPage.introTextShort}
+                      {!this.state.showAll && (
+                        <span style={{color: 'red', cursor: 'pointer'}} onClick={this.toggleShowFulltext}>
+                          {' '}
+                          {context.language.mainPage.fullText}
+                        </span>
+                      )}
+                    </p>
 
-            <span style={{color: 'green'}}>{context.language.mainPage.mainTopics}</span>
-            <ul style={{fontWeight: 'bold'}}>
-            <li>{context.language.mainPage.mireEcology}</li>
-            <li>{context.language.mainPage.palaeoecology}</li>
-            <li>{context.language.mainPage.relictEcosystems}</li>
-            <li>{context.language.mainPage.cryptogamology}</li>
-            </ul>
-          </div>
-          </>}
-          </LocalizationConsumer>
-        </MainContainer>
-        <Databases/>
+                    <span style={{color: 'green'}}>{context.language.mainPage.mainTopics}</span>
+                    <ul style={{fontWeight: 'bold'}}>
+                      <li>{context.language.mainPage.mireEcology}</li>
+                      <li>{context.language.mainPage.palaeoecology}</li>
+                      <li>{context.language.mainPage.relictEcosystems}</li>
+                      <li>{context.language.mainPage.cryptogamology}</li>
+                    </ul>
+                  </div>
+                </Fragment>
+              )}
+            </LocalizationConsumer>
+          </MainContainer>
+          <Databases />
         </ContainerWrapper>
-      </Layout>)
+      </Layout>
+    )
   }
 }
 
-export default Index;
+export default Index
 
 const ContainerWrapper = styled.div`
-    display: flex;
-    margin: 0 50px;
-    @media (max-width: ${props => props.theme.largeDevice}) {
-      margin: 0 15px;
-      flex-wrap: wrap;
-    }
-`;
+  display: flex;
+  margin: 0 50px;
+  @media (max-width: ${props => props.theme.largeDevice}) {
+    margin: 0 15px;
+    flex-wrap: wrap;
+  }
+`
 
 const StyledLink = styled.a`
   color: ${props => props.theme.main};
@@ -82,7 +100,7 @@ const StyledLink = styled.a`
   &:focus {
     color: ${props => props.theme.secondary};
   }
-`;
+`
 
 const Section = styled.section`
   flex: 1;
@@ -97,8 +115,7 @@ const Section = styled.section`
     border: 0;
     border-top: 1px solid ${props => props.theme.grey};
   }
-`;
-
+`
 
 // TODO: move this section to gatsby-browser after solving the issue with global styles: https://github.com/gatsbyjs/gatsby/issues/7447
 injectGlobal`

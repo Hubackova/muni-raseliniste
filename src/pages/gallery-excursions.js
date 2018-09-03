@@ -1,21 +1,26 @@
-import React from "react";
-import Gallery from 'react-grid-gallery';
+import React from 'react'
+import Gallery from 'react-grid-gallery'
 
-import Layout from "../components/layout";
-import MainContainer from "../components/MainContainer";
-import H2 from "../components/atoms/h2";
-import StyledLink from "../components/atoms/styledLink";
+import Layout from '../components/layout'
+import MainContainer from '../components/MainContainer'
+import H2 from '../components/atoms/h2'
+import StyledLink from '../components/atoms/styledLink'
 
 const PhotoGallery = () => {
-    return (
+  return (
     <Layout>
-        <MainContainer>
-            <H2><StyledLink to="/gallery/"><i className="fa fa-arrow-left"></i></StyledLink>Exkurze</H2>
-            <Gallery images={PHOTO_SET}/>
-        </MainContainer>
+      <MainContainer>
+        <H2>
+          <StyledLink to="/gallery/">
+            <i className="fa fa-arrow-left" />
+          </StyledLink>
+          Exkurze
+        </H2>
+        <Gallery images={PHOTO_SET} />
+      </MainContainer>
     </Layout>
-    );
-};
+  )
+}
 
 const PHOTO_SET = [
   {
@@ -31,8 +36,10 @@ const PHOTO_SET = [
     thumbnailHeight: 347
   },
   {
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg/800px-NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg',
-    thumbnail: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg/800px-NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg',
+    src:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg/800px-NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg',
+    thumbnail:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg/800px-NPR_Rolavsk%C3%A1_vrchovi%C5%A1t%C4%9B_%284%29.jpg',
     thumbnailWidth: 569,
     thumbnailHeight: 860
   },
@@ -42,6 +49,6 @@ const PHOTO_SET = [
     thumbnailWidth: 368,
     thumbnailHeight: 246
   }
-];
+]
 
 export default PhotoGallery

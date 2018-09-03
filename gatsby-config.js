@@ -3,6 +3,7 @@ module.exports = {
     title: `MIRE ECOLOGY GROUP - MUNI`,
   },
   plugins: [
+    'gatsby-plugin-eslint',
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-next`,
     `gatsby-plugin-netlify-cms`,

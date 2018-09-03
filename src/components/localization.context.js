@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 
- const languages = {
+const languages = {
   en: {
     mainPage: {
       mainHeader: 'Mire ecology group',
@@ -27,7 +27,7 @@ import React, {Component} from 'react'
       mireEcology: 'Mire ecology',
       palaeoecology: 'Palaeoecology',
       relictEcosystems: 'Relict ecosystems',
-      cryptogamology: 'Cryptogamology',
+      cryptogamology: 'Cryptogamology'
     },
     footer: {
       botzool: 'Department of Botany and Zoology, ',
@@ -66,7 +66,7 @@ import React, {Component} from 'react'
       mireEcology: 'Ekologie rašelinišť',
       palaeoecology: 'Paleoekologie',
       relictEcosystems: 'Reliktní ekosystémy',
-      cryptogamology: 'Kryptogamologie',
+      cryptogamology: 'Kryptogamologie'
     },
     footer: {
       botzool: 'Ústav botaniky a zoologie, ',
@@ -78,32 +78,29 @@ import React, {Component} from 'react'
       physicalAddress: `Campus Bohunice, budova A31, Kamenice 5, Brno`,
       links: 'Odkazy'
     }
-  },
-};
+  }
+}
 
-
-const LocalizationContext = React.createContext();
+const LocalizationContext = React.createContext()
 
 export class LocalizationProvider extends Component {
   state = {
     language: languages.en
-  };
+  }
 
   changeToEn = () => {
-    console.log(this.state)
     this.setState({
       language: languages.en
-    });
-  };
+    })
+  }
 
   changeToCz = () => {
-    console.log(this.state)
     this.setState({
       language: languages.cz
-    });
-  };
+    })
+  }
   render() {
-    const { children } = this.props;
+    const {children} = this.props
 
     return (
       <LocalizationContext.Provider
@@ -113,20 +110,16 @@ export class LocalizationProvider extends Component {
           changeToEn: this.changeToEn
         }}
       >
-         {children}
+        {children}
       </LocalizationContext.Provider>
-    );
+    )
   }
 }
 
-export const LocalizationConsumer = LocalizationContext.Consumer;
+export const LocalizationConsumer = LocalizationContext.Consumer
 
 export function withLocalization(Component) {
   return function LocalizedComponent(props) {
-    return (
-      <LocalizationConsumer>
-        {language => <Component {...props} language={language} />}
-      </LocalizationConsumer>
-    );
-  };
+    return <LocalizationConsumer>{language => <Component {...props} language={language} />}</LocalizationConsumer>
+  }
 }

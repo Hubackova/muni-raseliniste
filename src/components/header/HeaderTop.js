@@ -1,57 +1,43 @@
 import React from 'react'
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import czFlag from "../../images/cz-icon.png";
-import ukFlag from "../../images/uk-icon.png";
-import Navigation from "./Navigation";
-import { LocalizationConsumer } from '../localization.context';
+import czFlag from '../../images/cz-icon.png'
+import ukFlag from '../../images/uk-icon.png'
+import Navigation from './Navigation'
+import {LocalizationConsumer} from '../localization.context'
 
 const FlagCZ = () => (
-  <LocalizationConsumer>
-    {({ changeToCz }) => (
-      <Flag
-       src={czFlag}
-       onClick={() => changeToCz()}
-      />
-    )}
-  </LocalizationConsumer>
-);
+  <LocalizationConsumer>{({changeToCz}) => <Flag src={czFlag} onClick={() => changeToCz()} />}</LocalizationConsumer>
+)
 const FlagEN = () => (
-  <LocalizationConsumer>
-    {({ changeToEn }) => (
-      <Flag
-       src={ukFlag}
-       onClick={() => changeToEn()}
-      />
-    )}
-  </LocalizationConsumer>
-);
+  <LocalizationConsumer>{({changeToEn}) => <Flag src={ukFlag} onClick={() => changeToEn()} />}</LocalizationConsumer>
+)
 
 const HeaderTop = () => {
-    return (
-        <Container>
-            <FlagEN />
-            <FlagCZ />
-            <Navigation/>
-        </Container>
-    )
+  return (
+    <Container>
+      <FlagEN />
+      <FlagCZ />
+      <Navigation />
+    </Container>
+  )
 }
 
 const Container = styled.div`
-    display: flex;
-    position: relative;
-    min-height: 100px;
-    padding-left: 10px;
-    @media (max-width: ${props => props.theme.mediumDevice}) {
-      min-height: 40px;
-      padding-bottom: 10px;
-    }
-`;
+  display: flex;
+  position: relative;
+  min-height: 100px;
+  padding-left: 10px;
+  @media (max-width: ${props => props.theme.mediumDevice}) {
+    min-height: 40px;
+    padding-bottom: 10px;
+  }
+`
 
 const Flag = styled.img`
-    height: 48px;
-    margin: 2px;
-    align-self: flex-end;
-`;
+  height: 48px;
+  margin: 2px;
+  align-self: flex-end;
+`
 
-export default HeaderTop;
+export default HeaderTop

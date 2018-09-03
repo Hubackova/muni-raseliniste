@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import {ThemeProvider} from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
+import {ThemeProvider} from 'styled-components'
 
-import Header from "./header/Header";
-import FooterContent from "./footer/Footer";
-import {LocalizationProvider, withLocalization} from "./localization.context";
+import Header from './header/Header'
+import FooterContent from './footer/Footer'
+import {LocalizationProvider, withLocalization} from './localization.context'
 
 const blueTheme = {
   main: '#0868ac',
@@ -17,26 +17,28 @@ const blueTheme = {
   mediumDevice: '768px',
   largeDevice: '1024px',
   extraLargeDevice: '1600px'
-};
+}
 
-export default withLocalization(({ children, language, isIndex }) =>
- <ThemeProvider theme={blueTheme}>
-   <LocalizationProvider>
-    <Container>
-      <Header isIndex={isIndex}/>
-      <Main>{children}</Main>
-      <footer><FooterContent/></footer>
-    </Container>
+export default withLocalization(({children, isIndex}) => (
+  <ThemeProvider theme={blueTheme}>
+    <LocalizationProvider>
+      <Container>
+        <Header isIndex={isIndex} />
+        <Main>{children}</Main>
+        <footer>
+          <FooterContent />
+        </footer>
+      </Container>
     </LocalizationProvider>
-  </ThemeProvider>)
+  </ThemeProvider>
+))
 
 const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-`;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 const Main = styled.main`
-    flex: 1;
-`;
-
+  flex: 1;
+`
