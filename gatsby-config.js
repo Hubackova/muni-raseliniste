@@ -9,8 +9,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages`,
-        name: "pages",
+        path: `${__dirname}/content`,
+        name: "content",
       },
     },
     {
@@ -24,6 +24,5 @@ module.exports = {
   `gatsby-plugin-sharp`,
   `gatsby-transformer-remark`,
   ],
-    pathPrefix: "/raseliniste"
-
+  pathPrefix: "/raseliniste"
 }

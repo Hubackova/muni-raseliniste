@@ -5,7 +5,6 @@ import StyledLink from "../atoms/styledLink";
 import researchgate from "../../images/social-researchgate.png";
 import is from "../../images/social-is.png";
 
-
 class PersonBox extends Component {
     state = {showDetail: false}
 
@@ -34,7 +33,7 @@ class PersonBox extends Component {
                 <div>
                     <P>
                         <i className="fa fa-envelope fa-lg" style={{color: 'black', marginRight: 15}}></i>
-                        <StyledLink href={`mailto:${personInfo.email}` || '#'}>
+                        <StyledLink href={`mailto:${personInfo.email}` || '#'} to="#"> {/*todo: make another type of Link instead of StyledLink*/}
                             <span>{personInfo.email}</span>
                         </StyledLink>
                     </P>

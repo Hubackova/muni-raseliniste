@@ -5,7 +5,7 @@ import { Link, Element} from 'react-scroll'
 import Layout from "../components/layout";
 import PersonBox from "../components/people/PersonBox"
 import H2 from "../components/atoms/h2";
-import {Container as MenuContainer, Li} from "../components/header/navigation"
+import {Container as MenuContainer, Li} from "../components/header/Navigation"
 
 import hajek from "../images/people/hajek.jpg";
 import horsak from "../images/people/horsak.jpg";

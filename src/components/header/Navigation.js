@@ -7,7 +7,7 @@ import StyledLink from "../atoms/styledLink";
 
 const ListLink = props =>
   <Li visible={props.visible}>
-    <StyledLink to={props.to} navigation={true}>
+    <StyledLink to={props.to} navigation={1}>
       {props.children}
     </StyledLink>
   </Li>

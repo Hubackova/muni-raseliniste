@@ -9,7 +9,9 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-plugin-styled-components": "^1.5.1",
+    "eslint": "^3.19.0",
     "font-awesome": "^4.7.0",
     "gatsby": "next",
     "gatsby-image": "^1.0.55",
