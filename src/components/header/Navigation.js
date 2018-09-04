@@ -1,21 +1,28 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
-import StyledLink from '../atoms/styledLink'
+import {StyledLink} from '../atoms'
 
-const ListLink = props => (
-  <Li visible={props.visible}>
-    <StyledLink to={props.to} navigation={1}>
-      {props.children}
+const ListLink = ({isVisible, to, children}) => (
+  <Li isVisible={isVisible}>
+    <StyledLink to={to} navigation={1}>
+      {children}
     </StyledLink>
   </Li>
 )
+
+ListLink.propTypes = {
+  children: PropTypes.node,
+  isVisible: PropTypes.bool,
+  to: PropTypes.string
+}
 
 const windowGlobal = typeof window !== 'undefined' && window
 
 class Navigation extends Component {
   state = {
-    visible: false,
+    isVisible: false,
     width: windowGlobal.innerWidth
   }
 
@@ -28,37 +35,37 @@ class Navigation extends Component {
   }
 
   toggleMenu = () => {
-    this.setState({visible: !this.state.visible})
+    this.setState({isVisible: !this.state.isVisible})
   }
 
   render() {
     const isMobile = this.state.width <= 768
-    const visible = this.state.visible || !isMobile
+    const isVisible = this.state.isVisible || !isMobile
     return (
       <Container>
         <NavbarToggle onClick={this.toggleMenu}>
           <i className="fa fa-bars" />
         </NavbarToggle>
-        <ListLink to="/" visible={visible}>
+        <ListLink to="/" isVisible={isVisible}>
           HomePage
         </ListLink>
-        <ListLink to="/people/" visible={visible}>
+        <ListLink to="/people/" isVisible={isVisible}>
           People
         </ListLink>
-        <ListLink to="/projects/" visible={visible}>
+        <ListLink to="/projects/" isVisible={isVisible}>
           Projects
         </ListLink>
-        <Li visible={visible}>Theses</Li>
-        <ListLink to="/publications/" visible={visible}>
+        <Li isVisible={isVisible}>Theses</Li>
+        <ListLink to="/publications/" isVisible={isVisible}>
           Publications
         </ListLink>
-        <ListLink to="/courses/" visible={visible}>
+        <ListLink to="/courses/" isVisible={isVisible}>
           Courses
         </ListLink>
-        <ListLink to="/gallery/" visible={visible}>
+        <ListLink to="/gallery/" isVisible={isVisible}>
           Gallery
         </ListLink>
-        <ListLink to="/links/" visible={visible}>
+        <ListLink to="/links/" isVisible={isVisible}>
           Links
         </ListLink>
       </Container>
@@ -67,6 +74,11 @@ class Navigation extends Component {
 }
 
 export default Navigation
+
+Navigation.propTypes = {
+  language: PropTypes.string,
+  isIndex: PropTypes.bool
+}
 
 export const Container = styled.ul`
   align-self: flex-end;
@@ -84,7 +96,7 @@ export const Container = styled.ul`
 `
 
 export const Li = styled.li`
-  display: ${props => (props.visible ? 'flex' : 'none')};
+  display: ${props => (props.isVisible ? 'flex' : 'none')};
   height: 40px;
   flex: auto;
   align-items: center;

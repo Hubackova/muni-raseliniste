@@ -1,8 +1,22 @@
 import React from 'react'
-import {Link} from 'gatsby'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
+import {Link} from 'gatsby'
 
-const StyledLink = ({to, navigation, children}) => {
+export const H2 = ({children}) => {
+  return <H2Styled> {children} </H2Styled>
+}
+
+H2.propTypes = {
+  children: PropTypes.node
+}
+
+const H2Styled = styled.h2`
+  color: '#969696';
+  border-bottom: 1px solid ${props => props.theme.grey};
+`
+
+export const StyledLink = ({to, navigation, children}) => {
   return (
     <LinkStyled to={to} navigation={navigation}>
       {' '}
@@ -11,7 +25,11 @@ const StyledLink = ({to, navigation, children}) => {
   )
 }
 
-export default StyledLink
+StyledLink.propTypes = {
+    children: PropTypes.node,
+    navigation: PropTypes.bool,
+    to: PropTypes.string
+  }
 
 const LinkStyled = styled(Link)`
   color: ${props => props.theme.grey};

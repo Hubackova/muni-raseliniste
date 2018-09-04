@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'gatsby'
+import PropTypes from 'prop-types';
 
 import Layout from '../components/layout'
 import excursions from '../images/gallery/excursions.jpg'
@@ -16,6 +17,12 @@ const GalleryType = ({to, img, heading}) => {
       <div style={{textAlign: 'center'}}>{heading}</div>
     </div>
   )
+}
+
+GalleryType.propTypes = {
+  heading: PropTypes.string,
+  img: PropTypes.string,
+  to: PropTypes.string
 }
 
 const PhotoGallery = () => {

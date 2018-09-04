@@ -1,7 +1,8 @@
 import React, {Component, Fragment} from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
-import StyledLink from '../atoms/styledLink'
+import {StyledLink} from '../atoms'
 import researchgate from '../../images/social-researchgate.png'
 import is from '../../images/social-is.png'
 
@@ -75,6 +76,10 @@ class PersonBox extends Component {
   }
 }
 export default PersonBox
+
+PersonBox.propTypes = {
+  personInfo: PropTypes.object
+}
 
 const Box = styled.div`
   display: flex;

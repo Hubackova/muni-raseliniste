@@ -1,5 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import styled, {injectGlobal} from 'styled-components'
+import PropTypes from 'prop-types';
 import 'font-awesome/css/font-awesome.min.css'
 
 import MainContainer from '../components/MainContainer'
@@ -40,8 +41,9 @@ class Index extends Component {
   }
 
   render() {
+    const {location: {pathname}} = this.props
     return (
-      <Layout isIndex={this.props.location.pathname === '/'}>
+      <Layout isIndex={pathname === '/'}>
         <ContainerWrapper>
           <MainContainer text>
             <LocalizationConsumer>
@@ -81,6 +83,10 @@ class Index extends Component {
 }
 
 export default Index
+
+Index.propTypes = {
+  location: PropTypes.object
+}
 
 const ContainerWrapper = styled.div`
   display: flex;

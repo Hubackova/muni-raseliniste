@@ -3,8 +3,7 @@ import Gallery from 'react-grid-gallery'
 
 import Layout from '../components/layout'
 import MainContainer from '../components/MainContainer'
-import H2 from '../components/atoms/h2'
-import StyledLink from '../components/atoms/styledLink'
+import {H2, StyledLink} from '../components/atoms'
 
 const PhotoGallery = () => {
   return (

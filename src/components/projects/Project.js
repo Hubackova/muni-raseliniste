@@ -1,5 +1,7 @@
 import React, {Component, Fragment} from 'react'
+import PropTypes from 'prop-types';
 import styled from 'styled-components'
+
 import {withLocalization} from '../localization.context'
 
 class Project extends Component {
@@ -13,11 +15,10 @@ class Project extends Component {
 
   render() {
     const {
-      project: {description},
       project
     } = this.props
     const {showDetail} = this.state
-    const shortDescription = description.substring(0, 300)
+    const shortDescription = project.description.substring(0, 300)
     return (
       <Fragment>
         <Name>{project.name}</Name>
@@ -53,6 +54,10 @@ class Project extends Component {
   }
 }
 export default withLocalization(Project)
+
+Project.propTypes = {
+  project: PropTypes.object
+}
 
 const Box = styled.div`
   line-height: 1.6em;

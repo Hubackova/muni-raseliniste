@@ -3,7 +3,7 @@ import React, {Component} from "react";
 import Layout from "../components/layout";
 import MainContainer from "../components/MainContainer";
 import Project from "../components/projects/Project"
-import H2 from "../components/atoms/h2";
+import {H2} from "../components/atoms";
 import img2 from "../images/projects/img2.jpg";
 
 const project1 = {

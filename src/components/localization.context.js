@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import PropTypes from 'prop-types';
 
 const languages = {
   en: {
@@ -114,6 +115,10 @@ export class LocalizationProvider extends Component {
       </LocalizationContext.Provider>
     )
   }
+}
+
+LocalizationProvider.propTypes = {
+  children: PropTypes.node
 }
 
 export const LocalizationConsumer = LocalizationContext.Consumer

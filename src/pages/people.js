@@ -1,10 +1,11 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
 import {Link, Element} from 'react-scroll'
+import PropTypes from 'prop-types';
 
 import Layout from '../components/layout'
 import PersonBox from '../components/people/PersonBox'
-import H2 from '../components/atoms/h2'
+import {H2} from '../components/atoms'
 import {Container as MenuContainer, Li} from '../components/header/Navigation'
 
 import hajek from '../images/people/hajek.jpg'
@@ -66,23 +67,27 @@ const Student = ({studentInfo}) => {
   )
 }
 
+Student.propTypes = {
+  studentInfo: PropTypes.object
+}
+
 class Staff extends Component {
   render() {
     return (
       <Layout>
         <Container>
           <MenuContainer>
-            <Li visible={true}>
+            <Li isVisible={true}>
               <StyledLink activeClass="active" to="staff" spy={true} smooth={true} duration={500}>
                 Staff
               </StyledLink>
             </Li>
-            <Li visible={true}>
+            <Li isVisible={true}>
               <StyledLink activeClass="active" to="PhD" spy={true} smooth={true} duration={500}>
                 PhD Students
               </StyledLink>
             </Li>
-            <Li visible={true}>
+            <Li isVisible={true}>
               <StyledLink activeClass="active" to="students" spy={true} smooth={true} duration={500}>
                 Students
               </StyledLink>

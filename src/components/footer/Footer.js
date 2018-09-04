@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 import facebook from '../../images/facebook.png'
 import youtube from '../../images/youtube.png'
@@ -43,6 +44,10 @@ const FooterContent = ({language}) => {
 }
 
 export default withLocalization(FooterContent)
+
+FooterContent.propTypes = {
+  language: PropTypes.string
+}
 
 const Container = styled.div`
   display: flex;

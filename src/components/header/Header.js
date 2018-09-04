@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 import Images from './images'
 import SmallImages from './SmallImages'
@@ -44,6 +45,11 @@ const Header = ({language, isIndex}) => {
 }
 
 export default withLocalization(Header)
+
+Header.propTypes = {
+  language: PropTypes.string,
+  isIndex: PropTypes.bool
+}
 
 const SubContainer = styled.div`
   display: flex;

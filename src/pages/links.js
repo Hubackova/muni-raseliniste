@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Layout from '../components/layout'
 import MainContainer from '../components/MainContainer'
-import H2 from '../components/atoms/h2'
+import {H2} from '../components/atoms'
 
 const popularization = [
   {
