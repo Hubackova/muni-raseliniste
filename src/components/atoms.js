@@ -19,15 +19,14 @@ const H2Styled = styled.h2`
 export const StyledLink = ({to, navigation, children}) => {
   return (
     <LinkStyled to={to} navigation={navigation}>
-      {' '}
-      {children}{' '}
+      {children}
     </LinkStyled>
   )
 }
 
 StyledLink.propTypes = {
     children: PropTypes.node,
-    navigation: PropTypes.bool,
+    navigation: PropTypes.number,
     to: PropTypes.string
   }
 

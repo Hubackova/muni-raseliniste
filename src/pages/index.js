@@ -45,7 +45,7 @@ class Index extends Component {
     return (
       <Layout isIndex={pathname === '/'}>
         <ContainerWrapper>
-          <MainContainer text>
+          <MainContainer isText>
             <LocalizationConsumer>
               {context => (
                 <Fragment>

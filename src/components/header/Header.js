@@ -47,7 +47,7 @@ const Header = ({language, isIndex}) => {
 export default withLocalization(Header)
 
 Header.propTypes = {
-  language: PropTypes.string,
+  language: PropTypes.object,
   isIndex: PropTypes.bool
 }
 

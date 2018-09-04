@@ -46,7 +46,7 @@ const FooterContent = ({language}) => {
 export default withLocalization(FooterContent)
 
 FooterContent.propTypes = {
-  language: PropTypes.string
+  language: PropTypes.object
 }
 
 const Container = styled.div`
