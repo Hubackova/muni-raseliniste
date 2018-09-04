@@ -30,12 +30,12 @@ const Header = ({language, isIndex}) => {
           </LeftSideWrapper>
         </LeftSide>
         {isIndex && (
-          <RightSide style={{}}>
+          <RightSide>
             <Images />
           </RightSide>
         )}
         {!isIndex && (
-          <RightSide style={{}}>
+          <RightSide>
             <SmallImages />
           </RightSide>
         )}

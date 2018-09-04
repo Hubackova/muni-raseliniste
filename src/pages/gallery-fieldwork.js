@@ -1,24 +1,13 @@
 import React from 'react'
 import Gallery from 'react-grid-gallery'
 
-import Layout from '../components/layout'
-import MainContainer from '../components/MainContainer'
-import {H2, StyledLink} from '../components/atoms'
+import GalleryContainer from '../components/GalleryContainer'
 
 const PhotoGallery = () => {
   return (
-    <Layout>
-      <MainContainer>
-        <H2>
-          {' '}
-          <StyledLink to="/gallery/">
-            <i className="fa fa-arrow-left" />
-          </StyledLink>{' '}
-          Terény
-        </H2>
+    <GalleryContainer heading="Terény">
         <Gallery images={PHOTO_SET} />
-      </MainContainer>
-    </Layout>
+    </GalleryContainer>
   )
 }
 

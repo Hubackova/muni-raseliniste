@@ -14,7 +14,7 @@ import hp09 from '../../images/homepage/hp09.jpg'
 import hp10 from '../../images/homepage/hp10.jpg'
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
-
+// todo find another component for img slideshow
 const Images = () => {
   return (
     <ImgWrapper className="indexImg">
