@@ -1,10 +1,18 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+# Mire Ecology Group Website
+Website about Mire Ecology Group at Masaryk University.
+Still in progress.
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+## Built With
+[Gatsby](https://www.gatsbyjs.org/)
 
 ## Running in development
 `gatsby develop`
+
+## Running the tests
+Todo
+
+## Temporary preview
+[Netlify page](https://boring-chandrasekhar-1a179c.netlify.com/)
+
+## Authors
+* **Lenka Hubáčková**
