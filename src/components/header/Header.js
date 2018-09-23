@@ -2,7 +2,7 @@ import React, {Fragment} from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 
-import Images from './Images'
+import ImgSlider from './ImgSlider'
 import HeaderTop from './HeaderTop'
 import {withLocalization} from '../localization.context'
 import logo from '../../images/logo2.png'
@@ -28,7 +28,7 @@ import shp06 from '../../images/homepage/small/hp06small.jpg'
 import shp07 from '../../images/homepage/small/hp07small.jpg'
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
-const simgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
+const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
 
 const Header = ({language, isIndex}) => {
   return (
@@ -52,12 +52,12 @@ const Header = ({language, isIndex}) => {
         </LeftSide>
         {isIndex && (
           <RightSide>
-            <Images imgs={imgs}/>
+            <ImgSlider imgs={imgs}/>
           </RightSide>
         )}
         {!isIndex && (
           <RightSide>
-            <Images imgs={simgs}/>
+            <ImgSlider imgs={sImgs}/>
           </RightSide>
         )}
       </SubContainer>
