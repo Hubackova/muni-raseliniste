@@ -172,27 +172,7 @@ a {
     box-sizing: border-box
 }
 
-.images-wrap, .images-wrap img, .images-wrap > div {
-   max-height: 200px;
-   object-fit: cover;
-   @media (max-width: ${props => props.theme.extraLargeDevice}) {
-     object-fit: contain;
-  }
-   @media (max-width: ${props => props.theme.largeDevice}) {
-     max-height: 150px;
-     object-fit: contain;
-  }
-}
-
-.indexImg .images-wrap, .indexImg .images-wrap img, .indexImg .images-wrap > div {
-   max-height: 250px;
-   object-fit: cover;
-   @media (max-width: ${props => props.theme.extraLargeDevice}) {
-     object-fit: contain;
-  }
-   @media (max-width: ${props => props.theme.largeDevice}) {
-     max-height: 150px;
-     object-fit: contain;
-  }
+.carousel .slide {
+  background: linear-gradient(#3E7404, #778F55, #A4AF8D, white) !important;
 }
 `

@@ -32,12 +32,17 @@ const Container = styled.div`
     min-height: 40px;
     padding-bottom: 10px;
   }
+  @media (min-width: ${props => props.theme.mediumDevice}) {
+    transform: skewY(-1deg);
+    transform-origin: top right;
+  }
 `
 
 const Flag = styled.img`
   height: 48px;
   margin: 2px;
   align-self: flex-end;
+  cursor: pointer;
 `
 
 export default HeaderTop
