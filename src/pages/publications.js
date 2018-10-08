@@ -26,8 +26,8 @@ const Publications = ({data}) => {
 
 export default Publications
 
-export const pageQuery = graphql`
-  query IndexQuery {
+export const publicationsQuery = graphql`
+  query publicationsQuery {
     markdownRemark(frontmatter: {title: {eq: "2016"}}) {
       html
       frontmatter {
