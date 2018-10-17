@@ -1,3 +1,7 @@
+---
+title: 'courses'
+---
+
 **Odkazy na předměty:**
 
 Příroda ve čtvrtohorách: [https://is.muni.cz/predmet/sci/jaro2018/Bi8300](https://is.muni.cz/predmet/sci/jaro2018/Bi8300)
