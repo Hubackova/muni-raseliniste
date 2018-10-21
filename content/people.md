@@ -1,0 +1,11 @@
+---
+id: hajek
+groupId: people
+title: Doc. Michal Hájek, Ph.D.
+email: hajek@sci.muni.cz
+phone: 549494010
+positionEng:  Group head 
+positionCz: Vedoucí skupiny
+eng: Michal Hájek is an associated professor in botany at Masaryk University, with a research interest in the diversity of peatland and grassland vegetation and its contemporary and historical determinants. What he especially likes are fascinating universes of sedge-moss calcareous fens and extremely species-rich grasslands in the Carpathians. He studied plant systematics and ecology at Palacký University, Olomouc. His diploma thesis, defended in 1997, concerned wetland vegetation in the White Carpathian Mts, and was published as a monograph in 1998. PhD thesis on spring and spring fen vegetation in relation to environmental factors in the Carpathians flysh range was defended in 2002. Since 2000, appointed as a research scientist (2000-2003) and later as an assistant and associated professor. He is a mascot of the Center for Applied Plant Ecology, a virtual common workplace of Department of Botany and Zoology, Masaryk University, and Department of Vegetation Ecology, Institute of Botany of the Czech Academy of Sciences.
+cz: Michal Hájek je docent v oboru botanika na Masarykově univerzitě v Brně, kde vede Pracovní skupinu pro výzkum rašelinišť. Jeho vědecký výzkum je zaměřen na diverzitu rašeliništní a luční vegetace a současné a historické činitele, které ji předurčují. Co má obzvláště rád, jsou fascinující vesmíry ostřicovomechových vápnitých slatinišť a extrémně druhově bohatých luk v Karpatech. Studoval obor Systematická botanika a ekologie na Universitě Palackého v Olomouci. Diplomovou práci o mokřadní vegetaci Bílých Karpat obhájil v roce 1997. Doktorská práce se zabývala vegetací prameništních slatinišť Západních Karpat ve vztahu k faktorům prostředí a byla obhájena v roce 2002. Od roku 2000 pracoval na Masarykově univerzitě jako odborný pracovník, od roku 2003 jako odborný asistent a později jako docent. Menší úvazek měl i na Botanickém ústavu Akademie věd České republiky. Je maskotem Centra aplikované ekologie rostlin, virtuálního společného pracoviště Ústavu botaniky a zoologie Masarykovy univerzity a Oddělení vegetační ekologie Botanického ústavu Akademie věd ČR.
+---

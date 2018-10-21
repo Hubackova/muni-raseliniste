@@ -39,6 +39,9 @@ const languages = {
       postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
       physicalAddress: `Campus Bohunice, building A31, Kamenice 5, Brno`,
       links: 'Links'
+    },
+    people: {
+      staff: `Personál`
     }
   },
   cz: {
@@ -78,6 +81,9 @@ const languages = {
       postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
       physicalAddress: `Campus Bohunice, budova A31, Kamenice 5, Brno`,
       links: 'Odkazy'
+    },
+    people: {
+      staff: `Staff`
     }
   }
 }

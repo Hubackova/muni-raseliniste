@@ -2,27 +2,28 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 import {Link, Element} from 'react-scroll'
 import PropTypes from 'prop-types';
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 import PersonBox from '../components/people/PersonBox'
 import {H2} from '../components/atoms'
 import {Container as MenuContainer, Li} from '../components/header/Navigation'
-
+import {withLocalization} from '../components/localization.context'
 import hajek from '../images/people/hajek.jpg'
 import horsak from '../images/people/horsak.jpg'
 import horsakova from '../images/people/horsakova.jpg'
 
-export const hajekInfo = {
-  name: 'Doc. Michal Hájek Ph.D.',
-  position: 'vedoucí pracovní skupiny',
-  description:
-    'Michal Hájek je docent v oboru botanika na Masarykově univerzitě v Brně, kde vede Pracovní skupinu pro výzkum rašelinišť. Jeho vědecký výzkum je zaměřen na diverzitu rašeliništní a luční vegetace a současné a historické činitele, které ji předurčují. Co má obzvláště rád, jsou fascinující vesmíry ostřicovomechových vápnitých slatinišť a extrémně druhově bohatých luk v Karpatech. Studoval obor Systematická botanika a ekologie na Universitě Palackého v Olomouci. Diplomovou práci o mokřadní vegetaci Bílých Karpat obhájil v roce 1997. Doktorská práce se zabývala vegetací prameništních slatinišť Západních Karpat ve vztahu k faktorům prostředí a byla obhájena v roce 2002. Od roku 2000 pracoval na Masarykově univerzitě jako odborný pracovník, od roku 2003 jako odborný asistent a později jako docent. Menší úvazek měl i na Botanickém ústavu Akademie věd České republiky. Je maskotem Centra aplikované ekologie rostlin, virtuálního společného pracoviště Ústavu botaniky a zoologie Masarykovy univerzity a Oddělení vegetační ekologie Botanického ústavu Akademie věd ČR.',
-  email: 'hajek@sci.muni.cz',
-  researchgate: 'https://www.researchgate.net/profile/Jan_Helesic2',
-  is: 'https://is.muni.cz/osoba/580',
-  phoneNumber: '+42549494010',
-  img: hajek
-}
+// export const hajekInfo = {
+//   name: 'Doc. Michal Hájek Ph.D.',
+//   position: 'vedoucí pracovní skupiny',
+//   description:
+//     'Michal Hájek je docent v oboru botanika na Masarykově univerzitě v Brně, kde vede Pracovní skupinu pro výzkum rašelinišť. Jeho vědecký výzkum je zaměřen na diverzitu rašeliništní a luční vegetace a současné a historické činitele, které ji předurčují. Co má obzvláště rád, jsou fascinující vesmíry ostřicovomechových vápnitých slatinišť a extrémně druhově bohatých luk v Karpatech. Studoval obor Systematická botanika a ekologie na Universitě Palackého v Olomouci. Diplomovou práci o mokřadní vegetaci Bílých Karpat obhájil v roce 1997. Doktorská práce se zabývala vegetací prameništních slatinišť Západních Karpat ve vztahu k faktorům prostředí a byla obhájena v roce 2002. Od roku 2000 pracoval na Masarykově univerzitě jako odborný pracovník, od roku 2003 jako odborný asistent a později jako docent. Menší úvazek měl i na Botanickém ústavu Akademie věd České republiky. Je maskotem Centra aplikované ekologie rostlin, virtuálního společného pracoviště Ústavu botaniky a zoologie Masarykovy univerzity a Oddělení vegetační ekologie Botanického ústavu Akademie věd ČR.',
+//   email: 'hajek@sci.muni.cz',
+//   researchgate: 'https://www.researchgate.net/',
+//   is: 'https://is.muni.cz/osoba/580',
+//   phoneNumber: '+42549494010',
+//   img: hajek
+// }
 
 const horsakInfo = {
   name: 'Prof. RNDr. Michal Horsák Ph.D.',
@@ -73,13 +74,29 @@ Student.propTypes = {
 
 class Staff extends Component {
   render() {
+    const {data, language} = this.props
+    if (!data && !data.markdownRemark) return <div>...loading</div>
+    // const {
+    //   language: {people}
+    // } = language
+    const {title, email, phone, positionEng, positionCz, eng, cz} = data.markdownRemark.frontmatter
+    const hajekInfo = {
+      name: title,
+      position: positionCz,
+      description: cz,
+      email: email,
+      researchgate: 'https://www.researchgate.net/',
+      is: 'https://is.muni.cz/osoba/580',
+      phoneNumber: phone,
+      img: hajek
+    }
     return (
       <Layout>
         <Container>
           <MenuContainer>
             <Li isVisible={true}>
               <StyledLink activeClass="active" to="staff" spy={true} smooth={true} duration={500}>
-                Staff
+                {/* {people.staff} */}
               </StyledLink>
             </Li>
             <Li isVisible={true}>
@@ -97,7 +114,7 @@ class Staff extends Component {
             <H2>Staff</H2>
           </Element>
           <PersonBox personInfo={hajekInfo} />
-          <PersonBox personInfo={horsakInfo} />
+          <PersonBox personInfo={horsakInfo} />{JSON.stringify(this.props)}
           <Element name="PhD" className="element">
             <H2>PhD Students</H2>
           </Element>
@@ -109,12 +126,28 @@ class Staff extends Component {
           <Student studentInfo={studentInfoA} />
           <Student studentInfo={studentInfoA} />
         </Container>
-      </Layout>
+    </Layout>
     )
   }
 }
 
-export default Staff
+export default withLocalization(Staff)
+
+export const peopleQuery = graphql`
+  query peopleQuery {
+    markdownRemark(frontmatter: {id: {eq: "hajek"}}) {
+      frontmatter {
+        title
+        email
+        phone
+        positionEng
+        positionCz
+        eng
+        cz
+      }
+    }
+  }
+`
 
 const Container = styled.div`
   display: flex;

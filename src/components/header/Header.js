@@ -78,8 +78,6 @@ const SubContainer = styled.div`
   @media (max-width: ${props => props.theme.extraLargeDevice}) {
     flex-direction: column;
   }
-  transform: skewY(-1deg);
-  transform-origin: top right;
   padding-bottom: 2em;
 `
 
