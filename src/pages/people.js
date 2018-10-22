@@ -74,16 +74,14 @@ Student.propTypes = {
 
 class Staff extends Component {
   render() {
-    const {data, language} = this.props
+    const {data} = this.props
     if (!data && !data.markdownRemark) return <div>...loading</div>
-    // const {
-    //   language: {people}
-    // } = language
-    const {title, email, phone, positionEng, positionCz, eng, cz} = data.markdownRemark.frontmatter
+
+    const {title, email, phone, position, description} = data.markdownRemark.frontmatter
     const hajekInfo = {
       name: title,
-      position: positionCz,
-      description: cz,
+      position: position,
+      description: description,
       email: email,
       researchgate: 'https://www.researchgate.net/',
       is: 'https://is.muni.cz/osoba/580',
@@ -114,7 +112,7 @@ class Staff extends Component {
             <H2>Staff</H2>
           </Element>
           <PersonBox personInfo={hajekInfo} />
-          <PersonBox personInfo={horsakInfo} />{JSON.stringify(this.props)}
+          <PersonBox personInfo={horsakInfo} />
           <Element name="PhD" className="element">
             <H2>PhD Students</H2>
           </Element>
@@ -140,10 +138,8 @@ export const peopleQuery = graphql`
         title
         email
         phone
-        positionEng
-        positionCz
-        eng
-        cz
+        position
+        description
       }
     }
   }
