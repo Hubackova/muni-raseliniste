@@ -41,3 +41,7 @@ Terénní cvičení z botaniky: [https://is.muni.cz/predmet/sci/jaro2018/Bi2160]
 Fylogeneze a diverzita vyšších rostlin – cvičení: [https://is.muni.cz/predmet/sci/jaro2018/Bi2030c](https://is.muni.cz/predmet/sci/jaro2018/Bi2030c)
 
 Fylogeneze a diverzita rostlin – cvičení: [https://is.muni.cz/predmet/sci/podzim2018/Bi1010c](https://is.muni.cz/predmet/sci/podzim2018/Bi1010c)
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM0NDcyMTY2OV19
+-->
