@@ -23,7 +23,7 @@ class PersonBox extends Component {
       <Fragment>
         <Box>
           <BoxPart style={{flex: 1, paddingLeft: 0}}>
-            <div>{personInfo.img && <img src={personInfo.img} alt={personInfo.name} height="265px" />}</div>
+            <div>{personInfo.img ? <img src={personInfo.img} alt={personInfo.name} height="265px" /> : <div style={{height: 265, width: 177, border: "1px solid black"}}></div>}</div>
           </BoxPart>
           <BoxPart style={{flex: 6, minWidth: 260}}>
             <Name>
@@ -39,10 +39,10 @@ class PersonBox extends Component {
                   <span>{personInfo.email}</span>
                 </StyledLink>
               </P>
-              <P>
+              {personInfo.phoneNumber && <P>
                 <i className="fa fa-phone fa-lg" style={{marginRight: 15}} />
                 {personInfo.phoneNumber}
-              </P>
+              </P>}
               <P>
                 <a href={personInfo.researchgate || '#'}>
                   <img src={researchgate} alt="researchgate" height="40px" />
