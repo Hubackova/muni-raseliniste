@@ -86,12 +86,9 @@ const LeftSide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(${props => props.theme.green}, #778F55, #A4AF8D,${props => props.theme.white});
+  background-image: linear-gradient(110deg, #578724 33.33%, #51811D 33.33%, #51811D 66.66%, #3E7404 66.66%);
   @media (max-width: 600px) {
     flex-wrap: wrap;
-  }
-  @media (max-width: ${props => props.theme.extraLargeDevice}) {
-    background-image: linear-gradient(${props => props.theme.green}, #A4AF8D);
   }
   `
 
@@ -105,7 +102,7 @@ const RightSide = styled.div`
 `
 
 const LogoText = styled.h1`
-  font-family: "josefin sans";
+  font-family: "Open Sans";
   text-transform: uppercase;
   color: ${props => props.theme.white};
   background-color: inherit;
@@ -117,7 +114,7 @@ const LogoText = styled.h1`
 
 const LogoTextSmall = styled.h2`
   color: ${props => props.theme.white};
-  font-family: "josefin sans";
+  font-family: "Open Sans";
   background-color: inherit;
   margin: 0;
   @media (max-width: 600px) {

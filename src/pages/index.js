@@ -145,6 +145,7 @@ body h1, body h2 {
 
 h1 {
   font-size: calc(22px + 1.6vw);
+  font-family: Open Sans;
 }
 
 h2 {

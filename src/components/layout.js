@@ -11,6 +11,7 @@ const blueTheme = {
   secondary: '#43a2ca',
   terciary: 'green',
   green: '#3E7404',
+  lightGreen: '#578724',
   grey: '#969696',
   white: 'white',
   black: 'black',

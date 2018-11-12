@@ -9,7 +9,7 @@ import {Carousel} from 'react-responsive-carousel'
 const Images = ({imgs}) => {
   const images = imgs.map((i, index) => <img key={index} src={i} />)
   return (
-    <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false}>
+    <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={7000}>
       {images}
     </Carousel>
   )
