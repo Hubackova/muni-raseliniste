@@ -8,7 +8,6 @@ import {withLocalization} from '../localization.context'
 import logo from '../../images/logo2.png'
 import mainLogo from '../../images/mainLogo.png'
 
-
 import hp01 from '../../images/homepage/hp01.jpg'
 import hp02 from '../../images/homepage/hp02.jpg'
 import hp03 from '../../images/homepage/hp03.jpg'
@@ -19,13 +18,13 @@ import hp07 from '../../images/homepage/hp07.jpg'
 import hp08 from '../../images/homepage/hp08.jpg'
 import hp09 from '../../images/homepage/hp09.jpg'
 import hp10 from '../../images/homepage/hp10.jpg'
-import shp01 from '../../images/homepage/small/hp01small.jpg'
-import shp02 from '../../images/homepage/small/hp02small.jpg'
-import shp03 from '../../images/homepage/small/hp03small.jpg'
-import shp04 from '../../images/homepage/small/hp04small.jpg'
-import shp05 from '../../images/homepage/small/hp05small.jpg'
-import shp06 from '../../images/homepage/small/hp06small.jpg'
-import shp07 from '../../images/homepage/small/hp07small.jpg'
+import shp01 from '../../images/smallhomepage/shp01small.jpg'
+import shp02 from '../../images/smallhomepage/shp02small.jpg'
+import shp03 from '../../images/smallhomepage/shp03small.jpg'
+import shp04 from '../../images/smallhomepage/shp04small.jpg'
+import shp05 from '../../images/smallhomepage/shp05small.jpg'
+import shp06 from '../../images/smallhomepage/shp06small.jpg'
+import shp07 from '../../images/smallhomepage/shp07small.jpg'
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
 const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
