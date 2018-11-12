@@ -56,9 +56,6 @@ class Navigation extends Component {
           Projects
         </ListLink>
         <Li isVisible={isVisible}>Theses</Li>
-        <ListLink to="/publications/" isVisible={isVisible}>
-          Publications
-        </ListLink>
         <ListLink to="/courses/" isVisible={isVisible}>
           Courses
         </ListLink>
