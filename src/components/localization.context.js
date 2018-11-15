@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const languages = {
   en: {
     mainPage: {
-      mainHeader: 'Mire ecology group',
+      mainHeader: 'Mire Ecology Group',
       muni: 'Masaryk university',
       introHeader: 'In our group we focus on',
       introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,

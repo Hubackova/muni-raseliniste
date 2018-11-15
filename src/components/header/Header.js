@@ -101,10 +101,10 @@ const RightSide = styled.div`
 `
 
 const LogoText = styled.h1`
-  text-transform: uppercase;
+  font-family: Lucida Sans Unicode;
   color: ${props => props.theme.white};
   background-color: inherit;
-  margin: 30px 0 0 0;
+  margin: 0;
   @media (max-width: 600px) {
     margin: 0;
   }
@@ -112,6 +112,8 @@ const LogoText = styled.h1`
 
 const LogoTextSmall = styled.h2`
   color: ${props => props.theme.white};
+  font-family: Lucida Sans Unicode;
+  font-weight: normal;
   background-color: inherit;
   margin: 0;
   @media (max-width: 600px) {

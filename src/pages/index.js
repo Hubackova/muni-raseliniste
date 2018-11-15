@@ -131,7 +131,7 @@ html, body, #___gatsby, #___gatsby>div {
 }
 
 body {
-    font-family: Elena, sans-serif;
+    font-family: Calibri, sans-serif;
     font-size: calc(17px + .25vw);
     letter-spacing: -.25px;
     line-height: calc(1.5em + .2vw);
