@@ -101,7 +101,6 @@ const RightSide = styled.div`
 `
 
 const LogoText = styled.h1`
-  font-family: "Open Sans";
   text-transform: uppercase;
   color: ${props => props.theme.white};
   background-color: inherit;
@@ -113,7 +112,6 @@ const LogoText = styled.h1`
 
 const LogoTextSmall = styled.h2`
   color: ${props => props.theme.white};
-  font-family: "Open Sans";
   background-color: inherit;
   margin: 0;
   @media (max-width: 600px) {
