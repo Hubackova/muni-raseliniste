@@ -4,21 +4,23 @@ import PropTypes from 'prop-types';
 const IntContext = React.createContext();
 export class IntProvider extends Component {
   state = {
-    int: localStorage.getItem('int') || 'cz',
+    int: typeof window !== 'undefined' && window && window.localStorage.getItem('int') || 'cz',
   }
 
   changeToEn = () => {
+    const windowGlobal = typeof window !== 'undefined' && window
     this.setState({
       int: "en"
     })
-    localStorage.setItem('int', "en")
+    windowGlobal.localStorage.setItem('int', "en")
   }
 
   changeToCz = () => {
+    const windowGlobal = typeof window !== 'undefined' && window
     this.setState({
       int: "cz"
     })
-    localStorage.setItem('int', "cz")
+    windowGlobal.localStorage.setItem('int', "cz")
   }
 
   render() {
