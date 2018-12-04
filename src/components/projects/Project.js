@@ -2,8 +2,6 @@ import React, {Component, Fragment} from 'react'
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
-import {withLocalization} from '../localization.context'
-
 class Project extends Component {
   state = {showDetail: false}
 
@@ -53,7 +51,7 @@ class Project extends Component {
     )
   }
 }
-export default withLocalization(Project)
+export default Project
 
 Project.propTypes = {
   project: PropTypes.object

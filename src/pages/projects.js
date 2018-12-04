@@ -1,6 +1,6 @@
 import React, {Component} from "react";
-
-import Layout from "../components/layout";
+import {Consumer} from "../layouts/Context";
+import Layout from '../layouts'
 import MainContainer from "../components/MainContainer";
 import Project from "../components/projects/Project"
 import {H2} from "../components/atoms";
@@ -30,18 +30,20 @@ const project2 = {
 3) To characterize the species composition and geographic distribution of the alliances.`,
 }
 
+
 class Projects extends Component {
     state = {showAllIndex: 0}
 
     render() {
-        return (<Layout>
+        return (
           <MainContainer>
             <H2> Soušasné projekty </H2>
+            <Consumer>{context => <p>{JSON.stringify(context)}</p>}</Consumer>
               <Project project={project1} />
             <H2> Dokončené projekty </H2>
               <Project project={project2} />
           </MainContainer>
-        </Layout>);
+        );
 }}
 
 export default Projects;

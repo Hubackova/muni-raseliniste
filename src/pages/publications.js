@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
+import Layout from '../layouts'
 import MainContainer from '../components/MainContainer'
 import {H2} from '../components/atoms'
 
@@ -10,7 +10,6 @@ const Publications = ({data}) => {
   if (!data && !data.markdownRemark) return <div>...loading</div>
   const {markdownRemark: publications} = data
   return (
-    <Layout>
       <MainContainer>
         <H2>2018</H2>
         {papers_2018}
@@ -20,7 +19,6 @@ const Publications = ({data}) => {
         <H2>{publications.frontmatter.title}</H2>
         <MarkdownStyles dangerouslySetInnerHTML={{__html: publications.html}} />
       </MainContainer>
-    </Layout>
   )
 }
 

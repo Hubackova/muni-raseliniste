@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import ImgSlider from './ImgSlider'
 import HeaderTop from './HeaderTop'
-import {withLocalization} from '../localization.context'
+
 import logo from '../../images/logo2.png'
 import mainLogo from '../../images/mainLogo.png'
 
@@ -28,8 +28,16 @@ import shp07 from '../../images/smallhomepage/shp07small.jpg'
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
 const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
+const mainPageEng = {
+  mainHeader: 'Mire Ecology Group',
+  muni: 'Masaryk university',
+}
 
-const Header = ({language, isIndex}) => {
+const mainPage = {
+  mainHeader: 'Skupina pro výzkum rašelinišť',
+  muni: 'Masarykova univerzita',
+}
+const Header = ({isIndex}) => {
   return (
     <Fragment>
       <HeaderTop />
@@ -40,10 +48,10 @@ const Header = ({language, isIndex}) => {
           </LeftSideWrapper>
           <LeftSideWrapper>
             <LogoText>
-              {language.language.mainPage.mainHeader}
+              {mainPage.mainHeader}
               <br />
             </LogoText>
-            <LogoTextSmall>{language.language.mainPage.muni}</LogoTextSmall>
+            <LogoTextSmall>{mainPage.muni}</LogoTextSmall>
           </LeftSideWrapper>
           <LeftSideWrapper>
             <Logo src={logo} alt="logo" />
@@ -64,7 +72,7 @@ const Header = ({language, isIndex}) => {
   )
 }
 
-export default withLocalization(Header)
+export default Header
 
 Header.propTypes = {
   language: PropTypes.object,

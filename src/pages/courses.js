@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
-import Layout from '../components/layout'
 import MainContainer from '../components/MainContainer'
 import {H2} from '../components/atoms'
 
@@ -12,12 +11,10 @@ const Courses = ({data}) => {
   const {markdownRemark: courses} = data
 
   return (
-    <Layout>
       <MainContainer>
         <H2>Předměty</H2>
         <MarkdownStyles dangerouslySetInnerHTML={{__html: courses.html}} />
       </MainContainer>
-    </Layout>
   )
 }
 

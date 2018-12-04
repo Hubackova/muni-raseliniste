@@ -5,13 +5,27 @@ module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
     `gatsby-plugin-styled-components`,
-    `gatsby-plugin-react-next`,
-    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-json`,
+    `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content`,
         name: "content",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/projects`,
+        name: "projects",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/people`,
+        name: "people",
       },
     },
     {

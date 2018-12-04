@@ -4,13 +4,13 @@ import styled from 'styled-components'
 import czFlag from '../../images/cz-icon.png'
 import ukFlag from '../../images/uk-icon.png'
 import Navigation from './Navigation'
-import {LocalizationConsumer} from '../localization.context'
+import {Consumer} from '../../layouts/Context'
 
 const FlagCZ = () => (
-  <LocalizationConsumer>{({changeToCz}) => <Flag src={czFlag} onClick={() => changeToCz()} />}</LocalizationConsumer>
+  <Consumer>{({changeToCz}) => <Flag src={czFlag} name="cz" onClick={() => changeToCz()} />}</Consumer>
 )
 const FlagEN = () => (
-  <LocalizationConsumer>{({changeToEn}) => <Flag src={ukFlag} onClick={() => changeToEn()} />}</LocalizationConsumer>
+  <Consumer>{({changeToEn}) => <Flag src={ukFlag} name="en" onClick={() => changeToEn()} />}</Consumer>
 )
 
 const HeaderTop = () => {
@@ -18,6 +18,7 @@ const HeaderTop = () => {
     <Container>
       <FlagEN />
       <FlagCZ />
+      <Consumer>{({int}) => <div>{int}</div>}</Consumer>
       <Navigation />
     </Container>
   )

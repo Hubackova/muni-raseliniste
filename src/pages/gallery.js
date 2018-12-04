@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import {Link} from 'gatsby'
 import PropTypes from 'prop-types';
 
-import Layout from '../components/layout'
 import excursions from '../images/gallery/excursions.jpg'
 import organisms from '../images/gallery/organisms.jpg'
 import fieldwork from '../images/gallery/fieldwork.jpg'
@@ -27,13 +26,11 @@ GalleryType.propTypes = {
 
 const PhotoGallery = () => {
   return (
-    <Layout>
       <Container>
         <GalleryType to="/gallery-excursions/" img={excursions} heading="Exkurze" />
         <GalleryType to="/gallery-organisms/" img={organisms} heading="Rostliny a živočichové" />
         <GalleryType to="/gallery-fieldwork/" img={fieldwork} heading="Terény" />
       </Container>
-    </Layout>
   )
 }
 

@@ -5,12 +5,30 @@ import PropTypes from 'prop-types';
 import facebook from '../../images/facebook.png'
 import youtube from '../../images/youtube.png'
 import twitter from '../../images/twitter.png'
-import {withLocalization} from '../localization.context'
 
-const FooterContent = ({language}) => {
-  const {
-    language: {footer}
-  } = language
+const footer = {
+  botzool: 'Ústav botaniky a zoologie, ',
+  faculty: 'Přírodovědecká fakulta, ',
+  university: ' Masarykova Univerzita',
+  postalAddressHeading: 'Poštovní adresa: ',
+  physicalAddressHeading: `Adresa pracoviště: `,
+  postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
+  physicalAddress: `Campus Bohunice, budova A31, Kamenice 5, Brno`,
+  links: 'Odkazy'
+}
+
+const footerEn = {
+  botzool: 'Department of Botany and Zoology, ',
+  faculty: 'Faculty of Science, ',
+  university: ' Masaryk University',
+  postalAddressHeading: 'Postal Address: ',
+  physicalAddressHeading: `Physical Address: `,
+  postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
+  physicalAddress: `Campus Bohunice, building A31, Kamenice 5, Brno`,
+  links: 'Links'
+}
+
+const FooterContent = () => {
   return (
     <Container>
       <FooterSection background="rgba(150,150,150, 0.9)">
@@ -43,7 +61,7 @@ const FooterContent = ({language}) => {
   )
 }
 
-export default withLocalization(FooterContent)
+export default FooterContent
 
 FooterContent.propTypes = {
   language: PropTypes.object

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Layout from '../components/layout'
+import Layout from '../layouts'
 import MainContainer from '../components/MainContainer'
 import {H2} from '../components/atoms'
 
@@ -32,14 +32,14 @@ const Popularization = () => {
       <A href={i.link}>{i.name}</A>
     </li>);
   });
-  return (<Layout>
+  return (
     <MainContainer>
       <H2> Odkazy </H2>
       {linksList}
       <H2> Popularizační články </H2>
       {popularizationList}
     </MainContainer>
-  </Layout>);
+  );
 }
 
 Popularization.propTypes = {}
