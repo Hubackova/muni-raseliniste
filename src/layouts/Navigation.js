@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 
-import {StyledLink} from '../atoms'
+import {StyledLink} from '../components/atoms'
 
 const ListLink = ({isVisible, to, children}) => (
   <Li isVisible={isVisible}>

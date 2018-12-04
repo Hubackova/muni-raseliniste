@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import czFlag from '../../images/cz-icon.png'
-import ukFlag from '../../images/uk-icon.png'
+import czFlag from '../images/cz-icon.png'
+import ukFlag from '../images/uk-icon.png'
 import Navigation from './Navigation'
-import {Consumer} from '../../layouts/Context'
+import {Consumer} from './Context'
 
 const FlagCZ = () => (
   <Consumer>{({changeToCz}) => <Flag src={czFlag} name="cz" onClick={() => changeToCz()} />}</Consumer>
@@ -18,7 +18,6 @@ const HeaderTop = () => {
     <Container>
       <FlagEN />
       <FlagCZ />
-      <Consumer>{({int}) => <div>{int}</div>}</Consumer>
       <Navigation />
     </Container>
   )

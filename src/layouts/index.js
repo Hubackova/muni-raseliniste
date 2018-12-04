@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import {ThemeProvider} from 'styled-components'
 
-import Header from '../components/header/Header'
-import FooterContent from '../components/footer/Footer'
+import Header from './Header'
+import FooterContent from './Footer'
 import {IntProvider} from './Context'
 
 const blueTheme = {

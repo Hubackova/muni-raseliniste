@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
-import Layout from '../layouts'
 import MainContainer from '../components/MainContainer'
 import {H2} from '../components/atoms'
 

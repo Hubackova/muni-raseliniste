@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import horsak from '../../images/people/horsak.jpg'
 import horsakova from '../../images/people/horsakova.jpg'
 import {Link, Element} from 'react-scroll'
-import {Container as MenuContainer, Li} from '../header/Navigation'
+import {Container as MenuContainer, Li} from '../../layouts/Navigation'
 import hajek from '../../images/people/hajek.jpg'
 import styled from 'styled-components'
 
@@ -143,18 +143,8 @@ Student.propTypes = {
 
 class People extends Component {
   render() {
-    const peopleData = this.props.data.allPeopleJson.edges.find(i => i.node.language === this.props.int)
-    const {title, email, phone, position, description} = peopleData.node.hajek
-    const hajekInfo = {
-      name: title,
-      position: position,
-      description: description,
-      email: email,
-      researchgate: 'https://www.researchgate.net/',
-      is: 'https://is.muni.cz/osoba/580',
-      phoneNumber: phone,
-      img: hajek
-    }
+    const {data} = this.props
+    const people = data.map(i => <PersonBox personInfo={i} key={i.id}/>)
     return (
       <React.Fragment>
         <MenuContainer>
@@ -177,16 +167,7 @@ class People extends Component {
         <Element name="staff" className="element">
           <H2>Staff</H2>
         </Element>
-        <PersonBox personInfo={hajekInfo} />
-        <PersonBox personInfo={horsakInfo} />
-        <PersonBox personInfo={hajkovaInfo} />
-        <PersonBox personInfo={mikulaskovaInfo} />
-        <PersonBox personInfo={smerdovaInfo} />
-        <PersonBox personInfo={jirousekInfo} />
-        <PersonBox personInfo={kosuthovovaInfo} />
-        <PersonBox personInfo={petrInfo} />
-        <PersonBox personInfo={horsakovaInfo} />
-        <PersonBox personInfo={pleskovaInfo} />
+        {people}
         <Element name="PhD" className="element">
           <H2>PhD Students</H2>
         </Element>

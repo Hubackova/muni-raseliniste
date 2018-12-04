@@ -2,9 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 
-import facebook from '../../images/facebook.png'
-import youtube from '../../images/youtube.png'
-import twitter from '../../images/twitter.png'
+import facebook from '../images/facebook.png'
+import youtube from '../images/youtube.png'
+import twitter from '../images/twitter.png'
 
 const footer = {
   botzool: 'Ústav botaniky a zoologie, ',

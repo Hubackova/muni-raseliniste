@@ -38,7 +38,6 @@ class Projects extends Component {
         return (
           <MainContainer>
             <H2> Soušasné projekty </H2>
-            <Consumer>{context => <p>{JSON.stringify(context)}</p>}</Consumer>
               <Project project={project1} />
             <H2> Dokončené projekty </H2>
               <Project project={project2} />
