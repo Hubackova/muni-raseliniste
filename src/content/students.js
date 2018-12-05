@@ -1,4 +1,11 @@
-// import horsak from '../images/people/horsak.jpg'
+import durcanova from '../images/people/durcanova.jpg'
+import frodlova from '../images/people/frodlova.jpg'
+import lizonova from '../images/people/lizonova.jpg'
+import peterka from '../images/people/peterka.jpg'
+import simova from '../images/people/simova.jpg'
+import prochazkova from '../images/people/prochazkova.jpg'
+import lorencova from '../images/people/lorencova.jpg'
+import nemec from '../images/people/nemec.jpg'
 
 export const studentsEn = [
   {
@@ -11,6 +18,7 @@ export const studentsEn = [
     concerns succession of minerotrophic mires and its relationship with availability of nutrients.`,
     researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
     is: `https://is.muni.cz/osoba/447157`,
+    img: durcanova
   },
   {
     id: `frodlova`,
@@ -23,6 +31,7 @@ export const studentsEn = [
     fens, extending the region of interest to the Western Carpathians.`,
     researchgate: `https://www.researchgate.net/profile/Jitka_Frodlova`,
     is: `https://www.muni.cz/lide/356427-jitka-frodlova`,
+    img: frodlova
   },
   {
     id: `lizonova`,
@@ -35,6 +44,7 @@ export const studentsEn = [
     spatial scales.`,
     researchgate: `https://www.researchgate.net/publication/314031327_Contrasting_diversity_of_testate_amoebae_communities_in_Sphagnum_and_brown-moss_dominated_patches_in_relation_to_shell_counts.`,
     is: `https://www.muni.cz/lide/375896-zuzana-lizonova`,
+    img: lizonova
   },
   {
     id: `peterka`,
@@ -49,6 +59,7 @@ export const studentsEn = [
     still paid to the Žďárské vrchy Hills.`,
     researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
     is: `https://is.muni.cz/osoba/268921`,
+    img: peterka
   },
   {
     id: `simova`,
@@ -65,6 +76,7 @@ export const studentsEn = [
     help of testate amoebae.`,
     researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
     is: `https://www.researchgate.net/profile/Anna_Simova`,
+    img: simova
   },
   {
     id: `prochazkova`,
@@ -77,6 +89,7 @@ export const studentsEn = [
     science with maternity currently :-).`,
     researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
     is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+    img: prochazkova
   },
   {
     id: `lorencova`,
@@ -91,6 +104,7 @@ export const studentsEn = [
     of selected species.`,
     researchgate: `https://www.researchgate.net/profile/Erika_Lorencova2`,
     is: `https://www.researchgate.net/profile/Erika_Lorencova2`,
+    img: lorencova
   },
   {
     id: `nemec`,
@@ -104,6 +118,7 @@ export const studentsEn = [
     malacophagous predators, diet of land snails should also be evaluated using a specific approach
     consisting in stable isotope analyses.`,
     is: `https://www.muni.cz/lide/422930`,
+    img: nemec
   }
 ]
 
@@ -119,6 +134,7 @@ export const studentsCz = [
       minerotrofních rašeliništích ve vztahu k přístupnosti živin.`,
       researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
       is: `https://is.muni.cz/osoba/447157`,
+      img: durcanova
     },
     {
       id: `frodlova`,
@@ -131,6 +147,7 @@ export const studentsCz = [
       pěnovcových prameništích napříč Západními Karpaty.`,
       researchgate: `https://www.researchgate.net/profile/Jitka_Frodlova`,
       is: `https://www.muni.cz/lide/356427-jitka-frodlova`,
+      img: frodlova
     },
     {
       id: `lizonova`,
@@ -143,6 +160,7 @@ export const studentsCz = [
       společenstev krytenek na malých prostorových škálách.`,
       researchgate: `https://www.researchgate.net/publication/314031327_Contrasting_diversity_of_testate_amoebae_communities_in_Sphagnum_and_brown-moss_dominated_patches_in_relation_to_shell_counts.`,
       is: `https://www.muni.cz/lide/375896-zuzana-lizonova`,
+      img: lizonova
     },
     {
       id: `peterka`,
@@ -158,6 +176,7 @@ export const studentsCz = [
       věrný.`,
       researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
       is: `https://is.muni.cz/osoba/268921`,
+      img: peterka
     },
     {
       id: `simova`,
@@ -173,6 +192,7 @@ export const studentsCz = [
       vlhkosti na karpatských rašeliništích pomocí krytenek.`,
       researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
       is: `https://www.researchgate.net/profile/Anna_Simova`,
+      img: simova
     },
     {
       id: `prochazkova`,
@@ -185,6 +205,7 @@ export const studentsCz = [
       směrem jejího dizertačního projektu. V současné době se snaží zkombinovat vědu a mateřství :-).`,
       researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
       is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+      img: prochazkova
     },
     {
       id: `lorencova`,
@@ -198,6 +219,7 @@ export const studentsCz = [
       Albánii, a do budoucna pak také genetickou strukturou populací vybraných druhů.`,
       researchgate: `https://www.researchgate.net/profile/Erika_Lorencova2`,
       is: `https://www.researchgate.net/profile/Erika_Lorencova2`,
+      img: lorencova
     },
     {
       id: `nemec`,
@@ -212,5 +234,6 @@ export const studentsCz = [
       hodnotit rovněž potravní nároky suchozemských plžů, a to především pomocí metody
       spočívající v analýze stabilních izotopů.`,
       is: `https://www.muni.cz/lide/422930`,
+      img: nemec
     }
   ]

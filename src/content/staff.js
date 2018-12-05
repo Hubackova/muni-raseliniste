@@ -2,6 +2,13 @@ import horsak from '../images/people/horsak.jpg'
 import horsakova from '../images/people/horsakova.jpg'
 import hajek from '../images/people/hajek.jpg'
 import mikulaskova from '../images/people/mikulaskova.jpg'
+import hajkova from '../images/people/hajkova.jpg'
+import smerdova from '../images/people/smerdova.jpg'
+import jamrichova from '../images/people/jamrichova.jpg'
+import kosuthova from '../images/people/kosuthova.jpg'
+import jirousek from '../images/people/jirousek.jpg'
+import petr from '../images/people/petr.jpg'
+import chattova from '../images/people/chattova.jpg'
 
 export const staffEn = [
   {
@@ -36,7 +43,8 @@ export const staffEn = [
     email: `buriana@sci.muni.cz`,
     phoneNumber: `549494010`,
     researchgate: `https://www.researchgate.net/profile/Petra_Hajkova3`,
-    is: `https://is.muni.cz/osoba/petrahajkova`
+    is: `https://is.muni.cz/osoba/petrahajkova`,
+    img: hajkova
   },
   {
     id: `mikulaskova`,
@@ -59,7 +67,8 @@ export const staffEn = [
     email: `eva.hette@centrum.cz`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
-    is: `https://is.muni.cz/osoba/75764`
+    is: `https://is.muni.cz/osoba/75764`,
+    img: smerdova
   },
   {
     id: `jamrichova`,
@@ -79,7 +88,8 @@ export const staffEn = [
     email: `111594@mail.muni.cz`,
     phoneNumber: `541126217`,
     researchgate: `https://www.researchgate.net/profile/Eva_Jamrichova`,
-    is: `https://is.muni.cz/osoba/machozrut`
+    is: `https://is.muni.cz/osoba/machozrut`,
+    img: jamrichova
   },
   {
     id: `jirousek`,
@@ -90,10 +100,11 @@ export const staffEn = [
     email: `merlin.mann@seznam.cz`,
     phoneNumber: `549498266`,
     researchgate: `https://www.researchgate.net/profile/Martin_Jirousek`,
-    is: `https://is.muni.cz/osoba/machozrut`
+    is: `https://is.muni.cz/osoba/machozrut`,
+    img: jirousek
   },
   {
-    id: `kosuthovova`,
+    id: `kosuthova`,
     name: `Alica Košuthová`,
     position: `Researcher`,
     description:
@@ -101,7 +112,8 @@ export const staffEn = [
     email: `kosuthova.alica@gmail.com`,
     phoneNumber: `549498494`,
     researchgate: `https://www.researchgate.net/profile/Alica_Kosuthova`,
-    is: `https://is.muni.cz/osoba/117046`
+    is: `https://is.muni.cz/osoba/117046`,
+    img: kosuthova
   },
   {
     id: `petr`,
@@ -112,7 +124,8 @@ export const staffEn = [
     email: `115762@mail.muni.cz`,
     phoneNumber: `549498485`,
     researchgate: `https://www.researchgate.net/profile/Libor_Petr`,
-    is: `https://is.muni.cz/osoba/115762`
+    is: `https://is.muni.cz/osoba/115762`,
+    img: petr
   },
   {
     id: `horsakova`,
@@ -152,7 +165,8 @@ export const staffEn = [
     email: `bacha@mail.muni.cz`,
     phoneNumber: `549498575`,
     researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
-    is: `https://is.muni.cz/osoba/bacha`
+    is: `https://is.muni.cz/osoba/bacha`,
+    img: chattova
   }
 ]
 
@@ -188,7 +202,8 @@ export const staffCz = [
     email: `buriana@sci.muni.cz`,
     phoneNumber: `549494010`,
     researchgate: `https://www.researchgate.net/profile/Petra_Hajkova3`,
-    is: `https://is.muni.cz/osoba/petrahajkova`
+    is: `https://is.muni.cz/osoba/petrahajkova`,
+    img: hajkova
   },
   {
     id: `mikulaskova`,
@@ -209,7 +224,8 @@ export const staffCz = [
     email: `eva.hette@centrum.cz`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
-    is: `https://is.muni.cz/osoba/75764`
+    is: `https://is.muni.cz/osoba/75764`,
+    img: smerdova
   },
   {
     id: `jamrichova`,
@@ -219,7 +235,8 @@ export const staffCz = [
     email: `111594@mail.muni.cz`,
     phoneNumber: `541126217`,
     researchgate: `https://www.researchgate.net/profile/Eva_Jamrichova`,
-    is: `https://is.muni.cz/osoba/111594t`
+    is: `https://is.muni.cz/osoba/111594t`,
+    img: jamrichova
   },
   {
     id: `jirousek`,
@@ -229,17 +246,19 @@ export const staffCz = [
     email: `merlin.mann@seznam.cz`,
     phoneNumber: `549498266`,
     researchgate: `https://www.researchgate.net/profile/Martin_Jirousek`,
-    is: `https://is.muni.cz/osoba/machozrut`
+    is: `https://is.muni.cz/osoba/machozrut`,
+    img: jirousek
   },
   {
-    id: `kosuthovova`,
+    id: `kosuthova`,
     name: `Alica Košuthová`,
     position: `Odborná pracovnice`,
     description: `Alica Košuthová pracuje jako externí odborná pracovnice na Katedře botaniky Masarykovy university v Brně. Studovala odbor Environmentalistika na Přírodovědecké fakultě na Univerzitě Komenského v Bratislavě. Diplomovou práci o vlivu úprav sjezdovek na diverzitu lišejníků v NP Nízke Tatry obhájila v roce 2005. Doktorská práce se zabývala změnami v synuziích terestrických lišejníků na kyselých píscích Borské nížiny (Slovensko) ve vztahu k ekologickým a klimatickým faktorům a byla obhájena v roce 2013. Od roku 2013 pracuje na Ústavu botaniky a zoologie Masarykovy university a úvazek má i na Botanickém ústavu Akademie Věd SR. Její vědecký výzkum je zaměřen na: (1) diverzitu lišejníků v celosvětovém měřítku, zejména na terestrické lišejníky rodu Cladonia a saxikolní rod Placynthium, (2) moderní přístupy v oblasti genetiky (DNA-barcoding, NGS) a ekologii (studium mycobionta a fotobionta, co-evoluce), (3) ochranu přírody.`,
     email: `kosuthova.alica@gmail.com`,
     phoneNumber: `549498494`,
     researchgate: `https://www.researchgate.net/profile/Alica_Kosuthova`,
-    is: `https://is.muni.cz/osoba/117046`
+    is: `https://is.muni.cz/osoba/117046`,
+    img: kosuthova
   },
   {
     id: `petr`,
@@ -249,7 +268,8 @@ export const staffCz = [
     email: `115762@mail.muni.cz`,
     phoneNumber: `549498485`,
     researchgate: `https://www.researchgate.net/profile/Libor_Petr`,
-    is: `https://is.muni.cz/osoba/115762`
+    is: `https://is.muni.cz/osoba/115762`,
+    img: petr
   },
   {
     id: `horsakova`,
@@ -287,6 +307,7 @@ export const staffCz = [
     email: `bacha@mail.muni.cz`,
     phoneNumber: `549498575`,
     researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
-    is: `https://is.muni.cz/osoba/bacha`
+    is: `https://is.muni.cz/osoba/bacha`,
+    img: chattova
   }
 ]
