@@ -53,3 +53,17 @@ export const cz = {
     relictEcosystems: 'Reliktní ekosystémy',
     cryptogamology: 'Kryptogamologie'
   }
+
+
+export const peopleCz = {
+    staff: `Zaměstnanci`,
+    phD: `PhD Studenti`,
+    showMore: "Ukázat detail...",
+    showLess: "Skrýt detail...",
+  }
+  export const peopleEn = {
+    staff: `Staff`,
+    phD: `PhD Students`,
+    showMore: "Show more...",
+    showLess: "Show more...",
+  }

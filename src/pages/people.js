@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import People from '../components/people/People'
 import {staffCz,staffEn} from '../content/staff'
 import {studentsCz, studentsEn} from '../content/students'
+import {peopleCz, peopleEn} from '../content/general'
 
 class Staff extends Component {
   render() {
@@ -15,6 +16,7 @@ class Staff extends Component {
               int={context.int}
               staffData={context.int === "en" ? staffEn : staffCz}
               studentsData={context.int === "en" ? studentsEn : studentsCz}
+              data={context.int === "en" ? peopleEn : peopleCz}
             />
           </Container>
         )}

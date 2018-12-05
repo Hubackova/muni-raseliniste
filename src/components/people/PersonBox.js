@@ -6,6 +6,8 @@ import {StyledLink} from '../atoms'
 import researchgate from '../../images/social-researchgate.png'
 import is from '../../images/social-is.png'
 
+
+
 class PersonBox extends Component {
   state = {showDetail: false}
 
@@ -16,7 +18,7 @@ class PersonBox extends Component {
   }
 
   render() {
-    const {personInfo} = this.props
+    const {personInfo, data} = this.props
     const {showDetail} = this.state
     const hasDetail = personInfo.description.length > 0
     return (
@@ -56,7 +58,7 @@ class PersonBox extends Component {
               hasDetail && (
                 <ArrowIcon onClick={() => this.toggleShowDetail()}>
                   <i className="fa fa-arrow-down" />
-                  <ArrowText style={{color: 'red', cursor: 'pointer'}}> Show more...</ArrowText>
+                  <ArrowText style={{color: 'red', cursor: 'pointer'}}> {data.showMore}</ArrowText>
                 </ArrowIcon>
               )}
           </BoxPart>
@@ -67,7 +69,7 @@ class PersonBox extends Component {
               <div>{personInfo.description}</div>
               <ArrowIcon onClick={() => this.toggleShowDetail()}>
                 <i className="fa fa-arrow-up" />
-                <ArrowText style={{color: 'red', cursor: 'pointer'}}> Show less...</ArrowText>
+                <ArrowText style={{color: 'red', cursor: 'pointer'}}> {data.showLess}</ArrowText>
               </ArrowIcon>
             </div>
           )}
