@@ -2,7 +2,8 @@ import React, {Component} from 'react'
 import {Consumer} from '../layouts/Context'
 import styled from 'styled-components'
 import People from '../components/people/People'
-import {cz, en} from '../content/people'
+import {staffCz,staffEn} from '../content/staff'
+import {studentsCz, studentsEn} from '../content/students'
 
 class Staff extends Component {
   render() {
@@ -10,7 +11,11 @@ class Staff extends Component {
       <Consumer>
         {context => (
           <Container>
-            <People int={context.int} data={context.int === "en" ? en : cz} />
+            <People
+              int={context.int}
+              staffData={context.int === "en" ? staffEn : staffCz}
+              studentsData={context.int === "en" ? studentsEn : studentsCz}
+            />
           </Container>
         )}
       </Consumer>
