@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 import snail from '../../images/snail.png'
 import plant from '../../images/plant.png'
 import styled from 'styled-components'
 
 const Databases = () => {
-    return (
-      <Section>
-        <p>
+  return (
+    <Section>
+            <p>
           <strong>Databases</strong>
         </p>
         <p>
@@ -21,11 +21,11 @@ const Databases = () => {
           <img src={plant} alt="plant" height="30em" />
           <StyledLink href="http://is.muni.cz">Vegetation</StyledLink>
         </p>
-      </Section>
-    )
-  }
+    </Section>
+  )
+}
 
-  export default Databases;
+export default Databases
 
   const StyledLink = styled.a`
   color: ${props => props.theme.main};

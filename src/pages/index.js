@@ -5,11 +5,15 @@ import 'font-awesome/css/font-awesome.min.css'
 
 import Homepage from '../components/homepage/Homepage'
 import Databases from '../components/homepage/Databases'
+import Topics from '../components/homepage/Topics'
 import {Consumer} from '../layouts/Context'
-import {cz, en} from '../content/general'
+import {cz, en, results} from '../content/general'
 
 class Index extends Component {
-  state = {showAll: false}
+  state = {
+    showAll: false,
+    selectedTopic: "home"
+  }
 
   toggleShowFulltext = () => {
     this.setState(prevState => ({
@@ -17,16 +21,31 @@ class Index extends Component {
     }))
   }
 
+  selectTopic = e => {
+    this.setState({
+      selectedTopic: e.target.getAttribute('name')
+    })
+  }
+
   render() {
+    const {selectedTopic, showAll} = this.state
     return (
       <Consumer>
         {context => (
         <ContainerWrapper>
-          <Homepage
+          {selectedTopic === "home" ? <Homepage
             data={context.int === "en" ? en : cz}
-            toggleShowFulltext = {this.toggleShowFulltext}
-            showAll={this.state.showAll}
+            toggleShowFulltext={this.toggleShowFulltext}
+            selectTopic={this.selectTopic}
+            showAll={showAll}
+            style={{flex: 1}}
           />
+          : <Topics
+            data={context.int === "en" ? en : cz}
+            selectedTopic={selectedTopic}
+            results={results}
+            selectTopic={this.selectTopic}
+          />}
           <Databases />
         </ContainerWrapper>
         )}
