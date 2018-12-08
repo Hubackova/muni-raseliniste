@@ -46,7 +46,9 @@ class Index extends Component {
             results={results}
             selectTopic={this.selectTopic}
           />}
-          <Databases />
+          <Databases 
+            data={context.int === "en" ? en : cz}
+          />
         </ContainerWrapper>
         )}
         </Consumer>

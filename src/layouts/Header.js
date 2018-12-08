@@ -28,19 +28,11 @@ import shp07 from '../images/smallhomepage/shp07small.jpg'
 
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
 const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
-const mainPageEng = {
-  mainHeader: 'Mire Ecology Group',
-  muni: 'Masaryk university',
-}
 
-const mainPage = {
-  mainHeader: 'Skupina pro výzkum rašelinišť',
-  muni: 'Masarykova univerzita',
-}
-const Header = ({isIndex}) => {
+const Header = ({isIndex, data}) => {
   return (
     <Fragment>
-      <HeaderTop />
+      <HeaderTop data={data}/>
       <SubContainer>
         <LeftSide>
           <LeftSideWrapper>
@@ -48,10 +40,10 @@ const Header = ({isIndex}) => {
           </LeftSideWrapper>
           <LeftSideWrapper>
             <LogoText>
-              {mainPage.mainHeader}
+              {data.mainHeader}
               <br />
             </LogoText>
-            <LogoTextSmall>{mainPage.muni}</LogoTextSmall>
+            <LogoTextSmall>{data.muni}</LogoTextSmall>
           </LeftSideWrapper>
           <LeftSideWrapper>
             <Logo src={logo} alt="logo" />

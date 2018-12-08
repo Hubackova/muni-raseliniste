@@ -1,51 +1,58 @@
-import React from 'react'
-import styled from 'styled-components'
-import {ThemeProvider} from 'styled-components'
+import React from "react";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
 
-import Header from './Header'
-import FooterContent from './Footer'
-import {IntProvider} from './Context'
+import Header from "./Header";
+import FooterContent from "./Footer";
+import { IntProvider, Consumer } from "./Context";
+import { cz, en } from "../content/general";
 
 const blueTheme = {
-  main: '#0868ac',
-  secondary: '#43a2ca',
-  terciary: 'green',
-  green: '#3E7404',
-  lightGreen: '#578724',
-  grey: '#969696',
-  white: 'white',
-  black: 'black',
-  mediumDevice: '768px',
-  largeDevice: '1024px',
-  extraLargeDevice: '1600px'
-}
+  main: "#0868ac",
+  secondary: "#43a2ca",
+  terciary: "green",
+  green: "#3E7404",
+  lightGreen: "#578724",
+  grey: "#969696",
+  white: "white",
+  black: "black",
+  mediumDevice: "768px",
+  largeDevice: "1024px",
+  extraLargeDevice: "1600px"
+};
 
 const Layout = props => {
-  const {location: {pathname}} = props
-  const isIndex = pathname === "/"
+  const {
+    location: { pathname }
+  } = props;
+  const isIndex = pathname === "/";
   return (
     <IntProvider>
       <ThemeProvider theme={blueTheme}>
-        <Container>
-          <Header isIndex={isIndex} />
-          <Main>{props.children}</Main>
-          <footer>
-            <FooterContent />
-          </footer>
-        </Container>
+        <Consumer>
+          {context => (
+            <Container>
+              <Header isIndex={isIndex} data={context.int === "en" ? en : cz} />
+              <Main>{props.children}</Main>
+              <footer>
+                <FooterContent footer={context.int === "en" ? en.footer : cz.footer}/>
+              </footer>
+            </Container>
+          )}
+        </Consumer>
       </ThemeProvider>
     </IntProvider>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-`
+`;
 
 const Main = styled.main`
   flex: 1;
-`
+`;

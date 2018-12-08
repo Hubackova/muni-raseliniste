@@ -292,7 +292,8 @@ export const staffCz = [
     email: `pleskovicova@gmail.com`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/profile/Zuzana_Pleskova`,
-    is: `https://is.muni.cz/osoba/pleskovicova`
+    is: `https://is.muni.cz/osoba/pleskovicova`,
+    img: pleskova
   },
   {
     id: `chattova`,

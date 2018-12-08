@@ -10,10 +10,11 @@ const footer = {
   botzool: 'Ústav botaniky a zoologie, ',
   faculty: 'Přírodovědecká fakulta, ',
   university: ' Masarykova Univerzita',
-  postalAddressHeading: 'Poštovní adresa: ',
+  postalAddressHeading: 'Korespondenční adresa: ',
   physicalAddressHeading: `Adresa pracoviště: `,
   postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-  physicalAddress: `Campus Bohunice, budova A31, Kamenice 5, Brno`,
+  physicalAddress: `Univerzitní
+  kampus Bohunice, budova A32, Kamenice 753/5, 625 00, Brno, Česká republika`,
   links: 'Odkazy'
 }
 
@@ -24,11 +25,11 @@ const footerEn = {
   postalAddressHeading: 'Postal Address: ',
   physicalAddressHeading: `Physical Address: `,
   postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-  physicalAddress: `Campus Bohunice, building A31, Kamenice 5, Brno`,
+  physicalAddress: `Campus Bohunice, building A32, Kamenice 753/5, 625 00, Brno, Czech Republic`,
   links: 'Links'
 }
 
-const FooterContent = () => {
+const FooterContent = ({footer}) => {
   return (
     <Container>
       <FooterSection background="rgba(150,150,150, 0.9)">

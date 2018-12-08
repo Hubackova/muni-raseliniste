@@ -3,7 +3,7 @@ import snail from '../../images/snail.png'
 import plant from '../../images/plant.png'
 import styled from 'styled-components'
 
-const Databases = () => {
+const Databases = ({data}) => {
   return (
     <Section>
             <p>
@@ -11,15 +11,15 @@ const Databases = () => {
         </p>
         <p>
           <img src={plant} alt="plant" height="30em" />
-          <StyledLink href="http://is.muni.cz">Macrofossils</StyledLink>
+          <StyledLink href="http://www.sci.muni.cz/botany/mirecol/paleo/en/">{data.plantDatabase}</StyledLink>
         </p>
         <p>
           <img src={snail} alt="snail" height="30em" />
-          <StyledLink href="http://is.muni.cz">Palaeo-profiles</StyledLink>
+          <StyledLink href="http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&amp;proj=7">{data.paleoDatabase}</StyledLink>
         </p>
         <p>
           <img src={plant} alt="plant" height="30em" />
-          <StyledLink href="http://is.muni.cz">Vegetation</StyledLink>
+          <StyledLink href="http://www.givd.info/ID/EU-00-022">{data.vegetationDatabase}</StyledLink>
         </p>
     </Section>
   )
