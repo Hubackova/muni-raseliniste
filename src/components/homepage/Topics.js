@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import Backlink from "../atoms/Backlink"
 import MainContainer from '../MainContainer'
 
 const Topics = ({selectedTopic, selectTopic, data, results}) => {
@@ -8,7 +8,7 @@ const Topics = ({selectedTopic, selectTopic, data, results}) => {
     }
   return (
     <MainContainer>
-      <div name="home" onClick={(e) => selectTopic(e)}>Back</div>
+      <Backlink name="home" handleOnclick={selectTopic}><span>←</span>Back</Backlink>
       {selectedTopic === 'mire' && (
         <React.Fragment>
           <h2>{data.mireEcology}</h2>
@@ -46,5 +46,6 @@ const Topics = ({selectedTopic, selectTopic, data, results}) => {
 }
 
 export default Topics
+
 
 

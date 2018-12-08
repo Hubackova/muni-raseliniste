@@ -1,27 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import Layout from '../layouts'
-import MainContainer from '../components/MainContainer'
-import {H2, StyledLink} from '../components/atoms'
+import Layout from "../layouts";
+import MainContainer from "../components/MainContainer";
+import { H2, StyledLink } from "../components/atoms";
+import Backarrow from "../components/atoms/Backarrow";
 
-const GalleryContainer = ({children, heading}) => {
+const GalleryContainer = ({ children, heading }) => {
   return (
-      <MainContainer>
-        <H2>
-          <StyledLink to="/gallery/">
-            <i className="fa fa-arrow-left" />
-          </StyledLink>
-          {heading}
-        </H2>
-        {children}
-      </MainContainer>
-  )
-}
+    <MainContainer>
+      <Backarrow to="/gallery/" />
+      <H2>{heading} </H2>
+      {children}
+    </MainContainer>
+  );
+};
 
-export default GalleryContainer
+export default GalleryContainer;
 
 GalleryContainer.propTypes = {
-    children: PropTypes.node,
-    heading: PropTypes.string
-  }
+  children: PropTypes.node,
+  heading: PropTypes.string
+};

@@ -25,6 +25,14 @@ export const en = {
     palaeoEcology: 'Palaeoecology',
     relictEcosystems: 'Relict ecosystems',
     cryptogamology: 'Cryptogamology',
+    staff: `Staff`,
+    phD: `PhD Students`,
+    showMore: "Show more...",
+    showLess: "Show more...",
+    publications: "Publications",
+    databases: "Databases",
+    media: "Media",
+    popularization: "popularization Papers",
     mireEcologyText: `In our research we try to disentangle the causes of the diversity and vulnerability of various mire types.
     Mires are wetland ecosystems with permanently high water levels and limited nutrient availability. A
     great variety of rare and endangered species is associated with these ecosystems, which are, however,
@@ -147,6 +155,14 @@ export const cz = {
     palaeoEcology: 'Paleoekologie',
     relictEcosystems: 'Reliktní ekosystémy',
     cryptogamology: 'Kryptogamologie',
+    staff: `Zaměstnanci`,
+    phD: `PhD Studenti`,
+    showMore: "Ukázat detail...",
+    showLess: "Skrýt detail...",
+    publications: "Publikace",
+    databases: "Databáze",
+    media: "Média",
+    popularization: "Popularizační články",
     mireEcologyText: `Hlavním tématem našeho výzkumu je snaha o pochopení příčin pestrosti a zranitelnosti různých typů
     rašelinišť. Rašeliniště jsou ekosystémy s trvale vysokou hladinou vody a nedostatkem přístupných živin.
     Vyskytuje se na nich celá řada vzácných a ohrožených organismů. Ve střední Evropě však rašeliniště velmi
@@ -239,21 +255,6 @@ export const cz = {
     odhalení vnitrodruhové struktury populací, odrazem prostředí v genetické struktuře druhů a na řešení
     nejasných taxonomických otázek.`
   }
-
-
-export const peopleCz = {
-    staff: `Zaměstnanci`,
-    phD: `PhD Studenti`,
-    showMore: "Ukázat detail...",
-    showLess: "Skrýt detail...",
-}
-
-export const peopleEn = {
-    staff: `Staff`,
-    phD: `PhD Students`,
-    showMore: "Show more...",
-    showLess: "Show more...",
-}
 
 export const results = {
     mireEcologyResults: [

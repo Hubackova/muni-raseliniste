@@ -9,6 +9,7 @@ import kosuthova from '../images/people/kosuthova.jpg'
 import jirousek from '../images/people/jirousek.jpg'
 import petr from '../images/people/petr.jpg'
 import chattova from '../images/people/chattova.jpg'
+import pleskova from '../images/people/pleskova.jpg'
 
 export const staffEn = [
   {
@@ -148,7 +149,8 @@ export const staffEn = [
     email: `pleskovicova@gmail.com`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/profile/Zuzana_Pleskova`,
-    is: `https://is.muni.cz/osoba/pleskovicova`
+    is: `https://is.muni.cz/osoba/pleskovicova`,
+    img: pleskova
   },
   {
     id: `chattova`,
