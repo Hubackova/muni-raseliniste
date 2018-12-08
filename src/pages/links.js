@@ -4,7 +4,7 @@ import Links from '../components/links/Links'
 import {publications, databasesEn, databasesCz, media, popularization} from '../content/links'
 import {cz, en} from '../content/general'
 
-const Popularization = () => (
+const LinksPage = () => (
       <Consumer>
         {context => (
             <Links
@@ -18,6 +18,6 @@ const Popularization = () => (
       </Consumer>
 )
 
-Popularization.propTypes = {}
+Links.propTypes = {}
 
-export default Popularization
+export default LinksPage
