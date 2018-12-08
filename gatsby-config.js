@@ -8,13 +8,6 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-layout`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content`,
-        name: "content",
-      },
-    },
-    {
     resolve: `gatsby-source-filesystem`,
     options: {
         path: `${__dirname}/src/images/`,
