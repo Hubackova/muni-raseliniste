@@ -13,37 +13,42 @@ class Project extends Component {
 
   render() {
     const {
-      project
+      project, projectsData
     } = this.props
     const {showDetail} = this.state
-    const shortDescription = project.description.substring(0, 300)
+    const shortDescription = project.abstract.substring(0, 300)
     return (
       <Fragment>
-        <Name>{project.name}</Name>
+        <Name>{project.title}</Name>
         <Box>
-          <Img src={project.img} alt={project.name} />
+          <Img src={project.img} alt={project.title} />
           <RightWrapper>
-            <div style={{color: '#778899'}}>{project.contributors}</div>
+            <div style={{color: '#778899'}}>{project.applicant || project.coapplicant}</div>
+    
             <div>
-              <u>Funding</u>: {project.grant}
+              <u>{projectsData.identification}</u>: {project.identification}
             </div>
             <div>
-              <u>Duration</u>: {project.duration}
+              <u>{projectsData.duration}</u>: {project.duration}
+            </div>
+            <div>
+              <u>{projectsData.investor}</u>: {project.investor}
             </div>
             <div style={{whiteSpace: 'pre-wrap', textAlign: 'justify'}}>
-              <u>Project aims</u>:{showDetail ? project.description : shortDescription}
+              <u>{projectsData.abstract}</u>: {showDetail ? project.abstract : shortDescription}
               {!showDetail && (
                 <span style={{color: 'red', cursor: 'pointer'}} onClick={() => this.toggleShowDetail()}>
-                  {' '}
-                  Show more...
+                  {projectsData.showMore}
                 </span>
               )}
               {showDetail && (
                 <div style={{color: 'red', cursor: 'pointer'}} onClick={() => this.toggleShowDetail()}>
-                  {' '}
-                  Show less...
+                  {projectsData.showLess}
                 </div>
               )}
+            </div>
+            <div>
+              <u>{projectsData.link}</u>: <a href={project.link}>{project.link}</a>
             </div>
           </RightWrapper>
         </Box>
