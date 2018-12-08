@@ -18,10 +18,10 @@ const Theses = ({thesesData}) => {
   return (
     <MainContainer>
         <div>{thesesData.mainText}</div>
-        <li><A href={thesesData.bachelorBotanyLink}>{thesesData.bachelorBotany}</A></li>
-        <li><A href={thesesData.bachelorZoologyLink}>{thesesData.bachelorZoology}</A></li>
-        <li><A href={thesesData.masterBotanyLink}>{thesesData.masterBotany}</A></li>
-        <li><A href={thesesData.masterZoologyLink}>{thesesData.masterZoology}</A></li>
+        <div><A href={thesesData.bachelorBotanyLink}>→ {thesesData.bachelorBotany}</A></div>
+        <div><A href={thesesData.bachelorZoologyLink}>→ {thesesData.bachelorZoology}</A></div>
+        <div><A href={thesesData.masterBotanyLink}>→ {thesesData.masterBotany}</A></div>
+        <div><A href={thesesData.masterZoologyLink}>→ {thesesData.masterZoology}</A></div>
       <H2> {thesesData.thesesExample} </H2>
       <b>{thesesData.bachelorTheses}</b>
      {bachelorThesesList}
