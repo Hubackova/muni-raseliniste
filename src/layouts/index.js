@@ -32,7 +32,7 @@ const Layout = props => {
         <Consumer>
           {context => (
             <Container>
-              <Header isIndex={isIndex} data={context.int === "en" ? en : cz} />
+              <Header isIndex={isIndex} general={context.int === "en" ? en : cz} />
               <Main>{props.children}</Main>
               <footer>
                 <FooterContent footer={context.int === "en" ? en.footer : cz.footer}/>

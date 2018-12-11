@@ -39,7 +39,7 @@ class Navigation extends Component {
   }
 
   render() {
-    const {data} = this.props
+    const {general} = this.props
     const isMobile = this.state.width <= 768
     const isVisible = this.state.isVisible || !isMobile
     return (
@@ -51,22 +51,22 @@ class Navigation extends Component {
           HomePage
         </ListLink>
         <ListLink to="/people/" isVisible={isVisible}>
-          {data.menuPeople}
+          {general.menuPeople}
         </ListLink>
         <ListLink to="/projects/" isVisible={isVisible}>
-        {data.menuProjects}
+        {general.menuProjects}
         </ListLink>
         <ListLink to="/theses/" isVisible={isVisible}>
-          {data.menuTheses}
+          {general.menuTheses}
         </ListLink>
         <ListLink to="/courses/" isVisible={isVisible}>
-          {data.menuCourses}
+          {general.menuCourses}
         </ListLink>
         <ListLink to="/gallery/" isVisible={isVisible}>
-          {data.menuGallery}
+          {general.menuGallery}
         </ListLink>
         <ListLink to="/links/" isVisible={isVisible}>
-          {data.menuLinks}
+          {general.menuLinks}
         </ListLink>
       </Container>
     )

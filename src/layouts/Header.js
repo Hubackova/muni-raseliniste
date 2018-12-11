@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
-
 import ImgSlider from './ImgSlider'
 import HeaderTop from './HeaderTop'
 
@@ -29,10 +28,10 @@ import shp07 from '../images/smallhomepage/shp07small.jpg'
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
 const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
 
-const Header = ({isIndex, data}) => {
+const Header = ({isIndex, general}) => {
   return (
     <Fragment>
-      <HeaderTop data={data}/>
+      <HeaderTop general={general}/>
       <SubContainer>
         <LeftSide>
           <LeftSideWrapper>
@@ -40,10 +39,10 @@ const Header = ({isIndex, data}) => {
           </LeftSideWrapper>
           <LeftSideWrapper>
             <LogoText>
-              {data.mainHeader}
+              {general.mainHeader}
               <br />
             </LogoText>
-            <LogoTextSmall>{data.muni}</LogoTextSmall>
+            <LogoTextSmall>{general.muni}</LogoTextSmall>
           </LeftSideWrapper>
           <LeftSideWrapper>
             <Logo src={logo} alt="logo" />
@@ -70,6 +69,7 @@ Header.propTypes = {
   language: PropTypes.object,
   isIndex: PropTypes.bool
 }
+
 
 const SubContainer = styled.div`
   display: flex;
