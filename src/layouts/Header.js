@@ -28,10 +28,10 @@ import shp07 from '../images/smallhomepage/shp07small.jpg'
 const imgs = [hp01, hp02, hp03, hp04, hp05, hp06, hp07, hp08, hp09, hp10] //do props
 const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
 
-const Header = ({isIndex, general}) => {
+const Header = ({isIndex, generalData}) => {
   return (
     <Fragment>
-      <HeaderTop general={general}/>
+      <HeaderTop generalData={generalData}/>
       <SubContainer>
         <LeftSide>
           <LeftSideWrapper>
@@ -39,10 +39,10 @@ const Header = ({isIndex, general}) => {
           </LeftSideWrapper>
           <LeftSideWrapper>
             <LogoText>
-              {general.mainHeader}
+              {generalData.mainHeader}
               <br />
             </LogoText>
-            <LogoTextSmall>{general.muni}</LogoTextSmall>
+            <LogoTextSmall>{generalData.muni}</LogoTextSmall>
           </LeftSideWrapper>
           <LeftSideWrapper>
             <Logo src={logo} alt="logo" />
@@ -67,7 +67,8 @@ export default Header
 
 Header.propTypes = {
   language: PropTypes.object,
-  isIndex: PropTypes.bool
+  isIndex: PropTypes.bool,
+  generalData: PropTypes.object,
 }
 
 

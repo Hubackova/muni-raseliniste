@@ -41,6 +41,12 @@ class People extends Component {
 
 export default People
 
+People.propTypes = {
+  data: PropTypes.object,
+  studentsData: PropTypes.object,
+  staffData: PropTypes.object,
+}
+
 const StyledLink = styled(Link)`
   color: ${props => props.theme.grey};
   text-decoration: none;

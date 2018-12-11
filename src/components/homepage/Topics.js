@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import Backlink from "../atoms/Backlink"
 import MainContainer from '../MainContainer'
 
@@ -47,5 +48,10 @@ const Topics = ({selectedTopic, selectTopic, data, results}) => {
 
 export default Topics
 
-
+Topics.propTypes = {
+  data: PropTypes.object,
+  selectTopic: PropTypes.func,
+  selectedTopic: PropTypes.string,
+  results: PropTypes.array
+}
 

@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Layout from "../layouts";
 import MainContainer from "../components/MainContainer";
-import { H2, StyledLink } from "../components/atoms";
+import { H2 } from "../components/atoms";
 import Backarrow from "../components/atoms/Backarrow";
 
 const GalleryContainer = ({ children, heading }) => {

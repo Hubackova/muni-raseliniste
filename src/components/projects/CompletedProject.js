@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 const CompletedProject = ({projectsData, project}) => {
   return (
@@ -19,10 +20,15 @@ const CompletedProject = ({projectsData, project}) => {
         <u>{projectsData.duration}</u>: {project.duration}
       </div>
       <div>
-        <a href={project.link}>{project.link}</a>: 
+        <a  target="_blank" rel="noopener noreferrer" href={project.link}>{project.link}</a>: 
       </div>
     </div>
   );
 };
+
+CompletedProject.propTypes = {
+  projectsData: PropTypes.object,
+  project: PropTypes.object,
+}
 
 export default CompletedProject;

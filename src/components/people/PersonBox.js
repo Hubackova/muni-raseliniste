@@ -46,10 +46,10 @@ class PersonBox extends Component {
                 {personInfo.phoneNumber}
               </P>}
               <P>
-                <a href={personInfo.researchgate || '#'}>
+                <a  target="_blank" rel="noopener noreferrer" href={personInfo.researchgate || '#'}>
                   <img src={researchgate} alt="researchgate" height="40px" />
                 </a>
-                <a href={personInfo.is || '#'}>
+                <a  target="_blank" rel="noopener noreferrer" href={personInfo.is || '#'}>
                   <img src={is} alt="is" height="40px" />
                 </a>
               </P>
@@ -80,7 +80,8 @@ class PersonBox extends Component {
 export default PersonBox
 
 PersonBox.propTypes = {
-  personInfo: PropTypes.object
+  personInfo: PropTypes.object,
+  data: PropTypes.object,
 }
 
 const Box = styled.div`

@@ -48,7 +48,7 @@ class Project extends Component {
               )}
             </div>
             <div>
-              <u>{projectsData.link}</u>: <a href={project.link}>{project.link}</a>
+              <u>{projectsData.link}</u>: <a  target="_blank" rel="noopener noreferrer" href={project.link}>{project.link}</a>
             </div>
           </RightWrapper>
         </Box>
@@ -59,7 +59,8 @@ class Project extends Component {
 export default Project
 
 Project.propTypes = {
-  project: PropTypes.object
+  project: PropTypes.object,
+  projectsData: PropTypes.object,
 }
 
 const Box = styled.div`

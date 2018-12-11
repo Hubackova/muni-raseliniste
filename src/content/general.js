@@ -21,7 +21,7 @@ export const en = {
     introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
-      general ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
+      generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
       and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae. In these groups of organisms, we are mainly interested in the relationships
       between the species richness and composition and the environmental conditions. Based on these data we also reconstruct the development of mires from the Late Glacial
       up to the present (using multi-proxy biotic and abiotic analyses of organic sediments) in relation to distribution and ecology of selected relict taxa. Except for
@@ -32,7 +32,7 @@ export const en = {
     introTextShort: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
-      general ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
+      generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
       and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae.`,
     fullText: ' Show full text...',
     mainTopics: 'Main research topics:',
@@ -68,7 +68,7 @@ export const en = {
     current climate changes, making mire ecosystems so easily vulnerable. Using the methods of
     palaeoecology (link) we also include historical factors to our analyses, which often appear as key (link)
     for the species diversity of mires. Comparing multiple taxonomic groups we are able to reach more
-    general conclusions and higher resolution in our understanding of relationships between biotic and
+    generalData conclusions and higher resolution in our understanding of relationships between biotic and
     abiotic factors. We also deal with the functional links between the individual groups of organisms, such
     as bryophytes (link) and vascular plants. To obtain a broader picture of the vulnerability of mires, we
     explore these ecosystems across the whole of Europe. We synthesize literature data, but we also collect

@@ -1,6 +1,7 @@
 import React from 'react';
 import MainContainer from '../MainContainer'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const Homepage = ({data, toggleShowFulltext, selectTopic, showAll}) => {
     return (
@@ -31,6 +32,13 @@ const Homepage = ({data, toggleShowFulltext, selectTopic, showAll}) => {
 };
 
 export default Homepage;
+
+Homepage.propTypes = {
+  selectTopic: PropTypes.string,
+  showAll: PropTypes.bool,
+  toggleShowFulltext: PropTypes.func,
+  data: PropTypes.object,
+}
 
 const Li = styled.li`
   cursor: pointer

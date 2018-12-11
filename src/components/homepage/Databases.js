@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import snail from '../../images/snail.png'
 import plant from '../../images/plant.png'
 import styled from 'styled-components'
@@ -26,6 +27,10 @@ const Databases = ({data}) => {
 }
 
 export default Databases
+
+Databases.propTypes = {
+  data: PropTypes.object,
+}
 
   const StyledLink = styled.a`
   color: ${props => props.theme.main};

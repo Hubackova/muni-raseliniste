@@ -26,117 +26,78 @@ export const thesesEn = {
   masterTheses: "Master Theses",
   bachelorThesesList: [
     {
-      name: `Rešerše datovaných fosilních nálezů druhů specializovaných na rašeliniště na Českomoravské vrchovině
-    bakalářská práce, Mgr. Žaneta Blahová, 20. 6. 2013
-    Review of dated fosil records of mire plant specialists in the Bohemian-Moravian Highlands`,
+      name: `Review of dated fosil records of mire plant specialists in the Bohemian-Moravian Highlands,
+    bachelor's thesis, Mgr. Žaneta Blahová, 20. 6. 2013`,
       link: `https://is.muni.cz/th/av2jf/`
     },
     {
-      name: `Vztah druhového složení krytenek k faktorům prostředí na rašeliništích v západních Karpatech
-    bakalářská práce, Mgr. Anna Šímová, 12. 6. 2013
-    Relationships between testate amoebae species composition and environmental factors in mires of the
-    West Carpathians`,
+      name: `Relationships between testate amoebae species composition and environmental factors in mires of the
+      West Carpathians,
+    bachelor's thesis, Mgr. Anna Šímová, 12. 6. 2013`,
       link: `https://is.muni.cz/th/lbbyg/`
     },
     {
-      name: `Krytenky rašelinišť a slatinišť: druhová skladba, ekologie a jejich využití
-    bakalářská práce, Mgr. Zuzana Lizoňová, 11. 6. 2013
-    Testacean assemblages of bog and fen habitats: species composition, ecology and their applications`,
+      name: `Testacean assemblages of bog and fen habitats: species composition, ecology and their applications, bachelor's thesis, Mgr. Zuzana Lizoňová, 11. 6. 2013`,
       link: `https://is.muni.cz/th/tf0bl/`
     },
     {
-      name: `Holocenní sukcese měkkýšů na bělokarpatských slatiništích
-    Holocene mollusc succession of the White Carpathian fens
-    bakalářská práce, Mgr. Jitka Frodlová, 13. 6. 2012`,
+      name: `Holocene mollusc succession of the White Carpathian fens, bachelor's thesis, Mgr. Jitka Frodlová, 13. 6. 2012`,
       link: `https://is.muni.cz/th/zyjgd/`
     },
     {
-      name: `Rostlinná společenstva mokřadů na Poličsku
-    bakalářská práce, Mgr. Tomáš Peterka, 22. 6. 2010
-    Wetland plant communities in the surrounding of the town of Polička`,
+      name: `Wetland plant communities in the surrounding of the town of Polička, bachelor's thesis, Mgr. Tomáš Peterka, 22. 6. 2010`,
       link: `https://is.muni.cz/th/yf8vu/`
     },
     {
-      name: `Společenstva měkkýšů na slatiništích jižní Skandinávie: změny podél gradientu minerální bohatosti
-    bakalářská práce, Mgr. Veronika Horsáková, Ph.D., 18. 6. 2010`,
+      name: `Společenstva měkkýšů na slatiništích jižní Skandinávie: změny podél gradientu minerální bohatosti, bachelor's thesis, Mgr. Veronika Horsáková, Ph.D., 18. 6. 2010`,
       link: `https://is.muni.cz/th/mq9vj/`
     },
     {
-      name: `Diverzita a variabilita taxocenóz jepic, pošvatek a chrostíků v pramenných stružkách vápnitých slatinišť
-    bakalářská práce, Mgr. Vanda Šorfová, Ph.D., 11. 6. 2009
-    Mollusc assemblages in fens of southern Scandinavia: changes along the gradient of mineral richness`,
+      name: `Mollusc assemblages in fens of southern Scandinavia: changes along the gradient of mineral richness, bachelor's thesis, Mgr. Vanda Šorfová, Ph.D., 11. 6. 2009`,
       link: `https://is.muni.cz/th/a5bi2/`
     },
-
     {
-      name: `Distribuce makrozoobenthosu a stanovištní preference na pěnovcových prameništích
-    Distribution of benthic macroinvertebrates and their habitat preferences in petrifying springs with tufa
-    formation
-    bakalářská práce, Mgr. Vendula Polášková, Ph.D., 13. 6. 2006`,
+      name: `Distribution of benthic macroinvertebrates and their habitat preferences in petrifying springs with tufa formation, bachelor's thesis, Mgr. Vendula Polášková, Ph.D., 13. 6. 2006`,
       link: `https://is.muni.cz/th/x4vpa/`
     }
   ],
   masterThesesList: [
     {
-      name: `Specifická poškození ulit plžů jako doklad predace
-    diplomová práce, Mgr. Tomáš Němec, 11. 6. 2018
-    Specific damages of snail shells as the evidence of predation`,
+      name: `Specific damages of snail shells as the evidence of predation, master's thesis, Mgr. Tomáš Němec, 11. 6. 2018`,
       link: `https://is.muni.cz/th/q3hjm/`
     },
     {
-      name: `Vegetace mokřadních a rašelinných luk Rožnovské Bečvy a její změny vlivem různého managementu
-    diplomová práce, Mgr. Monika Dršková, 12. 6. 2017
-    Wet and fen meadows vegetation of the Rožnovská Bečva valley and its changes under different
-    management practices`,
+      name: `Wet and fen meadows vegetation of the Rožnovská Bečva valley and its changes under different management practices ,master's thesis, Mgr. Monika Dršková, 12. 6. 2017`,
       link: `https://is.muni.cz/th/q5j3l/`
     },
     {
-      name: `Vliv disperze na strukturu společenstev vodních brouků (Coleoptera) izolovaných slatinišť
-    diplomová práce, Mgr. Bc. Tomáš Havlík, 9. 6. 2017
-    Effect of dispersal on structuring aquatic beetle (Coleoptera) assemblages in isolated spring fens`,
+      name: `Effect of dispersal on structuring aquatic beetle (Coleoptera) assemblages in isolated spring fens, master's thesis, Mgr. Bc. Tomáš Havlík, 9. 6. 2017`,
       link: `https://is.muni.cz/th/sd049/`
     },
     {
-      name: `Holocenní vývoj rašeliniště Kotelnice ve Slezských Beskydech
-    diplomová práce, Mgr. Anna Šímová, 23. 6. 2016
-    Holocenne development of the Kotelnice mire in the Slezské Beskydy Mts`,
+      name: `Holocenne development of the Kotelnice mire in the Slezské Beskydy Mts, master's thesis, Mgr. Anna Šímová, 23. 6. 2016`,
       link: `https://is.muni.cz/th/du7m1/`
     },
     {
-      name: `Maloškálová distribuce krytenek na minerotrofních rašeliništích: vliv heterogenity prostředí a velikosti
-    vzorku
-    diplomová práce, Mgr. Zuzana Lizoňová, 18. 2. 2016
-    Small-scale distribution of testate amoebae at minerotrophic mires: the effect of habitat heterogeneity and
-    sample size`,
+      name: `Small-scale distribution of testate amoebae at minerotrophic mires: the effect of habitat heterogeneity and sample size, master's thesis, Mgr. Zuzana Lizoňová, 18. 2. 2016
+    `,
       link: `https://is.muni.cz/th/awgtm/`
     },
     {
-      name: `Holocenní vývoj kyselého rašeliniště ve vnitřních Západních Karpatech rekonstruovaný za pomoci
-    analýzy fosilních krytenek
-    diplomová práce, Mgr. Zuzana Jermanová, 15. 6. 2015
-    Holocene development of acidic mire in the Inner Western Carpathians reconstructed with the help of
-    testate amoebae analysis`,
+      name: `Holocene development of acidic mire in the Inner Western Carpathians reconstructed with the help of testate amoebae analysis, master's thesis, Mgr. Zuzana Jermanová, 15. 6. 2015`,
       link: `https://is.muni.cz/th/csg60/`
     },
     {
-      name: `Paleomalakologická analýza sedimentů pěnovcového slatiniště holocenního stáří: vliv velikosti vzorků,
-    členění vrstev a prostorové variability
-    diplomová práce, Mgr. Jitka Frodlová, 11. 2. 2015
-    Palaeomalacological analysis of calcareous fen sediments of the Holocene age: the effect of volume size,
-    resolution and spatial variability`,
+      name: `Palaeomalacological analysis of calcareous fen sediments of the Holocene age: the effect of volume size, resolution and spatial variability, master's thesis, Mgr. Jitka Frodlová, 11. 2. 2015`,
       link: `https://is.muni.cz/th/slrdy/`
     },
 
     {
-      name: `Variabilita společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie
-    diplomová práce, Mgr. Veronika Horsáková, Ph.D., 11. 6. 2012
-    Variation in mollusc assemblages of alkaline fens in Poland and southern Scandinavia`,
+      name: `Variation in mollusc assemblages of alkaline fens in Poland and southern Scandinavia, master's thesis, Mgr. Veronika Horsáková, Ph.D., 11. 6. 2012`,
       link: `https://is.muni.cz/th/pktq5/`
     },
     {
-      name: `Paleoekologická studie okolí Malého mechového jezírka na Rejvízu
-    diplomová práce, Mgr. Lydie Dudová, Ph.D., 4. 6. 2007
-    The paleoecological study of the Rejviz bog`,
+      name: `The paleoecological study of the Rejviz bog, master's thesis, Mgr. Lydie Dudová, Ph.D., 4. 6. 2007`,
       link: `https://is.muni.cz/th/fnenp/`
     }
   ]
@@ -171,116 +132,77 @@ export const thesesCz = {
   masterTheses: "Magisterské práce",
   bachelorThesesList: [
     {
-      name: `Rešerše datovaných fosilních nálezů druhů specializovaných na rašeliniště na Českomoravské vrchovině
-    bakalářská práce, Mgr. Žaneta Blahová, 20. 6. 2013
-    Review of dated fosil records of mire plant specialists in the Bohemian-Moravian Highlands`,
+      name: `Rešerše datovaných fosilních nálezů druhů specializovaných na rašeliniště na Českomoravské vrchovině, bakalářská práce, Mgr. Žaneta Blahová, 20. 6. 2013`,
       link: `https://is.muni.cz/th/av2jf/`
     },
     {
-      name: `Vztah druhového složení krytenek k faktorům prostředí na rašeliništích v západních Karpatech
-    bakalářská práce, Mgr. Anna Šímová, 12. 6. 2013
-    Relationships between testate amoebae species composition and environmental factors in mires of the
-    West Carpathians`,
+      name: `Vztah druhového složení krytenek k faktorům prostředí na rašeliništích v západních Karpatech, bakalářská práce, Mgr. Anna Šímová, 12. 6. 2013`,
       link: `https://is.muni.cz/th/lbbyg/`
     },
     {
-      name: `Krytenky rašelinišť a slatinišť: druhová skladba, ekologie a jejich využití
-    bakalářská práce, Mgr. Zuzana Lizoňová, 11. 6. 2013
-    Testacean assemblages of bog and fen habitats: species composition, ecology and their applications`,
+      name: `Krytenky rašelinišť a slatinišť: druhová skladba, ekologie a jejich využití, bakalářská práce, Mgr. Zuzana Lizoňová, 11. 6. 2013`,
       link: `https://is.muni.cz/th/tf0bl/`
     },
     {
-      name: `Holocenní sukcese měkkýšů na bělokarpatských slatiništích
-    Holocene mollusc succession of the White Carpathian fens
-    bakalářská práce, Mgr. Jitka Frodlová, 13. 6. 2012`,
+      name: `Holocenní sukcese měkkýšů na bělokarpatských slatiništích, bakalářská práce, Mgr. Jitka Frodlová, 13. 6. 2012`,
       link: `https://is.muni.cz/th/zyjgd/`
     },
     {
-      name: `Rostlinná společenstva mokřadů na Poličsku
-    bakalářská práce, Mgr. Tomáš Peterka, 22. 6. 2010
-    Wetland plant communities in the surrounding of the town of Polička`,
+      name: `Rostlinná společenstva mokřadů na Poličsku, bakalářská práce, Mgr. Tomáš Peterka, 22. 6. 2010`,
       link: `https://is.muni.cz/th/yf8vu/`
     },
     {
-      name: `Společenstva měkkýšů na slatiništích jižní Skandinávie: změny podél gradientu minerální bohatosti
-    bakalářská práce, Mgr. Veronika Horsáková, Ph.D., 18. 6. 2010`,
+      name: `Společenstva měkkýšů na slatiništích jižní Skandinávie: změny podél gradientu minerální bohatosti, bakalářská práce, Mgr. Veronika Horsáková, Ph.D., 18. 6. 2010`,
       link: `https://is.muni.cz/th/mq9vj/`
     },
     {
-      name: `Diverzita a variabilita taxocenóz jepic, pošvatek a chrostíků v pramenných stružkách vápnitých slatinišť
-    bakalářská práce, Mgr. Vanda Šorfová, Ph.D., 11. 6. 2009
-    Mollusc assemblages in fens of southern Scandinavia: changes along the gradient of mineral richness`,
+      name: `Diverzita a variabilita taxocenóz jepic, pošvatek a chrostíků v pramenných stružkách vápnitých slatinišť, bakalářská práce, Mgr. Vanda Šorfová, Ph.D., 11. 6. 2009`,
       link: `https://is.muni.cz/th/a5bi2/`
     },
     {
-      name: `Distribuce makrozoobenthosu a stanovištní preference na pěnovcových prameništích
-    Distribution of benthic macroinvertebrates and their habitat preferences in petrifying springs with tufa
-    formation
-    bakalářská práce, Mgr. Vendula Polášková, Ph.D., 13. 6. 2006`,
+      name: `Distribuce makrozoobenthosu a stanovištní preference na pěnovcových prameništích, bakalářská práce, Mgr. Vendula Polášková, Ph.D., 13. 6. 2006`,
       link: `https://is.muni.cz/th/x4vpa/`
     }
   ],
   masterThesesList: [
     {
-      name: `Specifická poškození ulit plžů jako doklad predace
-    diplomová práce, Mgr. Tomáš Němec, 11. 6. 2018
-    Specific damages of snail shells as the evidence of predation`,
+      name: `Specifická poškození ulit plžů jako doklad predace, diplomová práce, Mgr. Tomáš Němec, 11. 6. 2018`,
       link: `https://is.muni.cz/th/q3hjm/`
     },
     {
-      name: `Vegetace mokřadních a rašelinných luk Rožnovské Bečvy a její změny vlivem různého managementu
-    diplomová práce, Mgr. Monika Dršková, 12. 6. 2017
-    Wet and fen meadows vegetation of the Rožnovská Bečva valley and its changes under different
-    management practices`,
+      name: `Vegetace mokřadních a rašelinných luk Rožnovské Bečvy a její změny vlivem různého managementu, diplomová práce, Mgr. Monika Dršková, 12. 6. 2017`,
       link: `https://is.muni.cz/th/q5j3l/`
     },
     {
-      name: `Vliv disperze na strukturu společenstev vodních brouků (Coleoptera) izolovaných slatinišť
-    diplomová práce, Mgr. Bc. Tomáš Havlík, 9. 6. 2017
-    Effect of dispersal on structuring aquatic beetle (Coleoptera) assemblages in isolated spring fens`,
+      name: `Vliv disperze na strukturu společenstev vodních brouků (Coleoptera) izolovaných slatinišť, diplomová práce, Mgr. Bc. Tomáš Havlík, 9. 6. 2017`,
       link: `https://is.muni.cz/th/sd049/`
     },
     {
-      name: `Holocenní vývoj rašeliniště Kotelnice ve Slezských Beskydech
-    diplomová práce, Mgr. Anna Šímová, 23. 6. 2016
-    Holocenne development of the Kotelnice mire in the Slezské Beskydy Mts`,
+      name: `Holocenní vývoj rašeliniště Kotelnice ve Slezských Beskydech, diplomová práce, Mgr. Anna Šímová, 23. 6. 2016`,
       link: `https://is.muni.cz/th/du7m1/`
     },
     {
       name: `Maloškálová distribuce krytenek na minerotrofních rašeliništích: vliv heterogenity prostředí a velikosti
-    vzorku
-    diplomová práce, Mgr. Zuzana Lizoňová, 18. 2. 2016
-    Small-scale distribution of testate amoebae at minerotrophic mires: the effect of habitat heterogeneity and
-    sample size`,
+    vzorku, diplomová práce, Mgr. Zuzana Lizoňová, 18. 2. 2016`,
       link: `https://is.muni.cz/th/awgtm/`
     },
     {
       name: `Holocenní vývoj kyselého rašeliniště ve vnitřních Západních Karpatech rekonstruovaný za pomoci
-    analýzy fosilních krytenek
-    diplomová práce, Mgr. Zuzana Jermanová, 15. 6. 2015
-    Holocene development of acidic mire in the Inner Western Carpathians reconstructed with the help of
-    testate amoebae analysis`,
+    analýzy fosilních krytenek, diplomová práce, Mgr. Zuzana Jermanová, 15. 6. 2015`,
       link: `https://is.muni.cz/th/csg60/`
     },
     {
       name: `Paleomalakologická analýza sedimentů pěnovcového slatiniště holocenního stáří: vliv velikosti vzorků,
-    členění vrstev a prostorové variability
-    diplomová práce, Mgr. Jitka Frodlová, 11. 2. 2015
-    Palaeomalacological analysis of calcareous fen sediments of the Holocene age: the effect of volume size,
-    resolution and spatial variability`,
+    členění vrstev a prostorové variability, diplomová práce, Mgr. Jitka Frodlová, 11. 2. 2015`,
       link: `https://is.muni.cz/th/slrdy/`
     },
 
     {
-      name: `Variabilita společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie
-    diplomová práce, Mgr. Veronika Horsáková, Ph.D., 11. 6. 2012
-    Variation in mollusc assemblages of alkaline fens in Poland and southern Scandinavia`,
+      name: `Variabilita společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie, diplomová práce, Mgr. Veronika Horsáková, Ph.D., 11. 6. 2012`,
       link: `https://is.muni.cz/th/pktq5/`
     },
     {
-      name: `Paleoekologická studie okolí Malého mechového jezírka na Rejvízu
-    diplomová práce, Mgr. Lydie Dudová, Ph.D., 4. 6. 2007
-    The paleoecological study of the Rejviz bog`,
+      name: `Paleoekologická studie okolí Malého mechového jezírka na Rejvízu, diplomová práce, Mgr. Lydie Dudová, Ph.D., 4. 6. 2007`,
       link: `https://is.muni.cz/th/fnenp/`
     }
   ]

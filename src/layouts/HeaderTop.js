@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import PropTypes from 'prop-types';
 import czFlag from '../images/cz-icon.png'
 import ukFlag from '../images/uk-icon.png'
 import Navigation from './Navigation'
@@ -13,12 +13,12 @@ const FlagEN = () => (
   <Consumer>{({changeToEn}) => <Flag src={ukFlag} name="en" onClick={() => changeToEn()} />}</Consumer>
 )
 
-const HeaderTop = ({general}) => {
+const HeaderTop = ({generalData}) => {
   return (
     <Container>
       <FlagEN />
       <FlagCZ />
-      <Navigation general={general}/>
+      <Navigation generalData={generalData}/>
     </Container>
   )
 }
@@ -42,3 +42,7 @@ const Flag = styled.img`
 `
 
 export default HeaderTop
+
+HeaderTop.propTypes = {
+  generalData: PropTypes.object,
+}

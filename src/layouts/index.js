@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types'; 
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 
@@ -32,7 +33,7 @@ const Layout = props => {
         <Consumer>
           {context => (
             <Container>
-              <Header isIndex={isIndex} general={context.int === "en" ? en : cz} />
+              <Header isIndex={isIndex} generalData={context.int === "en" ? en : cz} />
               <Main>{props.children}</Main>
               <footer>
                 <FooterContent footer={context.int === "en" ? en.footer : cz.footer}/>
@@ -46,6 +47,11 @@ const Layout = props => {
 };
 
 export default Layout;
+
+Layout.propTypes = {
+  children: PropTypes.node,
+  location: PropTypes.object
+}
 
 const Container = styled.div`
   display: flex;

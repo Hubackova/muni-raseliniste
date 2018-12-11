@@ -39,7 +39,7 @@ class Navigation extends Component {
   }
 
   render() {
-    const {general} = this.props
+    const {generalData} = this.props
     const isMobile = this.state.width <= 768
     const isVisible = this.state.isVisible || !isMobile
     return (
@@ -51,22 +51,22 @@ class Navigation extends Component {
           HomePage
         </ListLink>
         <ListLink to="/people/" isVisible={isVisible}>
-          {general.menuPeople}
+          {generalData.menuPeople}
         </ListLink>
         <ListLink to="/projects/" isVisible={isVisible}>
-        {general.menuProjects}
+        {generalData.menuProjects}
         </ListLink>
         <ListLink to="/theses/" isVisible={isVisible}>
-          {general.menuTheses}
+          {generalData.menuTheses}
         </ListLink>
         <ListLink to="/courses/" isVisible={isVisible}>
-          {general.menuCourses}
+          {generalData.menuCourses}
         </ListLink>
         <ListLink to="/gallery/" isVisible={isVisible}>
-          {general.menuGallery}
+          {generalData.menuGallery}
         </ListLink>
         <ListLink to="/links/" isVisible={isVisible}>
-          {general.menuLinks}
+          {generalData.menuLinks}
         </ListLink>
       </Container>
     )
@@ -77,7 +77,8 @@ export default Navigation
 
 Navigation.propTypes = {
   language: PropTypes.string,
-  isIndex: PropTypes.bool
+  isIndex: PropTypes.bool,
+  generalData: PropTypes.object,
 }
 
 export const Container = styled.ul`

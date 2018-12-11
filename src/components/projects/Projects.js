@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'; 
 import Project from "./Project";
 import CompletedProject from "./CompletedProject"
 import { H2 } from "../atoms";
@@ -22,3 +23,7 @@ const Projects = ({projectsData}) => {
 };
 
 export default Projects;
+
+Projects.propTypes = {
+    projectsData: PropTypes.object
+  }

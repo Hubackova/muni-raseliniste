@@ -6,37 +6,14 @@ import facebook from '../images/facebook.png'
 import youtube from '../images/youtube.png'
 import twitter from '../images/twitter.png'
 
-const footer = {
-  botzool: 'Ústav botaniky a zoologie, ',
-  faculty: 'Přírodovědecká fakulta, ',
-  university: ' Masarykova Univerzita',
-  postalAddressHeading: 'Korespondenční adresa: ',
-  physicalAddressHeading: `Adresa pracoviště: `,
-  postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-  physicalAddress: `Univerzitní
-  kampus Bohunice, budova A32, Kamenice 753/5, 625 00, Brno, Česká republika`,
-  links: 'Odkazy'
-}
-
-const footerEn = {
-  botzool: 'Department of Botany and Zoology, ',
-  faculty: 'Faculty of Science, ',
-  university: ' Masaryk University',
-  postalAddressHeading: 'Postal Address: ',
-  physicalAddressHeading: `Physical Address: `,
-  postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-  physicalAddress: `Campus Bohunice, building A32, Kamenice 753/5, 625 00, Brno, Czech Republic`,
-  links: 'Links'
-}
-
 const FooterContent = ({footer}) => {
   return (
     <Container>
       <FooterSection background="rgba(150,150,150, 0.9)">
         <FooterHeader>MUNI</FooterHeader>
-        <A href="http://botzool.sci.muni.cz">{footer.botzool}</A>
-        <A href="http://www.sci.muni.cz/">{footer.faculty}</A>
-        <A href="https://www.muni.cz/">{footer.university}</A>
+        <A  target="_blank" rel="noopener noreferrer" href="http://botzool.sci.muni.cz">{footer.botzool}</A>
+        <A  target="_blank" rel="noopener noreferrer" href="http://www.sci.muni.cz/">{footer.faculty}</A>
+        <A  target="_blank" rel="noopener noreferrer" href="https://www.muni.cz/">{footer.university}</A>
       </FooterSection>
       <FooterSection background="rgba(150,150,150, 0.8)">
         <FooterHeader>{footer.postalAddressHeading}</FooterHeader>
@@ -48,13 +25,13 @@ const FooterContent = ({footer}) => {
       </FooterSection>
       <FooterSection background="rgba(150,150,150, 0.6)">
         <FooterHeader>{footer.links}</FooterHeader>
-        <a href="https://www.facebook.com/botzool">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/botzool">
           <Img src={facebook} />
         </a>
-        <a href="https://www.youtube.com/channel/UCpUU624DlUwOewM_KfG1rpA/videos">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCpUU624DlUwOewM_KfG1rpA/videos">
           <Img src={youtube} />
         </a>
-        <a href="https://twitter.com/BotZool_MUNI">
+        <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/BotZool_MUNI">
           <Img src={twitter} />
         </a>
       </FooterSection>
@@ -65,7 +42,8 @@ const FooterContent = ({footer}) => {
 export default FooterContent
 
 FooterContent.propTypes = {
-  language: PropTypes.object
+  language: PropTypes.object,
+  footer: PropTypes.object
 }
 
 const Container = styled.div`

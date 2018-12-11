@@ -1,15 +1,14 @@
-import React, {Component} from 'react'
-import {Consumer} from '../layouts/Context'
-import styled from 'styled-components'
-import People from '../components/people/People'
-import {staffCz,staffEn} from '../content/staff'
-import {studentsCz, studentsEn} from '../content/students'
-import {cz, en} from '../content/general'
-import { graphql } from 'gatsby'
+import React, { Component } from "react";
+import { Consumer } from "../layouts/Context";
+import styled from "styled-components";
+import People from "../components/people/People";
+import { staffCz, staffEn } from "../content/staff";
+import { studentsCz, studentsEn } from "../content/students";
+import { cz, en } from "../content/general";
+import { graphql } from "gatsby";
 
 class Staff extends Component {
   render() {
-    debugger
     return (
       <Consumer>
         {context => (
@@ -23,27 +22,27 @@ class Staff extends Component {
           </Container>
         )}
       </Consumer>
-    )
+    );
   }
 }
 
-export default Staff
+export default Staff;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 80%;
-`
+`;
 
 export const fluidImage = graphql`
-fragment fluidImage on File {
-  childImageSharp {
-    sizes {
-      src
-            }
+  fragment fluidImage on File {
+    childImageSharp {
+      sizes {
+        src
+      }
+    }
   }
-}
 `;
 
 export const query = graphql`
@@ -88,4 +87,4 @@ export const query = graphql`
       ...fluidImage
     }
   }
-`
+`;
