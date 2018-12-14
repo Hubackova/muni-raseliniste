@@ -8,8 +8,8 @@ import ContainerWrapper from "../components/atoms/ContainerWrapper";
 import { Consumer } from "../layouts/Context";
 import { cz, en } from "../content/general";
 import {
-    cryptogamologyTextEn,
-    cryptogamologyTextCz,
+  cryptogamologyTextEn,
+  cryptogamologyTextCz,
   results
 } from "../content/topics";
 
@@ -20,14 +20,20 @@ const Relicts = () => {
   return (
     <Consumer>
       {context => (
-        <ContainerWrapper><div><Backarrow to="" />
-        <h2>{context.int === "en" ? en.cryptogamology : cz.cryptogamology}</h2>
-        <div>
-          {context.int === "en" ? cryptogamologyTextEn : cryptogamologyTextCz}
-        </div>
-        <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
-        <div>{getResults(results.cryptogamologyResults)}</div></div>
-          
+        <ContainerWrapper>
+          <div>
+            <Backarrow to="" />
+            <h2>
+              {context.int === "en" ? en.cryptogamology : cz.cryptogamology}
+            </h2>
+            <div>
+              {context.int === "en"
+                ? cryptogamologyTextEn
+                : cryptogamologyTextCz}
+            </div>
+            <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
+            <div>{getResults(results.cryptogamologyResults)}</div>
+          </div>
           <Databases data={context.int === "en" ? en : cz} />
         </ContainerWrapper>
       )}

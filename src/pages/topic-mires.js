@@ -21,14 +21,15 @@ const Relicts = () => {
     <Consumer>
       {context => (
         <ContainerWrapper>
-          <div><Backarrow to="" />
-          <h2>{context.int === "en" ? en.mireEcology : cz.mireEcology}</h2>
           <div>
-            {context.int === "en" ? mireEcologyTextEn : mireEcologyTextCz}
+            <Backarrow to="" />
+            <h2>{context.int === "en" ? en.mireEcology : cz.mireEcology}</h2>
+            <div>
+              {context.int === "en" ? mireEcologyTextEn : mireEcologyTextCz}
+            </div>
+            <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
+            <div>{getResults(results.mireEcologyResults)}</div>
           </div>
-          <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
-          <div>{getResults(results.mireEcologyResults)}</div></div>
-          
           <Databases data={context.int === "en" ? en : cz} />
         </ContainerWrapper>
       )}
