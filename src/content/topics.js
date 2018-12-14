@@ -1,6 +1,6 @@
 import React from "react";
 
-export const cryptogamologyTextCz = () =>
+export const cryptogamologyTextCz = (
   <span>
     Zabýváme se detailním výzkumem řas, mechorostů a lišejníků. Tyto skupiny se
     dříve řadily do skupiny tajnosnubných (výtrusných) rostlin, tak zvaných
@@ -30,9 +30,9 @@ export const cryptogamologyTextCz = () =>
     prostředí v genetické struktuře druhů a na řešení nejasných taxonomických
     otázek.
   </span>
+);
 
-
-export const cryptogamologyTextEn = () => 
+export const cryptogamologyTextEn = (
   <span>
     We focus in detail on the research of algae, bryophytes and lichens. These
     groups were all formerly classified as “cryptogams” (spore plants). Our
@@ -60,9 +60,10 @@ export const cryptogamologyTextEn = () =>
     up-to-date molecular methods (e.g. next-generation sequencing), to reveal
     intra-specific population structure, impact of environment on the genetic
     structure of species, and resolving unclear taxonomic issues.
-  </span>;
+  </span>
+);
 
-export const mireEcologyTextEn = () => 
+export const mireEcologyTextEn = (
   <span>
     In our research we try to disentangle the causes of the diversity and
     vulnerability of various mire types. Mires are wetland ecosystems with
@@ -97,9 +98,10 @@ export const mireEcologyTextEn = () =>
     relation to ongoing changes of mire ecosystems. Ultimately, we seek for the
     type of management or other direct activities that might help saving the
     diversity of fen ecosystems in our landscape.
-  </span>;
+  </span>
+);
 
-export const mireEcologyTextCz = () => 
+export const mireEcologyTextCz = (
   <span>
     Hlavním tématem našeho výzkumu je snaha o pochopení příčin pestrosti a
     zranitelnosti různých typů rašelinišť. Rašeliniště jsou ekosystémy s trvale
@@ -132,9 +134,10 @@ export const mireEcologyTextCz = () =>
     rašeliništních ekosystémů. Zjišťujeme, jaký typ obhospodařování nebo jiných
     aktivních zásahů do ekosystému může pomoci zachránit pestrost slatiništních
     ekosystémů v naší krajině.
-  </span>;
+  </span>
+);
 
-export const palaeoEcologyTextEn = () => 
+export const palaeoEcologyTextEn = (
   <span>
     In our research we also try to learn about historical changes of our
     landscape, such as openness, forest cover and species composition of various
@@ -166,9 +169,10 @@ export const palaeoEcologyTextEn = () =>
     study the influence of past landscape development on the contemporary
     variation of flora and fauna and distribution of species, including
     threatened <a href="topic-relict">relicts</a>.
-  </span>;
+  </span>
+);
 
-export const palaeoEcologyTextCz = () => 
+export const palaeoEcologyTextCz = (
   <span>
     V našem výzkumu se také snažíme zjistit, jak se v minulosti měnila krajina,
     její lesnatost a druhové složení jednotlivých biotopů v závislosti na
@@ -197,9 +201,10 @@ export const palaeoEcologyTextCz = () =>
     současnou ekologií – ověřujeme vliv dávné historie naší krajiny na současnou
     pestrost flóry a fauny a současné rozšíření jednotlivých druhů, včetně
     ohrožených <a href="topic-relict">reliktů</a>.
-  </span>;
+  </span>
+);
 
-export const relictEcosystemsTextEn = () => 
+export const relictEcosystemsTextEn = (
   <span>
     One of the most fascinating and unique characters of <a href="topic-mires">mires 
     and fens</a> is their ability to act as refugia for relict populations of species which
@@ -237,9 +242,10 @@ export const relictEcosystemsTextEn = () =>
     and evolution using molecular techniques. For this purpose we will also use
     our recent data from Alaska, which also represents a relict landscape, as
     the majority of its extent has never been glaciated during the Quaternary.
-  </span>;
+  </span>
+);
 
-export const relictEcosystemsTextCz = () => 
+export const relictEcosystemsTextCz = (
   <span>
     Jednou z pozoruhodných a unikátních vlastností <a href="topic-mires">vrchovišť a slatinišť</a> je jejich schopnost
     poskytnout útočiště mnoha reliktním populacím řady druhů z konce poslední
@@ -274,7 +280,8 @@ export const relictEcosystemsTextCz = () =>
     molekulárních metod. K tomu nám poslouží i naše aktuální data z Aljašky,
     která rovněž představuje reliktní krajinu, jelikož většina její rozlohy
     nebyla nikdy během čtvrtohor zaledněna.
-  </span>;
+  </span>
+);
 
 export const results = {
   mireEcologyResults: [
