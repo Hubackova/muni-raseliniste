@@ -18,14 +18,38 @@ const StyledLink = ({to, navigation, children}) => {
     }
   
   const LinkStyled = styled(Link)`
-    color: ${props => props.theme.grey};
-    text-decoration: none;
-    &:hover {
-      text-decoration: ${props => (props.navigation ? 'underline' : 'none')};
-      color: ${props => (props.navigation ? props.theme.grey : props.theme.secondary)};
+  color: ${props => props.theme.grey};
+  padding: 10px;
+  cursor: pointer;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    top: 0;
+    height: 4px;
+    background-color: ${props => props.theme.green};
+    transition-property: right;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    @media (max-width: ${props => props.theme.mediumDevice}) {
+      height: 0px
     }
-    &:focus {
-      color: ${props => (props.navigation ? props.theme.secondary : props.theme.grey)};
-    }
+  }
+  &:hover:before {
+    right: 0;
+  }
+  &:hover, &:focus {
+    color: black;
+  }
+  &:active { 
+    background-color: yellow;
+  }
   `
   export default StyledLink

@@ -20,7 +20,7 @@ const Homepage = ({data, toggleShowFulltext, showAll}) => {
                       )}
                     </p>
 
-                    <span style={{color: 'green'}}>{data.mainTopics}</span>
+                    <span><u>{data.mainTopics}</u></span>
                     <ul style={{fontWeight: 'bold'}}>
                       <li><TopicLink to="topic-mires">{data.mireEcology}</TopicLink></li>
                       <li><TopicLink to="topic-paleo">{data.palaeoEcology}</TopicLink></li>

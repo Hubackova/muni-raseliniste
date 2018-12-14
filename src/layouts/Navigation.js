@@ -103,8 +103,7 @@ export const Li = styled.li`
   align-items: center;
   justify-content: center;
   color: ${props => props.theme.grey};
-  padding: 0px 10px;
-  border-right: 1px solid ${props => props.theme.grey};
+  margin: 10px 10px;
   &:last-child {
     border-right: 0px;
   }
