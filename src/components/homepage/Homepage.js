@@ -2,8 +2,9 @@ import React from 'react';
 import MainContainer from '../MainContainer'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
+import {Link} from 'gatsby'
 
-const Homepage = ({data, toggleShowFulltext, selectTopic, showAll}) => {
+const Homepage = ({data, toggleShowFulltext, showAll}) => {
     return (
         <MainContainer isText>
                   <h2>{data.introHeader}</h2>
@@ -21,10 +22,10 @@ const Homepage = ({data, toggleShowFulltext, selectTopic, showAll}) => {
 
                     <span style={{color: 'green'}}>{data.mainTopics}</span>
                     <ul style={{fontWeight: 'bold'}}>
-                      <Li name="mire" onClick={(e) => selectTopic(e)}>{data.mireEcology}</Li>
-                      <Li name="palaeo" onClick={(e) => selectTopic(e)}>{data.palaeoEcology}</Li>
-                      <Li name="relict" onClick={(e) => selectTopic(e)}>{data.relictEcosystems}</Li>
-                      <Li name="crypto" onClick={(e) => selectTopic(e)}>{data.cryptogamology}</Li>
+                      <li><TopicLink to="topic-mires">{data.mireEcology}</TopicLink></li>
+                      <li><TopicLink to="topic-paleo">{data.palaeoEcology}</TopicLink></li>
+                      <li><TopicLink to="topic-relict">{data.relictEcosystems}</TopicLink></li>
+                      <li><TopicLink to="topic-crypto">{data.cryptogamology}</TopicLink></li>
                     </ul>
                   </div>
           </MainContainer>
@@ -40,6 +41,16 @@ Homepage.propTypes = {
   data: PropTypes.object,
 }
 
-const Li = styled.li`
-  cursor: pointer
+const TopicLink = styled(Link)`
+  cursor: pointer,
+  color: ${props => props.theme.grey};
+  text-decoration: none;
+  font-
+  &:hover {
+    text-decoration: ${props => (props.navigation ? 'underline' : 'none')};
+    color: ${props => (props.navigation ? props.theme.grey : props.theme.secondary)};
+  }
+  &:focus {
+    color: ${props => (props.navigation ? props.theme.secondary : props.theme.grey)};
+  }
 `

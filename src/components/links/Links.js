@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import MainContainer from "../MainContainer";
-import { H2 } from "../atoms.js";
+import H2 from "../atoms/H2";
 
 const Links = ({
   publicationsData,

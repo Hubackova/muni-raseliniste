@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import MainContainer from "../components/MainContainer";
-import { H2 } from "../components/atoms";
-import Backarrow from "../components/atoms/Backarrow";
+import MainContainer from "./MainContainer";
+import H2 from "./atoms/H2";
+import Backarrow from "./atoms/Backarrow";
 
 const GalleryContainer = ({ children, heading }) => {
   return (

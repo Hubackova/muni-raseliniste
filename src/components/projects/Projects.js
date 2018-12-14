@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types'; 
 import Project from "./Project";
 import CompletedProject from "./CompletedProject"
-import { H2 } from "../atoms";
+import H2 from "../atoms/H2";
 
 const Projects = ({projectsData}) => {
     const {currentProjectsList, completedProjectsList} = projectsData

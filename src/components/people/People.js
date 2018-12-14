@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import PersonBox from './PersonBox'
-import {H2} from '../atoms'
+import H2 from '../atoms/H2'
 import PropTypes from 'prop-types'
 import {Link, Element} from 'react-scroll'
 import {Container as MenuContainer, Li} from '../../layouts/Navigation'
