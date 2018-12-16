@@ -51,7 +51,7 @@ export const en = {
     paleoDatabase: `Palaeoecological profiles`,
     vegetationDatabase: `Vegetation-plot databases`,
     media: "Media",
-    popularization: "popularization Papers",
+    popularization: "Popularization Papers",
   }
 
 export const cz = {

@@ -6,15 +6,15 @@ export const publications = [
 ];
 export const databasesEn = [
   {
-    name: `Plant macrofossil database:`,
+    name: `Plant macrofossil database`,
     link: `http://www.sci.muni.cz/botany/mirecol/paleo/en/`
   },
   {
-    name: `Palaeoecological profiles:`,
+    name: `Palaeoecological profiles`,
     link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&amp;proj=7`
   },
   {
-    name: `Vegetation-plot databases:`,
+    name: `Vegetation-plot databases`,
     link: `http://www.givd.info/ID/EU-00-022`
   }
 ];
