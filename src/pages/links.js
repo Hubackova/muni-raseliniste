@@ -6,13 +6,13 @@ import {cz, en} from '../content/general'
 
 const LinksPage = () => (
       <Consumer>
-        {context => (
+        {({int}) => (
             <Links
               publicationsData={publications}
               mediaData={media}
               popularizationData={popularization}
-              databasesData={context.int === "en" ? databasesEn : databasesCz}
-              data={context.int === "en" ? en : cz}
+              databasesData={int === "en" ? databasesEn : databasesCz}
+              data={int === "en" ? en : cz}
             />
         )}
       </Consumer>

@@ -11,13 +11,12 @@ class Staff extends Component {
   render() {
     return (
       <Consumer>
-        {context => (
+        {({int}) => (
           <Container>
             <People
-              int={context.int}
-              staffData={context.int === "en" ? staffEn : staffCz}
-              studentsData={context.int === "en" ? studentsEn : studentsCz}
-              data={context.int === "en" ? en : cz}
+              staffData={int === "en" ? staffEn : staffCz}
+              studentsData={int === "en" ? studentsEn : studentsCz}
+              data={int === "en" ? en : cz}
             />
           </Container>
         )}

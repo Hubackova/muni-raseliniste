@@ -25,16 +25,16 @@ class Index extends Component {
     const { showAll } = this.state;
     return (
       <Consumer>
-        {context => (
+        {({int}) => (
           <ContainerWrapper>
               <Homepage
-                data={context.int === "en" ? en : cz}
+                data={int === "en" ? en : cz}
                 toggleShowFulltext={this.toggleShowFulltext}
                 selectTopic={this.selectTopic}
                 showAll={showAll}
                 style={{ flex: 1 }}
               />
-            <Databases data={context.int === "en" ? en : cz} />
+            <Databases data={int === "en" ? en : cz} />
           </ContainerWrapper>
         )}
       </Consumer>

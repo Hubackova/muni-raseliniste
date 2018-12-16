@@ -19,18 +19,18 @@ const Relicts = () => {
   };
   return (
     <Consumer>
-      {context => (
+      {({int}) => (
         <ContainerWrapper>
           <div>
             <Backarrow to="" />
-            <h2>{context.int === "en" ? en.mireEcology : cz.mireEcology}</h2>
+            <h2>{int === "en" ? en.mireEcology : cz.mireEcology}</h2>
             <div>
-              {context.int === "en" ? mireEcologyTextEn : mireEcologyTextCz}
+              {int === "en" ? mireEcologyTextEn : mireEcologyTextCz}
             </div>
-            <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
+            <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.mireEcologyResults)}</div>
           </div>
-          <Databases data={context.int === "en" ? en : cz} />
+          <Databases data={int === "en" ? en : cz} />
         </ContainerWrapper>
       )}
     </Consumer>

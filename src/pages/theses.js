@@ -5,9 +5,9 @@ import {thesesEn, thesesCz} from '../content/theses'
 
 const ThesesPage = () => (
       <Consumer>
-        {context => (
+        {({int}) => (
             <Theses
-              thesesData={context.int === "en" ? thesesEn : thesesCz}
+              thesesData={int === "en" ? thesesEn : thesesCz}
             />
         )}
       </Consumer>

@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
 import styled from "styled-components";
 import { ThemeProvider } from "styled-components";
 
@@ -31,12 +31,12 @@ const Layout = props => {
     <IntProvider>
       <ThemeProvider theme={blueTheme}>
         <Consumer>
-          {context => (
+          {({int}) => (
             <Container>
-              <Header isIndex={isIndex} generalData={context.int === "en" ? en : cz} />
+              <Header isIndex={isIndex} generalData={int === "en" ? en : cz} />
               <Main>{props.children}</Main>
               <footer>
-                <FooterContent footer={context.int === "en" ? en.footer : cz.footer}/>
+                <FooterContent footer={int === "en" ? en.footer : cz.footer}/>
               </footer>
             </Container>
           )}

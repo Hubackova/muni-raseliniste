@@ -19,22 +19,22 @@ const Relicts = () => {
   };
   return (
     <Consumer>
-      {context => (
+      {({int}) => (
         <ContainerWrapper>
           <div>
             <Backarrow to="" />
             <h2>
-              {context.int === "en" ? en.cryptogamology : cz.cryptogamology}
+              {int === "en" ? en.cryptogamology : cz.cryptogamology}
             </h2>
             <div>
-              {context.int === "en"
+              {int === "en"
                 ? cryptogamologyTextEn
                 : cryptogamologyTextCz}
             </div>
-            <h2>{context.int === "en" ? en.mainResults : cz.mainResults}</h2>
+            <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.cryptogamologyResults)}</div>
           </div>
-          <Databases data={context.int === "en" ? en : cz} />
+          <Databases data={int === "en" ? en : cz} />
         </ContainerWrapper>
       )}
     </Consumer>
