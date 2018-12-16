@@ -45,11 +45,8 @@ const StyledLink = ({to, navigation, children}) => {
   &:hover:before {
     right: 0;
   }
-  &:hover, &:focus {
+  &:hover, &:focus, &.active {
     color: black;
-  }
-  &:active { 
-    background-color: yellow;
   }
   `
   export default StyledLink

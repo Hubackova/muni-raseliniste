@@ -13,12 +13,12 @@ const FlagEN = () => (
   <Consumer>{({changeToEn}) => <Flag src={ukFlag} name="en" onClick={() => changeToEn()} />}</Consumer>
 )
 
-const HeaderTop = ({generalData}) => {
+const HeaderTop = ({generalData, isIndex}) => {
   return (
     <Container>
       <FlagEN />
       <FlagCZ />
-      <Navigation generalData={generalData}/>
+      <Navigation generalData={generalData} isIndex={isIndex}/>
     </Container>
   )
 }

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 import StyledLink from '../components/atoms/StyledLink'
 
-const ListLink = ({isVisible, to, children}) => (
-  <Li isVisible={isVisible}>
-    <StyledLink to={to} navigation={1}>
+const ListLink = ({isVisible, to, children, className}) => (
+  <Li isVisible={isVisible}  className={className}>
+    <StyledLink to={to} navigation={1} >
       {children}
     </StyledLink>
   </Li>
@@ -15,14 +15,15 @@ const ListLink = ({isVisible, to, children}) => (
 ListLink.propTypes = {
   children: PropTypes.node,
   isVisible: PropTypes.bool,
-  to: PropTypes.string
+  to: PropTypes.string,
+  className: PropTypes.string
 }
 
 const windowGlobal = typeof window !== 'undefined' && window
 
 class Navigation extends Component {
   state = {
-    isVisible: false,
+    isNavVisible: false,
     width: windowGlobal.innerWidth
   }
 
@@ -35,37 +36,38 @@ class Navigation extends Component {
   }
 
   toggleMenu = () => {
-    this.setState({isVisible: !this.state.isVisible})
+    this.setState({isNavVisible: !this.state.isNavVisible})
   }
 
   render() {
-    const {generalData} = this.props
-    const isMobile = this.state.width <= 768
-    const isVisible = this.state.isVisible || !isMobile
+    const {generalData, isIndex} = this.props
+    const {width, isNavVisible} = this.state
+    const isMobile = width <= 768
+    const isVisible = isNavVisible || !isMobile
     return (
       <Container>
         <NavbarToggle onClick={this.toggleMenu}>
           <i className="fa fa-bars" />
         </NavbarToggle>
-        <ListLink to="/" isVisible={isVisible}>
+        <ListLink to="/" isVisible={isVisible} className={isIndex ? "active" : ""}>
           HomePage
         </ListLink>
-        <ListLink to="/people/" isVisible={isVisible}>
+        <ListLink to="/people/" isVisible={isVisible} className={windowGlobal.location.href.includes("people") ? "active" : ""}>
           {generalData.menuPeople}
         </ListLink>
-        <ListLink to="/projects/" isVisible={isVisible}>
+        <ListLink to="/projects/" isVisible={isVisible} className={windowGlobal.location.href.includes("projects") ? "active" : ""}>
         {generalData.menuProjects}
         </ListLink>
-        <ListLink to="/theses/" isVisible={isVisible}>
+        <ListLink to="/theses/" isVisible={isVisible} className={windowGlobal.location.href.includes("theses") ? "active" : ""}>
           {generalData.menuTheses}
         </ListLink>
-        <ListLink to="/courses/" isVisible={isVisible}>
+        <ListLink to="/courses/" isVisible={isVisible} className={windowGlobal.location.href.includes("courses") ? "active" : ""}>
           {generalData.menuCourses}
         </ListLink>
-        <ListLink to="/gallery/" isVisible={isVisible}>
+        <ListLink to="/gallery/" isVisible={isVisible} className={windowGlobal.location.href.includes("gallery") ? "active" : ""}>
           {generalData.menuGallery}
         </ListLink>
-        <ListLink to="/links/" isVisible={isVisible}>
+        <ListLink to="/links/" isVisible={isVisible} className={windowGlobal.location.href.includes("links") ? "active" : ""}>
           {generalData.menuLinks}
         </ListLink>
       </Container>
@@ -109,6 +111,20 @@ export const Li = styled.li`
   }
   @media (max-width: ${props => props.theme.mediumDevice}) {
     border: 0px;
+  }
+  &.active > a { 
+    color: black;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 100%;
+      top: 0;
+      height: 4px;
+      background-color: ${props => props.theme.black};
+      @media (max-width: ${props => props.theme.mediumDevice}) {
+        height: 0px;
+      }
   }
 `
 

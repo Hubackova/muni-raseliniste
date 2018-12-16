@@ -43,8 +43,8 @@ export default People
 
 People.propTypes = {
   data: PropTypes.object,
-  studentsData: PropTypes.object,
-  staffData: PropTypes.object,
+  studentsData: PropTypes.array,
+  staffData: PropTypes.array,
 }
 
 const StyledLink = styled(Link)`

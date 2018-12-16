@@ -31,7 +31,7 @@ const sImgs = [shp01, shp02, shp03, shp04, shp05, shp06, shp07] //do props
 const Header = ({isIndex, generalData}) => {
   return (
     <Fragment>
-      <HeaderTop generalData={generalData}/>
+      <HeaderTop generalData={generalData} isIndex={isIndex}/>
       <SubContainer>
         <LeftSide>
           <LeftSideWrapper>
