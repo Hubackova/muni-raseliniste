@@ -15,9 +15,9 @@ const Header = ({isIndex, generalData}) => (
     query={graphql`
       fragment fluidImage on File {
         childImageSharp {
-          sizes(maxWidth: 1240) {
-            ...GatsbyImageSharpSizes
-          }
+          fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
         }
       }
       query {
@@ -76,25 +76,25 @@ const Header = ({isIndex, generalData}) => (
     `}
     render={data => {
       const imgs = [
-        data.image1.childImageSharp.sizes,
-        data.image2.childImageSharp.sizes,
-        data.image3.childImageSharp.sizes,
-        data.image4.childImageSharp.sizes,
-        data.image5.childImageSharp.sizes,
-        data.image6.childImageSharp.sizes,
-        data.image7.childImageSharp.sizes,
-        data.image8.childImageSharp.sizes,
-        data.image9.childImageSharp.sizes,
-        data.image10.childImageSharp.sizes
+        data.image1.childImageSharp.fluid,
+        data.image2.childImageSharp.fluid,
+        data.image3.childImageSharp.fluid,
+        data.image4.childImageSharp.fluid,
+        data.image5.childImageSharp.fluid,
+        data.image6.childImageSharp.fluid,
+        data.image7.childImageSharp.fluid,
+        data.image8.childImageSharp.fluid,
+        data.image9.childImageSharp.fluid,
+        data.image10.childImageSharp.fluid
       ]
       const sImgs = [
-        data.simage1.childImageSharp.sizes,
-        data.simage2.childImageSharp.sizes,
-        data.simage3.childImageSharp.sizes,
-        data.simage4.childImageSharp.sizes,
-        data.simage5.childImageSharp.sizes,
-        data.simage6.childImageSharp.sizes,
-        data.simage7.childImageSharp.sizes
+        data.simage1.childImageSharp.fluid,
+        data.simage2.childImageSharp.fluid,
+        data.simage3.childImageSharp.fluid,
+        data.simage4.childImageSharp.fluid,
+        data.simage5.childImageSharp.fluid,
+        data.simage6.childImageSharp.fluid,
+        data.simage7.childImageSharp.fluid
       ]
       return (
         <Fragment>
@@ -143,7 +143,7 @@ Header.propTypes = {
 const SubContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  @media (max-width: ${props => props.theme.extraLargeDevice}) {
+  @media (max-width: 1400px) {
     flex-direction: column;
   }
   padding-bottom: 2em;
@@ -154,6 +154,7 @@ const LeftSide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  max-height: 285px;
   background-image: linear-gradient(110deg, #578724 33.33%, #51811d 33.33%, #51811d 66.66%, #3e7404 66.66%);
   @media (max-width: 600px) {
     flex-wrap: wrap;
@@ -167,6 +168,9 @@ const LeftSideWrapper = styled.div`
 
 const RightSide = styled.div`
   flex: 1;
+  @media (max-width: 1400px) {
+    width: 100%;
+  }
 `
 
 const LogoText = styled.h1`

@@ -5,7 +5,7 @@ import {Carousel} from 'react-responsive-carousel'
 import Img from "gatsby-image"
 
 const Images = ({imgs}) => {
-  const images = imgs.map((i, index) => <Img key={index} sizes={i} />)
+  const images = imgs.map((i, index) => <Img key={index} fluid={i}/>)
   return (
     <Carousel showThumbs={false} autoPlay={true} infiniteLoop={true} showStatus={false} interval={7000}>
       {images}
