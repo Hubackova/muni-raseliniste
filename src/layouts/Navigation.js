@@ -39,6 +39,12 @@ class Navigation extends Component {
     this.setState({isNavVisible: !this.state.isNavVisible})
   }
 
+  getClass = (urlIncludes) => {
+    if (windowGlobal && windowGlobal.location && windowGlobal.location.href.includes(urlIncludes)) {
+      return "active"
+    } else return ""
+  }
+
   render() {
     const {generalData, isIndex} = this.props
     const {width, isNavVisible} = this.state
@@ -52,22 +58,22 @@ class Navigation extends Component {
         <ListLink to="/" isVisible={isVisible} className={isIndex ? "active" : ""}>
           HomePage
         </ListLink>
-        <ListLink to="/people/" isVisible={isVisible} className={windowGlobal.location.href.includes("people") ? "active" : ""}>
+        <ListLink to="/people/" isVisible={isVisible} className={this.getClass("people")}>
           {generalData.menuPeople}
         </ListLink>
-        <ListLink to="/projects/" isVisible={isVisible} className={windowGlobal.location.href.includes("projects") ? "active" : ""}>
+        <ListLink to="/projects/" isVisible={isVisible} className={this.getClass("projects")}>
         {generalData.menuProjects}
         </ListLink>
-        <ListLink to="/theses/" isVisible={isVisible} className={windowGlobal.location.href.includes("theses") ? "active" : ""}>
+        <ListLink to="/theses/" isVisible={isVisible} className={this.getClass("theses")}>
           {generalData.menuTheses}
         </ListLink>
-        <ListLink to="/courses/" isVisible={isVisible} className={windowGlobal.location.href.includes("courses") ? "active" : ""}>
+        <ListLink to="/courses/" isVisible={isVisible} className={this.getClass("courses")}>
           {generalData.menuCourses}
         </ListLink>
-        <ListLink to="/gallery/" isVisible={isVisible} className={windowGlobal.location.href.includes("gallery") ? "active" : ""}>
+        <ListLink to="/gallery/" isVisible={isVisible} className={this.getClass("gallery")}>
           {generalData.menuGallery}
         </ListLink>
-        <ListLink to="/links/" isVisible={isVisible} className={windowGlobal.location.href.includes("links") ? "active" : ""}>
+        <ListLink to="/links/" isVisible={isVisible} className={this.getClass("links")}>
           {generalData.menuLinks}
         </ListLink>
       </Container>
@@ -112,7 +118,7 @@ export const Li = styled.li`
   @media (max-width: ${props => props.theme.mediumDevice}) {
     border: 0px;
   }
-  &.active > a { 
+  &.active > a {
     color: black;
     &:before {
       content: "";
