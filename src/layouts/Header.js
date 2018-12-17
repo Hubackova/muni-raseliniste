@@ -15,7 +15,7 @@ const Header = ({isIndex, generalData}) => (
     query={graphql`
       fragment fluidImage on File {
         childImageSharp {
-          fluid(quality: 100) {
+          fluid(maxWidth: 1200) {
           ...GatsbyImageSharpFluid
         }
         }
@@ -154,7 +154,6 @@ const LeftSide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 285px;
   background-image: linear-gradient(110deg, #578724 33.33%, #51811d 33.33%, #51811d 66.66%, #3e7404 66.66%);
   @media (max-width: 600px) {
     flex-wrap: wrap;
