@@ -5,9 +5,9 @@ import {Link} from 'gatsby'
 
 const StyledLink = ({to, navigation, children}) => {
     return (
-      <LinkStyled to={to} navigation={navigation}>
+      <Styledlink to={to} navigation={navigation}>
         {children}
-      </LinkStyled>
+      </Styledlink>
     )
   }
   
@@ -17,7 +17,7 @@ const StyledLink = ({to, navigation, children}) => {
       to: PropTypes.string
     }
   
-  const LinkStyled = styled(Link)`
+  const Styledlink = styled(Link)`
   color: ${props => props.theme.grey};
   padding: 10px;
   cursor: pointer;
@@ -33,7 +33,7 @@ const StyledLink = ({to, navigation, children}) => {
     left: 0;
     right: 100%;
     top: 0;
-    height: 4px;
+    height: ${props => props.navigation ? "4px" : 0};
     background-color: ${props => props.theme.green};
     transition-property: right;
     transition-duration: 0.3s;

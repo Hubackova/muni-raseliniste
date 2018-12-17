@@ -7,7 +7,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-eslint',
     `gatsby-plugin-styled-components`,
-    `gatsby-transformer-json`,
     `gatsby-plugin-layout`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -25,7 +24,6 @@ module.exports = {
   },
   `gatsby-transformer-sharp`,
   `gatsby-plugin-sharp`,
-  `gatsby-transformer-remark`,
   ],
   pathPrefix: "/raseliniste"
 }
