@@ -13,89 +13,36 @@ import mainLogo from '../images/mainLogo.png'
 const Header = ({isIndex, generalData}) => (
   <StaticQuery
     query={graphql`
-      fragment fluidImage on File {
-        childImageSharp {
-          fluid(maxWidth: 1200) {
-          ...GatsbyImageSharpFluid
-        }
-        }
-      }
       query {
-        image1: file(relativePath: {eq: "homepage/hp01.jpg"}) {
-          ...fluidImage
+        images: allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "homepage"}}) {
+          edges {
+            node {
+              childImageSharp {
+                fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
-        image2: file(relativePath: {eq: "homepage/hp02.jpg"}) {
-          ...fluidImage
-        }
-        image3: file(relativePath: {eq: "homepage/hp03.jpg"}) {
-          ...fluidImage
-        }
-        image4: file(relativePath: {eq: "homepage/hp04.jpg"}) {
-          ...fluidImage
-        }
-        image5: file(relativePath: {eq: "homepage/hp05.jpg"}) {
-          ...fluidImage
-        }
-        image6: file(relativePath: {eq: "homepage/hp06.jpg"}) {
-          ...fluidImage
-        }
-        image7: file(relativePath: {eq: "homepage/hp07.jpg"}) {
-          ...fluidImage
-        }
-        image8: file(relativePath: {eq: "homepage/hp08.jpg"}) {
-          ...fluidImage
-        }
-        image9: file(relativePath: {eq: "homepage/hp09.jpg"}) {
-          ...fluidImage
-        }
-        image10: file(relativePath: {eq: "homepage/hp10.jpg"}) {
-          ...fluidImage
-        }
-        simage1: file(relativePath: {eq: "smallhomepage/shp01small.jpg"}) {
-          ...fluidImage
-        }
-        simage2: file(relativePath: {eq: "smallhomepage/shp02small.jpg"}) {
-          ...fluidImage
-        }
-        simage3: file(relativePath: {eq: "smallhomepage/shp03small.jpg"}) {
-          ...fluidImage
-        }
-        simage4: file(relativePath: {eq: "smallhomepage/shp04small.jpg"}) {
-          ...fluidImage
-        }
-        simage5: file(relativePath: {eq: "smallhomepage/shp05small.jpg"}) {
-          ...fluidImage
-        }
-        simage6: file(relativePath: {eq: "smallhomepage/shp06small.jpg"}) {
-          ...fluidImage
-        }
-        simage7: file(relativePath: {eq: "smallhomepage/shp07small.jpg"}) {
-          ...fluidImage
+        smallimages: allFile(filter: {extension: {regex: "/(jpg)|(png)/"}, relativeDirectory: {eq: "smallhomepage"}}) {
+          edges {
+            node {
+              childImageSharp {
+                fluid(maxWidth: 1200) {
+                ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
         }
       }
     `}
     render={data => {
-      const imgs = [
-        data.image1.childImageSharp.fluid,
-        data.image2.childImageSharp.fluid,
-        data.image3.childImageSharp.fluid,
-        data.image4.childImageSharp.fluid,
-        data.image5.childImageSharp.fluid,
-        data.image6.childImageSharp.fluid,
-        data.image7.childImageSharp.fluid,
-        data.image8.childImageSharp.fluid,
-        data.image9.childImageSharp.fluid,
-        data.image10.childImageSharp.fluid
-      ]
-      const sImgs = [
-        data.simage1.childImageSharp.fluid,
-        data.simage2.childImageSharp.fluid,
-        data.simage3.childImageSharp.fluid,
-        data.simage4.childImageSharp.fluid,
-        data.simage5.childImageSharp.fluid,
-        data.simage6.childImageSharp.fluid,
-        data.simage7.childImageSharp.fluid
-      ]
+      const imgs = data.images.edges.map(i => i.node.childImageSharp.fluid)
+
+      const sImgs = data.smallimages.edges.map(i => i.node.childImageSharp.fluid)
+
       return (
         <Fragment>
           <HeaderTop generalData={generalData} isIndex={isIndex} />

@@ -45,4 +45,5 @@ export default HeaderTop
 
 HeaderTop.propTypes = {
   generalData: PropTypes.object,
+  isIndex: PropTypes.bool
 }
