@@ -13,7 +13,7 @@ const PhotoGallery = ({ data }) => {
       .split("/")
       .pop()
       .slice(0, -4)
-      .slice(0, 2);
+      .substring(2);
     //const finalCaption = ["m-", "t-", "v-"].some(word => caption.includes(word))
     return { src: i.src, thumbnail: i.src, caption: caption };
   });
