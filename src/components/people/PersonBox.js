@@ -25,7 +25,7 @@ class PersonBox extends Component {
       <Fragment>
         <Box>
           <BoxPart style={{flex: 1, paddingLeft: 0}}>
-            <div>{personInfo.img ? <img src={personInfo.img} alt={personInfo.name} height="265px" /> : <div style={{height: 265, width: 177, border: "1px solid black"}}></div>}</div>
+            <div style={{paddingTop: 10}}>{personInfo.img ? <img src={personInfo.img} alt={personInfo.name} height="265px" /> : <div style={{height: 265, width: 177, border: "1px solid black"}}></div>}</div>
           </BoxPart>
           <BoxPart style={{flex: 6, minWidth: 260}}>
             <Name>
