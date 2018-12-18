@@ -20,7 +20,7 @@ export const en = {
       gallery: {
         excursions: "Excursions",
         plantsAndAnimals: "Plants and Animals",
-        terrains: "Terrains"
+        fieldworks: "Fieldworks"
       },
     introHeader: 'In our group we focus on',
     introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
@@ -83,7 +83,7 @@ export const cz = {
     gallery: {
       excursions: "Exkurze",
       plantsAndAnimals: "Rostliny a živočichové",
-      terrains: "Terény"
+      fieldworks: "Terény"
     },
     introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
