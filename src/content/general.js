@@ -17,6 +17,11 @@ export const en = {
         physicalAddress: `Campus Bohunice, building A32, Kamenice 753/5, 625 00, Brno, Czech Republic`,
         links: 'Links'
       },
+      gallery: {
+        excursions: "Excursions",
+        plantsAndAnimals: "Plants and Animals",
+        terrains: "Terrains"
+      },
     introHeader: 'In our group we focus on',
     introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
@@ -75,6 +80,11 @@ export const cz = {
         kampus Bohunice, budova A32, Kamenice 753/5, 625 00, Brno, Česká republika`,
         links: 'Odkazy'
       },
+    gallery: {
+      excursions: "Exkurze",
+      plantsAndAnimals: "Rostliny a živočichové",
+      terrains: "Terény"
+    },
     introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým

@@ -40,9 +40,7 @@ const Header = ({isIndex, generalData}) => (
     `}
     render={data => {
       const imgs = data.images.edges.map(i => i.node.childImageSharp.fluid)
-
       const sImgs = data.smallimages.edges.map(i => i.node.childImageSharp.fluid)
-
       return (
         <Fragment>
           <HeaderTop generalData={generalData} isIndex={isIndex} />
