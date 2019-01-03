@@ -1,29 +1,31 @@
 export const en = {
-    mainHeader: 'Mire Ecology Group',
-    muni: 'Masaryk university',
+  menu: {
     menuPeople: "People",
     menuProjects: "Projects",
     menuTheses: "Theses",
     menuCourses: "Courses",
     menuGallery: "Gallery",
-    menuLinks: "Links",
-    footer: {
-        botzool: 'Department of Botany and Zoology, ',
-        faculty: 'Faculty of Science, ',
-        university: ' Masaryk University',
-        postalAddressHeading: 'Postal Address: ',
-        physicalAddressHeading: `Physical Address: `,
-        postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-        physicalAddress: `Campus Bohunice, building A32, Kamenice 753/5, 625 00, Brno, Czech Republic`,
-        links: 'Links'
-      },
-      gallery: {
-        excursions: "Excursions",
-        plantsAndAnimals: "Plants and Animals",
-        fieldworks: "Fieldworks"
-      },
-    introHeader: 'In our group we focus on',
-    introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
+    menuLinks: "Links"
+  },
+  footer: {
+    botzool: "Department of Botany and Zoology, ",
+    faculty: "Faculty of Science, ",
+    university: " Masaryk University",
+    postalAddressHeading: "Postal Address: ",
+    physicalAddressHeading: `Physical Address: `,
+    postalAddress: "Kotlářská 267/2, 611 37, Brno, Czech Republic",
+    physicalAddress: `Campus Bohunice, building A32, Kamenice 753/5, 625 00, Brno, Czech Republic`,
+    links: "Links"
+  },
+  gallery: {
+    excursions: "Excursions",
+    plantsAndAnimals: "Plants and Animals",
+    fieldworks: "Fieldworks"
+  },
+  mainHeader: "Mire Ecology Group",
+  muni: "Masaryk university",
+  introHeader: "In our group we focus on",
+  introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
       generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
@@ -34,58 +36,60 @@ export const en = {
       monitor the influence of different management types on the vegetation of spring fens and fen meadows using permanent plots. Our research covers various spatial scales,
       from very local to pan-European. Recently, we have also dealt with the classification of mire vegetation on the European scale (large-scale syntheses), phylogenetic
       reconstructions, phylogeography and taxonomy.`,
-    introTextShort: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
+  introTextShort: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
       generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
       and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae.`,
-    fullText: ' Show full text...',
-    mainTopics: 'Main research topics:',
-    mainResults: 'Main results:',
-    mireEcology: 'Mire ecology',
-    palaeoEcology: 'Palaeoecology',
-    relictEcosystems: 'Relict ecosystems',
-    cryptogamology: 'Cryptogamology',
-    staff: `Staff`,
-    phD: `PhD Students`,
-    showMore: "Show more...",
-    showLess: "Show more...",
-    publications: "Publications",
-    databases: "Databases",
-    plantDatabase: `Plant macrofossil database`,
-    paleoDatabase: `Palaeoecological profiles`,
-    vegetationDatabase: `Vegetation-plot databases`,
-    media: "Media",
-    popularization: "Popularization Papers",
-  }
+  fullText: " Show full text...",
+  mainTopics: "Main research topics:",
+  mainResults: "Main results:",
+  mireEcology: "Mire ecology",
+  palaeoEcology: "Palaeoecology",
+  relictEcosystems: "Relict ecosystems",
+  cryptogamology: "Cryptogamology",
+  staff: `Staff`,
+  phD: `PhD Students`,
+  showMore: "Show more...",
+  showLess: "Show less...",
+  publications: "Publications",
+  databases: "Databases",
+  plantDatabase: `Plant macrofossil database`,
+  paleoDatabase: `Palaeoecological profiles`,
+  vegetationDatabase: `Vegetation-plot databases`,
+  media: "Media",
+  popularization: "Popularization Papers"
+};
 
 export const cz = {
-    mainHeader: 'Skupina pro výzkum rašelinišť',
-    muni: 'Masarykova univerzita',
+  menu: {
     menuPeople: "Lidé",
     menuProjects: "Projekty",
     menuTheses: "Témata prací",
     menuCourses: "Výuka",
     menuGallery: "Galerie",
-    menuLinks: "Odkazy",
-    introHeader: 'Naše skupina',
-    footer: {
-        botzool: 'Ústav botaniky a zoologie, ',
-        faculty: 'Přírodovědecká fakulta, ',
-        university: ' Masarykova Univerzita',
-        postalAddressHeading: 'Korespondenční adresa: ',
-        physicalAddressHeading: `Adresa pracoviště: `,
-        postalAddress: 'Kotlářská 267/2, 611 37, Brno, Czech Republic',
-        physicalAddress: `Univerzitní
-        kampus Bohunice, budova A32, Kamenice 753/5, 625 00, Brno, Česká republika`,
-        links: 'Odkazy'
-      },
-    gallery: {
-      excursions: "Exkurze",
-      plantsAndAnimals: "Rostliny a živočichové",
-      fieldworks: "Terény"
-    },
-    introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
+    menuLinks: "Odkazy"
+  },
+  footer: {
+    botzool: "Ústav botaniky a zoologie, ",
+    faculty: "Přírodovědecká fakulta, ",
+    university: " Masarykova Univerzita",
+    postalAddressHeading: "Korespondenční adresa: ",
+    physicalAddressHeading: `Adresa pracoviště: `,
+    postalAddress: "Kotlářská 267/2, 611 37, Brno, Czech Republic",
+    physicalAddress: `Univerzitní
+    kampus Bohunice, budova A32, Kamenice 753/5, 625 00, Brno, Česká republika`,
+    links: "Odkazy"
+  },
+  gallery: {
+    excursions: "Exkurze",
+    plantsAndAnimals: "Rostliny a živočichové",
+    fieldworks: "Terény"
+  },
+  mainHeader: "Skupina pro výzkum rašelinišť",
+  muni: "Masarykova univerzita",
+  introHeader: "Naše skupina",
+  introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
     ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,
@@ -96,27 +100,27 @@ export const cz = {
     vegetaci pramenišť a rašelinných luk, s cílem přispět k jejich efektivní ochraně. Naše výzkumy probíhají na rozmanitých prostorových škálách, od zcela lokální
     až po celoevropskou. V poslední době se věnujeme také klasifikaci vegetace na evropské škále (celoevropské syntézy), fylogenetickým rekonstrukcím,
     fylogeografii a taxonomii. `,
-    introTextShort: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
+  introTextShort: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
     ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,
     rozsivek, krytenek až po subfosilní pyl, makrozbytky rostlin i schránky měkkýšů a krytenek.`,
-    fullText: ' Zobrazit celý text...',
-    mainTopics: 'Hlavní směry výzkumu:',
-    mainResults: 'Hlavní výsledky:',
-    mireEcology: 'Ekologie rašelinišť',
-    palaeoEcology: 'Paleoekologie',
-    relictEcosystems: 'Reliktní ekosystémy',
-    cryptogamology: 'Kryptogamologie',
-    staff: `Zaměstnanci`,
-    phD: `PhD Studenti`,
-    showMore: "Ukázat detail...",
-    showLess: "Skrýt detail...",
-    publications: "Publikace",
-    databases: "Databáze",
-    plantDatabase: `Databáze rostlinných makrozbytků`,
-    paleoDatabase: `Paleoekologické profily`,
-    vegetationDatabase: `Databáze vegetačních snímků`,
-    media: "Média",
-    popularization: "Popularizační články",
-  }
+  fullText: " Zobrazit celý text...",
+  mainTopics: "Hlavní směry výzkumu:",
+  mainResults: "Hlavní výsledky:",
+  mireEcology: "Ekologie rašelinišť",
+  palaeoEcology: "Paleoekologie",
+  relictEcosystems: "Reliktní ekosystémy",
+  cryptogamology: "Kryptogamologie",
+  staff: `Zaměstnanci`,
+  phD: `PhD Studenti`,
+  showMore: "Ukázat detail...",
+  showLess: "Skrýt detail...",
+  publications: "Publikace",
+  databases: "Databáze",
+  plantDatabase: `Databáze rostlinných makrozbytků`,
+  paleoDatabase: `Paleoekologické profily`,
+  vegetationDatabase: `Databáze vegetačních snímků`,
+  media: "Média",
+  popularization: "Popularizační články"
+};

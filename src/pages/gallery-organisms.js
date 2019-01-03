@@ -12,9 +12,7 @@ const PhotoGallery = ({ data }) => {
     const caption = i.src
       .split("/")
       .pop()
-      .slice(0, -4)
-      .slice(0, 2);
-    //const finalCaption = ["m-", "t-", "v-"].some(word => caption.includes(word))
+      .slice(2, -4)
     return { src: i.src, thumbnail: i.src, caption: caption };
   });
   PHOTO_SET.sort((a, b) => a.caption.localeCompare(b.caption));

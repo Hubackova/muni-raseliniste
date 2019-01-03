@@ -3,18 +3,7 @@ import originCultural from "../images/projects/originCultural.jpg";
 import coexistence from "../images/projects/coexistence.jpg";
 
 export const projectsEn = {
-  title: "Title",
-  identification: "Project Identification",
-  applicant: "Applicant",
-  coapplicant: "Co-applicant",
-  duration: "Duration",
-  investor: "Investor",
-  abstract: "Abstract",
-  link: "Link",
-  currentProjects: "Current Projects",
-  completedProjects: "Completed Projects",
-  showMore: " Show more...",
-  showLess: " Show less...",
+  
   currentProjectsList: [
     {
       title: `Holocene development of temperate European biota: effects of climate, refugia and local factors tested by complex datasets of independent proxies`,
@@ -47,6 +36,7 @@ export const projectsEn = {
       img: coexistence
     }
   ],
+
   completedProjectsList: [
     {
       title: `Annelids of isolated micro-wetlands: from water to soil`,
@@ -160,22 +150,24 @@ for biodiversity`,
       duration: `1/2002 - 12/2004`,
       link: `https://www.muni.cz/vyzkum/projekty/1280`
     }
-  ]
+  ], 
+
+  title: "Title",
+  identification: "Project Identification",
+  applicant: "Applicant",
+  coapplicant: "Co-applicant",
+  duration: "Duration",
+  investor: "Investor",
+  abstract: "Abstract",
+  link: "Link",
+  currentProjects: "Current Projects",
+  completedProjects: "Completed Projects",
+  showMore: " Show more...",
+  showLess: " Show less..."
 };
 
 export const projectsCz = {
-  title: "Název",
-  identification: "Kód",
-  applicant: "Řešitel",
-  coapplicant: "Spoluřešitel",
-  duration: "Trvání",
-  investor: "Zdroje",
-  abstract: "Abstrakt",
-  link: "Odkaz",
-  currentProjects: "Současné Projekty",
-  completedProjects: "Ukončené Projekty",
-  showMore: " Zobrazit vše...",
-  showLess: " Zobrazit méně...",
+  
   currentProjectsList: [
     {
       title: `Holocenní vývoj evropské bioty mírného pásu: vlivy klimatu, refugií a lokálních faktorů
@@ -210,6 +202,7 @@ export const projectsCz = {
       img: coexistence
     }
   ],
+  
   completedProjectsList: [
     {
       title: `Kroužkovci izolovaných mikro-mokřadů: od vody až po půdu`,
@@ -322,5 +315,18 @@ export const projectsCz = {
       duration: `1/2002 - 12/2004`,
       link: `https://www.muni.cz/vyzkum/projekty/1280`
     }
-  ]
+  ], 
+
+  title: "Název",
+  identification: "Kód",
+  applicant: "Řešitel",
+  coapplicant: "Spoluřešitel",
+  duration: "Trvání",
+  investor: "Zdroje",
+  abstract: "Abstrakt",
+  link: "Odkaz",
+  currentProjects: "Současné Projekty",
+  completedProjects: "Ukončené Projekty",
+  showMore: " Zobrazit vše...",
+  showLess: " Zobrazit méně..."
 };

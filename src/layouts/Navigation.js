@@ -59,22 +59,22 @@ class Navigation extends Component {
           HomePage
         </ListLink>
         <ListLink to="/people/" isVisible={isVisible} className={this.getClass("people")}>
-          {generalData.menuPeople}
+          {generalData.menu.menuPeople}
         </ListLink>
         <ListLink to="/projects/" isVisible={isVisible} className={this.getClass("projects")}>
-        {generalData.menuProjects}
+        {generalData.menu.menuProjects}
         </ListLink>
         <ListLink to="/theses/" isVisible={isVisible} className={this.getClass("theses")}>
-          {generalData.menuTheses}
+          {generalData.menu.menuTheses}
         </ListLink>
         <ListLink to="/courses/" isVisible={isVisible} className={this.getClass("courses")}>
-          {generalData.menuCourses}
+          {generalData.menu.menuCourses}
         </ListLink>
         <ListLink to="/gallery/" isVisible={isVisible} className={this.getClass("gallery")}>
-          {generalData.menuGallery}
+          {generalData.menu.menuGallery}
         </ListLink>
         <ListLink to="/links/" isVisible={isVisible} className={this.getClass("links")}>
-          {generalData.menuLinks}
+          {generalData.menu.menuLinks}
         </ListLink>
       </Container>
     )
