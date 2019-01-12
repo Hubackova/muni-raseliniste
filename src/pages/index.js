@@ -1,58 +1,61 @@
-import React, { Component } from "react";
-import { injectGlobal } from "styled-components";
-import PropTypes from "prop-types";
-import "font-awesome/css/font-awesome.min.css";
-import ContainerWrapper from "../components/atoms/ContainerWrapper";
-import Homepage from "../components/homepage/Homepage";
-import Databases from "../components/homepage/Databases";
-import { Consumer } from "../layouts/Context";
-import { cz, en } from "../content/general";
-
+import React, {Component} from 'react'
+import {injectGlobal} from 'styled-components'
+import PropTypes from 'prop-types'
+import 'font-awesome/css/font-awesome.min.css'
+import ContainerWrapper from '../components/atoms/ContainerWrapper'
+import Homepage from '../components/homepage/Homepage'
+import Databases from '../components/homepage/Databases'
+import {Consumer} from '../layouts/Context'
+import {cz, en} from '../content/general'
 
 class Index extends Component {
   state = {
     showAll: false,
-    selectedTopic: "home"
-  };
+    selectedTopic: 'home'
+  }
 
   toggleShowFulltext = () => {
     this.setState(prevState => ({
       showAll: !prevState.showAll
-    }));
-  };
+    }))
+  }
 
   render() {
-    const { showAll } = this.state;
+    const {showAll} = this.state
     return (
       <Consumer>
         {({int}) => (
           <ContainerWrapper>
-              <Homepage
-                data={int === "en" ? en : cz}
-                toggleShowFulltext={this.toggleShowFulltext}
-                selectTopic={this.selectTopic}
-                showAll={showAll}
-                style={{ flex: 1 }}
-              />
-            <Databases data={int === "en" ? en : cz} />
+            <Homepage
+              data={int === 'en' ? en : cz}
+              toggleShowFulltext={this.toggleShowFulltext}
+              selectTopic={this.selectTopic}
+              showAll={showAll}
+              style={{flex: 1}}
+            />
+            <Databases data={int === 'en' ? en : cz} />
           </ContainerWrapper>
         )}
       </Consumer>
-    );
+    )
   }
 }
 
-export default Index;
+export default Index
 
 Index.propTypes = {
   location: PropTypes.object
-};
+}
 
 // TODO: move this section to gatsby-browser after solving the issue with global styles: https://github.com/gatsbyjs/gatsby/issues/7447
 injectGlobal`
 html, body, #___gatsby, #___gatsby>div {
     width: 100%;
     margin: 0;
+}
+
+* {
+    box-sizing: border-box
 }
 
 body {
@@ -90,11 +93,7 @@ a {
   color: green;
 }
 
-* {
-    box-sizing: border-box
-}
-
 .carousel .slide {
   background: linear-gradient(#3E7404, #778F55, #A4AF8D, white) !important;
 }
-`;
+`

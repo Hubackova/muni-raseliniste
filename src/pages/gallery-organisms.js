@@ -12,10 +12,10 @@ const PhotoGallery = ({ data }) => {
     const caption = i.src
       .split("/")
       .pop()
-      .slice(2, -4)
+      .slice(0, -4)
     return { src: i.src, thumbnail: i.src, caption: caption };
   });
-  PHOTO_SET.sort((a, b) => a.caption.localeCompare(b.caption));
+  PHOTO_SET.sort((a, b) => a.caption.localeCompare(b.caption)).slice(0, 2);
   return (
     <Consumer>
       {({ int }) => (

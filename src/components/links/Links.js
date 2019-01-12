@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import MainContainer from "../MainContainer";
 import H2 from "../atoms/H2";
+import Ul from "../atoms/Ul";
 
 const Links = ({
   publicationsData,
@@ -50,13 +51,13 @@ const Links = ({
   return (
     <MainContainer>
       <H2> {data.publications} </H2>
-      {publicationsList}
+      <Ul>{publicationsList}</Ul>
       <H2> {data.databases} </H2>
-      {databasesList}
+      <Ul>{databasesList}</Ul>
       <H2> {data.media} </H2>
-      {mediaList}
+      <Ul>{mediaList}</Ul>
       <H2> {data.popularization} </H2>
-      {popularizationList}
+      <Ul>{popularizationList}</Ul>
     </MainContainer>
   );
 };

@@ -118,7 +118,7 @@ const RightSide = styled.div`
 `
 
 const LogoText = styled.h1`
-  font-family: Lucida Sans Unicode;
+  font-family: "Lucida Sans Unicode", sans-serif;
   color: ${props => props.theme.white};
   background-color: inherit;
   margin: 0;
@@ -129,7 +129,7 @@ const LogoText = styled.h1`
 
 const LogoTextSmall = styled.h2`
   color: ${props => props.theme.white};
-  font-family: Lucida Sans Unicode;
+  font-family: "Lucida Sans Unicode", sans-serif;
   font-weight: normal;
   background-color: inherit;
   margin: 0;
