@@ -1,4 +1,4 @@
-export const en = {
+﻿export const en = {
   menu: {
     menuPeople: "People",
     menuProjects: "Projects",
@@ -28,7 +28,7 @@ export const en = {
   introText: `the long-term research of mire ecosystems, especially those rich in calcium (i.e. fens). The group involves botanists, zoologists and palaeoecologists,
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
-      generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
+      general ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
       and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae. In these groups of organisms, we are mainly interested in the relationships
       between the species richness and composition and the environmental conditions. Based on these data we also reconstruct the development of mires from the Late Glacial
       up to the present (using multi-proxy biotic and abiotic analyses of organic sediments) in relation to distribution and ecology of selected relict taxa. Except for
@@ -88,8 +88,8 @@ export const cz = {
   },
   mainHeader: "Skupina pro výzkum rašelinišť",
   muni: "Masarykova univerzita",
-  introHeader: "Naše skupina",
-  introText: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
+  introHeader: "Naše skupina se dlouhodobě věnuje",
+  introText: `výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
     ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,
@@ -100,7 +100,7 @@ export const cz = {
     vegetaci pramenišť a rašelinných luk, s cílem přispět k jejich efektivní ochraně. Naše výzkumy probíhají na rozmanitých prostorových škálách, od zcela lokální
     až po celoevropskou. V poslední době se věnujeme také klasifikaci vegetace na evropské škále (celoevropské syntézy), fylogenetickým rekonstrukcím,
     fylogeografii a taxonomii. `,
-  introTextShort: `se dlouhodobě věnuje výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
+  introTextShort: `výzkumu rašelinišť se zvláštním důrazem na tzv. slatiniště (vápnitá rašeliniště). Skupinu tvoří botanici, zoologové a
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
     ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,

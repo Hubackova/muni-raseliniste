@@ -1,4 +1,4 @@
-import horsak from '../images/people/horsak.jpg'
+﻿import horsak from '../images/people/horsak.jpg'
 import horsakova from '../images/people/horsakova.jpg'
 import hajek from '../images/people/hajek.jpg'
 import mikulaskova from '../images/people/mikulaskova.jpg'
@@ -36,6 +36,24 @@ export const staffEn = [
     img: horsak
   },
   {
+    id: `chattova`,
+    name: `Barbora Chattová`,
+    position: `Lecturer`,
+    description:
+    `Barbora Chattová studied Botany at Masaryk University, Brno. For more than 10 years, her
+    research has been focusing on ecology, diversity, morphology and taxonomy of diatoms, mainly
+    in in the (sub) Antarctic Region. In 2017, she defended a dissertation devoted to diatoms from
+    two isolated sub-Antarctic Islands. She conducted several fieldwork expeditions to Polar
+    Regions. In collaboration with Belgian colleagues, her analysis of the sampled material revealed
+    the presence of unique diatom flora composed of a large number of (newly described) endemic
+    species. Recently she started to focus also on palaeoecological research.`,
+    email: `bacha@mail.muni.cz`,
+    phoneNumber: `549498575`,
+    researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
+    is: `https://is.muni.cz/osoba/bacha`,
+    img: chattova
+  },
+  {
     id: `hajkova`,
     name: `Petra Hájková`,
     position: `Researcher`,
@@ -48,40 +66,27 @@ export const staffEn = [
     img: hajkova
   },
   {
-    id: `mikulaskova`,
-    name: `Eva Mikulášková`,
+    id: `horsakova`,
+    name: `Veronika Horsáková`,
     position: `Researcher`,
     description:
-    `Eva Mikulášková received her Mgr. and Ph.D. at the Department of Botany, Faculty of Science, Charles University in Prague. The focus of her master's thesis was on biodiversity and ecology of bryophytes in selected zones of national park Bohemian Forest. In 2012 she earned her Ph.D., the topic of her thesis being 'Biology and Ecology of the moss Campylopus introflexus'. From 2005 to 2009 she worked as a bryologist at the Administration of Protected Land Area and National Park Bohemian Forest, during which period she carried out bryofloristic surveys on the territory of the park, focusing primarily on wetland and epiphytic bryophytes. Since 2006 she has been working at the Department of Botany and Zoology, Faculty of Science, Masaryk University in Brno, where she is leading a course Biology and ecology of bryophytes. Her current research is focused on population genetics of the genus Sphagnum and on bryofloristic surveys of mainly wetland and epiphytic bryophytes. Currently she is part-time working as a researcher and is part-time on a maternity leave.`,
-    email: `klicek@mail.muni.cz`,
-    phoneNumber: `549498474`,
-    researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
-    is: `https://is.muni.cz/osoba/klicek`,
-    img: mikulaskova
-  },
-  {
-    id: `smerdova`,
-    name: `Eva Šmerdová (Hettenbergerová)`,
-    position: `Researcher`,
-    description:
-    `Eva Hettenbergerová studied Plant Systematics and Ecology at University of Ostrava. She continued in master study of botany at Masaryk University, Brno and was graduated in 2006. Her master thesis dealt with the effect of contact plant communities on the species composition of spring fens. Her PhD thesis dealt with species richness of plants and molluscs along the moisture gradient. Currently she works on database of plant macrofossils of Czech and Slovak Republic. She likes to travel with co-workers to sample field data for the next research`,
-    email: `eva.hette@centrum.cz`,
-    phoneNumber: `549498487`,
-    researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
-    is: `https://is.muni.cz/osoba/75764`,
-    img: smerdova
+    `Veronika Horsáková studied the field of Systematic biology and ecology at the Faculty of Science, MU. In her diploma thesis, defended in 2012, she studied the variation of mollusc communities in mineral-rich fens of Poland and southern Scandinavia. In her PhD thesis she analyses the species richness and composition of mollusc communities in fens of continental Europe. At present she is a PhD student of the field of Ecology and a research assistant at MU. In her current research she focuses on the ecology of land-mollusc communities with respect to spring-fen habitats and ecology of relict land-snail species.`,
+    email: `veronika.horsakova@seznam.cz`,
+    phoneNumber: `549495163`,
+    researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
+    is: `https://is.muni.cz/osoba/v.schenkova`,
+    img: horsakova
   },
   {
     id: `jamrichova`,
     name: `Eva Jamrichová`,
     position: `Researcher`,
     description: `Eva Jamrichová studied Biology and Chemistry at University of Constantine the Philosopher in
-    Nitra (Slovakia) and was graduated in 2005. She continued in PhD. studium at the same
+    Nitra (Slovakia) and was graduated in 2005. She continued in doctoral studium at the same
     University (2005-2009) where she focused on relationship between prehistoric settlement and
-    environmental factors of the landscape in the South-Western Slovakia. Currently she is a
-    postgraduate student at Charles University in Prague and her PhD. thesis deals about
-    anthropogenic impact on landscape transformation and vegetation changes reflected in pollen
-    spectra from Central Europe. Since 2009 she is employed as researcher at Department of
+    environmental factors of the landscape in the South-Western Slovakia. In 2016, she defended her PhD. thesis
+    at Charles University in Prague (Anthropogenic impact on landscape transformation and vegetation changes reflecting in pollen spectra from central-eastern Europe).
+    Since 2009 she is employed as researcher at Department of
     Vegetation Ecology of the Institute of Botany of the ASCR and Department of Botany and
     Zoology at Masaryk University. Her research interest is landscape transformation and
     vegetation changes during the Late Glacial and Holocene period in the Northern part of
@@ -89,7 +94,7 @@ export const staffEn = [
     email: `111594@mail.muni.cz`,
     phoneNumber: `541126217`,
     researchgate: `https://www.researchgate.net/profile/Eva_Jamrichova`,
-    is: `https://is.muni.cz/osoba/machozrut`,
+    is: `https://is.muni.cz/osoba/111594`,
     img: jamrichova
   },
   {
@@ -117,6 +122,18 @@ export const staffEn = [
     img: kosuthova
   },
   {
+    id: `mikulaskova`,
+    name: `Eva Mikulášková`,
+    position: `Researcher`,
+    description:
+    `Eva Mikulášková received her Mgr. and Ph.D. at the Department of Botany, Faculty of Science, Charles University in Prague. The focus of her master's thesis was on biodiversity and ecology of bryophytes in selected zones of national park Bohemian Forest. In 2012 she earned her Ph.D., the topic of her thesis being 'Biology and Ecology of the moss Campylopus introflexus'. From 2005 to 2009 she worked as a bryologist at the Administration of Protected Land Area and National Park Bohemian Forest, during which period she carried out bryofloristic surveys on the territory of the park, focusing primarily on wetland and epiphytic bryophytes. Since 2006 she has been working at the Department of Botany and Zoology, Faculty of Science, Masaryk University in Brno, where she is leading a course Biology and ecology of bryophytes. Her current research is focused on population genetics of the genus Sphagnum and on bryofloristic surveys of mainly wetland and epiphytic bryophytes. Currently she is part-time working as a researcher and is part-time on a maternity leave.`,
+    email: `klicek@mail.muni.cz`,
+    phoneNumber: `549498474`,
+    researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
+    is: `https://is.muni.cz/osoba/klicek`,
+    img: mikulaskova
+  },
+  {
     id: `petr`,
     name: `Libor Petr`,
     position: `Researcher`,
@@ -127,18 +144,6 @@ export const staffEn = [
     researchgate: `https://www.researchgate.net/profile/Libor_Petr`,
     is: `https://is.muni.cz/osoba/115762`,
     img: petr
-  },
-  {
-    id: `horsakova`,
-    name: `Veronika Horsáková`,
-    position: `Researcher`,
-    description:
-    `Veronika Horsáková studied the field of Systematic biology and ecology at the Faculty of Science, MU. In her diploma thesis, defended in 2012, she studied the variation of mollusc communities in mineral-rich fens of Poland and southern Scandinavia. In her PhD thesis she analyses the species richness and composition of mollusc communities in fens of continental Europe. At present she is a PhD student of the field of Ecology and a research assistant at MU. In her current research she focuses on the ecology of land-mollusc communities with respect to spring-fen habitats and ecology of relict land-snail species.`,
-    email: `veronika.horsakova@seznam.cz`,
-    phoneNumber: `549495163`,
-    researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
-    is: `https://is.muni.cz/osoba/v.schenkova`,
-    img: horsakova
   },
   {
     id: `pleskova`,
@@ -153,22 +158,16 @@ export const staffEn = [
     img: pleskova
   },
   {
-    id: `chattova`,
-    name: `Barbora Chattová`,
-    position: `Lecturer`,
+    id: `smerdova`,
+    name: `Eva Šmerdová (Hettenbergerová)`,
+    position: `Researcher`,
     description:
-    `Barbora Chattová studied Botany at Masaryk University, Brno. For more than 10 years, her
-    research has been focusing on ecology, diversity, morphology and taxonomy of diatoms, mainly
-    in in the (sub) Antarctic Region. In 2017, she defended a dissertation devoted to diatoms from
-    two isolated sub-Antarctic Islands. She conducted several fieldwork expeditions to Polar
-    Regions. In collaboration with Belgian colleagues, her analysis of the sampled material revealed
-    the presence of unique diatom flora composed of a large number of (newly described) endemic
-    species. Recently she started to focus also on palaeoecological research.`,
-    email: `bacha@mail.muni.cz`,
-    phoneNumber: `549498575`,
-    researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
-    is: `https://is.muni.cz/osoba/bacha`,
-    img: chattova
+    `Eva Hettenbergerová studied Plant Systematics and Ecology at University of Ostrava. She continued in master study of botany at Masaryk University, Brno and was graduated in 2006. Her master thesis dealt with the effect of contact plant communities on the species composition of spring fens. Her PhD thesis dealt with species richness of plants and molluscs along the moisture gradient. Currently she works on database of plant macrofossils of Czech and Slovak Republic. She likes to travel with co-workers to sample field data for the next research`,
+    email: `eva.hette@centrum.cz`,
+    phoneNumber: `549498487`,
+    researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
+    is: `https://is.muni.cz/osoba/75764`,
+    img: smerdova
   }
 ]
 
@@ -197,6 +196,24 @@ export const staffCz = [
     img: horsak
   },
   {
+    id: `chattova`,
+    name: `Barbora Chattová`,
+    position: `Lektorka`,
+    description:
+    `Barbora Chattová vystudovala botaniku na Masarykově Univerzitě v Brně. Přes deset let se
+    věnuje ekologii, diverzitě, morfologii a taxonomii rozsivek, především v Antarktidě a sub-
+    Antarktidě. V roce 2017 obhájila disertační práci, která se věnovala rozsivkám dvou malých,
+    izolovaných sub-Antarktických ostrovů. Během svých výzkumných prací se stala účastnicí
+    několika polárních expedic. Během výzkumu získaného materiálu se jí společně s belgickými
+    kolegy podařilo objevit a popsat několik nových (endemických) druhů. V poslední době se
+    intenzivně věnuje i paleoekologickým analýzám rozsivek v sedimentech.`,
+    email: `bacha@mail.muni.cz`,
+    phoneNumber: `549498575`,
+    researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
+    is: `https://is.muni.cz/osoba/bacha`,
+    img: chattova
+  },
+  {
     id: `hajkova`,
     name: `Petra Hájková`,
     position: `Odborná pracovnice`,
@@ -208,36 +225,25 @@ export const staffCz = [
     img: hajkova
   },
   {
-    id: `mikulaskova`,
-    name: `Eva Mikulášková`,
+    id: `horsakova`,
+    name: `Veronika Horsáková`,
     position: `Odborná pracovnice`,
-    description: `Eva Mikulášková studovala obor Odborná biologie na Katedře botaniky PřF Univerzity Karlovy v Praze, absolvovala v roce 2004. Ve své diplomové práci se zabývala biodiverzitou a ekologií mechorostů ve vybraných I. zónách NP Šumava. Poté na PřF UK navázala doktorským oborem Botanika s tématem disertační práce Biologie a ekologie mechu Campylopus introflexus. Absolvovala v roce 2012. Během let 2005-2009 pracovala jako bryolog na Správě CHKO a NP Šumava, kde se zaměřovala převážně na výzkum mokřadních a epifytických mechorostů a celkovou bryofloristiku. Od roku 2006 pracuje na Ústavu botaniky a zoologie PřF Masarykovy Univerzity v Brně, kde vede kurz Obecné bryologie, zabývá se populační genetikou rodu Sphagnum, mokřadními a epifytickými mechorosty a příležitostně se věnuje bryofloristice jiných biotopů. V současné době pracuje ve vědě pouze částečně a zbytek času je na rodičovské dovolené.`,
-    email: `klicek@mail.muni.cz`,
-    phoneNumber: `549498474`,
-    researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
-    is: `https://is.muni.cz/osoba/klicek`,
-    img: mikulaskova
-  },
-  {
-    id: `smerdova`,
-    name: `Eva Šmerdová (Hettenbergerová)`,
-    position: `Odborná pracovnice`,
-    description: `Eva Hettenbergerová získala bakalářský titul na Ostravské Univerzitě, její práce se zaměřovala na flóru a vegetaci hald. Magisterské studium botaniky ukončila v roce 2006 na PřF Masarykovy Univerzity v Brně diplomovou prací zabývající se vlivem kontaktních společenstev na druhové složení lučních pramenišť. Doktorskou práci na téma druhová bohatost a variabilita rostlin a měkkýšů na vlhkostním gradientu obhájila v roce 2013. V současné době se mimo jiné zabývá tvorbou databáze rostlinných makrozbytků České a Slovenské republiky a doplňováním vegetačních snímků a jiných údajů pro projekt PLADIAS. Ráda cestuje s kolegy po rodné vlasti i do zahraničí a sbírá terénní data k dalšímu výzkumu ekologie mokřadů i jiných biotopů.`,
-    email: `eva.hette@centrum.cz`,
-    phoneNumber: `549498487`,
-    researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
-    is: `https://is.muni.cz/osoba/75764`,
-    img: smerdova
+    description: `Veronika Horsáková studovala obor Systematická biologie a ekologie na PřF MU. Diplomovou práci obhájila v r. 2012 a zabývala se v ní studiem variability společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie. Tématem její disertační práce, obhájené v roce 2017, byla analýza druhové bohatosti a skladby společenstev měkkýšů na slatiništích kontinentální Evropy. V současnosti je odbornou pracovnicí na Ústavu botaniky a zoologie (MU) a ve svém aktuálním výzkumu se věnuje ekologii suchozemských společenstev měkkýšů se zaměřením na prameništní slatiniště a ekologii reliktních druhů plžů.`,
+    email: `veronika.horsakova@seznam.cz`,
+    phoneNumber: `549495163`,
+    researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
+    is: `https://is.muni.cz/osoba/v.schenkova`,
+    img: horsakova
   },
   {
     id: `jamrichova`,
     name: `Eva Jamrichová`,
     position: `Odborná pracovnice`,
-    description: `Študovala odbor biológia-chémia na Univerzite Konštantína Filozofa v Nitre (UKF, Nitra, Slovensko), ktorý ukončila v roku 2005. V následnom postgraduálnom štúdiu (2005-2009) na UKF v Nitre sa venovala vzťahom medzi pravekým osídlením a prírodným prostredím na juhozápadnom Slovensku. V súčasnej dobe je postgraduálnou študentkou Univerzity Karlovy v Prahe a téma jej dizertačnej práce je antropogénny vplyv na zmeny krajiny a vegetácie odrážajúce sa v peľových spektrách strednej Európy. V súčasnosti pracuje na Oddelení vegetační ekológie BÚ AVČR v Brne a UBZ na Masarykovej Univerzite, kde sa zaoberá zmenami krajiny a vegetácie v priebehu neskorého glaciálu a holocénu v severnej časti Panónskej nížiny a Západných Karpatoch.`,
+    description: `Študovala odbor biológia-chémia na Univerzite Konštantína Filozofa v Nitre (UKF, Nitra, Slovensko), ktorý ukončila v roku 2005. V následnom postgraduálnom štúdiu (2005-2009) na UKF v Nitre sa venovala vzťahom medzi pravekým osídlením a prírodným prostredím na juhozápadnom Slovensku. V roku 2016 obhájila PhD na Univerzite Karlovej v Prahe a téma jej dizertačnej práce bola antropogénny vplyv na zmeny krajiny a vegetácie odrážajúce sa v peľových spektrách strednej Európy. V súčasnosti pracuje v Paleoekologické laboratoři BÚ AVČR v Brne a UBZ na Masarykovej Univerzite, kde sa zaoberá zmenami krajiny a vegetácie v priebehu neskorého glaciálu a holocénu v severnej časti Panónskej nížiny a Západných Karpatoch.`,
     email: `111594@mail.muni.cz`,
     phoneNumber: `541126217`,
     researchgate: `https://www.researchgate.net/profile/Eva_Jamrichova`,
-    is: `https://is.muni.cz/osoba/111594t`,
+    is: `https://is.muni.cz/osoba/111594`,
     img: jamrichova
   },
   {
@@ -263,6 +269,17 @@ export const staffCz = [
     img: kosuthova
   },
   {
+    id: `mikulaskova`,
+    name: `Eva Mikulášková`,
+    position: `Odborná pracovnice`,
+    description: `Eva Mikulášková studovala obor Odborná biologie na Katedře botaniky PřF Univerzity Karlovy v Praze, absolvovala v roce 2004. Ve své diplomové práci se zabývala biodiverzitou a ekologií mechorostů ve vybraných I. zónách NP Šumava. Poté na PřF UK navázala doktorským oborem Botanika s tématem disertační práce Biologie a ekologie mechu Campylopus introflexus. Absolvovala v roce 2012. Během let 2005-2009 pracovala jako bryolog na Správě CHKO a NP Šumava, kde se zaměřovala převážně na výzkum mokřadních a epifytických mechorostů a celkovou bryofloristiku. Od roku 2006 pracuje na Ústavu botaniky a zoologie PřF Masarykovy Univerzity v Brně, kde vede kurz Obecné bryologie, zabývá se populační genetikou rodu Sphagnum, mokřadními a epifytickými mechorosty a příležitostně se věnuje bryofloristice jiných biotopů. V současné době pracuje ve vědě pouze částečně a zbytek času je na rodičovské dovolené.`,
+    email: `klicek@mail.muni.cz`,
+    phoneNumber: `549498474`,
+    researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
+    is: `https://is.muni.cz/osoba/klicek`,
+    img: mikulaskova
+  },
+  {
     id: `petr`,
     name: `Libor Petr`,
     position: `Odborný pracovník`,
@@ -272,17 +289,6 @@ export const staffCz = [
     researchgate: `https://www.researchgate.net/profile/Libor_Petr`,
     is: `https://is.muni.cz/osoba/115762`,
     img: petr
-  },
-  {
-    id: `horsakova`,
-    name: `Veronika Horsáková`,
-    position: `Odborná pracovnice`,
-    description: `Veronika Horsáková studovala obor Systematická biologie a ekologie na PřF MU. Diplomovou práci obhájila v r. 2012 a zabývala se v ní studiem variability společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie. Tématem její disertační práce, obhájené v roce 2017, byla analýza druhové bohatosti a skladby společenstev měkkýšů na slatiništích kontinentální Evropy. V současnosti je odbornou pracovnicí na Ústavu botaniky a zoologie (MU) a ve svém aktuálním výzkumu se věnuje ekologii suchozemských společenstev měkkýšů se zaměřením na prameništní slatiniště a ekologii reliktních druhů plžů.`,
-    email: `veronika.horsakova@seznam.cz`,
-    phoneNumber: `549495163`,
-    researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
-    is: `https://is.muni.cz/osoba/v.schenkova`,
-    img: horsakova
   },
   {
     id: `pleskova`,
@@ -296,21 +302,14 @@ export const staffCz = [
     img: pleskova
   },
   {
-    id: `chattova`,
-    name: `Barbora Chattová`,
-    position: `Lektorka`,
-    description:
-    `Barbora Chattová vystudovala botaniku na Masarykově Univerzitě v Brně. Přes deset let se
-    věnuje ekologii, diverzitě, morfologii a taxonomii rozsivek, především v Antarktidě a sub-
-    Antarktidě. V roce 2017 obhájila disertační práci, která se věnovala rozsivkám dvou malých,
-    izolovaných sub-Antarktických ostrovů. Během svých výzkumných prací se stala účastnicí
-    několika polárních expedic. Během výzkumu získaného materiálu se jí společně s belgickými
-    kolegy podařilo objevit a popsat několik nových (endemických) druhů. V poslední době se
-    intenzivně věnuje i paleoekologickým analýzám rozsivek v sedimentech.`,
-    email: `bacha@mail.muni.cz`,
-    phoneNumber: `549498575`,
-    researchgate: `https://www.researchgate.net/profile/Barbora_Chattova`,
-    is: `https://is.muni.cz/osoba/bacha`,
-    img: chattova
+    id: `smerdova`,
+    name: `Eva Šmerdová (Hettenbergerová)`,
+    position: `Odborná pracovnice`,
+    description: `Eva Hettenbergerová získala bakalářský titul na Ostravské Univerzitě, její práce se zaměřovala na flóru a vegetaci hald. Magisterské studium botaniky ukončila v roce 2006 na PřF Masarykovy Univerzity v Brně diplomovou prací zabývající se vlivem kontaktních společenstev na druhové složení lučních pramenišť. Doktorskou práci na téma druhová bohatost a variabilita rostlin a měkkýšů na vlhkostním gradientu obhájila v roce 2013. V současné době se mimo jiné zabývá tvorbou databáze rostlinných makrozbytků České a Slovenské republiky a doplňováním vegetačních snímků a jiných údajů pro projekt PLADIAS. Ráda cestuje s kolegy po rodné vlasti i do zahraničí a sbírá terénní data k dalšímu výzkumu ekologie mokřadů i jiných biotopů.`,
+    email: `eva.hette@centrum.cz`,
+    phoneNumber: `549498487`,
+    researchgate: `https://www.researchgate.net/scientific-contributions/85483229_Eva_Hettenbergerova`,
+    is: `https://is.muni.cz/osoba/75764`,
+    img: smerdova
   }
 ]

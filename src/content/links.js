@@ -1,4 +1,4 @@
-export const publications = [
+﻿export const publications = [
     {
         name: `http://botzool.sci.muni.cz/publikace/m`,
         link: `http://botzool.sci.muni.cz/publikace/m`
@@ -11,7 +11,7 @@ export const databasesEn = [
   },
   {
     name: `Palaeoecological profiles`,
-    link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&amp;proj=7`
+    link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&proj=7`
   },
   {
     name: `Vegetation-plot databases`,
@@ -25,7 +25,7 @@ export const databasesCz = [
     },
     {
       name: `Paleoekologické profily`,
-      link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&amp;proj=7`
+      link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&proj=7`
     },
     {
       name: `Databáze vegetačních snímků`,
@@ -67,7 +67,7 @@ export const media = [
   },
   {
     name: `06/12/2016 První úplný přehled typů evropské vegetace: Online.muni.cz`,
-    link: `https://www.online.muni.cz/veda-a-vyzkum/8576-botanici-muni-pomohli-s-popisem-evropske-vegetace-pomuze-chranit-prirodu?utm_source=fb_milujeme&amp;utm_medium=link&amp;utm_campaign=facebook`
+    link: `https://www.online.muni.cz/veda-a-vyzkum/8576-botanici-muni-pomohli-s-popisem-evropske-vegetace-pomuze-chranit-prirodu?utm_source=fb_milujeme&utm_medium=link&utm_campaign=facebook`
   },
   {
     name: `19/04/2007 Doba ledová nebyla tak hrozivá, 21. století`,
@@ -77,10 +77,10 @@ export const media = [
 
 export const popularization = [
   {
-    name: `Horsáková V. &amp; Horsák M. (2018): Vrkoč Geyerův a vrkoč útlý - první nálezy celoevropsky ohrožených    plžů ve Slavkovském lese. Arnika 1:30-33. - fulltext pdf file`
+    name: `Horsáková V. & Horsák M. (2018): Vrkoč Geyerův a vrkoč útlý - první nálezy celoevropsky ohrožených    plžů ve Slavkovském lese. Arnika 1:30-33. - fulltext pdf file`
   },
   {
-    name: `Horsák M., Juřičková L. &amp; Škodová J. (2017): Pod svícnem bývá tma - identita záhadné fosilní zrnovky z
+    name: `Horsák M., Juřičková L. & Škodová J. (2017): Pod svícnem bývá tma - identita záhadné fosilní zrnovky z
     Brna odhalena. Živa 65: 124-125.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/pod-svicnem-byva-tma-identita-zahadne-fosilni-zrno.pdf`
@@ -100,66 +100,66 @@ export const popularization = [
     zemi.html`
   },
   {
-    name: `Schenková V., Čáp Hlaváč J. &amp; Horsák M. (2013): Vrkoč rašelinný - další z glaciálních reliktů - z červené
+    name: `Schenková V., Čáp Hlaváč J. & Horsák M. (2013): Vrkoč rašelinný - další z glaciálních reliktů - z červené
     knihy našich měkkýšů. Živa 61: 73-74.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/vrkoc-raselinny-dalsi-z-glacialnich-reliktu-z-cerv.pdf`
   },
   {
-    name: `Schenková V. &amp; Horsák M. (2013): Nové nálezy vrkoče Geyerova potvrzují jeho ohroženost - z červené
+    name: `Schenková V. & Horsák M. (2013): Nové nálezy vrkoče Geyerova potvrzují jeho ohroženost - z červené
     knihy našich měkkýšů. Živa 5: 238-239.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/nove-nalezy-vrkoce-geyerova-potvrzuji-jeho-ohrozen.pdf`
   },
   {
-    name: `Hájek M. &amp; Hájková P. (2012): Na jih za severskými rašeliništi. Živa 4: 183-185. - fulltext pdf file
+    name: `Hájek M. & Hájková P. (2012): Na jih za severskými rašeliništi. Živa 4: 183-185. - fulltext pdf file
     http://ziva.avcr.cz/files/ziva/pdf/na-jih-za-severskymi-raselinisti.pdf`
   },
   {
-    name: `Horsák M., Hájek M., Hájková P., Tichý L. &amp; Dítě D. (2012): Západokarpatská pěnovcová rašeliniště -
+    name: `Horsák M., Hájek M., Hájková P., Tichý L. & Dítě D. (2012): Západokarpatská pěnovcová rašeliniště -
     příběh dlouhý 17 tisíc let. Živa 1: 8-9.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/zapadokarpatska-penovcova-raseliniste-pribeh-dlouh.pdf`
   },
   {
-    name: `Literák I., Literáková Z., Horsák M. &amp; Hromádko M. (2012): S ptáky se mohou stěhovat i plži - pěnice
+    name: `Literák I., Literáková Z., Horsák M. & Hromádko M. (2012): S ptáky se mohou stěhovat i plži - pěnice
     hnědokřídlá a skleněnka průsvitná. Živa 5: 245-246.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/s-ptaky-se-mohou-stehovat-i-plzi-penice-hnedokridl.pdf`
   },
   {
-    name: `Myšák J., Horsák M. &amp; Hlaváč J.Č. (2012): Jedna špatná a jedna dobrá zpráva o vrkoči Geyerově - z
+    name: `Myšák J., Horsák M. & Hlaváč J.Č. (2012): Jedna špatná a jedna dobrá zpráva o vrkoči Geyerově - z
     červené knihy našich měkkýšů. Živa 2: 73-74.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/jedna-spatna-a-jedna-dobra-zprava-o-vrkoci-geyerov.pdf`
   },
   {
-    name: `Horsák M. &amp; Hájek M. (2011): Trpasličí plži na slatiništích - proč je dobré být malý. Vesmír 90: 492-495.`,
+    name: `Horsák M. & Hájek M. (2011): Trpasličí plži na slatiništích - proč je dobré být malý. Vesmír 90: 492-495.`,
     link: `
     https://vesmir.cz/cz/casopis/archiv-casopisu/2011/cislo-9/trpaslici-plzi-slatinistich.html`
   },
   {
     name: `Chytrý M., Šumberová K., Hájková P., Hájek M., Hroudová Z., Navrátilová J., Čtvrtlíková M., Sádlo J.,
     Lososová Z., Hrivnák R., Rydlo J., Oťaheľová H., Bauer P., Hanáková P., Ekrt L., Ekrtová E., Michalcová
-    D., Žáková K., Danihelka J., Králová Š., Karimová K., Tichý L., Hájek O. &amp; Kočí M. (2011): Vegetace
+    D., Žáková K., Danihelka J., Králová Š., Karimová K., Tichý L., Hájek O. & Kočí M. (2011): Vegetace
     České republiky 3. Vodní a mokřadní vegetace. Praha : Academia. 827 pp.`,
     link: `
     http://www.sci.muni.cz/botany/chytry/Vegetace-Ceske-republiky-3-2011-high-resolution.pdf`
   },
   {
-    name: `Hájek M., Roleček J. &amp; Fajmon K. (2010): Pomozte objasnit historii našich luk. Bílé-Biele Karpaty 1: 20-
+    name: `Hájek M., Roleček J. & Fajmon K. (2010): Pomozte objasnit historii našich luk. Bílé-Biele Karpaty 1: 20-
     21.`,
     link: `
     http://www.sci.muni.cz/botany/rolecek/Hajek_etal2010_BK.pdf`
   },
   {
-    name: `Horsák M. &amp; Chytrý M. (2010): Krajiny zamrzlé v čase I. Jižní Sibiř - současná analogie střední Evropy v
+    name: `Horsák M. & Chytrý M. (2010): Krajiny zamrzlé v čase I. Jižní Sibiř - současná analogie střední Evropy v
     době ledové. Živa 2009: 118-120.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/krajiny-zamrzle-v-case-i-jizni-sibir-soucasna-anal.pdf`
   },
   {
-    name: `Horsák M. &amp; Chytrý M. (2010): Krajiny zamrzlé v čase II. Jižní Ural - současná analogie střední Evropy
+    name: `Horsák M. & Chytrý M. (2010): Krajiny zamrzlé v čase II. Jižní Ural - současná analogie střední Evropy
     ve starém a středním holocénu. Živa 2010: 166-168.`,
     link: `
     http://ziva.avcr.cz/files/ziva/pdf/krajiny-zamrzle-v-case-ii-jizni-ural-soucasna-anal.pdf`

@@ -1,4 +1,4 @@
-import React from "react";
+﻿import React from "react";
 
 export const cryptogamologyTextCz = (
   <span>
@@ -181,8 +181,7 @@ export const palaeoEcologyTextCz = (
     věda o vztazích organismů a jejich prostředí v minulosti. Zdrojem informací
     a objektem zkoumání jsou nejrůznější sedimenty obsahující zachovalé zbytky
     organizmů. V případě našeho výzkumu se většinou jedná o <a href="topic-mires">
-      organické sedimenty jezer, vrchovišť a slatinišť
-    </a>, ve kterých čteme jako ve vzácné kronice, ale zachycující výrazně delší
+    organické sedimenty jezer, vrchovišť a slatinišť</a>, ve kterých čteme jako ve vzácné kronice, ale zachycující výrazně delší
     časový úsek než všechny lidské písemnosti. Postupného ukládání sedimentu a
     vzniku těchto „přírodních archivů“ je dosaženo díky vysoké hladině vody,
     která zabraňuje rozkladu zbytků většiny organizmů. Využíváme jak analýzu
@@ -252,7 +251,7 @@ export const relictEcosystemsTextCz = (
     doby ledové a počátku současné doby poledové. Právě proto nás baví zkoumat
     reliktní ekosystémy, tedy takové, které různou mírou připomínají stav
     přírody v minulosti, od doby posledního maxima zalednění zhruba před 24
-    tisící lety. V případě rašelinišť sledujeme rozšíření, ekologii a
+    tisíci lety. V případě rašelinišť sledujeme rozšíření, ekologii a
     ochranářské otázky týkající se reliktních druhů rostlin a měkkýšů, jejich
     disjunktního rozšíření a dlouhodobého přežívání na lokalitách. Možnost
     přesného datování stáří rašelinišť a poznání jejich <a href="topic-paleo">historického vývoje</a> nám umožňuje dávat do
@@ -285,114 +284,114 @@ export const relictEcosystemsTextCz = (
 
 export const results = {
   mireEcologyResults: [
-    `Horsáková, V., Hájek, M., Hájková, P., Dítě, D., &amp; Horsák, M. (2018). Principal factors controlling the
+    `Horsáková, V., Hájek, M., Hájková, P., Dítě, D., & Horsák, M. (2018). Principal factors controlling the
         species richness of European fens differ between habitat specialists and matrix‐derived species. Diversity
         and Distributions, 24, 742-754.`,
-    `Horsák, M., Polášková, V., Zhai, M., Bojková, J., Syrovátka, V., Šorfová, V., ... &amp; Hájek, M. (2018). Spring-
+    `Horsák, M., Polášková, V., Zhai, M., Bojková, J., Syrovátka, V., Šorfová, V., ... & Hájek, M. (2018). Spring-
         fen habitat islands in a warming climate: Partitioning the effects of mesoclimate air and water
         temperature on aquatic and terrestrial biota. Science of the Total Environment, 634, 355-365.`,
-    `Navrátilová, J., Hájek, M., Navrátil, J., Hájková, P., &amp; Frazier, R. J. (2017). Convergence and
+    `Navrátilová, J., Hájek, M., Navrátil, J., Hájková, P., & Frazier, R. J. (2017). Convergence and
         impoverishment of fen communities in a eutrophicated agricultural landscape of the Czech
         Republic. Applied Vegetation Science, 20, 225-235.`,
     `Peterka, T., Hájek, M., Jiroušek, M., Jiménez‐Alfaro, B., Aunina, L., Bergamini, A., ... (2017). Formalized
         classification of European fen vegetation at the alliance level. Applied Vegetation Science, 20, 124-142.`,
-    `Plesková, Z., Jiroušek, M., Peterka, T., Hájek, T., Dítě, D., Hájková, P., ... &amp; Hájek, M. (2016). Testing
+    `Plesková, Z., Jiroušek, M., Peterka, T., Hájek, T., Dítě, D., Hájková, P., ... & Hájek, M. (2016). Testing
         inter‐regional variation in pH niches of fen mosses. Journal of vegetation science, 27, 352-364.`,
-    `Peterka, T., Pleskova, Z., Jirousek, M., &amp; Hajek, M. (2014). Testing floristic and environmental
+    `Peterka, T., Pleskova, Z., Jirousek, M., & Hajek, M. (2014). Testing floristic and environmental
         differentiation of rich fens on the Bohemian Massif. Preslia, 86, 337-366.`,
-    `Jiroušek, M., Poulíčková, A., Kintrová, K., Opravilová, V., Hájková, P., Rybníček, K., ... &amp; Králová, Š. (2013).
+    `Jiroušek, M., Poulíčková, A., Kintrová, K., Opravilová, V., Hájková, P., Rybníček, K., ... & Králová, Š. (2013).
         Long‐term and contemporary environmental conditions as determinants of the species composition of
         bog organisms. Freshwater Biology, 58, 2196-2207.`,
-    `Horsák, M., Hájek, M., Spitale, D., Hájková, P., Dítě, D., &amp; Nekola, J. C. (2012). The age of island‐like
+    `Horsák, M., Hájek, M., Spitale, D., Hájková, P., Dítě, D., & Nekola, J. C. (2012). The age of island‐like
         habitats impacts habitat specialist species richness. Ecology, 93, 1106-1114.`,
-    `Hájek, M., Roleček, J., Cottenie, K., Kintrová, K., Horsák, M., Poulíčková, A., ... &amp; Dítě, D. (2011).
+    `Hájek, M., Roleček, J., Cottenie, K., Kintrová, K., Horsák, M., Poulíčková, A., ... & Dítě, D. (2011).
         Environmental and spatial controls of biotic assemblages in a discrete semi‐terrestrial habitat:
         comparison of organisms with different dispersal abilities sampled in the same plots. Journal of
         Biogeography, 38, 1683-1693.`,
-    `Jiroušek, M., Hájek, M., &amp; Bragazza, L. (2011). Nutrient stoichiometry in Sphagnum along a nitrogen
+    `Jiroušek, M., Hájek, M., & Bragazza, L. (2011). Nutrient stoichiometry in Sphagnum along a nitrogen
         deposition gradient in highly polluted region of Central-East Europe. Environmental Pollution, 159, 585-
         590.`,
-    `Hájek, M., Horsák, M., Hájková, P., &amp; Dítě, D. (2006). Habitat diversity of central European fens in
+    `Hájek, M., Horsák, M., Hájková, P., & Dítě, D. (2006). Habitat diversity of central European fens in
         relation to environmental gradients and an effort to standardise fen terminology in ecological
         studies. Perspectives in Plant Ecology, Evolution and Systematics, 8, 97-114.`
   ],
   palaeoEcologyResults: [
-    `Frodlová, J., Hájková, P. &amp; Horsák, M. (2018). Effect of sample size and resolution on palaeomalacological
+    `Frodlová, J., Hájková, P. & Horsák, M. (2018). Effect of sample size and resolution on palaeomalacological
     interpretation: a case study from Holocene calcareous-fen deposits. Journal of Quaternary Science, 33,
     68-78.`,
-    `Dudová, L., Hájek, M., Petr, L., &amp; Jankovská, V. (2018). Holocene vegetation history of the Jeseníky Mts:
+    `Dudová, L., Hájek, M., Petr, L., & Jankovská, V. (2018). Holocene vegetation history of the Jeseníky Mts:
     Deepening elevational contrast in pollen assemblages since late prehistory. Journal of Vegetation
     Science, 29, 371-381.`,
-    `Jamrichová, E., Petr, L., Jiménez‐Alfaro, B., Jankovská, V., Dudová, L., Pokorný, P., ... &amp; Syrovátka, V.
+    `Jamrichová, E., Petr, L., Jiménez‐Alfaro, B., Jankovská, V., Dudová, L., Pokorný, P., ... & Syrovátka, V.
     (2017). Pollen‐inferred millennial changes in landscape patterns at a major biogeographical interface
     within Europe. Journal of Biogeography, 44, 2386-2397.`,
-    `Hájková, P., Pařil P., Petr, L., Chattová, B., Grygar, T.M. &amp; Heiri, O. (2016). A first chironomid-based
+    `Hájková, P., Pařil P., Petr, L., Chattová, B., Grygar, T.M. & Heiri, O. (2016). A first chironomid-based
     summer temperature reconstruction (13-5 ka BP) around 49°N in inland Europe compared with local lake
     development. Quaternary Science Reviews, 141, 94-111.`,
-    `Hájek, M., Dudová, L., Hájková, P., Roleček, J., Moutelíková, J., Jamrichová, E. &amp; Horsák, M. (2016):
+    `Hájek, M., Dudová, L., Hájková, P., Roleček, J., Moutelíková, J., Jamrichová, E. & Horsák, M. (2016):
     Contrasting Holocene environmental histories may explain patterns of species richness and rarity in a
     Central European landscape. Quaternary Science Reviews, 133, 48-61.`,
-    `Hájková, P., Horsák, M., Hájek, M., Jankovská, V., Jamrichová, E. &amp; Moutelíková, J. (2015). Using multi-
+    `Hájková, P., Horsák, M., Hájek, M., Jankovská, V., Jamrichová, E. & Moutelíková, J. (2015). Using multi-
     proxy palaeoecology to test a relict status of refugial populations of calcareous-fen species in the
     Western Carpathians. Holocene, 25, 702-715.`,
-    `Juřičková, L., Horsák, M., Horáčková, J., Abraham, V. &amp; Ložek, V. (2014). Patterns of land-snail succession
+    `Juřičková, L., Horsák, M., Horáčková, J., Abraham, V. & Ložek, V. (2014). Patterns of land-snail succession
     in Central Europe over the last 15,000 years: main changes along environmental, spatial and temporal
     gradients. Quaternary Science Reviews, 93, 155-166.`,
-    `Dudová, L., Hájková, P., Buchtová, H., &amp; Opravilová, V. (2013). Formation, succession and landscape
+    `Dudová, L., Hájková, P., Buchtová, H., & Opravilová, V. (2013). Formation, succession and landscape
     history of Central-European summit raised bogs: A multiproxy study from the Hrubý Jeseník
     Mountains. The Holocene, 23, 230-242.`
   ],
   relictEcosystemsResults: [
-    `Dítě, D., Hájek, M., Svitková, I., Košuthová, A., Šoltés, R., &amp; Kliment, J. (2018). Glacial-relict symptoms in
+    `Dítě, D., Hájek, M., Svitková, I., Košuthová, A., Šoltés, R., & Kliment, J. (2018). Glacial-relict symptoms in
     the Western Carpathian flora. Folia Geobotanica, 53, 277-300.`,
     `Horsák, M., Hájek, M., Horsáková, V., Hlaváč, J., Hájková, P., Dítě, D., Peterka, T., Divíšek, J., Potůčková, A.
-    &amp; Preece, R.C. (2017). Refugial occurrence and ecology of the land snail Vertigo lilljeborgi in fen habitats
+    & Preece, R.C. (2017). Refugial occurrence and ecology of the land snail Vertigo lilljeborgi in fen habitats
     in temperate mainland Europe. Journal of Molluscan Studies, 83, 451-460.`,
     `Chytrý, M., Horsák, M., Syrovátka, V., Danihelka, J., Ermakov, N., German, D.A., Hájek, M., Hájek, O.,
-    Hájková, P., Horsáková, V., Kočí, M., Kubešová, S., Lustyk, P., Nekola, J.C., Preislerová, Z., Resl, P. &amp;
+    Hájková, P., Horsáková, V., Kočí, M., Kubešová, S., Lustyk, P., Nekola, J.C., Preislerová, Z., Resl, P. &
     Valachovič, M. (2017). Refugial ecosystems in central Asia as indicators of biodiversity change during the
     Pleistocene-Holocene transition. Ecological Indicators, 77, 357-367.`,
-    `Hájek, M., Dresler, P., Hájková, P., Hettenbergerová, E., Milo, P., Plesková, Z., &amp; Pavonič, M. (2017). Long-
+    `Hájek, M., Dresler, P., Hájková, P., Hettenbergerová, E., Milo, P., Plesková, Z., & Pavonič, M. (2017). Long-
     lasting imprint of former glassworks on vegetation pattern in an extremely species-rich grassland: a
     battle of species pools on mesic soils. Ecosystems, 20, 1233-1249.`,
     `Horsák, M., Chytrý, M., Hájková, P., Hájek, M., Danihelka, J., Horsáková, V., Ermakov, N., German, D.A.,
-    Kočí, M., Lustyk, P., Nekola, J.C., Preislerová, Z. &amp; Valachovič, M. (2015). European glacial relict snails and
+    Kočí, M., Lustyk, P., Nekola, J.C., Preislerová, Z. & Valachovič, M. (2015). European glacial relict snails and
     plants: environmental context of their modern refugial occurrence in southern Siberia. Boreas, 44, 638-
     657.`,
-    `Horsák, M., Hájek, M., Spitale, D., Hájková, P., Dítě, D. &amp; Nekola, J.C. (2012). The age of island-like
+    `Horsák, M., Hájek, M., Spitale, D., Hájková, P., Dítě, D. & Nekola, J.C. (2012). The age of island-like
     habitats impacts habitat specialist species richness. Ecology, 93, 1106-1114.`,
-    `Hájek, M., Horsák, M., Tichý, L., Hájková, P., Dítě, D., &amp; Jamrichová, E. (2011). Testing a relict
+    `Hájek, M., Horsák, M., Tichý, L., Hájková, P., Dítě, D., & Jamrichová, E. (2011). Testing a relict
     distributional pattern of fen plant and terrestrial snail species at the Holocene scale: a null model
     approach. Journal of Biogeography, 38, 742-755.`,
     `Horsák, M., Chytrý, M., Pokryszko, B.M., Danihelka, J., Ermakov, N., Hájek, M., Hájková, P., Kintrová, K.,
-    Kočí, M., Kubešová, S., Lustyk, P., Otýpková, Z., Pelánková, B. &amp; Valachovič, M. (2010). Habitats of relict
+    Kočí, M., Kubešová, S., Lustyk, P., Otýpková, Z., Pelánková, B. & Valachovič, M. (2010). Habitats of relict
     terrestrial snails in southern Siberia: lessons for the reconstruction of palaeoenvironments of full-glacial
     Europe. Journal of Biogeography, 37, 1450-1462.`
   ],
   cryptogamologyResults: [
-    `Chattová, B., Lebouvier, M., &amp; Van de Vijver, B. (2018). Morphological and taxonomical analysis of the
+    `Chattová, B., Lebouvier, M., & Van de Vijver, B. (2018). Morphological and taxonomical analysis of the
     terrestrial diatom genus Humidophila (Bacillariophyta) on Ile Amsterdam and Ile Saint-Paul (Southern
     Indian Ocean). Phytotaxa, 336, 28-42.`,
-    `Chattová, B., Lebouvier, M., De Haan, M., &amp; Van de Vijver, B. (2017). The genus Luticola (Bacillariophyta)
+    `Chattová, B., Lebouvier, M., De Haan, M., & Van de Vijver, B. (2017). The genus Luticola (Bacillariophyta)
     on Ile Amsterdam and Ile Saint-Paul (Southern Indian Ocean) with the description of two new species.
     European Journal of Taxonomy, 387, 1-17.`,
-    `Mikulášková, E., Veleba, A., Šmerda, J., Knoll, A., &amp; Hajek, M. (2017). Microsatellite variation in three
+    `Mikulášková, E., Veleba, A., Šmerda, J., Knoll, A., & Hajek, M. (2017). Microsatellite variation in three
     calcium-tolerant species of peat moss detected specific genotypes of Sphagnum warnstorfii on
     magnesium-rich bedrock. Preslia, 89, 101-114.`,
-    `Košuthová, A., Fernández-Brime, S., Westberg, M., &amp; Wedin, M. (2016). Collolechia revisited and a re-
+    `Košuthová, A., Fernández-Brime, S., Westberg, M., & Wedin, M. (2016). Collolechia revisited and a re-
     assessment of ascus characteristics in Placynthiaceae (Peltigerales, Ascomycota). The Lichenologist, 48,
     3-12.`,
-    `Mikulášková, E., Hájek, M., Veleba, A., Johnson, M. G., Hájek, T., &amp; Shaw, J. A. (2015). Local adaptations
+    `Mikulášková, E., Hájek, M., Veleba, A., Johnson, M. G., Hájek, T., & Shaw, J. A. (2015). Local adaptations
     in bryophytes revisited: the genetic structure of the calcium‐tolerant peatmoss Sphagnum warnstorfii
     along geographic and pH gradients. Ecology and evolution, 5, 229-242.`,
-    `Košuthová, A., Svitková, I., Pišút, I., Senko, D., Valachovič, M., Zaniewski, P. T., &amp; Hájek, M. (2015).
+    `Košuthová, A., Svitková, I., Pišút, I., Senko, D., Valachovič, M., Zaniewski, P. T., & Hájek, M. (2015).
     Climatic gradients within temperate Europe and small-scale species composition of lichen-rich dry
     acidophilous Scots pine forests. Fungal Ecology, 14, 8-23.`,
-    `Chattová, B., Lebouvier, M., &amp; Van de Vijver, B. (2014). Freshwater diatom communities from Ile
+    `Chattová, B., Lebouvier, M., & Van de Vijver, B. (2014). Freshwater diatom communities from Ile
     Amsterdam (TAAF, southern Indian Ocean). Fottea, 14, 101-119.`,
-    `Košuthová, A. D., &amp; Šibík, J. (2013). Ecological indicator values and life history traits of terricolous lichens
+    `Košuthová, A. D., & Šibík, J. (2013). Ecological indicator values and life history traits of terricolous lichens
     of the Western Carpathians. Ecological indicators, 34, 246-259.`,
-    `Mikulášková, E., Fajmonova, Z., &amp; Hajek, M. (2012). Invasion of central-European habitats by the moss
+    `Mikulášková, E., Fajmonova, Z., & Hajek, M. (2012). Invasion of central-European habitats by the moss
     Campylopus introflexus. Preslia, 84, 863-886.`
   ]
 };

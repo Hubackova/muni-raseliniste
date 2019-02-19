@@ -1,4 +1,4 @@
-import durcanova from '../images/people/durcanova.jpg'
+﻿import durcanova from '../images/people/durcanova.jpg'
 import frodlova from '../images/people/frodlova.jpg'
 import lizonova from '../images/people/lizonova.jpg'
 import peterka from '../images/people/peterka.jpg'
@@ -8,18 +8,6 @@ import lorencova from '../images/people/lorencova.jpg'
 import nemec from '../images/people/nemec.jpg'
 
 export const studentsEn = [
-  {
-    id: `durcanova`,
-    name: `Patrícía Ďurčanová`,
-    email: `patadurcanova@gmail.com`,
-    description: `Patrícia Ďurčanová studied biology at The Constantine the Philosopher University in Nitra and
-    was graduated 2005. Her diploma thesis dealt with wetland vegetation of Kysuce region in
-    Slovakia. Currently she is a PhD student of Department of Botany in Brno. Her PhD thesis
-    concerns succession of minerotrophic mires and its relationship with availability of nutrients.`,
-    researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
-    is: `https://is.muni.cz/osoba/447157`,
-    img: durcanova
-  },
   {
     id: `frodlova`,
     name: `Jitka Frodlová`,
@@ -38,58 +26,13 @@ export const studentsEn = [
     name: `Zuzana Lizoňová`,
     email: `375896@mail.muni.cz`,
     description: `Zuzana Lizoňová got her degree in Ecological and evolutionary biology and Zoology at Masaryk
-    University in Brno, where she graduated in 2016. Her bachelor&#39;s and master&#39;s theses dealt with
+    University in Brno, where she graduated in 2016. Her bachelor and master theses dealt with
     ecology of testate amoebae inhabiting minerothophic mires and she currently continues her
     research as a Ph.D. student focusing on variability of testate amoebae communities on small
     spatial scales.`,
     researchgate: `https://www.researchgate.net/publication/314031327_Contrasting_diversity_of_testate_amoebae_communities_in_Sphagnum_and_brown-moss_dominated_patches_in_relation_to_shell_counts.`,
     is: `https://www.muni.cz/lide/375896-zuzana-lizonova`,
     img: lizonova
-  },
-  {
-    id: `peterka`,
-    name: `Tomáš Peterka`,
-    email: `268921@mail.muni.cz`,
-    phoneNumber: `549498266`,
-    description: `Tomáš Peterka studied Botany at Masaryk University, Brno. He graduated in 2013. His master
-    thesis was devoted to mire and wetland vegetation of the north-estern part of the Žďárské vrchy
-    hills, the region previously overlooked by phytosociologist and mire ecologists. Currently he is a
-    PhD student at the Department of Botany and Zoology. His thesis should be an attempt to make
-    a classification of European fens, especially of rich fens with sphagna. His special attention is
-    still paid to the Žďárské vrchy Hills.`,
-    researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
-    is: `https://is.muni.cz/osoba/268921`,
-    img: peterka
-  },
-  {
-    id: `simova`,
-    name: `Anna Šímová`,
-    email: `simova39@gmail.com`,
-    description: `Anna Šímová studied Ecological and Evolutionary Biology at the Faculty of Science, Masaryk
-    University in Brno. In her bachelor&#39;s thesis, which she defended in 2013, she examined the
-    relationships between species composition of testate amoebae assemblages and environmental
-    factors in mires of the Western Carpathians. Her master&#39;s thesis, defended in 2016, dealt with
-    Holocene development of the Kotelnice mire in the Slezské Beskydy Mts, which was
-    reconstructed on the basis of fossil testate amoebae analysis. Currently she is a doctoral student
-    (field Ecology) at the Department of Botany and Zoology, Faculty of Science, MU and her PhD
-    thesis focuses on reconstructions of Holocene moisture changes in Carpathian mires with the
-    help of testate amoebae.`,
-    researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
-    is: `https://www.researchgate.net/profile/Anna_Simova`,
-    img: simova
-  },
-  {
-    id: `prochazkova`,
-    name: `Jana „malunka“ Procházková`,
-    email: `jana.prochazkova@mail.muni.cz`,
-    description: `Jana Procházková studied Botany at Masaryk University, Brno. She graduated in 2014. Her
-    master thesis was focused on ecology of epiphytic bryophytes. This topic, particularly
-    relationship between human impact (air pollution, forest management) and structure of
-    communities of epiphytic bryophytes is the main issue of her PhD project. She tries to combine
-    science with maternity currently :-).`,
-    researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-    is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-    img: prochazkova
   },
   {
     id: `lorencova`,
@@ -119,23 +62,67 @@ export const studentsEn = [
     consisting in stable isotope analyses.`,
     is: `https://www.muni.cz/lide/422930`,
     img: nemec
+  },
+  {
+    id: `peterka`,
+    name: `Tomáš Peterka`,
+    email: `268921@mail.muni.cz`,
+    phoneNumber: `549498266`,
+    description: `Tomáš Peterka studied Botany at Masaryk University, Brno. He graduated in 2013. His master
+    thesis was devoted to mire and wetland vegetation of the north-estern part of the Žďárské vrchy
+    hills, the region previously overlooked by phytosociologist and mire ecologists. Currently he is a
+    PhD student at the Department of Botany and Zoology. His thesis should be an attempt to make
+    a classification of European fens, especially of rich fens with sphagna. His special attention is
+    still paid to the Žďárské vrchy Hills.`,
+    researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
+    is: `https://is.muni.cz/osoba/268921`,
+    img: peterka
+  },
+  {
+    id: `prochazkova`,
+    name: `Jana „malunka“ Procházková`,
+    email: `jana.prochazkova@mail.muni.cz`,
+    description: `Jana Procházková studied Botany at Masaryk University, Brno. She graduated in 2014. Her
+    master thesis was focused on ecology of epiphytic bryophytes. This topic, particularly
+    relationship between human impact (air pollution, forest management) and structure of
+    communities of epiphytic bryophytes is the main issue of her PhD project. She tries to combine
+    science with maternity currently :-).`,
+    researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+    is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+    img: prochazkova
+  },
+  {
+    id: `simova`,
+    name: `Anna Šímová`,
+    email: `simova39@gmail.com`,
+    description: `Anna Šímová studied Ecological and Evolutionary Biology at the Faculty of Science, Masaryk
+    University in Brno. In her bachelor&#39;s thesis, which she defended in 2013, she examined the
+    relationships between species composition of testate amoebae assemblages and environmental
+    factors in mires of the Western Carpathians. Her master&#39;s thesis, defended in 2016, dealt with
+    Holocene development of the Kotelnice mire in the Slezské Beskydy Mts, which was
+    reconstructed on the basis of fossil testate amoebae analysis. Currently she is a doctoral student
+    (field Ecology) at the Department of Botany and Zoology, Faculty of Science, MU and her PhD
+    thesis focuses on reconstructions of Holocene moisture changes in Carpathian mires with the
+    help of testate amoebae.`,
+    researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
+    is: `https://www.researchgate.net/profile/Anna_Simova`,
+    img: simova
+  },
+  {
+    id: `singh`,
+    name: `Patrícía Singh`,
+    email: `patadurcanova@gmail.com`,
+    description: `Patrícia Ďurčanová studied biology at The Constantine the Philosopher University in Nitra and
+    was graduated 2005. Her diploma thesis dealt with wetland vegetation of Kysuce region in
+    Slovakia. Currently she is a PhD student of Department of Botany in Brno. Her PhD thesis
+    concerns succession of minerotrophic mires and its relationship with availability of nutrients.`,
+    researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
+    is: `https://is.muni.cz/osoba/447157`,
+    img: durcanova
   }
 ]
 
 export const studentsCz = [
-    {
-      id: `durcanova`,
-      name: `Patrícía Ďurčanová`,
-      email: `patadurcanova@gmail.com`,
-      description: `Patrícia Ďurčanová absolvovala bakalářské a magisterské studium na Přírodovědecké fakultě
-      Univerzity Konštantína Filozofa v Nitře obor Biologie v roce 2015 a obhájila diplomovou práci
-      zabývající se vegetací mokřadů Kysuc na Slovensku. Nyní je studentkou doktorského studia na
-      Ústavu botaniky a zoologie PřF MU v Brně. Tématem její dizertační práce je Sukcese na
-      minerotrofních rašeliništích ve vztahu k přístupnosti živin.`,
-      researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
-      is: `https://is.muni.cz/osoba/447157`,
-      img: durcanova
-    },
     {
       id: `frodlova`,
       name: `Jitka Frodlová`,
@@ -161,51 +148,6 @@ export const studentsCz = [
       researchgate: `https://www.researchgate.net/publication/314031327_Contrasting_diversity_of_testate_amoebae_communities_in_Sphagnum_and_brown-moss_dominated_patches_in_relation_to_shell_counts.`,
       is: `https://www.muni.cz/lide/375896-zuzana-lizonova`,
       img: lizonova
-    },
-    {
-      id: `peterka`,
-      name: `Tomáš Peterka`,
-      email: `268921@mail.muni.cz`,
-      phoneNumber: `549498266`,
-      description: `Tomáš Peterka studoval obor Botanika, směr Ekologie rostlin na Přírodovědecké fakultě
-      Masarykovy univerzity v Brně. Absolvoval v roce 2013 obhajobou diplomové práce o rašeliništní
-      a mokřadní vegetaci severozápadní části Žďárských vrchů, které do té doby stály spíše na okraji
-      zájmu fytocenologů a rašelinářů. Ve stejném roce nastoupil na doktorské studium. Tématem
-      jeho disertační práce je pokus o vytvoření jednotné klasifikace evropských slatinišť se
-      zaměřením na mírně vápnitá slatiniště s rašeliníky. Žďárských vrchům však zůstává i nadále
-      věrný.`,
-      researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
-      is: `https://is.muni.cz/osoba/268921`,
-      img: peterka
-    },
-    {
-      id: `simova`,
-      name: `Anna Šímová`,
-      email: `simova39@gmail.com`,
-      description: `Anna Šímová studovala Ekologickou a evoluční biologii na Přírodovědecké fakultě Masarykovy
-      Univerzity v Brně. Ve své bakalářské práci, kterou obhájila v roce 2013, se zabývala vztahem
-      druhového složení společenstev krytenek k faktorům prostředí na rašeliništích v Západních
-      Karpatech. Její diplomová práce, obhájena v roce 2016, pojednávala o holocenním vývoji
-      rašeliniště Kotelnice ve Slezských Beskydech, jenž byl rekonstruován na základě analýzy
-      fosilních skupin krytenek. Nyní je studentkou doktorského studia (obor Ekologie) na Ústavu
-      botaniky a zoologie, PřF MU a tématem její dizertační práce je rekonstrukce holocenních změn
-      vlhkosti na karpatských rašeliništích pomocí krytenek.`,
-      researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
-      is: `https://www.researchgate.net/profile/Anna_Simova`,
-      img: simova
-    },
-    {
-      id: `prochazkova`,
-      name: `Jana „malunka“ Procházková`,
-      email: `jana.prochazkova@mail.muni.cz`,
-      description: `Jana Procházková studovala obor Botanika, směr Ekologie rostlin, na Přírodovědecké fakultě
-      Masarykovy univerzity v Brně. Absolvovala v roce 2014. Její diplomová práce byla zaměřena na
-      ekologii epifytických mechorostů. Toto téma, zejména pak vliv člověka (znečištění ovzduší,
-      lesního hospodářství) na strukturu společenstev epifytických mechorostů, je také výzkumným
-      směrem jejího dizertačního projektu. V současné době se snaží zkombinovat vědu a mateřství :-).`,
-      researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-      is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-      img: prochazkova
     },
     {
       id: `lorencova`,
@@ -235,5 +177,63 @@ export const studentsCz = [
       spočívající v analýze stabilních izotopů.`,
       is: `https://www.muni.cz/lide/422930`,
       img: nemec
+    },
+    {
+      id: `peterka`,
+      name: `Tomáš Peterka`,
+      email: `268921@mail.muni.cz`,
+      phoneNumber: `549498266`,
+      description: `Tomáš Peterka studoval obor Botanika, směr Ekologie rostlin na Přírodovědecké fakultě
+      Masarykovy univerzity v Brně. Absolvoval v roce 2013 obhajobou diplomové práce o rašeliništní
+      a mokřadní vegetaci severozápadní části Žďárských vrchů, které do té doby stály spíše na okraji
+      zájmu fytocenologů a rašelinářů. Ve stejném roce nastoupil na doktorské studium. Tématem
+      jeho disertační práce je pokus o vytvoření jednotné klasifikace evropských slatinišť se
+      zaměřením na mírně vápnitá slatiniště s rašeliníky. Žďárských vrchům však zůstává i nadále
+      věrný.`,
+      researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
+      is: `https://is.muni.cz/osoba/268921`,
+      img: peterka
+    },
+    {
+      id: `prochazkova`,
+      name: `Jana „malunka“ Procházková`,
+      email: `jana.prochazkova@mail.muni.cz`,
+      description: `Jana Procházková studovala obor Botanika, směr Ekologie rostlin, na Přírodovědecké fakultě
+      Masarykovy univerzity v Brně. Absolvovala v roce 2014. Její diplomová práce byla zaměřena na
+      ekologii epifytických mechorostů. Toto téma, zejména pak vliv člověka (znečištění ovzduší,
+      lesního hospodářství) na strukturu společenstev epifytických mechorostů, je také výzkumným
+      směrem jejího dizertačního projektu. V současné době se snaží zkombinovat vědu a mateřství :-).`,
+      researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+      is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+      img: prochazkova
+    },
+    {
+      id: `simova`,
+      name: `Anna Šímová`,
+      email: `simova39@gmail.com`,
+      description: `Anna Šímová studovala Ekologickou a evoluční biologii na Přírodovědecké fakultě Masarykovy
+      Univerzity v Brně. Ve své bakalářské práci, kterou obhájila v roce 2013, se zabývala vztahem
+      druhového složení společenstev krytenek k faktorům prostředí na rašeliništích v Západních
+      Karpatech. Její diplomová práce, obhájena v roce 2016, pojednávala o holocenním vývoji
+      rašeliniště Kotelnice ve Slezských Beskydech, jenž byl rekonstruován na základě analýzy
+      fosilních skupin krytenek. Nyní je studentkou doktorského studia (obor Ekologie) na Ústavu
+      botaniky a zoologie, PřF MU a tématem její dizertační práce je rekonstrukce holocenních změn
+      vlhkosti na karpatských rašeliništích pomocí krytenek.`,
+      researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
+      is: `https://www.researchgate.net/profile/Anna_Simova`,
+      img: simova
+    },
+    {
+      id: `singh`,
+      name: `Patrícía Singh`,
+      email: `patadurcanova@gmail.com`,
+      description: `Patrícia Ďurčanová absolvovala bakalářské a magisterské studium na Přírodovědecké fakultě
+      Univerzity Konštantína Filozofa v Nitře obor Biologie v roce 2015 a obhájila diplomovou práci
+      zabývající se vegetací mokřadů Kysuc na Slovensku. Nyní je studentkou doktorského studia na
+      Ústavu botaniky a zoologie PřF MU v Brně. Tématem její dizertační práce je Sukcese na
+      minerotrofních rašeliništích ve vztahu k přístupnosti živin.`,
+      researchgate: `https://www.researchgate.net/profile/Patricia_Durcanova`,
+      is: `https://is.muni.cz/osoba/447157`,
+      img: durcanova
     }
   ]

@@ -1,4 +1,4 @@
-export const thesesEn = {
+﻿export const thesesEn = {
   bachelorThesesList: [
     {
       name: `Review of dated fosil records of mire plant specialists in the Bohemian-Moravian Highlands,
@@ -84,25 +84,13 @@ export const thesesEn = {
     phylogenetic studies of a particular organism group). The lists of topics in the MU Information
     System include a selection of current topics that are available for students to choose from, but it
     is always possible to create a „tailor-made“ topic according to the interest and focus of a
-    particular student. To show the topics that are offered by the Mire Ecology Group, using the link
-    below, it is necessary to choose „advanced selection“ tab and filter „by supervisor“ (e.g. Michal
+    particular student. The topics listed in IS MU, offered by our group, can be found under the Studies and Topic Lists tabs, where you need to select the type 
+    of your studies, choose „advanced selection“ tab and filter „by supervisor“ (e.g. Michal
     Hájek, Petra Hájková, Eva Mikulášková and Barbora Chattová for botanical theses, or Michal
-    Horsák for zoological theses). The link is available after logging in to IS MU only.`,
-  bachelorBotany: `Bachelor Theses Topics – Botany`,
-  bachelorBotanyLink: `https://is.muni.cz/auth/rozpis/tema?sorter=vedouci;lang=en;setlang=en;fakulta=1431;obdobi=66
-    66;studium=629617;balik=1786`,
-  bachelorZoology: `Bachelor Theses Topics – Zoology`,
-  bachelorZoologyLink: `https://is.muni.cz/auth/rozpis/tema?fakulta=1431;obdobi=6666;studium=629617;lang=en;sorter=
-    vedouci;balik=1743;omezeni=volne_aktualni`,
-  masterBotany: `Master Theses Topics – Botany`,
-  masterBotanyLink: `https://is.muni.cz/auth/rozpis/tema?lang=en;setlang=en;sorter=vedouci;fakulta=1431;obdobi=66
-   66;studium=629617;balik=1787`,
-  masterZoology: `Master Theses Topics – Zoology`,
-  masterZoologyLink: `https://is.muni.cz/auth/rozpis/tema?fakulta=1431;obdobi=6666;studium=629617;lang=en;balik=3
-   0074`,
-  thesesExample: "Example of Defended Theses",
-  bachelorTheses: "Bachelor Theses",
-  masterTheses: "Master Theses"
+    Horsák for zoological theses).`,
+    thesesExample: "Example of Defended Theses",
+    bachelorTheses: "Bachelor Theses",
+    masterTheses: "Master Theses"
 };
 
 export const thesesCz = {
@@ -189,24 +177,11 @@ export const thesesCz = {
     taxonomické a fylogenetické studie vybrané skupiny organismů). Rozpisy v Informačním
     systému MU obsahují ukázku aktuálně vypsaných témat, ze kterých lze vybírat, avšak v případě
     zájmu je obvykle možné „ušít téma přímo na míru“ konkrétního studenta, v závislosti na jeho
-    zájmu a zaměření. Pro zobrazení témat vypsaných v rámci Skupiny pro výzkum rašelinišť je
-    nutné v odkazu níže zvolit záložku „pokročilý výběr“ a zde filtrovat „dle vedoucího“ (např. Michal
+    zájmu a zaměření. Témata vypsaná v IS MU naší pracovní skupinou lze nalézt pod záložkou Studium – Rozpisy témat, 
+    kde je potřeba vybrat příslušné studium, zvolit záložku „pokročilý výběr“ a zde filtrovat „dle vedoucího“ (např. Michal
     Hájek, Petra Hájková, Eva Mikulášková a Barbora Chattová v případě témat botanických prací,
-    nebo Michal Horsák v případě zoologických prací). Odkaz je přístupný pouze to přihlášení se do
-    systému IS MU.`,
-  bachelorBotany: `Témata bakalářských prací – Botanika`,
-  bachelorBotanyLink: `https://is.muni.cz/auth/rozpis/tema?fakulta=1431;obdobi=6666;studium=629617;lang=cs;balik=1
-    786#dalsi_filtry`,
-  bachelorZoology: `Témata bakalářských prací – Zoologie`,
-  bachelorZoologyLink: `https://is.muni.cz/auth/rozpis/tema?fakulta=1431;obdobi=6666;studium=629617;lang=cs;sorter=
-    vedouci;balik=1743;omezeni=volne_aktualni`,
-  masterBotany: `Témata diplomových prací – Botanika`,
-  masterBotanyLink: `https://is.muni.cz/auth/rozpis/tema?lang=cs;setlang=cs;sorter=vedouci;fakulta=1431;obdobi=666
-     6;studium=629617;balik=1787`,
-  masterZoology: `Témata diplomových prací – Zoologie`,
-  masterZoologyLink: `https://is.muni.cz/auth/rozpis/tema?sorter=vedouci;lang=cs;setlang=cs;fakulta=1431;obdobi=666
-     6;studium=629617;balik=30074`,
-  thesesExample: "Ukázky obhájených prací",
+    nebo Michal Horsák v případě zoologických prací).`,
+    thesesExample: "Ukázky obhájených prací",
   bachelorTheses: "Balakářské práce",
   masterTheses: "Magisterské práce"
 };
