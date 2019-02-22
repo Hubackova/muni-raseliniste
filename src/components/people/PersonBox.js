@@ -35,11 +35,7 @@ class PersonBox extends Component {
             <div>
               <P>
                 <i className="fa fa-envelope fa-lg" style={{color: 'black', marginRight: 15}} />
-                <StyledLink href={`mailto:${personInfo.email}` || '#'} to="#">
-                  {' '}
-                  {/*todo: make another type of Link instead of StyledLink*/}
                   <span>{personInfo.email}</span>
-                </StyledLink>
               </P>
               {personInfo.phoneNumber && <P>
                 <i className="fa fa-phone fa-lg" style={{marginRight: 15}} />
