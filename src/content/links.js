@@ -11,7 +11,7 @@ export const databasesEn = [
   },
   {
     name: `Palaeoecological profiles`,
-    link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&proj=7`
+    link: `https://arcg.is/1yqyGH`
   },
   {
     name: `Vegetation-plot databases`,
@@ -25,7 +25,7 @@ export const databasesCz = [
     },
     {
       name: `Paleoekologické profily`,
-      link: `http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&proj=7`
+      link: `https://arcg.is/1yqyGH`
     },
     {
       name: `Databáze vegetačních snímků`,

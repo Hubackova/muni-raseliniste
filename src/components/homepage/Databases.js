@@ -16,7 +16,7 @@ const Databases = ({data}) => {
         </p>
         <p>
           <img src={snail} alt="snail" height="30em" />
-          <StyledLink href="http://www.sci.muni.cz/botany/mirecol/project.php?lang=en&amp;proj=7">{data.paleoDatabase}</StyledLink>
+          <StyledLink href="https://arcg.is/1yqyGH">{data.paleoDatabase}</StyledLink>
         </p>
         <p>
           <img src={plant} alt="plant" height="30em" />
