@@ -150,7 +150,7 @@ export const staffEn = [
     name: `Zuzana Plesková`,
     position: `Researcher`,
     description:
-    `Zuzana Plesková is an absolvent of Systematic Biology and Ecology with specialization on Botany. In her Bachelor and Master Thesis she was studing succesion on abandoned meadows of White Carpathians. For now she is interested in fen ecology and currently works on her Ph.D. thesis 'Realised niches of calcitolerant mire species'. She works also as a researcher on different grant projects of Masaryk University and Czech Academy of Sciences.`,
+    `Zuzana Plesková is an absolvent of Systematic Biology and Ecology with specialization on Botany. In her Bachelor and Master Thesis she was studing succesion on abandoned meadows of White Carpathians. For now she is interested in fen ecology, mainly in the topic of realised niches of calcitolerant mire species. She works also as a researcher on different grant projects of Masaryk University and Czech Academy of Sciences.`,
     email: `pleskovicova@gmail.com`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/profile/Zuzana_Pleskova`,
@@ -294,7 +294,7 @@ export const staffCz = [
     id: `pleskova`,
     name: `Zuzana Plesková`,
     position: `Odborná pracovnice`,
-    description: `Zuzana Plesková vystudovala Systematickou biologii a ekologii se zaměřením na botaniku a ve své bakalářské i diplomové práci se věnovala sukcesi zarůstajících bělokarpatských luk. V současné době se věnuje ekologii rašelinišť, především tématu realizovaných nik kalcitolerantních rašeliništních rostlin. Zároveň pracuje na Masarykově univerzitě a Botanickém ústavu AVČR jako odborný asistent na různých grantových projektech.`,
+    description: `Zuzana Plesková vystudovala Systematickou biologii a ekologii se zaměřením na botaniku a ve své bakalářské i diplomové práci se věnovala sukcesi zarůstajících bělokarpatských luk. V současné době se věnuje ekologii rašelinišť, především tématu realizovaných nik kalcitolerantních rašeliništních rostlin. Zároveň pracuje na Masarykově univerzitě jako odborný asistent na různých grantových projektech.`,
     email: `pleskovicova@gmail.com`,
     phoneNumber: `549498487`,
     researchgate: `https://www.researchgate.net/profile/Zuzana_Pleskova`,
