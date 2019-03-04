@@ -18,7 +18,7 @@ const Header = ({isIndex, generalData}) => (
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 1200) {
+                fluid(maxWidth: 3200) {
                 ...GatsbyImageSharpFluid
                 }
               }
@@ -29,7 +29,7 @@ const Header = ({isIndex, generalData}) => (
           edges {
             node {
               childImageSharp {
-                fluid(maxWidth: 1200) {
+                fluid(maxWidth: 2200) {
                 ...GatsbyImageSharpFluid
                 }
               }
