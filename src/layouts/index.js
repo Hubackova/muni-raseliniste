@@ -6,6 +6,7 @@ import { ThemeProvider } from "styled-components";
 import Header from "./Header";
 import FooterContent from "./Footer";
 import { IntProvider, Consumer } from "./Context";
+import  SEO  from "../components/SEO";
 import { cz, en } from "../content/general";
 
 const blueTheme = {
@@ -32,7 +33,7 @@ const Layout = props => {
       <ThemeProvider theme={blueTheme}>
         <Consumer>
           {({int}) => (
-            <Container>
+            <Container><SEO />
               <Header isIndex={isIndex} generalData={int === "en" ? en : cz} />
               <Main>{props.children}</Main>
               <footer>
