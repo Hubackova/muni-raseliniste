@@ -70,7 +70,7 @@ export const staffEn = [
     name: `Veronika Horsáková`,
     position: `Researcher`,
     description:
-    `Veronika Horsáková studied the field of Systematic biology and ecology at the Faculty of Science, MU. In her diploma thesis, defended in 2012, she studied the variation of mollusc communities in mineral-rich fens of Poland and southern Scandinavia. In her PhD thesis she analyses the species richness and composition of mollusc communities in fens of continental Europe. At present she is a PhD student of the field of Ecology and a research assistant at MU. In her current research she focuses on the ecology of land-mollusc communities with respect to spring-fen habitats and ecology of relict land-snail species.`,
+    `Veronika Horsáková studied her Bachelor’s and Master’s degree in the field of Systematic Biology and Ecology at the Faculty of Science, Masaryk University (2007–2012). She then continued with a PhD study at the same institution, and in 2017 she defended her PhD thesis, dealing with the factors that control the species richness and composition of mollusc communities in spring fens of continental Europe. Currently she is a research assistant at the Department of Botany and Zoology (MU), and she is mainly interested in the ecology of mollusc communities with respect to spring-fen habitats, glacial relict land-snail fauna, as well as in molecular phylogeny of selected land snail taxa.`,
     email: `veronika.horsakova@seznam.cz`,
     phoneNumber: `549495163`,
     researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
@@ -228,7 +228,7 @@ export const staffCz = [
     id: `horsakova`,
     name: `Veronika Horsáková`,
     position: `Odborná pracovnice`,
-    description: `Veronika Horsáková studovala obor Systematická biologie a ekologie na PřF MU. Diplomovou práci obhájila v r. 2012 a zabývala se v ní studiem variability společenstev měkkýšů bazických slatinišť Polska a jižní Skandinávie. Tématem její disertační práce, obhájené v roce 2017, byla analýza druhové bohatosti a skladby společenstev měkkýšů na slatiništích kontinentální Evropy. V současnosti je odbornou pracovnicí na Ústavu botaniky a zoologie (MU) a ve svém aktuálním výzkumu se věnuje ekologii suchozemských společenstev měkkýšů se zaměřením na prameništní slatiniště a ekologii reliktních druhů plžů.`,
+    description: `Veronika Horsáková studovala bakalářský a magisterský stupeň v oboru Systematická biologie a ekologie na Přírodovědecké fakultě Masarykovy univerzity (2007–2012). Poté pokračovala se studiem PhD na téže instituci, a v r. 2017 obhájila svou dizertační práci, ve které se zabývala faktory ovlivňujícími druhovou bohatost a skladbu společenstev měkkýšů na slatiništích kontinentální Evropy. V současnosti je odbornou pracovnicí na Ústavu botaniky a zoologie (MU) a ve svém aktuálním výzkumu se věnuje především ekologii společenstev měkkýšů se zaměřením na prameništní slatiniště, výzkumu glaciálně reliktních druhů suchozemských plžů, a také molekulární fylogenezi vybraných taxonů měkkýšů.`,
     email: `veronika.horsakova@seznam.cz`,
     phoneNumber: `549495163`,
     researchgate: `https://www.researchgate.net/profile/Veronika_Horsakova`,
