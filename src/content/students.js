@@ -1,7 +1,6 @@
 ﻿import durcanova from '../images/people/durcanova.jpg'
 import frodlova from '../images/people/frodlova.jpg'
 import lizonova from '../images/people/lizonova.jpg'
-import peterka from '../images/people/peterka.jpg'
 import simova from '../images/people/simova.jpg'
 import prochazkova from '../images/people/prochazkova.jpg'
 import lorencova from '../images/people/lorencova.jpg'
@@ -62,21 +61,6 @@ export const studentsEn = [
     consisting in stable isotope analyses.`,
     is: `https://www.muni.cz/lide/422930`,
     img: nemec
-  },
-  {
-    id: `peterka`,
-    name: `Tomáš Peterka`,
-    email: `268921@mail.muni.cz`,
-    phoneNumber: `549498266`,
-    description: `Tomáš Peterka studied Botany at Masaryk University, Brno. He graduated in 2013. His master
-    thesis was devoted to mire and wetland vegetation of the north-estern part of the Žďárské vrchy
-    hills, the region previously overlooked by phytosociologist and mire ecologists. Currently he is a
-    PhD student at the Department of Botany and Zoology. His thesis should be an attempt to make
-    a classification of European fens, especially of rich fens with sphagna. His special attention is
-    still paid to the Žďárské vrchy Hills.`,
-    researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
-    is: `https://is.muni.cz/osoba/268921`,
-    img: peterka
   },
   {
     id: `prochazkova`,
@@ -177,22 +161,6 @@ export const studentsCz = [
       spočívající v analýze stabilních izotopů.`,
       is: `https://www.muni.cz/lide/422930`,
       img: nemec
-    },
-    {
-      id: `peterka`,
-      name: `Tomáš Peterka`,
-      email: `268921@mail.muni.cz`,
-      phoneNumber: `549498266`,
-      description: `Tomáš Peterka studoval obor Botanika, směr Ekologie rostlin na Přírodovědecké fakultě
-      Masarykovy univerzity v Brně. Absolvoval v roce 2013 obhajobou diplomové práce o rašeliništní
-      a mokřadní vegetaci severozápadní části Žďárských vrchů, které do té doby stály spíše na okraji
-      zájmu fytocenologů a rašelinářů. Ve stejném roce nastoupil na doktorské studium. Tématem
-      jeho disertační práce je pokus o vytvoření jednotné klasifikace evropských slatinišť se
-      zaměřením na mírně vápnitá slatiniště s rašeliníky. Žďárských vrchům však zůstává i nadále
-      věrný.`,
-      researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
-      is: `https://is.muni.cz/osoba/268921`,
-      img: peterka
     },
     {
       id: `prochazkova`,

@@ -3,10 +3,13 @@ import horsakova from '../images/people/horsakova.jpg'
 import hajek from '../images/people/hajek.jpg'
 import mikulaskova from '../images/people/mikulaskova.jpg'
 import hajkova from '../images/people/hajkova.jpg'
+import nekola from '../images/people/nekola.jpg'
+import liznarova from '../images/people/liznarova.jpg'
 import smerdova from '../images/people/smerdova.jpg'
 import jamrichova from '../images/people/jamrichova.jpg'
 import kosuthova from '../images/people/kosuthova.jpg'
 import jirousek from '../images/people/jirousek.jpg'
+import peterka from '../images/people/peterka.jpg'
 import petr from '../images/people/petr.jpg'
 import chattova from '../images/people/chattova.jpg'
 import pleskova from '../images/people/pleskova.jpg'
@@ -34,6 +37,18 @@ export const staffEn = [
     researchgate: `https://www.researchgate.net/profile/Michal_Horsak`,
     is: `https://is.muni.cz/osoba/8803`,
     img: horsak
+  },
+  {
+    id: `nekola`,
+    name: `Jeffrey Clark Nekola`,
+    position: `Associate professor`,
+    description:
+      `Why are there so many species of life on Earth? Why are they found where they are? How do they live together? How have they evolved? Why do they look the way they do? What do they tell us of the past and what do they suggest about the future? And how can they and humanity coexist in this finite world? These questions - and others - underlie my research. My primary focus is to understand the mechanisms which have given rise to our diverse world and the things we need to do to protect it. Just as with the parable of the Blind Men and the Elephant, the ability to detect large-scale pattern and identify potential mechanism is greatly enhanced by viewing systems through multiple lenses, preferably at different observational scales. As a result my biodiversity and ecology research represents a highly interdisciplinary course of studies that is vertically integrated from molecular genetics and taxonomy through biogeography, macroecology and theoretical ecology. All the while, I maintain an active field research program which spans thousands of study sites on three continents.`,
+    email: `nekola@sci.muni.cz`,
+    phoneNumber: `549493884`,
+    researchgate: `https://www.researchgate.net/scientific-contributions/76164856_Jeffrey_C_Nekola`,
+    is: `https://is.muni.cz/auth/osoba/115710`,
+    img: nekola
   },
   {
     id: `chattova`,
@@ -122,6 +137,18 @@ export const staffEn = [
     img: kosuthova
   },
   {
+    id: `liznarova`,
+    name: `Eva Líznarová`,
+    position: `Researcher`,
+    description:
+    `Eva Líznarová studied her Bachelor’s and Master’s degree at the Department of Botany and Zoology at the Faculty of Science, Masaryk University. She then continued with a PhD study at the same institution, and in 2016 she defended her PhD thesis in the field of Ecology. During her bachelor degree she focused on behavioural ecology of spiders, particularly on their predatory strategies and continued on this topic during her master and doctoral studies. Currently she is a research assistant at the Department of Botany and Zoology at Masaryk University. Recently, she is interested also in the evolution of spider genome size, composition of spider communities in mountain grasslands and she cooperates in research of land snail diet using a stable isotope analysis.`,
+    email: `liznarovaeva@centrum.cz`,
+    phoneNumber: `549498577`,
+    researchgate: `https://www.researchgate.net/profile/Eva_Liznarova`,
+    is: `https://is.muni.cz/auth/osoba/222933`,
+    img: liznarova
+  },
+  {
     id: `mikulaskova`,
     name: `Eva Mikulášková`,
     position: `Researcher`,
@@ -132,6 +159,22 @@ export const staffEn = [
     researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
     is: `https://is.muni.cz/osoba/klicek`,
     img: mikulaskova
+  },
+  {
+    id: `peterka`,
+    name: `Tomáš Peterka`,
+    position: `Researcher`,
+    description: `Tomáš Peterka studied Botany at Masaryk University, Brno. He graduated in 2013. His master
+    thesis was devoted to mire and wetland vegetation of the north-estern part of the Žďárské vrchy
+    hills, the region previously overlooked by phytosociologist and mire ecologists. Currently he is a
+    PhD student at the Department of Botany and Zoology. His thesis should be an attempt to make
+    a classification of European fens, especially of rich fens with sphagna. His special attention is
+    still paid to the Žďárské vrchy Hills.`,
+    email: `268921@mail.muni.cz`,
+    phoneNumber: `549498266`,
+    researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
+    is: `https://is.muni.cz/osoba/268921`,
+    img: peterka
   },
   {
     id: `petr`,
@@ -194,6 +237,18 @@ export const staffCz = [
     researchgate: `https://www.researchgate.net/profile/Michal_Horsak`,
     is: `https://is.muni.cz/osoba/8803`,
     img: horsak
+  },
+  {
+    id: `nekola`,
+    name: `Jeffrey Clark Nekola`,
+    position: `Docent`,
+    description:
+      `Proč žije na Zemi tolik druhů organizmů? Proč se nacházejí právě tam, kde se nacházejí? Jak spolu žijí? Jaká byla jejich evoluce? Proč vypadají tak, jak vypadají? Co nám mohou prozradit o minulosti a co nám naznačují o budoucnosti? A jak mohou tyto druhy koexistovat spolu s lidmi na omezeném prostoru našeho světa? Tyto a další otázky tvoří základ mého výzkumu. Mým hlavním cílem je porozumět mechanizmům, které daly vzniknout našemu pestrému světu, a činnostem, které jsou potřeba pro jeho ochranu. Jak ukazuje přirovnání O slepcích a slonovi, naši schopnost odhalit velkoškálové zákonitosti a jejich potenciální mechanizmy se významně zvyšuje když na přírodní systémy nahlížíme z více různých úhlů pohledu, ideálně na různých pozorovacích škálách. Můj výzkum ekologie a biodiverzity je tak výsledkem vysoce interdisciplinárního přístupu, podpořeného molekulární genetikou a taxonomií, propojujícího biogeografii, makroekologii a teoretickou ekologii. Zároveň s tím zůstávám stále aktivním terénním biologem s rozsahem tisíců studijních lokalit na území třech kontinentů.`,
+    email: `nekola@sci.muni.cz`,
+    phoneNumber: `549493884`,
+    researchgate: `https://www.researchgate.net/scientific-contributions/76164856_Jeffrey_C_Nekola`,
+    is: `https://is.muni.cz/auth/osoba/115710`,
+    img: nekola
   },
   {
     id: `chattova`,
@@ -269,6 +324,18 @@ export const staffCz = [
     img: kosuthova
   },
   {
+    id: `liznarova`,
+    name: `Eva Líznarová`,
+    position: `Odborná pracovnice`,
+    description:
+    `Eva Líznarová vystudovala bakalářský i magisterský obor na Ústavu botaniky a zoologie na Přírodovědecké fakultě Masarykovy univerzity. Na stejném pracovišti v roce 2016 absolvovala doktorské studium v oboru Ekologie. Během bakalářského studia se zabývala behaviorální ekologií pavouků se zaměřením na jejich predační strategie a na toto téma následně navázala během magisterského i doktorského studia. V současné době je zaměstnaná jako odborná pracovnice na Ústavu botaniky a zoologie Masarykovy univerzity. V poslední době se rovněž zabývá evolucí velikosti genomu u pavouků, složením společenstev pavouků na horských loukách a spolupracuje na výzkumu potravních nároků suchozemských plžů pomocí analýzy stabilních izotopů.`,
+    email: `liznarovaeva@centrum.cz`,
+    phoneNumber: `549498577`,
+    researchgate: `https://www.researchgate.net/profile/Eva_Liznarova`,
+    is: `https://is.muni.cz/auth/osoba/222933`,
+    img: liznarova
+  },
+  {
     id: `mikulaskova`,
     name: `Eva Mikulášková`,
     position: `Odborná pracovnice`,
@@ -278,6 +345,22 @@ export const staffCz = [
     researchgate: `https://www.researchgate.net/profile/Eva_Mikulaskova`,
     is: `https://is.muni.cz/osoba/klicek`,
     img: mikulaskova
+  },
+  {
+      id: `peterka`,
+      name: `Tomáš Peterka`,
+      description: `Tomáš Peterka studoval obor Botanika, směr Ekologie rostlin na Přírodovědecké fakultě
+      Masarykovy univerzity v Brně. Absolvoval v roce 2013 obhajobou diplomové práce o rašeliništní
+      a mokřadní vegetaci severozápadní části Žďárských vrchů, které do té doby stály spíše na okraji
+      zájmu fytocenologů a rašelinářů. Ve stejném roce nastoupil na doktorské studium. Tématem
+      jeho disertační práce je pokus o vytvoření jednotné klasifikace evropských slatinišť se
+      zaměřením na mírně vápnitá slatiniště s rašeliníky. Žďárských vrchům však zůstává i nadále
+      věrný.`,
+      email: `268921@mail.muni.cz`,
+      phoneNumber: `549498266`,
+      researchgate: `https://www.researchgate.net/profile/Tomas_Peterka2`,
+      is: `https://is.muni.cz/osoba/268921`,
+      img: peterka
   },
   {
     id: `petr`,
