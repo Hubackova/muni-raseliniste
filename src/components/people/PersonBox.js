@@ -2,7 +2,6 @@ import React, {Component, Fragment} from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types';
 
-import StyledLink from '../atoms/StyledLink'
 import researchgate from '../../images/social-researchgate.png'
 import is from '../../images/social-is.png'
 

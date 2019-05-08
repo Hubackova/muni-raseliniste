@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import PropTypes from "prop-types";
 import snail from "../../images/snail.png";
@@ -33,11 +33,11 @@ const Databases = ({ text }) => (
           {text.mireEcology}
         </TopicLink>,
         <TopicLink to="topic-paleo" key="topic-paleo">
-        <Img fluid={imgs[2]} />
+          <Img fluid={imgs[2]} />
           {text.palaeoEcology}
         </TopicLink>,
         <TopicLink to="topic-relict" key="topic-relict">
-        <Img fluid={imgs[3]} />
+          <Img fluid={imgs[3]} />
           {text.relictEcosystems}
         </TopicLink>,
         <TopicLink to="topic-crypto" key="topic-crypto">
@@ -46,7 +46,7 @@ const Databases = ({ text }) => (
         </TopicLink>
       ];
       let researchesBox = researches.map((i, index) => (
-        <div key={index} style={{ flex: 1, marginRight : 5 }}>
+        <div key={index} style={{ flex: 1, marginRight: 5 }}>
           {i}
         </div>
       ));
@@ -84,7 +84,7 @@ const Databases = ({ text }) => (
 export default Databases;
 
 Databases.propTypes = {
-  data: PropTypes.object
+  text: PropTypes.object
 };
 
 const Research = styled.div`
@@ -119,26 +119,14 @@ const StyledLink = styled.a`
 `;
 
 const TopicLink = styled(Link)`
-  cursor: pointer,
-  color: ${props => props.theme.grey};
+  cursor: pointer;
+  color: ${props => props.theme.black};
   text-decoration: none;
-  font-
   &:hover {
     text-decoration: ${props => (props.navigation ? "underline" : "none")};
-    color: ${props => (props.navigation ? props.theme.grey : props.theme.secondary)};
+    color: ${props => (props.navigation ? props.theme.grey : props.theme.main)};
   }
   &:focus {
     color: ${props => (props.navigation ? props.theme.secondary : props.theme.grey)};
   }
 `;
-const Ul = styled.ul`
-  font-weight: bold;
-`;
-
-const ResearchComponent = ({ img, text }) => {
-  return (
-    <div>
-      <div>{img}</div> {text}
-    </div>
-  );
-};
