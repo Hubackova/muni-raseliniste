@@ -29,15 +29,15 @@ const Databases = ({ text }) => (
       const imgs = data.images.edges.map(i => i.node.fluid);
       const researches = [
         <TopicLink to="topic-mires" key="topic-mires">
-          <Img fluid={imgs[3]} />
+          <Img fluid={imgs[1]} />
           {text.mireEcology}
         </TopicLink>,
         <TopicLink to="topic-paleo" key="topic-paleo">
-        <Img fluid={imgs[1]} />
+        <Img fluid={imgs[2]} />
           {text.palaeoEcology}
         </TopicLink>,
         <TopicLink to="topic-relict" key="topic-relict">
-        <Img fluid={imgs[2]} />
+        <Img fluid={imgs[3]} />
           {text.relictEcosystems}
         </TopicLink>,
         <TopicLink to="topic-crypto" key="topic-crypto">
