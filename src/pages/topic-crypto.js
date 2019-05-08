@@ -7,42 +7,32 @@ import Backarrow from "../components/atoms/Backarrow";
 import ContainerWrapper from "../components/atoms/ContainerWrapper";
 import { Consumer } from "../layouts/Context";
 import { cz, en } from "../content/general";
-import {
-  cryptogamologyTextEn,
-  cryptogamologyTextCz,
-  results
-} from "../content/topics";
+import { cryptogamologyTextEn, cryptogamologyTextCz, results } from "../content/topics";
 
-const Relicts = () => {
+const Crypto = () => {
   const getResults = results => {
     return results.map((i, index) => <li key={index}>{i}</li>);
   };
   return (
     <Consumer>
-      {({int}) => (
+      {({ int }) => (
         <ContainerWrapper>
-          <div>
+          <div style={{ flex: 1 }}>
             <Backarrow to="" />
-            <h2>
-              {int === "en" ? en.cryptogamology : cz.cryptogamology}
-            </h2>
-            <div>
-              {int === "en"
-                ? cryptogamologyTextEn
-                : cryptogamologyTextCz}
-            </div>
+            <h2>{int === "en" ? en.cryptogamology : cz.cryptogamology}</h2>
+            <div>{int === "en" ? cryptogamologyTextEn : cryptogamologyTextCz}</div>
             <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.cryptogamologyResults)}</div>
           </div>
-          <Databases data={int === "en" ? en : cz} />
+          <Databases text={int === "en" ? en : cz} style={{ flex: 1 }} />
         </ContainerWrapper>
       )}
     </Consumer>
   );
 };
 
-export default Relicts;
+export default Crypto;
 
-Relicts.propTypes = {
+Crypto.propTypes = {
   location: PropTypes.object
 };

@@ -40,8 +40,10 @@
       which allows us to interconnect the results from particular specializations in order to obtain complex knowledge about mire ecosystems as well as other biotopes.
       Mires represent island-like ecosystems that provide refugia for many rare and relict species, and can be therefore used as interesting and useful models to explore
       generalData ecological questions. Taxonomic scope of our research group is broad: we study vascular plants, bryophytes, molluscs, lichens, fungi, diatoms, testate amoebae
-      and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae.`,
-  fullText: " Show full text...",
+      and also fossil remains of pollen, plants, and shells of molluscs and testate amoebae. In these groups of organisms, we are mainly interested in the relationships
+      between the species richness and composition and the environmental conditions. `,
+  showFullText: "Show more",
+  hideFullText: "Show less",
   mainTopics: "Main research topics:",
   mainResults: "Main results:",
   mireEcology: "Mire ecology",
@@ -104,8 +106,10 @@ export const cz = {
     paleoekologové, což nám umožňuje propojovat výsledky jednotlivých specializací a získávat komplexní poznatky o ekosystémech rašelinišť, ale i dalších biotopů.
     Rašeliniště představují ostrovní biotopy, poskytující útočiště pro mnoho vzácných druhů s reliktním výskytem, a jsou proto velice zajímavým a užitečným modelovým
     ekosystémem pro výzkum obecných ekologických otázek. Taxonomický záběr skupiny je velmi široký: od cévnatých rostlin, mechorostů, měkkýšů, lišejníků, hub,
-    rozsivek, krytenek až po subfosilní pyl, makrozbytky rostlin i schránky měkkýšů a krytenek.`,
-  fullText: " Zobrazit celý text...",
+    rozsivek, krytenek až po subfosilní pyl, makrozbytky rostlin i schránky měkkýšů a krytenek. U těchto skupin nás zajímají především vztahy druhového složení a
+    druhové bohatosti k podmínkám prostředí. `,
+  showFullText: "Zobrazit více",
+  hideFullText: "Zobrazit méně",
   mainTopics: "Hlavní směry výzkumu:",
   mainResults: "Hlavní výsledky:",
   mireEcology: "Ekologie rašelinišť",

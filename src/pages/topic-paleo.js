@@ -7,11 +7,7 @@ import Backarrow from "../components/atoms/Backarrow";
 import ContainerWrapper from "../components/atoms/ContainerWrapper";
 import { Consumer } from "../layouts/Context";
 import { cz, en } from "../content/general";
-import {
-  palaeoEcologyTextEn,
-  palaeoEcologyTextCz,
-  results
-} from "../content/topics";
+import { palaeoEcologyTextEn, palaeoEcologyTextCz, results } from "../content/topics";
 
 const Relicts = () => {
   const getResults = results => {
@@ -19,20 +15,16 @@ const Relicts = () => {
   };
   return (
     <Consumer>
-      {({int}) => (
+      {({ int }) => (
         <ContainerWrapper>
-          <div>
+          <div style={{ flex: 1 }}>
             <Backarrow to="" />
-            <h2>
-              {int === "en" ? en.palaeoEcology : cz.palaeoEcology}
-            </h2>
-            <div>
-              {int === "en" ? palaeoEcologyTextEn : palaeoEcologyTextCz}
-            </div>
+            <h2>{int === "en" ? en.palaeoEcology : cz.palaeoEcology}</h2>
+            <div>{int === "en" ? palaeoEcologyTextEn : palaeoEcologyTextCz}</div>
             <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.palaeoEcologyResults)}</div>
           </div>
-          <Databases data={int === "en" ? en : cz} />
+          <Databases text={int === "en" ? en : cz} style={{ flex: 1 }} />
         </ContainerWrapper>
       )}
     </Consumer>

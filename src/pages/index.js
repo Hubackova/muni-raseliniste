@@ -31,9 +31,8 @@ class Index extends Component {
               toggleShowFulltext={this.toggleShowFulltext}
               selectTopic={this.selectTopic}
               showAll={showAll}
-              style={{flex: 1}}
             />
-            <Databases data={int === 'en' ? en : cz} />
+            <Databases text={int === 'en' ? en : cz} style={{flex: 1}}/>
           </ContainerWrapper>
         )}
       </Consumer>
