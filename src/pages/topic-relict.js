@@ -14,20 +14,21 @@ const Relicts = ({ data }) => {
   const getResults = results => {
     return results.map((i, index) => <li key={index}>{i}</li>);
   };
-  const imgs = data.images.edges.map((i, index) => <Img key={index} fluid={i.node.childImageSharp.fluid} />);
+  const imgs = data.images.edges.map((i, index) => (
+    <Img key={index} fluid={i.node.childImageSharp.fluid} />
+  ));
   return (
     <Consumer>
       {({ int }) => (
         <ContainerWrapper>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 4, paddingRight: "1em" }}>
             <Backarrow to="" />
             <h2>{int === "en" ? en.relictEcosystems : cz.relictEcosystems}</h2>
             <div>{int === "en" ? relictEcosystemsTextEn : relictEcosystemsTextCz}</div>
-            <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.relictEcosystemsResults)}</div>
-            {imgs}
           </div>
-          <Databases text={int === "en" ? en : cz} style={{ flex: 1 }} />
+          <div style={{ flex: 1 }}>{imgs}</div>
+          <Databases text={int === "en" ? en : cz} />
         </ContainerWrapper>
       )}
     </Consumer>

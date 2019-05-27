@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Homepage = ({ data, toggleShowFulltext, showAll }) => {
   return (
-    <div style={{ flex: 1 }}>
+    <div style={{ flex: 1, paddingRight: "1em" }}>
       <h2>{data.introHeader}</h2>
       <div>
         <p>

@@ -25,14 +25,14 @@ class Index extends Component {
     return (
       <Consumer>
         {({int}) => (
-          <ContainerWrapper>
+          <ContainerWrapper isHome={true}>
             <Homepage
               data={int === 'en' ? en : cz}
               toggleShowFulltext={this.toggleShowFulltext}
               selectTopic={this.selectTopic}
               showAll={showAll}
             />
-            <Databases text={int === 'en' ? en : cz} style={{flex: 1}}/>
+            <Databases text={int === 'en' ? en : cz} isHome={true}/>
           </ContainerWrapper>
         )}
       </Consumer>

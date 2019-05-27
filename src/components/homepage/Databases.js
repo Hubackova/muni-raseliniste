@@ -6,7 +6,7 @@ import plant from "../../images/plant.png";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-const Databases = ({ text }) => (
+const Databases = ({ text, isHome }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -46,35 +46,34 @@ const Databases = ({ text }) => (
         </TopicLink>
       ];
       let researchesBox = researches.map((i, index) => (
-        <div key={index} style={{ flex: 1, marginRight: 5 }}>
-          {i}
-        </div>
+        <TopicLinkWrapper key={index}>{i}</TopicLinkWrapper>
       ));
 
       return (
         <RightPanel>
-          <strong>{text.mainTopics}</strong>
-          <Research>{researchesBox}</Research>
-
-          <p>
-            <strong>{text.databases}</strong>
-          </p>
-          <p>
-            <img src={plant} alt="plant" height="30em" />
-            <StyledLink href="http://www.sci.muni.cz/botany/mirecol/paleo/en/">
-              {text.plantDatabase}
-            </StyledLink>
-          </p>
-          <p>
-            <img src={snail} alt="snail" height="30em" />
-            <StyledLink href="https://arcg.is/1yqyGH">{text.paleoDatabase}</StyledLink>
-          </p>
-          <p>
-            <img src={plant} alt="plant" height="30em" />
-            <StyledLink href="http://www.givd.info/ID/EU-00-022">
-              {text.vegetationDatabase}
-            </StyledLink>
-          </p>
+          {isHome && <strong>{text.mainTopics}</strong>}
+          {isHome && <Research>{researchesBox}</Research>}
+          <DatabasesBox>
+            <p>
+              <strong>{text.databases}</strong>
+            </p>
+            <p>
+              <img src={plant} alt="plant" height="30em" />
+              <StyledLink href="http://www.sci.muni.cz/botany/mirecol/paleo/en/">
+                {text.plantDatabase}
+              </StyledLink>
+            </p>
+            <p>
+              <img src={snail} alt="snail" height="30em" />
+              <StyledLink href="https://arcg.is/1yqyGH">{text.paleoDatabase}</StyledLink>
+            </p>
+            <p>
+              <img src={plant} alt="plant" height="30em" />
+              <StyledLink href="http://www.givd.info/ID/EU-00-022">
+                {text.vegetationDatabase}
+              </StyledLink>
+            </p>
+          </DatabasesBox>
         </RightPanel>
       );
     }}
@@ -84,26 +83,43 @@ const Databases = ({ text }) => (
 export default Databases;
 
 Databases.propTypes = {
-  text: PropTypes.object
+  text: PropTypes.object,
+  isHome: PropTypes.bool,
 };
 
 const Research = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 1em;
+  justify-content: center;
+  @media (max-width: ${props => props.theme.mediumDevice}) {
+    flex-wrap: wrap;
+    div {
+      width: 230px;
+    }
+  }
+`;
+
+const DatabasesBox = styled.div`
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  p {
+    margin: 5px 0;
+  }
 `;
 
 const RightPanel = styled.div`
-  flex: 1;
+  flex: ${props => props.isHome ? 3 : 1};
   border-left: 1px solid ${props => props.theme.grey};
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-left: 2em;
   line-height: 1em;
+  padding-left: 2em;
+  margin-left: 1em;
   @media (max-width: ${props => props.theme.largeDevice}) {
     margin: 0;
     border: 0;
-    border-top: 1px solid ${props => props.theme.grey};
+    padding: 0;
+    border-bottom: 1px solid ${props => props.theme.grey};
   }
 `;
 
@@ -122,6 +138,15 @@ const TopicLink = styled(Link)`
   cursor: pointer;
   color: ${props => props.theme.black};
   text-decoration: none;
+  div {
+    min-width: 140px;
+  }
+  @media (max-width: ${props => props.theme.mediumDevice}) {
+    div {
+    width: 100%;
+    min-width: 200px;
+  }
+  }
   &:hover {
     text-decoration: ${props => (props.navigation ? "underline" : "none")};
     color: ${props => (props.navigation ? props.theme.grey : props.theme.main)};
@@ -129,4 +154,9 @@ const TopicLink = styled(Link)`
   &:focus {
     color: ${props => (props.navigation ? props.theme.secondary : props.theme.grey)};
   }
+`;
+
+const TopicLinkWrapper = styled.div`
+  flex: 1;
+  margin: 5px;
 `;
