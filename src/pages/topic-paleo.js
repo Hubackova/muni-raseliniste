@@ -46,6 +46,7 @@ export const query = graphql`
   query {
     images: allFile(
       filter: { extension: { regex: "/(jpg)|(png)/" }, relativeDirectory: { eq: "research-paleo" } }
+      sort: { fields: [name], order: ASC }
     ) {
       edges {
         node {

@@ -1,55 +1,55 @@
-import React, {Component} from 'react'
-import styled from 'styled-components'
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
 
-import StyledLink from '../components/atoms/StyledLink'
+import StyledLink from "../components/atoms/StyledLink";
 
-const ListLink = ({isVisible, to, children, className}) => (
-  <Li isVisible={isVisible}  className={className}>
-    <StyledLink to={to} navigation={1} >
+const ListLink = ({ isVisible, to, children, className }) => (
+  <Li isVisible={isVisible} className={className}>
+    <StyledLink to={to} navigation={1}>
       {children}
     </StyledLink>
   </Li>
-)
+);
 
 ListLink.propTypes = {
   children: PropTypes.node,
   isVisible: PropTypes.bool,
   to: PropTypes.string,
   className: PropTypes.string
-}
+};
 
-const windowGlobal = typeof window !== 'undefined' && window
+const windowGlobal = typeof window !== "undefined" && window;
 
 class Navigation extends Component {
   state = {
     isNavVisible: false,
     width: windowGlobal.innerWidth
-  }
+  };
 
   componentDidMount() {
-    windowGlobal.addEventListener('resize', this.handleWindowSizeChange)
+    windowGlobal.addEventListener("resize", this.handleWindowSizeChange);
   }
 
   handleWindowSizeChange = () => {
-    this.setState({width: windowGlobal.innerWidth})
-  }
+    this.setState({ width: windowGlobal.innerWidth });
+  };
 
   toggleMenu = () => {
-    this.setState({isNavVisible: !this.state.isNavVisible})
-  }
+    this.setState({ isNavVisible: !this.state.isNavVisible });
+  };
 
-  getClass = (urlIncludes) => {
+  getClass = urlIncludes => {
     if (windowGlobal && windowGlobal.location && windowGlobal.location.href.includes(urlIncludes)) {
-      return "active"
-    } else return ""
-  }
+      return "active";
+    } else return "";
+  };
 
   render() {
-    const {generalData, isIndex} = this.props
-    const {width, isNavVisible} = this.state
-    const isMobile = width <= 768
-    const isVisible = isNavVisible || !isMobile
+    const { generalData, isIndex } = this.props;
+    const { width, isNavVisible } = this.state;
+    const isMobile = width <= 768;
+    const isVisible = isNavVisible || !isMobile;
     return (
       <Container>
         <NavbarToggle onClick={this.toggleMenu}>
@@ -62,7 +62,7 @@ class Navigation extends Component {
           {generalData.menu.menuPeople}
         </ListLink>
         <ListLink to="/projects/" isVisible={isVisible} className={this.getClass("projects")}>
-        {generalData.menu.menuProjects}
+          {generalData.menu.menuProjects}
         </ListLink>
         <ListLink to="/theses/" isVisible={isVisible} className={this.getClass("theses")}>
           {generalData.menu.menuTheses}
@@ -77,17 +77,17 @@ class Navigation extends Component {
           {generalData.menu.menuLinks}
         </ListLink>
       </Container>
-    )
+    );
   }
 }
 
-export default Navigation
+export default Navigation;
 
 Navigation.propTypes = {
   language: PropTypes.string,
   isIndex: PropTypes.bool,
-  generalData: PropTypes.object,
-}
+  generalData: PropTypes.object
+};
 
 export const Container = styled.ul`
   align-self: flex-end;
@@ -102,10 +102,10 @@ export const Container = styled.ul`
     text-align: center;
     width: 100%;
   }
-`
+`;
 
 export const Li = styled.li`
-  display: ${props => (props.isVisible ? 'flex' : 'none')};
+  display: ${props => (props.isVisible ? "flex" : "none")};
   height: 40px;
   flex: auto;
   align-items: center;
@@ -131,8 +131,9 @@ export const Li = styled.li`
       @media (max-width: ${props => props.theme.mediumDevice}) {
         height: 0px;
       }
+    }
   }
-`
+`;
 
 const NavbarToggle = styled(Li)`
   display: none;
@@ -143,4 +144,4 @@ const NavbarToggle = styled(Li)`
     display: flex;
     flex: 1;
   }
-`
+`;

@@ -14,9 +14,13 @@ const Crypto = ({ data }) => {
   const getResults = results => {
     return results.map((i, index) => <li key={index}>{i}</li>);
   };
+  const windowGlobal = typeof window !== "undefined" && window;
+  console.log(windowGlobal.innerWidth)
   const imgs = data.images.edges.map((i, index) => (
     <Img key={index} fluid={i.node.childImageSharp.fluid} />
   ));
+  const smallWidthImgs = imgs.slice(2)
+  const finalImgs = window.innerWidth > 1600 ? smallWidthImgs : imgs
   return (
     <Consumer>
       {({ int }) => (
@@ -28,7 +32,7 @@ const Crypto = ({ data }) => {
             <h2>{int === "en" ? en.mainResults : cz.mainResults}</h2>
             <div>{getResults(results.cryptogamologyResults)}</div>
           </div>
-          <div style={{ flex: 1 }}>{imgs}</div>
+          <div style={{ flex: 1 }}>{finalImgs}</div>
           <Databases text={int === "en" ? en : cz} style={{ flex: 1 }} />
         </ContainerWrapper>
       )}
@@ -49,6 +53,7 @@ export const query = graphql`
         extension: { regex: "/(jpg)|(png)/" }
         relativeDirectory: { eq: "research-kryptogamologie" }
       }
+      sort: { fields: [name], order: ASC }
     ) {
       edges {
         node {

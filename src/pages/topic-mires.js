@@ -49,6 +49,7 @@ export const query = graphql`
         extension: { regex: "/(jpg)|(png)/" }
         relativeDirectory: { eq: "research-raseliniste" }
       }
+      sort: { fields: [name], order: ASC }
     ) {
       edges {
         node {
