@@ -15,12 +15,11 @@ const Crypto = ({ data }) => {
     return results.map((i, index) => <li key={index}>{i}</li>);
   };
   const windowGlobal = typeof window !== "undefined" && window;
-  console.log(windowGlobal.innerWidth)
   const imgs = data.images.edges.map((i, index) => (
     <Img key={index} fluid={i.node.childImageSharp.fluid} />
   ));
   const smallWidthImgs = imgs.slice(2)
-  const finalImgs = window.innerWidth > 1600 ? smallWidthImgs : imgs
+  const finalImgs = windowGlobal.innerWidth > 1600 ? smallWidthImgs : imgs
   return (
     <Consumer>
       {({ int }) => (
