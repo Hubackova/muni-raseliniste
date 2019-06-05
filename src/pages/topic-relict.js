@@ -14,9 +14,12 @@ const Relicts = ({ data }) => {
   const getResults = results => {
     return results.map((i, index) => <li key={index}>{i}</li>);
   };
+  const windowGlobal = typeof window !== "undefined" && window;
   const imgs = data.images.edges.map((i, index) => (
-    <Img key={index} fluid={i.node.childImageSharp.fluid} />
+    <Img key={index} fluid={i.node.childImageSharp.fluid} style={{marginBottom: 5}}/>
   ));
+  const smallWidthImgs = imgs.slice(0,6)
+  const finalImgs = windowGlobal.innerWidth > 1600 ? smallWidthImgs : imgs
   return (
     <Consumer>
       {({ int }) => (
@@ -27,7 +30,7 @@ const Relicts = ({ data }) => {
             <div>{int === "en" ? relictEcosystemsTextEn : relictEcosystemsTextCz}</div>
             <div>{getResults(results.relictEcosystemsResults)}</div>
           </div>
-          <div style={{ flex: 1 }}>{imgs}</div>
+          <div style={{ flex: 1 }}>{finalImgs}</div>
           <Databases text={int === "en" ? en : cz} />
         </ContainerWrapper>
       )}

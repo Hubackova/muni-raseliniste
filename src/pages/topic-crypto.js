@@ -16,9 +16,9 @@ const Crypto = ({ data }) => {
   };
   const windowGlobal = typeof window !== "undefined" && window;
   const imgs = data.images.edges.map((i, index) => (
-    <Img key={index} fluid={i.node.childImageSharp.fluid} />
+    <Img key={index} fluid={i.node.childImageSharp.fluid} style={{marginBottom: 5}}/>
   ));
-  const smallWidthImgs = imgs.slice(2)
+  const smallWidthImgs = imgs.slice(0,6)
   const finalImgs = windowGlobal.innerWidth > 1600 ? smallWidthImgs : imgs
   return (
     <Consumer>
