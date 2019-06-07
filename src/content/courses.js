@@ -16,11 +16,11 @@
     link: `https://is.muni.cz/predmet/sci/podzim2017/Bi8309`
   },
   {
-    name: `Statistical Dynamics of Macroecology (in English)`,
+    name: `Statistical dynamics of macroecology (in English)`,
     link: `https://is.muni.cz/auth/predmet/sci/podzim2019/Bi7350`
   },
   {
-    name: `Fundamentals of Ecology (in English)`,
+    name: `Fundamentals of ecology (in English)`,
     link: `https://is.muni.cz/auth/predmet/sci/podzim2019/Bi7370`
   },
   {
