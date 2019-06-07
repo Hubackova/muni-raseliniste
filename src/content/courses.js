@@ -1,4 +1,4 @@
-export const courses = [
+﻿export const courses = [
   {
     name: `Příroda ve čtvrtohorách`,
     link: `https://is.muni.cz/predmet/sci/jaro2018/Bi8300`
@@ -14,6 +14,14 @@ export const courses = [
   {
     name: `Paleoekologické metody`,
     link: `https://is.muni.cz/predmet/sci/podzim2017/Bi8309`
+  },
+  {
+    name: `Statistical Dynamics of Macroecology (in English)`,
+    link: `https://is.muni.cz/auth/predmet/sci/podzim2019/Bi7350`
+  },
+  {
+    name: `Fundamentals of Ecology (in English)`,
+    link: `https://is.muni.cz/auth/predmet/sci/podzim2019/Bi7370`
   },
   {
     name: `Biologie a ekologie mechorostů`,
