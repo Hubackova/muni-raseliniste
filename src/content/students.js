@@ -5,8 +5,18 @@ import simova from '../images/people/simova.jpg'
 import prochazkova from '../images/people/prochazkova.jpg'
 import lorencova from '../images/people/lorencova.jpg'
 import nemec from '../images/people/nemec.jpg'
+import coufal from '../images/people/coufal.jpg'
 
 export const studentsEn = [
+  {
+    id: `coufal`,
+    name: `Radovan Coufal`,
+    email: `241288@mail.muni.cz`,
+    description: `Radovan Coufal studied Ecology bachelors program and Hydrobiology masters program at the Department of Ecology, Palacký University, Olomouc (2014-2019). In his masters thesis he studied fen mollusc communities on Bohemian-Moravian Highlands. Currently, he is a PhD student at the Department of Botany and Zoology, Masaryk university and in his PhD thesis he is studying effect of fragmentation and succession on fen mollusc communities with attention to glacial relics.`,
+    researchgate: `https://www.researchgate.net/profile/Radovan_Coufal2`,
+    is: `https://is.muni.cz/auth/osoba/241288`,
+    img: coufal
+  },
   {
     id: `frodlova`,
     name: `Jitka Frodlová`,
@@ -45,7 +55,7 @@ export const studentsEn = [
     environmental and spatial factors and in the future also the genetic structure of the populations
     of selected species.`,
     researchgate: `https://www.researchgate.net/profile/Erika_Lorencova2`,
-    is: `https://www.researchgate.net/profile/Erika_Lorencova2`,
+    is: `https://is.muni.cz/auth/osoba/393897`,
     img: lorencova
   },
   {
@@ -59,7 +69,7 @@ export const studentsEn = [
     field Ecology. His thesis should handle with role of land snails in food chains. Apart from
     malacophagous predators, diet of land snails should also be evaluated using a specific approach
     consisting in stable isotope analyses.`,
-    is: `https://www.muni.cz/lide/422930`,
+    is: `https://is.muni.cz/auth/osoba/422930`,
     img: nemec
   },
   {
@@ -72,7 +82,7 @@ export const studentsEn = [
     communities of epiphytic bryophytes is the main issue of her PhD project. She tries to combine
     science with maternity currently :-).`,
     researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-    is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+    is: `https://is.muni.cz/auth/osoba/jana.prochazkova`,
     img: prochazkova
   },
   {
@@ -89,7 +99,7 @@ export const studentsEn = [
     thesis focuses on reconstructions of Holocene moisture changes in Carpathian mires with the
     help of testate amoebae.`,
     researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
-    is: `https://www.researchgate.net/profile/Anna_Simova`,
+    is: `https://is.muni.cz/auth/osoba/376226`,
     img: simova
   },
   {
@@ -107,6 +117,15 @@ export const studentsEn = [
 ]
 
 export const studentsCz = [
+  {
+    id: `coufal`,
+    name: `Radovan Coufal`,
+    email: `241288@mail.muni.cz`,
+    description: `Radovan Coufal vystudoval bakalářský obor Ekologie a ochrana životního prostředí na Katedře ekologie Univerzity Palackého v Olomouci a následně magisterské studium Hydrobiologie (2014-2019). Ve své magisterské práci se věnoval společenstvům slatiništních měkkýšů na Českomoravské Vrchovině.  V současné době je doktorandem na Ústavu botaniky a zoologie a ve své dizertační práci se zabývá vlivem fragmentace a sukcese na slatiništní měkkýší společenstva s důrazem na glaciální relikty.`,
+    researchgate: `https://www.researchgate.net/profile/Radovan_Coufal2`,
+    is: `https://is.muni.cz/auth/osoba/241288`,
+    img: coufal
+    },
     {
       id: `frodlova`,
       name: `Jitka Frodlová`,
@@ -144,7 +163,7 @@ export const studentsCz = [
       metaspolečenstev sladkovodních měkkýšů na velké škále v oblasti od České republiky až po
       Albánii, a do budoucna pak také genetickou strukturou populací vybraných druhů.`,
       researchgate: `https://www.researchgate.net/profile/Erika_Lorencova2`,
-      is: `https://www.researchgate.net/profile/Erika_Lorencova2`,
+      is: `https://is.muni.cz/auth/osoba/393897`,
       img: lorencova
     },
     {
@@ -159,7 +178,7 @@ export const studentsCz = [
       úlohou suchozemských plžů v potravních řetězcích. Vyjma predátorů by měla tato práce
       hodnotit rovněž potravní nároky suchozemských plžů, a to především pomocí metody
       spočívající v analýze stabilních izotopů.`,
-      is: `https://www.muni.cz/lide/422930`,
+      is: `https://is.muni.cz/auth/osoba/422930`,
       img: nemec
     },
     {
@@ -172,7 +191,7 @@ export const studentsCz = [
       lesního hospodářství) na strukturu společenstev epifytických mechorostů, je také výzkumným
       směrem jejího dizertačního projektu. V současné době se snaží zkombinovat vědu a mateřství :-).`,
       researchgate: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
-      is: `https://www.researchgate.net/profile/Jana_Prochazkova6`,
+      is: `https://is.muni.cz/auth/osoba/jana.prochazkova`,
       img: prochazkova
     },
     {
@@ -188,7 +207,7 @@ export const studentsCz = [
       botaniky a zoologie, PřF MU a tématem její dizertační práce je rekonstrukce holocenních změn
       vlhkosti na karpatských rašeliništích pomocí krytenek.`,
       researchgate: `https://www.researchgate.net/profile/Anna_Simova`,
-      is: `https://www.researchgate.net/profile/Anna_Simova`,
+      is: `https://is.muni.cz/auth/osoba/376226`,
       img: simova
     },
     {
