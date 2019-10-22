@@ -34,6 +34,14 @@ export const databasesCz = [
   ];
 export const media = [
   {
+    name: `04/04/2019 České expedice do Antarktidy jsou mezinárodně čím dál známější. Zkoumají řasy, ledovce i bakterie, Český rozhlas`,
+    link: `https://wave.rozhlas.cz/ceske-expedice-do-antarktidy-jsou-mezinarodne-cim-dal-znamejsi-zkoumaji-rasy-7869204`
+  },
+  {
+    name: `20/03/2019 Masarykova univerzita expanduje na Antarktidě. Expedice jsou zpátky`,
+    link: `https://www.em.muni.cz/veda-a-vyzkum/11512-masarykova-univerzita-expanduje-na-antarktide-expedice-jsou-zpatky`
+  },
+  {
     name: `07/04/2018 Návrat vědců z Antarktidy, ČT24`,
     link: `https://www.ceskatelevize.cz/ivysilani/12094108610-regiony-ct24/318281381960407/obsah/611964-navrat-vedcu-z-antarktidy`
   },
@@ -77,6 +85,21 @@ export const media = [
 
 export const popularization = [
   {
+    name: `Roleček J. & Hájek M. (2019): Comeback středoevropské lesostepi (Vesmír 98, 424, 2019/7)`,
+    link: `
+    https://vesmir.cz/cz/casopis/archiv-casopisu/2019/cislo-7/comeback-stredoevropske-lesostepi.html`
+  },
+  {
+    name: `Němec T., Horsáková V. & Horsák M. (2019): Predátoři suchozemských plžů aneb Co prozradí prázdné ulity o osudu svých bývalých majitelů. Živa 3/2019: 125-128.`,
+    link: `
+    http://ziva.avcr.cz/files/ziva/pdf/predatori-suchozemskych-plzu-aneb-co-prozradi-praz.pdf`
+  },
+  {
+    name: `Horsák M. (2018): Odkud a kdy k nám přišlynepůvodní druhy měkkýšů. Živa 5/2018: 249-250.`,
+link: `
+    http://ziva.avcr.cz/files/ziva/pdf/odkud-a-kdy-k-nam-prisly-nepuvodni-druhy-mekkysu.pdf`
+  },
+  {
     name: `Horsáková V. & Horsák M. (2018): Vrkoč Geyerův a vrkoč útlý - první nálezy celoevropsky ohrožených    plžů ve Slavkovském lese. Arnika 1:30-33. - fulltext pdf file`
   },
   {
@@ -92,6 +115,11 @@ export const popularization = [
   },
   {
     name: `Vrkoči – malí, ale výjimeční (Vesmír 96, 174-175, 2017/3) - fulltext pdf file`
+  },
+{
+    name: `Horsák M. & Horsáková V. (2015): Malakozoologův průvodce (makro)ekologií. Živa 5/2015: 245-248.`,
+    link: `
+    http://ziva.avcr.cz/files/ziva/pdf/malakozoologuv-pruvodce-makro-ekologii.pdf`
   },
   {
     name: `Ekologie hlavních vegetačních formací na Zemi (Vesmír 88, 829, 2009/12)`,
