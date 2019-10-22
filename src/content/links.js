@@ -95,12 +95,14 @@ export const popularization = [
     http://ziva.avcr.cz/files/ziva/pdf/predatori-suchozemskych-plzu-aneb-co-prozradi-praz.pdf`
   },
   {
-    name: `Horsák M. (2018): Odkud a kdy k nám přišlynepůvodní druhy měkkýšů. Živa 5/2018: 249-250.`,
+    name: `Horsák M. (2018): Odkud a kdy k nám přišly nepůvodní druhy měkkýšů. Živa 5/2018: 249-250.`,
 link: `
     http://ziva.avcr.cz/files/ziva/pdf/odkud-a-kdy-k-nam-prisly-nepuvodni-druhy-mekkysu.pdf`
   },
   {
-    name: `Horsáková V. & Horsák M. (2018): Vrkoč Geyerův a vrkoč útlý - první nálezy celoevropsky ohrožených    plžů ve Slavkovském lese. Arnika 1:30-33. - fulltext pdf file`
+    name: `Horsáková V. & Horsák M. (2018): Vrkoč Geyerův a vrkoč útlý - první nálezy celoevropsky ohrožených    plžů ve Slavkovském lese. Arnika 1:30-33.`,
+ink: `
+    http://www.casopis-arnika.cz/cisla/arnika_18_1/index.html`
   },
   {
     name: `Horsák M., Juřičková L. & Škodová J. (2017): Pod svícnem bývá tma - identita záhadné fosilní zrnovky z
@@ -114,7 +116,9 @@ link: `
     https://vesmir.cz/cz/casopis/archiv-casopisu/2017/cislo-6/kam-se-toci-ulity.html`
   },
   {
-    name: `Vrkoči – malí, ale výjimeční (Vesmír 96, 174-175, 2017/3) - fulltext pdf file`
+    name: `Horsáková V. & Horsák M. (2017): Vrkoči – malí, ale výjimeční (Vesmír 96, 174-175, 2017/3).`,
+link: `
+    https://vesmir.cz/cz/casopis/archiv-casopisu/2017/cislo-3/vrkoci-mali-vyjimecni.html`
   },
 {
     name: `Horsák M. & Horsáková V. (2015): Malakozoologův průvodce (makro)ekologií. Živa 5/2015: 245-248.`,
