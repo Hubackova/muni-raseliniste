@@ -12,7 +12,7 @@ export const studentsEn = [
     id: `coufal`,
     name: `Radovan Coufal`,
     email: `241288@mail.muni.cz`,
-    description: `Radovan Coufal studied Ecology bachelors program and Hydrobiology masters program at the Department of Ecology, Palacký University, Olomouc (2014-2019). In his masters thesis he studied fen mollusc communities on Bohemian-Moravian Highlands. Currently, he is a PhD student at the Department of Botany and Zoology, Masaryk university and in his PhD thesis he is studying effect of fragmentation and succession on fen mollusc communities with attention to glacial relics.`,
+    description: `Radovan Coufal studied Ecology bachelors program and Hydrobiology masters program at the Department of Ecology, Palacký University, Olomouc (2014-2019). In his masters thesis, he studied fen mollusc communities on Bohemian-Moravian Highlands. Currently, he is a PhD student at the Department of Botany and Zoology, Masaryk university and in his PhD thesis he is studying effect of fragmentation and succession on fen mollusc communities with attention to glacial relics.`,
     researchgate: `https://www.researchgate.net/profile/Radovan_Coufal2`,
     is: `https://is.muni.cz/auth/osoba/241288`,
     img: coufal
@@ -121,7 +121,7 @@ export const studentsCz = [
     id: `coufal`,
     name: `Radovan Coufal`,
     email: `241288@mail.muni.cz`,
-    description: `Radovan Coufal vystudoval bakalářský obor Ekologie a ochrana životního prostředí na Katedře ekologie Univerzity Palackého v Olomouci a následně magisterské studium Hydrobiologie (2014-2019). Ve své magisterské práci se věnoval společenstvům slatiništních měkkýšů na Českomoravské Vrchovině.  V současné době je doktorandem na Ústavu botaniky a zoologie a ve své dizertační práci se zabývá vlivem fragmentace a sukcese na slatiništní měkkýší společenstva s důrazem na glaciální relikty.`,
+    description: `Radovan Coufal vystudoval bakalářský obor Ekologie a ochrana životního prostředí na Katedře ekologie Univerzity Palackého v Olomouci a následně magisterské studium Hydrobiologie (2014-2019). Ve své magisterské práci se věnoval společenstvům slatiništních měkkýšů na Českomoravské vysočině.  V současné době je doktorandem na Ústavu botaniky a zoologie a ve své dizertační práci se zabývá vlivem fragmentace a sukcese na slatiništní měkkýší společenstva s důrazem na glaciální relikty.`,
     researchgate: `https://www.researchgate.net/profile/Radovan_Coufal2`,
     is: `https://is.muni.cz/auth/osoba/241288`,
     img: coufal
